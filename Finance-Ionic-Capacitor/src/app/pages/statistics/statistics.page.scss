@@ -1,0 +1,153 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Finance App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+ion-header {
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.main_content {
+  .top_div {
+
+    .main_name {
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      font-family: 'medium';
+      padding-bottom: 100px;
+    }
+
+    .lower_div {
+      padding: 20px;
+      margin: 15px;
+      width: 93%;
+      border-radius: 15px;
+      background-color: white;
+      position: absolute;
+      bottom: -90px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      canvas {
+        margin: 20px 0px;
+      }
+    }
+  }
+
+  .middle_div {
+    background-color: white;
+    height: 7rem;
+  }
+
+  .bottom_div {
+
+    .title_div {
+      margin: 6px 16px;
+    }
+
+    .list_card {
+
+      .col_div {
+        margin: 12px 16px;
+
+        .item_card {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          background-color: white;
+          border-radius: 12px;
+          position: relative;
+          border: 1px solid lightgray;
+          padding: 10px;
+
+          .icon {
+            background-color: var(--ion-color-primary-tint);
+            margin-right: 10px;
+            padding: 14px;
+            display: flex;
+            border-radius: 50%;
+
+            .cate_img {
+              width: 30px;
+              height: 30px;
+              background-position: center center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            }
+          }
+
+
+          .details {
+            display: block;
+            width: 90%;
+
+            .col {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .end_div {
+              display: flex;
+              align-items: center;
+
+              .price {
+                font-family: 'medium';
+                color: black;
+                font-size: 16px;
+                padding-right: 4px;
+
+              }
+            }
+
+            .flex_row {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+
+              .tag {
+                background-color: var(--ion-color-primary);
+                color: white;
+                border-radius: 50%;
+                font-size: 10px;
+                width: 18px;
+                height: 18px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+
+              .title {
+                font-family: 'medium';
+                padding-bottom: 6px;
+
+              }
+
+              .text {
+                font-size: 12px;
+                color: var(--ion-color-medium);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #bar-chart-container {
+    height: 200px;
+    width: 400px;
+  }
+}

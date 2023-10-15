@@ -1,0 +1,36 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Set your location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label>This data will be displayed in your account profile for security</ion-label>
+
+  <div class="bg_white">
+    <ion-icon slot="start" name="location" class="icon" color="primary"></ion-icon>
+    <ion-label class="label">Set Location</ion-label>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="block" (click)="onSuccess()">
+      Set Location
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

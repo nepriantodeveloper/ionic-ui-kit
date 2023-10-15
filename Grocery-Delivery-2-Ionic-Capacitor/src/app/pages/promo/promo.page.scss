@@ -1,0 +1,50 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+
+    ion-icon {
+      color: white;
+    }
+
+    ion-title {
+      color: white;
+    }
+  }
+}
+
+ion-content {
+  .card {
+    margin-top: 20px;
+
+    .card_image {
+      height: 150px;
+      width: 100%;
+    }
+  }
+}
+
+
+ion-footer {
+  --background: white;
+  --background-color: white;
+  border: 0 !important;
+
+  ion-toolbar {
+    --background: white;
+    border: 0 !important;
+    padding: 10px;
+
+    ion-button {
+      --border-radius: 30px;
+      height: 45px;
+    }
+  }
+}

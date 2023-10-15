@@ -1,0 +1,83 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content>
+  <div class="main_content_div">
+
+      <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/offers.jpg)'">
+          <div class="overlay">
+              <ion-icon name="arrow-back" (click)="goBack()"></ion-icon>
+              <ion-label class="bold_lbl">Compare to choose the right car!</ion-label>
+              <ion-label class="small_lbl">Car that suits your needs</ion-label>
+          </div>
+      </div>
+
+      <div class="content_div">
+
+          <div class="add_box">
+              <ion-label class="title_lbl">ADD Cars TO COMPARE</ion-label>
+              <div class="flex_div">
+                  <div class="add_car">
+                      <div class="round_box">
+                          <ion-icon name="add"></ion-icon>
+                      </div>
+                      <ion-label>Add Cars</ion-label>
+                  </div>
+                  <div class="vs_div">
+                      <div class="line_div"></div>
+                      <div class="vs_box">
+                          <ion-label>VS</ion-label>
+                      </div>
+                  </div>
+                  <div class="add_car">
+                      <div class="round_box">
+                          <ion-icon name="add"></ion-icon>
+                      </div>
+                      <ion-label>Add Cars</ion-label>
+                  </div>
+              </div>
+              <ion-button expand="block" mode="ios">
+                  Add cars to compare
+              </ion-button>
+          </div>
+
+          <div class="slider_box">
+              <ion-label class="title_lbl" style="text-transform: none;">Compare to choose your right car</ion-label>
+
+              <div class="compare_slider">
+                  <div class="single_card" *ngFor="let item of compareCars">
+                      <div class="images_div">
+                          <div class="bg_image back_image" [style.backgroundImage]="'url('+item.img1+')'" style="border-top-left-radius: 5px;"></div>
+                          <div class="vs_box">
+                              <ion-label>VS</ion-label>
+                          </div>
+                          <div class="bg_image back_image" [style.backgroundImage]="'url('+item.img2+')'" style="border-top-right-radius: 5px;"></div>
+                      </div>
+                      <div class="detail_div">
+                          <div class="detail_flex">
+                              <div class="inner_detail">
+                                  <ion-label>Kia Carens</ion-label>
+                                  <ion-label class="price_lbl">₹ 16.99 Lakh*</ion-label>
+                              </div>
+                              <div class="inner_detail">
+                                  <ion-label>Hyundai Alcazar</ion-label>
+                                  <ion-label class="price_lbl">₹ 20.14 Lakh*</ion-label>
+                              </div>
+                          </div>
+                          <ion-label class="blue_lbl">Carens VS Alcazar</ion-label>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+
+      </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "Helth App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

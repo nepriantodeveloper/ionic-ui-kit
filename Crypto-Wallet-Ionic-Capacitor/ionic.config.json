@@ -1,0 +1,7 @@
+{
+  "name": "metacoin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

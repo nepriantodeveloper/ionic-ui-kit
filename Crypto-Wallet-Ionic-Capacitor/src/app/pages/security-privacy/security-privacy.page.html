@@ -1,0 +1,64 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Security & Privacy</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-label class="h5">Protect Your Wallet</ion-label>
+
+  <div class="btn">
+    <ion-button class="contentbtn2" fill="outline" expand="block">
+      Backup Again
+    </ion-button>
+    <ion-button class="contentbtn" expand="block">
+      Reveal Phrase
+    </ion-button>
+  </div>
+
+  <ion-label class="h5">Password</ion-label>
+
+  <ion-button class="contentbtn2" fill="outline" expand="block">
+    Change Password
+  </ion-button>
+
+  <ion-label class="h5">Auto Lock</ion-label>
+
+  <ion-item lines="none">
+    <ion-select placeholder="Select" value="30">
+      <ion-select-option value="30">After 30 Second</ion-select-option>
+      <ion-select-option value="60">After 60 Second</ion-select-option>
+      <ion-select-option value="90">After 90 Second</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <div class="toggle">
+    <ion-label>Sign in With Biometrics</ion-label>
+    <ion-toggle></ion-toggle>
+  </div>
+
+  <div class="toggle">
+    <ion-label>Privacy Mode</ion-label>
+    <ion-toggle></ion-toggle>
+  </div>
+
+  <div class="toggle">
+    <ion-label>Get Incoming Transaction</ion-label>
+    <ion-toggle></ion-toggle>
+  </div>
+
+</ion-content>

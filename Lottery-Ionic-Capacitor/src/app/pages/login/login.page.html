@@ -1,0 +1,68 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-content>
+  <div class="main-content">
+    <div class="upper_div">
+      <div class="logo_img" [style.backgroundImage]="'url(assets/img/logo.png)'">
+      </div>
+      <ion-label class="title">Sign in Account</ion-label>
+    </div>
+
+    <div class="container">
+      <div class="center_div">
+        <div class="input">
+          <ion-icon class="icon" name="mail"></ion-icon>
+          <ion-input type="text" placeholder="Enter Email"></ion-input>
+        </div>
+        <div class="input">
+          <ion-icon class="icon" name="lock-closed"></ion-icon>
+          <ion-input type="text" placeholder="Enter Password"></ion-input>
+        </div>
+
+        <ion-button (click)="goToVerify()" shape="" expand="block" class="submit_btn">
+          Login
+        </ion-button>
+        <ion-button (click)="goToForgot()" expand="block" fill="clear" shape="">
+          Forgot Password
+        </ion-button>
+      </div>
+
+      <div class="lower_div">
+        <div class="line">`
+          <div class="border"></div>
+          <ion-label>Or</ion-label>
+        </div>
+
+        <div class="login-btn">
+          <ion-buttons>
+            <ion-button>
+              <ion-icon name="logo-twitter"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-buttons>
+            <ion-button>
+              <ion-icon name="logo-facebook"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-buttons>
+            <ion-button>
+              <ion-icon name="logo-google"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+
+        <ion-button expand="block" fill="clear" shape="" (click)="goToRegister()">
+          Create an account
+        </ion-button>
+      </div>
+    </div>
+
+
+  </div>
+</ion-content>

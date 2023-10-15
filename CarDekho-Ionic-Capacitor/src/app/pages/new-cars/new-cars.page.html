@@ -1,0 +1,80 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="goBack()">
+                <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-label>
+            Ahmedabad &nbsp;<ion-icon name="chevron-down"></ion-icon>
+        </ion-label>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+            </ion-button>
+            <ion-button>
+                <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+
+        <ion-input type="text" placeholder="Search Cars"></ion-input>
+
+        <div class="filter_flex">
+            <div>
+                <ion-icon name="options-outline"></ion-icon>&nbsp;
+                <ion-label>Filters</ion-label>
+            </div>
+            <div *ngFor="let item of filters">
+                <ion-label>{{item}}</ion-label>&nbsp;
+                <ion-icon name="caret-down-outline"></ion-icon>
+            </div>
+        </div>
+
+        <ion-label class="title_lbl">150 Cars available</ion-label>
+
+        <div class="news_card" *ngFor="let item of cars" (click)="goToNewCarDetail()">
+
+            <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'">
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+
+            <div class="detail_div">
+                <ion-label class="bold_lbl">Maruti Swift Dzire</ion-label>
+
+                <div class="flex_div price_flex">
+                    <ion-label class="price_lbl">₹ 6.35 - 9.35 Lakh*</ion-label>
+                    <ion-label class="grey_lbl">
+                        EMI Starts @₹ 12,000
+                        <span>Apply Loan</span>
+                    </ion-label>
+                </div>
+                <div class="flex_div rate_flex">
+                    <ion-icon name="star"></ion-icon>&nbsp;
+                    <ion-label>4.4  <span>(11 reviews)</span></ion-label>
+                </div>
+
+                <div class="custom_btn">
+                    <img src="assets/imgs/discount.png">
+                    <ion-label>View Exciting Offer</ion-label>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</ion-content>

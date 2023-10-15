@@ -1,0 +1,60 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="end" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="map"></div>
+  <div class="ion-padding">
+    <div class="bg_white">
+      <ion-label class="bold">22:03 Minutes Remaining</ion-label>
+      <ion-progress-bar value="0.8"></ion-progress-bar>
+
+      <div class="top">
+        <ion-icon name="stopwatch-outline" class="icon" color="primary"></ion-icon>
+        <div>
+          <ion-label class="simpl">Delivery Time</ion-label>
+          <ion-label class="time">30 Mins</ion-label>
+        </div>
+      </div>
+
+      <div class="top">
+        <ion-icon name="location" class="icon" color="primary"></ion-icon>
+        <div>
+          <ion-label class="simpl">Delivery Address</ion-label>
+          <ion-label class="time">Smile Street, Palitana</ion-label>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="call">
+          <ion-icon name="call" class="call_icon" color="light"></ion-icon>
+          <ion-label class="call_res">Call Restaurant</ion-label>
+        </div>
+        <div class="call">
+          <ion-icon name="call" class="call_icon" color="light"></ion-icon>
+          <ion-label class="call_res">Call Delivery Boy</ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

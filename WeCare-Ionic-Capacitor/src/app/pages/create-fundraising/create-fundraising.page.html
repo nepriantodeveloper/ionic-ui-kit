@@ -1,0 +1,78 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : WeCare App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Create New Fundraising</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="img" [style.backgroundImage]="'url(assets/img/c1.jpg)'">
+    </div>
+
+    <div class="row_img">
+      <div class="img_small" [style.backgroundImage]="'url(assets/img/c2.jpg)'">
+      </div>
+      <div class="img_small" [style.backgroundImage]="'url(assets/img/c1.jpg)'">
+      </div>
+      <div class="img_small" [style.backgroundImage]="'url(assets/img/c3.jpg)'">
+      </div>
+      <div class="img_small" [style.backgroundImage]="'url(assets/img/c4.jpg)'">
+      </div>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title">Fund Raising Details</ion-label>
+    </div>
+
+    <div class="input">
+      <ion-input type="text" placeholder="Title"></ion-input>
+    </div>
+    <div class="input">
+      <ion-input type="text" placeholder="Category"></ion-input>
+    </div>
+    <div class="input">
+      <ion-input type="text" placeholder="Total Donation Required"></ion-input>
+    </div>
+    <div class="input">
+      <ion-input type="text" placeholder="Choose Donation Expiration Date"></ion-input>
+    </div>
+    <div class="input">
+      <textarea placeholder="Fund Usage Plan" cols="30" rows="10"></textarea>
+    </div>
+
+
+    <div class="title_div">
+      <ion-label class="title">Donation Recipient Details</ion-label>
+    </div>
+
+    <div class="input">
+      <ion-input type="text" placeholder="Name of Recipient"></ion-input>
+    </div>
+
+    <div class="input">
+      <textarea placeholder="Story" cols="30" rows="10"></textarea>
+    </div>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" shape="round" (click)="goToHome()" expand="block">
+      Submit
+    </ion-button>
+  </div>
+</ion-footer>

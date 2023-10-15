@@ -1,0 +1,104 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-thumbnail>
+      <img src="assets/images/p1.jpg" />
+    </ion-thumbnail>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-row (click)="onPreferences()">
+    <ion-col size="2">
+      <ion-button size="small" class="btns">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col size="10">
+      <div class="label">
+        <ion-label>Preferences</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-button size="small" class="btns">
+        <ion-icon name="globe-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col size="10">
+      <div class="label">
+        <ion-label>Browser</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-button size="small" class="btns">
+        <ion-icon name="share-social-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col size="10">
+      <div class="label">
+        <ion-label>Share My Public Address</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-button size="small" class="btns">
+        <ion-icon name="eye-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col size="10">
+      <div class="label">
+        <ion-label>View on Etherscan</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-button size="small" class="btns">
+        <ion-icon name="help-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col size="10">
+      <div class="label">
+        <ion-label>Help</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row (click)="onLogout()">
+    <ion-col size="2">
+      <ion-button size="small" class="btns">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col size="10">
+      <div class="label">
+        <ion-label>Logout</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

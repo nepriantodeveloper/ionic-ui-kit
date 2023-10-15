@@ -1,0 +1,277 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : WeCare App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+.main-content {
+  .profile {
+    .profile-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .img {
+        width: 120px;
+        height: 120px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        margin-bottom: 12px;
+        margin-top: 24px;
+      }
+
+      .btn_div {
+        display: flex;
+
+      }
+
+      .sub_btn {
+        width: 90px;
+        height: 30px;
+        color: white;
+        font-size: 13px;
+        font-family: 'medium';
+        margin: 12px 10px;
+      }
+
+      .title {
+        font-size: 20px;
+        font-family: 'bold';
+      }
+
+      .text {
+        font-size: 14px;
+        font-family: 'medium';
+      }
+
+      ion-row {
+        width: 100%;
+
+        ion-col {
+          text-align: center;
+
+          ion-label {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .segment {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+
+    .seg_name {
+      text-align: center;
+      width: 33%;
+      font-family: "bold";
+      font-size: 14px;
+      background-color: white;
+      color: var(--ion-color-medium);
+      padding: 10px 0px;
+      border-bottom: 2px solid var(--ion-color-light);
+    }
+
+    .active {
+      border-bottom: 2px solid var(--ion-color-primary);
+      color: var(--ion-color-primary);
+    }
+  }
+
+  .list_card {
+
+    .col_div {
+      padding: 8px 16px;
+
+      .item_card {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 24px;
+        position: relative;
+        border: 1px solid lightgray;
+
+        .img {
+          height: 140px;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+        }
+
+        .detail {
+          padding: 8px;
+
+          .title {
+            font-size: 14px;
+            font-family: 'bold';
+            padding-bottom: 10px;
+          }
+
+          .color_txt {
+            font-size: 12px;
+            font-family: 'bold';
+            color: var(--ion-color-primary);
+            padding-right: 4px;
+          }
+
+          .small_text {
+            font-size: 10px;
+            font-family: 'medium';
+            color: var(--ion-color-medium);
+          }
+
+          ion-progress-bar {
+            margin: 8px 0px;
+          }
+
+          .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .price_div {
+              display: flex;
+              align-items: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .review_card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding: 12px;
+    margin: 12px 16px;
+    border: 1px solid lightgray;
+
+    .upper_div {
+      display: flex;
+      border-bottom: 1px solid lightgrey;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+
+      .img {
+        width: 50px;
+        height: 50px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        position: relative;
+        margin-right: 16px;
+      }
+
+      .details {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left_div {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .title {
+          font-size: 16px;
+          font-family: 'bold';
+          padding-bottom: 4px;
+        }
+
+        .small_txt {
+          font-size: 12px;
+          color: var(--ion-color-medium);
+        }
+      }
+    }
+
+    .lower_div {
+      display: flex;
+      flex-direction: column;
+
+      .text {
+        font-size: 14px;
+      }
+
+      .small_txt {
+        font-size: 12px;
+        color: var(--ion-color-medium);
+        padding: 10px 0px;
+
+      }
+
+      .icon_div {
+        display: flex;
+        align-items: center;
+
+        ion-icon {
+          color: var(--ion-color-primary);
+          font-size: 24px;
+        }
+
+        ion-label {
+          padding-left: 3px;
+          padding-right: 10px;
+        }
+
+      }
+    }
+  }
+
+  .about_div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+
+    .title {
+      font-size: 16px;
+      font-family: 'bold';
+      padding: 12px 0px;
+    }
+
+    .text {
+      font-size: 14px;
+    }
+
+    .link_div {
+      display: flex;
+      align-items: center;
+      padding-bottom: 6px;
+
+      .link {
+        color: var(--ion-color-secondary);
+      }
+
+      ion-icon {
+        color: var(--ion-color-primary);
+        font-size: 26px;
+        padding-right: 8px;
+      }
+    }
+
+    .list_div {
+      display: flex;
+      align-items: center;
+      padding-bottom: 6px;
+
+      ion-icon {
+        font-size: 26px;
+        padding-right: 8px;
+      }
+    }
+  }
+}

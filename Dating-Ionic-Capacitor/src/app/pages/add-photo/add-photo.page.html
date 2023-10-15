@@ -1,0 +1,40 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Add Your Best Photos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="title">
+      <ion-label>Add Your best photos to get a higher amount of daily matches.</ion-label>
+    </div>
+    <div class="img_div">
+      <div class="flex" *ngFor="let item of [1,2,3,4]">
+        <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" shape="round" (click)="goToInterest()" expand="block">
+      Continue
+    </ion-button>
+  </div>
+</ion-footer>

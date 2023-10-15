@@ -1,0 +1,49 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Contact - Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="item">
+    <ion-label class="title">Name</ion-label>
+    <ion-item lines="none">
+      <ion-input type="text" placeholder="Enter name"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="item">
+    <ion-label class="title">Email</ion-label>
+    <ion-item lines="none">
+      <ion-input type="text" placeholder="Enter email"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="item">
+    <ion-label class="title">Message</ion-label>
+    <ion-textarea class="textarea" rows="7" type="text" placeholder="Enter message"></ion-textarea>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="contentbtn" (click)="onSend()" expand="block">
+      Send To Metacoin
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

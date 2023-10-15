@@ -1,0 +1,23 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content>
+  <div class="bg_image main_content_div" [style.backgroundImage]="'url(assets/imgs/back2.jpg)'">
+    <div class="overlay">
+      <div>
+        <ion-input type="text" placeholder="Username"></ion-input>
+        <ion-input type="text" placeholder="Password"></ion-input>
+        <ion-input type="text" placeholder="Confirm Password"></ion-input>
+        <ion-button expand="block" class="block_btn" (click)="goToTabs()">
+          Register
+        </ion-button>
+        <ion-label class="bottom_lbl" (click)="goToLogin()">Already have an account? Login</ion-label>
+      </div>
+    </div>
+  </div>
+</ion-content>

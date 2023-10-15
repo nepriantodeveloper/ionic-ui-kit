@@ -1,0 +1,112 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Driver App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="bg_white">
+    <div class="profile" (click)="onProfile()">
+      <div class="left">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/p1.jpg)'"></div>
+        <div class="text">
+          <ion-label class="bold">Gujarat Banks</ion-label>
+          <ion-label class="gold">Gold Member</ion-label>
+        </div>
+      </div>
+      <ion-icon name="chevron-forward-outline" color="medium" class="icon"></ion-icon>
+    </div>
+  </div>
+
+  <div class="bg_white">
+    <div class="profile border_bottom" (click)="onVehicle()">
+      <div class="left">
+        <div class="img">
+          <ion-icon name="car-sport-outline" class="left_icon orange"></ion-icon>
+        </div>
+        <div class="text">
+          <ion-label>Vehicla Management</ion-label>
+        </div>
+      </div>
+      <ion-icon name="chevron-forward-outline" color="medium" class="icon"></ion-icon>
+    </div>
+    <div class="profile border_bottom" (click)="onDocument()">
+      <div class="left">
+        <div class="img">
+          <ion-icon name="document-text" class="left_icon green"></ion-icon>
+        </div>
+        <div class="text">
+          <ion-label>Document Management</ion-label>
+        </div>
+      </div>
+      <ion-icon name="chevron-forward-outline" color="medium" class="icon"></ion-icon>
+    </div>
+    <div class="profile border_bottom">
+      <div class="left">
+        <div class="img">
+          <ion-icon name="star" class="left_icon yellow"></ion-icon>
+        </div>
+        <div class="text">
+          <ion-label>Reviews</ion-label>
+        </div>
+      </div>
+      <ion-icon name="chevron-forward-outline" color="medium" class="icon"></ion-icon>
+    </div>
+    <div class="profile">
+      <div class="left">
+        <div class="img">
+          <ion-icon name="language" class="left_icon blue"></ion-icon>
+        </div>
+        <div class="text">
+          <ion-label>Language</ion-label>
+        </div>
+      </div>
+      <ion-icon name="chevron-forward-outline" color="medium" class="icon"></ion-icon>
+    </div>
+  </div>
+
+  <div class="bg_white">
+    <div class="profile border_bottom">
+      <div class="left">
+        <div class="img">
+          <ion-icon name="notifications" class="left_icon lightblue"></ion-icon>
+        </div>
+        <div class="text">
+          <ion-label>Notifications</ion-label>
+        </div>
+      </div>
+      <ion-icon name="chevron-forward-outline" color="medium" class="icon"></ion-icon>
+    </div>
+    <div class="profile border_bottom">
+      <div class="left">
+        <div class="img">
+          <ion-icon name="alert-circle" class="left_icon grey"></ion-icon>
+        </div>
+        <div class="text">
+          <ion-label>Terms & Privacy Policy</ion-label>
+        </div>
+      </div>
+      <ion-icon name="chevron-forward-outline" color="medium" class="icon"></ion-icon>
+    </div>
+    <div class="profile">
+      <div class="left">
+        <ion-icon name="help-circle" class="left_icon red"></ion-icon>
+        <div class="text">
+          <ion-label>Contact Us</ion-label>
+        </div>
+      </div>
+      <ion-icon name="chevron-forward-outline" color="medium" class="icon"></ion-icon>
+    </div>
+  </div>
+</ion-content>

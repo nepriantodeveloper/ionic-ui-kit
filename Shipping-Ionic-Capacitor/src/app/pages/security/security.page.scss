@@ -1,0 +1,23 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Saska App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .add_button {
+    margin-top: 40px;
+    --background: #E8F8F5;
+    color: var(--ion-color-primary);
+    font-family: 'semi-bold';
+  }
+}

@@ -1,0 +1,50 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Saska App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Security</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+
+  <div class="flex">
+    <ion-label>Remember me</ion-label>
+    <ion-toggle slot="end" name="grape" checked></ion-toggle>
+  </div>
+
+  <div class="flex">
+    <ion-label>Face ID</ion-label>
+    <ion-toggle slot="end" name="grape"></ion-toggle>
+  </div>
+
+  <div class="flex">
+    <ion-label>Biometric ID</ion-label>
+    <ion-toggle slot="end" name="grape" checked></ion-toggle>
+  </div>
+
+  <div class="flex">
+    <ion-label>Google Authenticator</ion-label>
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </div>
+
+  <ion-button expand="full" class="add_button" shape="round">
+    Change Pin
+  </ion-button>
+
+  <ion-button expand="full" class="add_button" shape="round">
+    Change Password
+  </ion-button>
+</ion-content>

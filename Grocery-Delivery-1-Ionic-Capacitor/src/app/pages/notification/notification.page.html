@@ -1,0 +1,32 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()" color="dark">
+        <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Notification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    <div class="single_notification" *ngFor="let item of notifications">
+      <div class="image_box">
+        <img [src]="item.img">
+      </div>
+      <div class="detail">
+        <ion-label class="bold_lbl">{{item.title}}</ion-label>
+        <ion-label class="small_lbl">{{item.content}}</ion-label>
+      </div>
+    </div>
+  </div>
+</ion-content>

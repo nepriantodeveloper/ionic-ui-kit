@@ -1,0 +1,94 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Hotel Boooking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Payment Summary</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="list_card">
+      <div class="img" [style.backgroundImage]="'url(assets/img/6.jpg)'">
+      </div>
+      <div class="detail">
+        <div class="item">
+          <ion-label class="title">Eldorado Resort</ion-label>
+          <ion-label class="price">$35</ion-label>
+        </div>
+        <div class="item">
+          <ion-label class="text">Rome, Italy</ion-label>
+          <ion-label class="small_text">1 night</ion-label>
+        </div>
+        <div class="item">
+          <div class="rating">
+            <ion-icon class="star" color="warning" name="star"></ion-icon>
+            <ion-label class="color_txt">4.8</ion-label>
+            <ion-label class="small_text">(322 reviews)</ion-label>
+          </div>
+          <ion-icon color="primary" name="bookmark"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="bill_detail">
+      <div class="bill_list">
+        <ion-label class="title">Check In</ion-label>
+        <ion-label class="price">Dec. 24, 2022</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Check Out</ion-label>
+        <ion-label class="price">Dec. 24, 2022</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Guest</ion-label>
+        <ion-label class="price">2</ion-label>
+      </div>
+    </div>
+
+    <div class="bill_detail">
+      <div class="bill_list">
+        <ion-label class="title">5 Nights</ion-label>
+        <ion-label class="price">$9.99</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Taxes & Charges</ion-label>
+        <ion-label class="price">$9.99</ion-label>
+      </div>
+      <div class="line"></div>
+      <div class="bill_list">
+        <ion-label class="title">Total</ion-label>
+        <ion-label class="price">$9.99</ion-label>
+      </div>
+    </div>
+
+    <ion-item lines="none" class="payment">
+      <ion-avatar slot="start">
+        <img src="assets/img/paypal.png" />
+      </ion-avatar>
+      <ion-label>Paypal</ion-label>
+      <ion-button expand="block" fill="clear" shape="round">
+        Change
+      </ion-button>
+    </ion-item>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" shape="round" (click)="goToTicket()" expand="block">
+      Confirm Payment
+    </ion-button>
+  </div>
+</ion-footer>

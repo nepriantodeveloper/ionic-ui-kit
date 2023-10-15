@@ -1,0 +1,48 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : News App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Select Your Country</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="searchbox">
+      <ion-icon class="icon" name="search"></ion-icon>
+      <ion-input type="text" placeholder="Search" class="ion-no-padding"></ion-input>
+    </div>
+    <ion-list>
+      <ion-radio-group class="md">
+
+        <ion-item lines="none" class="country" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11]">
+          <ion-avatar slot="start">
+            <img src="assets/img/india.png" />
+          </ion-avatar>
+          <ion-label class="title"><span class="text">In</span>India</ion-label>
+          <ion-radio slot="end" value="1"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" shape="round" (click)="goToTopic()" expand="block">
+      Continue
+    </ion-button>
+  </div>
+</ion-footer>

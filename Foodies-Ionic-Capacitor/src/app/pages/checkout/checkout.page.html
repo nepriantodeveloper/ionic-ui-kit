@@ -1,0 +1,106 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onback()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Checkout</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="border">
+    <div class="radio">
+      <ion-label class="head">Cash On Delivery</ion-label>
+      <ion-icon name="radio-button-off-outline" class="icon" color="medium"></ion-icon>
+    </div>
+    <div class="cash">
+      <ion-icon name="wallet-outline" class="cash_icon"></ion-icon>
+      <div>
+        <ion-label class="bold">Cash on delivery</ion-label>
+        <ion-label class="simpl">Online payment recommended to reduce contract between you and delivery partner
+        </ion-label>
+      </div>
+    </div>
+  </div>
+
+  <div class="border">
+    <div class="radio">
+      <ion-label class="head">Credit/Debit Card</ion-label>
+      <ion-icon name="radio-button-on-outline" class="icon" color="primary"></ion-icon>
+    </div>
+    <div class="cash">
+      <ion-icon name="add-circle-outline" class="cash_icon"></ion-icon>
+      <div>
+        <ion-label class="bold">Add New Card</ion-label>
+        <ion-label class="simpl">Save and payment via cards.
+        </ion-label>
+        <div class="card">
+          <div class="bg_image card_img" [style.backgroundImage]="'url(assets/images/visa.png)'"></div>
+          <div class="bg_image card_img" [style.backgroundImage]="'url(assets/images/american.png)'"></div>
+          <div class="bg_image card_img" [style.backgroundImage]="'url(assets/images/visa.png)'"></div>
+          <div class="bg_image card_img" [style.backgroundImage]="'url(assets/images/american.png)'"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="border">
+    <div class="radio">
+      <ion-label class="head">UPI</ion-label>
+    </div>
+    <div class="pay">
+      <div class="bg_image pay_img" [style.backgroundImage]="'url(assets/images/gpay.png)'"></div>
+      <div class="bg_image pay_img" [style.backgroundImage]="'url(assets/images/apple_pay.png)'"></div>
+    </div>
+
+    <div class="cash">
+      <ion-icon name="add-circle-outline" class="cash_icon"></ion-icon>
+      <div>
+        <ion-label class="bold">Add New UPI</ion-label>
+        <ion-label class="simpl">You need to register UPI ID
+        </ion-label>
+      </div>
+    </div>
+  </div>
+
+  <div class="border">
+    <div class="radio">
+      <ion-label class="head">More Option</ion-label>
+    </div>
+    <div class="more">
+      <div class="left">
+        <ion-icon name="wallet-outline"></ion-icon>
+        <ion-label class="method">Wallet ($15)</ion-label>
+      </div>
+      <ion-icon name="radio-button-off-outline" class="icon" color="medium"></ion-icon>
+    </div>
+    <div class="more">
+      <div class="left">
+        <ion-icon name="storefront-outline"></ion-icon>
+        <ion-label class="method">Net Banking</ion-label>
+      </div>
+      <ion-icon name="radio-button-off-outline" class="icon" color="medium"></ion-icon>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-label class="btn" (click)="onCard()">Make Payment Now ($13.8)</ion-label>
+  </ion-toolbar>
+</ion-footer>

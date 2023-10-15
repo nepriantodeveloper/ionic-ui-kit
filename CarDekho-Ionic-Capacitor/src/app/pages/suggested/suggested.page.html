@@ -1,0 +1,223 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="main_content_div" *ngIf="stepID == 1">
+
+        <div class="bg_image banner_div" [style.backgroundImage]="'url(assets/imgs/family.jpg)'"></div>
+
+        <div class="content_div">
+
+            <ion-label class="title_lbl">Car Recommender</ion-label>
+
+            <div class="stepper_div">
+                <div class="round_div active"><ion-label>1</ion-label></div>
+                <div class="line_div"></div>
+                <div class="round_div"><ion-label>2</ion-label></div>
+                <div class="line_div"></div>
+                <div class="round_div"><ion-label>3</ion-label></div>
+            </div>
+
+            <img src="assets/imgs/purse.png" class="wallet">
+
+            <ion-label class="bold_lbl">My dream car budget</ion-label>
+
+            <ion-row>
+                <ion-col size="6" [class.left]="i%2==1" [class.right_flex]="i%2==0" *ngFor="let item of budget; let i = index">
+                    <div class="price_card" [class.active_price]="item == currentBudget" (click)="changeBudget(item)">
+                        <ion-label>{{item}}</ion-label>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+        </div>
+    </div>
+
+    <div class="main_content_div" *ngIf="stepID == 2">
+
+        <div class="chip_flex">
+            <ion-chip color="default" mode="ios">
+                <ion-label>1 Lakh - 5 Lakh</ion-label>
+            </ion-chip>
+        </div>
+
+        <div class="stepper_div">
+            <ion-icon name="arrow-back"></ion-icon>
+
+            <div class="round_div">
+                <ion-label>1</ion-label>
+            </div>
+            <div class="line_div"></div>
+            <div class="round_div active">
+                <ion-label>2</ion-label>
+            </div>
+            <div class="line_div"></div>
+            <div class="round_div">
+                <ion-label>3</ion-label>
+            </div>
+        </div>
+
+        <ion-label class="bold_lbl">Purpose of buying car is</ion-label>
+
+        <div class="content_div" style="background: #fafafa;">
+
+            <ion-row style="padding: 0px 16px;">
+                <ion-col size="6" [class.left]="i%2==1" [class.right]="i%2==0" *ngFor="let item of purpose; let i = index">
+                    <div class="purpose_card" [class.active_purpose]="yourPurpose == item.name" (click)="changePurpose(item.name)">
+                        <div class="icon_box" *ngIf="yourPurpose == item.name">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="bg_image back_image" [style.backgroundImage]="'url('+ item.img +')'"></div>
+                        <ion-label>{{item.name}}</ion-label>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+        </div>
+    </div>
+
+    <div class="main_content_div" *ngIf="stepID == 3">
+
+        <div class="chip_flex">
+            <ion-chip color="default" mode="ios">
+                <ion-label>1 Lakh - 5 Lakh</ion-label>
+            </ion-chip>
+            <ion-chip color="default" mode="ios">
+                <ion-label>Family Car</ion-label>
+            </ion-chip>
+        </div>
+
+        <div class="stepper_div">
+            <div class="round_div">
+                <ion-label>1</ion-label>
+            </div>
+            <div class="line_div"></div>
+            <div class="round_div">
+                <ion-label>2</ion-label>
+            </div>
+            <div class="line_div"></div>
+            <div class="round_div active">
+                <ion-label>3</ion-label>
+            </div>
+        </div>
+
+        <ion-label class="bold_lbl">Choose the Number of Seats</ion-label>
+
+        <div class="content_div" style="background: #fafafa;padding: 16px;">
+            <div class="seater_div">
+                <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/family.jpg)'"></div>
+                <ion-label class="name_lbl">In Family Car</ion-label>
+                <div class="seater_flex">
+                    <div [class.active]="noOfSeats == 4" (click)="noOfSeats = 4">
+                        <ion-label>4</ion-label>
+                    </div>
+                    <div [class.active]="noOfSeats == 5" (click)="noOfSeats = 5">
+                        <ion-label>5</ion-label>
+                    </div>
+                    <div [class.active]="noOfSeats == 7" (click)="noOfSeats = 7">
+                        <ion-label>7</ion-label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main_content_div" *ngIf="stepID == 4">
+
+        <div class="chip_flex">
+            <ion-chip color="default" mode="ios">
+                <ion-label>1 Lakh - 5 Lakh</ion-label>
+            </ion-chip>
+            <ion-chip color="default" mode="ios">
+                <ion-label>Family Car</ion-label>
+            </ion-chip>
+            <ion-chip color="default" mode="ios">
+                <ion-label>7</ion-label>
+            </ion-chip>
+        </div>
+
+        <div class="content_div" style="background: #fafafa;">
+
+            <ion-label class="bold_lbl" style="padding: 16px;">2 Best Matched Cars for You</ion-label>
+
+            <div class="car_div" *ngFor="let item of (cars | slice :0 :2)">
+                <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'"></div>
+                <div class="car_detail_div">
+
+                    <div class="detail_div">
+                        <div class="detail_flex">
+                            <div>
+                                <ion-label class="name_lbl">Maruti Baleno</ion-label>
+                                <ion-label class="price_lbl">₹ 6.35 - 9.35 Lakh*</ion-label>
+                                <ion-label class="small_grey">
+                                    <span>19.02 kmpl</span>&nbsp;•&nbsp;
+                                    <span>7 seater</span>
+                                </ion-label>
+                            </div>
+                            <div class="inner_flex">
+                                <ion-checkbox mode="md"></ion-checkbox>
+                                <ion-label>Compare</ion-label>
+                            </div>
+                        </div>
+                        <ion-button expand="block" mode="ios">
+                            Check March Offers
+                        </ion-button>
+                    </div>
+
+                    <div class="match_flex">
+                        <div class="round_box"></div>
+                        <div class="match_detail">
+                            <ion-label class="small_lbl">Best match on</ion-label>
+                            <ion-label class="simp_lbl">Safety & Economy</ion-label>
+                        </div>
+                    </div>
+
+                    <div class="varient_div">
+                        <ion-label class="badge_lbl">1</ion-label>
+                        <ion-label>Variant Matching Your Search Criteria</ion-label>
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</ion-content>
+
+<ion-footer>
+    <div class="footer_div" *ngIf="stepID != 4">
+        <div class="first_div">
+            <div>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div>
+                <ion-label class="simp_lbl">10 Cars found</ion-label>
+                <ion-label class="small_lbl">Matching above criateria</ion-label>
+            </div>
+        </div>
+        <div>
+            <ion-button mode="ios" (click)="next()">
+                Next
+            </ion-button>
+        </div>
+    </div>
+</ion-footer>

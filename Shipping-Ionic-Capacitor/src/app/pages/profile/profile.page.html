@@ -1,0 +1,96 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Saska App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile">
+    <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'">
+      <div class="icon">
+        <ion-icon name="pencil"></ion-icon>
+      </div>
+    </div>
+    <div class="title">
+      <ion-label style="font-size: 17px; font-family: 'bold';">Jaydeep Hirani</ion-label>
+      <ion-label style="font-size: 13px;">jaydeep@gmail.com</ion-label>
+    </div>
+  </div>
+
+  <div class="route">
+    <ion-item lines="none" (click)="onEditProfile()">
+      <ion-icon name="person-outline" color="dark"></ion-icon>
+      <ion-label>Edit Profile</ion-label>
+      <ion-icon name="chevron-forward-outline" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none" (click)="onNotification()">
+      <ion-icon name="notifications-outline" color="dark"></ion-icon>
+      <ion-label>Notification</ion-label>
+      <ion-icon name="chevron-forward-outline" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none" (click)="onPayment()">
+      <ion-icon name="wallet-outline" color="dark"></ion-icon>
+      <ion-label>Payment</ion-label>
+      <ion-icon name="chevron-forward-outline" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none" (click)="onSecurity()">
+      <ion-icon name="shield-checkmark-outline" color="dark"></ion-icon>
+      <ion-label>Security</ion-label>
+      <ion-icon name="chevron-forward-outline" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none" (click)="onLanguage()">
+      <ion-icon name="language-outline" color="dark"></ion-icon>
+      <ion-label>Language</ion-label>
+      <ion-icon name="chevron-forward-outline" color="medium"></ion-icon>
+    </ion-item>
+
+
+    <ion-item lines="none">
+      <ion-icon name="eye-outline" color="dark"></ion-icon>
+      <ion-label>Dark Theme</ion-label>
+      <ion-toggle slot="end" name="grape"></ion-toggle>
+    </ion-item>
+
+
+    <ion-item lines="none" (click)="onPrivacy()">
+      <ion-icon name="lock-closed-outline" color="dark"></ion-icon>
+      <ion-label>Privacy Policy</ion-label>
+      <ion-icon name="chevron-forward-outline" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none" (click)="onHelp()">
+      <ion-icon name="help-circle-outline" color="dark"></ion-icon>
+      <ion-label>Help Center</ion-label>
+      <ion-icon name="chevron-forward-outline" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none" (click)="onInvite()">
+      <ion-icon name="people-outline" color="dark"></ion-icon>
+      <ion-label>Invite Friends</ion-label>
+      <ion-icon name="chevron-forward-outline" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none" (click)="onLogout()">
+      <ion-icon name="log-out-outline" color="dark"></ion-icon>
+      <ion-label>Logout</ion-label>
+      <ion-icon name="chevron-forward-outline" color="medium"></ion-icon>
+    </ion-item>
+  </div>
+</ion-content>

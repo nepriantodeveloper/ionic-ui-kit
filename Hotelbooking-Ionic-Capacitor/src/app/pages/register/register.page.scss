@@ -1,0 +1,117 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Hotel Boooking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+
+
+  .upper_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo_img {
+      height: 80px;
+      width: 80px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .center_div {
+    width: 100%;
+
+    .head_text {
+      margin-bottom: 40px;
+
+      .title {
+        font-size: 24px;
+        font-family: 'bold';
+        border-left: 6px solid var(--ion-color-primary);
+        color: var(--ion-color-primary);
+        padding: 0px 24px;
+        position: relative;
+      }
+    }
+
+    .input {
+      background-color: var(--ion-color-light);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      margin: 16px 0px;
+
+      .icon {
+        color: var(--ion-color-primary);
+        padding: 0px 10px;
+      }
+
+      ion-input {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .lower_div {
+    .line {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      bottom: 1px;
+      margin: 2rem 1rem;
+
+      .border {
+        width: 100%;
+        border-bottom: 1px solid var(--ion-color-light);
+      }
+
+      ion-label {
+        position: absolute;
+        bottom: -5px;
+        background-color: white;
+        color: gray;
+        font-size: 16px;
+        padding: 0px 15px;
+      }
+    }
+
+    .login-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      ion-buttons {
+        padding: 5px;
+        margin: 10px;
+        font-size: 20px;
+        color: var(--ion-color-primary);
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px var(--box-shadow-color);
+        --box-shadow-color: #d7d8da;
+      }
+    }
+
+    .submit-btn {
+      margin: 30px 0px;
+      color: white;
+    }
+
+    .lower_btn {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

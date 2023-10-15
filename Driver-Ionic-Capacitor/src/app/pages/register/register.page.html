@@ -1,0 +1,44 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Driver App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-content>
+  <div class="bg_color"></div>
+  <div class="bg_white">
+    <ion-label class="head_text">Sign up With Email and Phone Number</ion-label>
+    <ion-row class="login">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input type="email" placeholder="jaydeep@initappz.com"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="3">
+        <ion-item lines="none">
+          <div class="bg_image flag_img" [style.backgroundImage]="'url(assets/images/flag.png)'"></div>
+        </ion-item>
+      </ion-col>
+      <ion-col size="9">
+        <ion-item lines="none">
+          <ion-icon slot="end" name="close-circle-outline"></ion-icon>
+          <ion-input type="number" placeholder="+91 9876543210"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <div class="button" (click)="onRegister()">
+      <ion-label class="text">SIGN UP</ion-label>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="bottom">
+      <ion-label class="last_lbl">Already have an account? <span (click)="onLogin()">Sign in</span></ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,113 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : HandyService App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+.main-content {
+  padding-top: 16px;
+  background-color: var(--ion-color-light);
+
+  .segment {
+    margin: 10px 10px;
+
+    ion-col {
+      font-family: "bold";
+      font-size: 14px;
+      background-color: white;
+      border-radius: 4px;
+      margin: 0px 5px;
+      padding: 10px 10px;
+    }
+
+    .active {
+      background-color: var(--ion-color-primary);
+      border-radius: 4px;
+      color: white;
+    }
+  }
+
+  .order_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 14px;
+    position: relative;
+    margin: 16px 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .img {
+      width: 90px;
+      height: 110px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      position: relative;
+
+      .img_detail {
+        position: absolute;
+        width: 90%;
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        color: var(--ion-color-primary);
+        background-color: white;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 5px 15px var(--box-shadow-color);
+        --box-shadow-color: #f3f3f4;
+
+        .discount {
+          font-size: 12px;
+          font-family: "medium";
+        }
+
+        .discount_type {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .detail {
+      width: 70%;
+      margin-left: 14px;
+      display: flex;
+      flex-direction: column;
+
+      .head {
+        font-size: 16px;
+        font-family: 'bold';
+      }
+
+      .item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--ion-color-light);
+        padding: 5px 0px;
+        margin-bottom: 5px;
+
+        .title {
+          font-size: 12px;
+          color: grey;
+        }
+
+        .text {
+          font-size: 14px;
+          font-family: 'medium';
+        }
+      }
+    }
+
+    .pb-1 {
+      padding-bottom: 14px;
+    }
+  }
+}

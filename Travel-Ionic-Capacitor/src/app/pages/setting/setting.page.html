@@ -1,0 +1,67 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Payment Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <div class="title_div">
+      <ion-label class="title">Payment Method</ion-label>
+    </div>
+
+    <div class="list_btn" (click)="goToCard()">
+      <ion-label class="main_title">Add New Credit Card</ion-label>
+      <ion-icon name="add-circle-outline" color="secondary"></ion-icon>
+    </div>
+    <div class="list_btn">
+      <ion-label class="main_title">Add New Paypal Address</ion-label>
+      <ion-icon name="add-circle-outline" color="secondary"></ion-icon>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title">Transaction History</ion-label>
+    </div>
+
+    <div class="payment_list" *ngFor="let item of [1,2,3]">
+      <div class="row_div">
+        <ion-label class="main_title">3 Days Flight</ion-label>
+        <ion-label class="grey_text">3 Feb 2024</ion-label>
+      </div>
+      <div class="row_div">
+        <ion-label class="grey_text">To Paris, France</ion-label>
+        <ion-label class="appcolor_text">243.54$</ion-label>
+      </div>
+    </div>
+
+
+    <div class="title_div">
+      <ion-label class="title">Payment Information</ion-label>
+    </div>
+
+    <div class="list_btn">
+      <ion-label class="main_title">Auto fill mode</ion-label>
+      <ion-toggle></ion-toggle>
+    </div>
+    <div class="list_btn">
+      <ion-label class="main_title">Add Shipping Address</ion-label>
+      <ion-icon name="add-circle-outline" color="secondary"></ion-icon>
+    </div>
+
+
+  </div>
+</ion-content>

@@ -1,0 +1,47 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Driver App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Driving Licence</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="bg_white">
+    <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/doc.png)'"></div>
+
+    <ion-label class="color">Update Photo</ion-label>
+  </div>
+
+
+  <ion-label class="head">CARD NUMBER</ion-label>
+
+  <div class="flex">
+    <ion-label>1234567890</ion-label>
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </div>
+
+  <ion-label class="head">EXPIRATION DATE</ion-label>
+
+  <div class="flex">
+    <ion-label>MM/DD/YYYY</ion-label>
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-label (click)="onBack()">COMPLETE</ion-label>
+  </ion-toolbar>
+</ion-footer>

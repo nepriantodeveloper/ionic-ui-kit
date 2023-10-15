@@ -1,0 +1,113 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Nomia App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+
+    ion-icon {
+      color: white;
+    }
+
+    ion-title {
+      color: white;
+    }
+  }
+}
+
+ion-content {
+  .profile {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    padding-bottom: 30px;
+
+    .back_image {
+      height: 70px;
+      width: 70px;
+      border-radius: 100%;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+
+    .bg_text {
+      background-color: orange;
+      color: #fff;
+      border-radius: 15px;
+      padding: 1px 10px;
+    }
+
+    .fav_image {
+      height: 25px;
+      width: 25px;
+      border-radius: 100%;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .payment {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 5px 16px;
+
+    .card_image {
+      height: 35px;
+      width: 35px;
+    }
+
+    .title {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .bottom_border {
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .top_border {
+    border-top: 1px solid lightgrey;
+  }
+
+  .bold_text {
+    font-size: 18px;
+    font-family: bold;
+    padding: 10px 16px 5px 16px;
+  }
+
+  .simple_text {
+    font-size: 13px;
+    color: grey;
+  }
+
+  .color_text {
+    color: var(--ion-color-primary);
+  }
+}

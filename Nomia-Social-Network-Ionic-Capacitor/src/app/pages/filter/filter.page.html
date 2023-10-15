@@ -1,0 +1,129 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Nomia App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="backBrowse()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Filter</ion-title>
+    <ion-label slot="end" class="add">Reset</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label class="title_text">Nearby</ion-label>
+
+  <div class="flex">
+    <ion-label>Show Nearby</ion-label>
+    <ion-toggle slot="end" name="blueberry" checked></ion-toggle>
+  </div>
+
+  <ion-label class="title_text">Sort Option</ion-label>
+
+  <div class="flex">
+    <ion-label>Popularity</ion-label>
+    <ion-icon name="ellipse-outline" color="medium"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label>Star Rating (highest first)</ion-label>
+    <ion-icon name="checkmark-circle" color="warning"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label>Best Review first</ion-label>
+    <ion-icon name="ellipse-outline" color="medium"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label>Most review first</ion-label>
+    <ion-icon name="ellipse-outline" color="medium"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label>Price (lowest first)</ion-label>
+    <ion-icon name="ellipse-outline" color="medium"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label>Price (highest first)</ion-label>
+    <ion-icon name="ellipse-outline" color="medium"></ion-icon>
+  </div>
+
+  <ion-label class="title_text">Gender</ion-label>
+
+  <div class="flex">
+    <ion-label>Male</ion-label>
+    <ion-icon name="checkmark-circle" color="warning"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label>Female</ion-label>
+    <ion-icon name="ellipse-outline" color="medium"></ion-icon>
+  </div>
+
+
+  <div class="price">
+    <ion-label class="title_text">Price Range</ion-label>
+    <div class="flex_div">
+      <div [class.active]="price == '$'" (click)="price = '$'">
+        <ion-label>$</ion-label>
+      </div>
+      <div [class.active]="price == '$$'" (click)="price = '$$'">
+        <ion-label>$$</ion-label>
+      </div>
+      <div [class.active]="price == '$$$'" (click)="price = '$$$'">
+        <ion-label>$$$</ion-label>
+      </div>
+      <div [class.active]="price == '$$$$'" (click)="price = '$$$$'">
+        <ion-label>$$$$</ion-label>
+      </div>
+      <div [class.active]="price == '$$$$$'" (click)="price = '$$$$$'">
+        <ion-label>$$$$$</ion-label>
+      </div>
+    </div>
+  </div>
+
+  <div class="price">
+    <ion-label class="title_text">Star rating</ion-label>
+    <div class="flex_div">
+      <div [class.active]="price == '$'" (click)="price = '$'">
+        <ion-icon name="star" color="warning"></ion-icon>
+        <ion-label style="margin-left: 3px;">1</ion-label>
+      </div>
+      <div [class.active]="price == '$$'" (click)="price = '$$'">
+        <ion-icon name="star" color="warning"></ion-icon>
+        <ion-label style="margin-left: 3px;">2</ion-label>
+      </div>
+      <div [class.active]="price == '$$$'" (click)="price = '$$$'">
+        <ion-icon name="star" color="warning"></ion-icon>
+        <ion-label style="margin-left: 3px;">3</ion-label>
+      </div>
+      <div [class.active]="price == '$$$$'" (click)="price = '$$$$'">
+        <ion-icon name="star" color="warning"></ion-icon>
+        <ion-label style="margin-left: 3px;">4</ion-label>
+      </div>
+      <div [class.active]="price == '$$$$$'" (click)="price = '$$$$$'">
+        <ion-icon name="star" color="warning"></ion-icon>
+        <ion-label style="margin-left: 3px;">5</ion-label>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="block" mode="ios" class="block_btn">
+      Apply Filters
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

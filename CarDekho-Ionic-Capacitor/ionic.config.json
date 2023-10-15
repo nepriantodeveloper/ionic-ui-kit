@@ -1,0 +1,7 @@
+{
+  "name": "cardekho",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

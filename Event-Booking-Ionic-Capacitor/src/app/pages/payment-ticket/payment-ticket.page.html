@@ -1,0 +1,59 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Payment Ticket</ion-title>
+    <ion-buttons class="searchbtn" slot="end">
+      <ion-button (click)="onMenu()">
+        <ion-icon name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="main_content">
+    <div class="scan_code">
+      <ion-label class="h5">BGMI Concert</ion-label>
+      <div class="scan" [style.backgroundImage]="'url(assets/images/q1.png )'"></div>
+    </div>
+    <div class="hr"></div>
+    <div class="ttl">
+      <ion-label class="h7">Name</ion-label>
+      <ion-label class="h8">Adam Smith</ion-label>
+    </div>
+    <div class="ttl">
+      <ion-label class="h7">Date</ion-label>
+      <ion-label class="h8">December 17, 2022</ion-label>
+    </div>
+    <div class="ttl">
+      <ion-label class="h7">Time</ion-label>
+      <ion-label class="h8">4:00 to 10:00 PM</ion-label>
+    </div>
+    <div class="ttl">
+      <ion-label class="h7">Location</ion-label>
+      <ion-label class="h8">Grand Avenue Center, Surabhaya</ion-label>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="content_button" (click)="onTicket()" expand="block">
+      Download Ticket
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

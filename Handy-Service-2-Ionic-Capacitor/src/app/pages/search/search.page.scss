@@ -1,0 +1,58 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Handy Service App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main-content {
+
+  .segment {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8px;
+    overflow: scroll;
+    padding-top: 10px;
+
+    .seg_name {
+      font-family: "bold";
+      font-size: 12px;
+      border-radius: 30px;
+      background-color: white;
+      color: var(--ion-color-primary);
+      margin: 0px 4px;
+      padding: 10px 20px;
+      border: 2px solid var(--ion-color-primary);
+    }
+
+    .active {
+      background-color: var(--ion-color-primary);
+      border-radius: 30px;
+      color: white;
+    }
+  }
+
+  .heading_div {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      padding-left: 16px;
+    }
+
+    .grid_btn {
+      display: flex;
+
+      ion-icon {
+        font-size: 24px;
+        padding: 0px 10px;
+      }
+    }
+
+    .active {
+      color: var(--ion-color-primary) !important;
+    }
+  }
+}

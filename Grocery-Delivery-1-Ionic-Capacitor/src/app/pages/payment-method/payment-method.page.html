@@ -1,0 +1,72 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()" color="dark">
+        <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Payment Method</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <ion-radio-group value="card" mode="md">
+      <div class="flex_div">
+        <ion-radio value="card"></ion-radio>
+        <img src="assets/imgs/credit-card.png">
+        <ion-label>My Card</ion-label>
+      </div>
+
+      <div class="card_div">
+        <div class="image_box">
+          <img src="assets/imgs/chip.png" alt="">
+          <div class="image_flex">
+            <div class="f_round"></div>
+            <div class="s_round"></div>
+          </div>
+        </div>
+        <div class="card_detail">
+          <div class="inner_flex">
+            <ion-label>Mausam Chavda</ion-label>
+            <ion-label>09/24</ion-label>
+          </div>
+          <ion-label class="no_lbl">
+            <span *ngFor="let item of number; let i = index">
+              {{item}}
+            </span>
+          </ion-label>
+        </div>
+      </div>
+
+      <div class="flex_div">
+        <ion-radio value="cash"></ion-radio>
+        <img src="assets/imgs/money.png">
+        <ion-label>Cash</ion-label>
+      </div>
+      <div class="flex_div">
+        <ion-radio value="wallet"></ion-radio>
+        <img src="assets/imgs/purse.png">
+        <ion-label>Sayuran Wallet</ion-label>
+      </div>
+    </ion-radio-group>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer_div">
+    <ion-button expand="block" class="block_btn" (click)="goToPaymentStatus()">
+      Pay
+    </ion-button>
+  </div>
+</ion-footer>

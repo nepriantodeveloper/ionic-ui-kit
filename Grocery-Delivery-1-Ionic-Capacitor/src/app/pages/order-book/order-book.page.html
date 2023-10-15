@@ -1,0 +1,100 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="title_div">
+      <ion-label class="bold_title">My Fruit Shop</ion-label>
+      <ion-label class="loc_lbl">2.5 km from you</ion-label>
+    </div>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="title_div">
+      <ion-label class="title_lbl">Deliver to</ion-label>
+      <ion-label class="small_lbl">Edit</ion-label>
+    </div>
+
+    <div class="address_div">
+      <div class="address_flex" style="margin-bottom: 10px;">
+        <div>
+          <ion-icon name="location"></ion-icon>
+        </div>
+        <ion-label>1234, Eva surbhi complex, aksharwadi road, bhavnagar - 364001</ion-label>
+      </div>
+      <div class="address_flex">
+        <div>
+          <ion-icon name="id-card"></ion-icon>
+        </div>
+        <ion-label>9876543212</ion-label>
+      </div>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title_lbl">Your Order</ion-label>
+      <ion-label class="small_lbl">Edit</ion-label>
+    </div>
+    <div class="product_container">
+      <div class="product_flex" *ngFor="let item of (products | slice : 0: 2);let i = index">
+        <div class="inner_flex">
+          <div class="qty_box">
+            <ion-label>{{i+2}}</ion-label>
+          </div>
+          <div style="padding-left: 16px;">
+            <ion-label class="name_lbl">{{item.name}}</ion-label>
+            <ion-label class="small_grey">500g</ion-label>
+          </div>
+        </div>
+        <ion-label class="price_lbl">${{item.price}}</ion-label>
+      </div>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title_lbl">Total Order</ion-label>
+    </div>
+    <div class="price_container">
+      <ion-label class="bold_lbl">Total Order <span>$90.0</span></ion-label>
+      <ion-label class="simp_lbl">Delivery Fee <span>$3.5</span></ion-label>
+      <ion-label class="simp_lbl" style="margin-bottom: 0px;">Tax <span>$1.5</span></ion-label>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title_lbl">Payment</ion-label>
+    </div>
+
+    <div class="payment_container">
+      <div>
+        <ion-label class="no_lbl">**** **** **** 4242</ion-label>
+        <ion-label class="simp_lbl">DANA</ion-label>
+      </div>
+      <ion-label class="change_lbl" (click)="goToPayment()">Change</ion-label>
+    </div>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer_div">
+    <ion-button expand="block" class="block_btn" (click)="goToPayment()">
+      Pay
+    </ion-button>
+  </div>
+</ion-footer>

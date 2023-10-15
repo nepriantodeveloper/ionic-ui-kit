@@ -1,0 +1,22 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Nomia App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="main_div">
+    <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/location.png)'"></div>
+    <ion-label class="bold_text">Hello, nice to meet you!</ion-label>
+    <ion-button expand="block" mode="ios" (click)="onHome()">
+      Use Current Location
+    </ion-button>
+
+    <ion-label class="grey_text">We only access your location while you are using this app</ion-label>
+
+    <ion-label class="color_text" (click)="onLocation()">or set location manually</ion-label>
+
+  </div>
+</ion-content>

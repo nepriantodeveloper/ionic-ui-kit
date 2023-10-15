@@ -1,0 +1,105 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+
+  .card_div {
+    margin: 12px;
+    width: 100%;
+    border-radius: 32px;
+    border: 2px solid var(--ion-color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .img {
+      height: 50px;
+      width: 50px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+    }
+
+    .head-title {
+      font-family: 'bold';
+      font-size: 22px;
+      padding: 12px 0px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid lightgray;
+      width: 100%;
+      text-align: center;
+
+      .text {
+        color: var(--ion-color-medium);
+        font-size: 14px;
+      }
+
+    }
+
+    .list {
+      padding-bottom: 8px;
+
+      ion-icon {
+        color: var(--ion-color-primary);
+        padding-right: 6px;
+      }
+    }
+
+  }
+
+  .bill_detail {
+    margin: 16px 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 16px;
+    width: 100%;
+    border-radius: 15px;
+
+    .bill_list {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 4px;
+
+      .title {
+        color: var(--ion-color-medium);
+      }
+
+      .price {
+        font-family: 'medium';
+      }
+    }
+
+    .line {
+      border-bottom: 1px solid var(--ion-color-light);
+      margin: 10px 0px;
+    }
+  }
+
+  .payment {
+    width: 100%;
+    border-radius: 15px;
+    margin: 16px 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    ion-label {
+      padding: 16px 0px;
+      font-family: 'medium';
+      font-size: 16px;
+    }
+
+    ion-button {
+      font-family: 'bold';
+    }
+  }
+}

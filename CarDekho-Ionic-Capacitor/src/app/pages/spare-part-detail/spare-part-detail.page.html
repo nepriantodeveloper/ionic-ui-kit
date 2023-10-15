@@ -1,0 +1,61 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="goBack()">
+                <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Mahindra XUV 300 Spare Parts</ion-title>
+    </ion-toolbar>
+    <div class="search_container">
+        <ion-select value="gujrat">
+            <ion-select-option value="gujrat">Gujrat</ion-select-option>
+            <ion-select-option value="delhi">Delhi</ion-select-option>
+            <ion-select-option value="maharashtra">Maharashtra</ion-select-option>
+            <ion-select-option value="rajasthan">Rajasthan</ion-select-option>
+        </ion-select>
+    </div>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <ion-row class="main_row">
+            <ion-col size="5">
+                <ion-label class="link_lbl">Mahindra</ion-label>
+                <ion-label class="link_lbl">XUV 300</ion-label>
+                <ion-label>Parts</ion-label>
+            </ion-col>
+            <ion-col size="3">
+                <ion-label>Authorized Dealer Price</ion-label>
+            </ion-col>
+            <ion-col size="2">
+                <ion-label>Extra GST 20%</ion-label>
+            </ion-col>
+            <ion-col size="2">
+                <ion-label>Total Price</ion-label>
+            </ion-col>
+        </ion-row>
+        <ion-row class="detail_row" *ngFor="let item of parts">
+            <ion-col size="5">
+                <ion-label>{{item.name}}</ion-label>
+            </ion-col>
+            <ion-col size="3">
+                <ion-label>{{item.dPrice}}</ion-label>
+            </ion-col>
+            <ion-col size="2">
+                <ion-label>{{item.gst}}</ion-label>
+            </ion-col>
+            <ion-col size="2">
+                <ion-label>{{item.total}}</ion-label>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

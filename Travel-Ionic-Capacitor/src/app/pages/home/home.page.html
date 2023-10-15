@@ -1,0 +1,122 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="ion-padding-start">
+      <ion-avatar class="logo">
+        <img src="assets/img/profile.jpg" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="start" name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Explore</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="segment">
+      <div (click)="segmentChange(1)" class="seg_name" [class.active]="seg_id == 1">Culture
+      </div>
+      <div (click)="segmentChange(2)" class="seg_name" [class.active]="seg_id == 2">Country
+      </div>
+      <div (click)="segmentChange(3)" class="seg_name" [class.active]="seg_id == 3">Category
+      </div>
+    </div>
+
+    <div class="culture_div" *ngIf="seg_id == 1">
+
+      <div class="post_div" *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="col_div">
+          <div class="img" [style.backgroundImage]="'url(assets/img/country.jpg)'">
+          </div>
+          <div class="detail">
+            <div class="top_div">
+              <ion-label>Kapai Natural Resort</ion-label>
+              <div class="">
+                <ion-icon color="primary" name="star"></ion-icon>
+                <ion-icon color="primary" name="star"></ion-icon>
+                <ion-icon color="primary" name="star"></ion-icon>
+                <ion-icon color="primary" name="star"></ion-icon>
+                <ion-icon color="primary" name="star"></ion-icon>
+              </div>
+            </div>
+            <ion-label class="small_txt">Hawai Mountain, Manali</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="country_div" *ngIf="seg_id == 2">
+      <div class="post_div" *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="col_div">
+          <div class="img" [style.backgroundImage]="'url(assets/img/country.jpg)'">
+          </div>
+          <div class="top_div">
+            <ion-label>Finland</ion-label>
+            <div class="right_btn">
+              <ion-label color="secondary">Explore</ion-label>
+              <ion-icon color="secondary" name="arrow-forward-outline"></ion-icon>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category_div" *ngIf="seg_id == 3">
+      <div>
+        <div class="title_div">
+          <ion-label class="title">Categories</ion-label>
+        </div>
+        <div class="slide_profile">
+          <div *ngFor="let item of [1,2,3,4,5,6]">
+            <div class="card c_card">
+              <div class="img" [style.backgroundImage]="'url(assets/img/country.jpg)'">
+              </div>
+              <ion-label class="title">Beach</ion-label>
+            </div>
+          </div>
+        </div>
+
+        <div class="title_div">
+          <ion-label class="title">Popular</ion-label>
+        </div>
+        <div class="slide_profile">
+          <div *ngFor="let item of [1,2,3,4,5,6]">
+            <div class="card p_card">
+              <div class="img" [style.backgroundImage]="'url(assets/img/country.jpg)'">
+              </div>
+              <ion-label class="title">Maldives</ion-label>
+            </div>
+          </div>
+        </div>
+
+        <div class="title_div">
+          <ion-label class="title">Most Visited</ion-label>
+        </div>
+        <div class="slide_profile">
+          <div *ngFor="let item of [1,2,3,4,5,6]">
+            <div class="card m_card">
+              <div class="img" [style.backgroundImage]="'url(assets/img/country.jpg)'">
+              </div>
+              <ion-label class="title">Paris, France</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</ion-content>

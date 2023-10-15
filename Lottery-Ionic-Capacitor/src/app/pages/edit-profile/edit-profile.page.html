@@ -1,0 +1,58 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <div class="center_div">
+      <div class="input">
+        <ion-input type="text" placeholder="Full Name"></ion-input>
+      </div>
+      <div class="input">
+        <ion-input type="text" placeholder="Nick Name"></ion-input>
+      </div>
+      <div class="input">
+        <ion-input type="text" placeholder="Date of Birth"></ion-input>
+      </div>
+      <div class="input">
+        <ion-select placeholder="Select Gender">
+          <ion-select-option value="0" class="text">Male</ion-select-option>
+          <ion-select-option value="1" class="text">Female</ion-select-option>
+        </ion-select>
+      </div>
+      <div class="input">
+        <ion-input type="text" placeholder="Email"></ion-input>
+      </div>
+      <div class="input">
+        <ion-input type="text" placeholder="Phone Number"></ion-input>
+      </div>
+      <div class="input">
+        <ion-input type="text" placeholder="Occupation"></ion-input>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" (click)="goToBack()" expand="block">
+      Apply
+    </ion-button>
+  </div>
+</ion-footer>

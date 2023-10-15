@@ -1,0 +1,37 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="end" (click)="goToHome()">
+            <ion-button>SKIP</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <div class="logo_box">
+            <div class="inner_box">
+                  <img src="assets/imgs/simple-logo.png">
+            </div>
+        </div>
+
+        <ion-label class="bold_lbl">India's trusted car advisor</ion-label>
+        <ion-label class="small_lbl">Find out the best cars that match your requirement</ion-label>
+
+        <ion-button (click)="goToHome()" expand="block" class="fb_btn" mode="ios">
+            Sign in with Facebook
+        </ion-button>
+
+        <ion-button (click)="goToHome()" expand="block" fill="outline" class="gp_btn" mode="ios">
+            Sign in with Google
+        </ion-button>
+
+    </div>
+</ion-content>

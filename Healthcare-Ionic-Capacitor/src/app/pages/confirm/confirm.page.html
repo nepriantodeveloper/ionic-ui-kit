@@ -1,0 +1,91 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Book In-Clinic Appointment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile">
+    <div class="bg_image profile_image" [style.backgroundImage]="'url(assets/images/p2.jpg)'"></div>
+    <div class="right">
+      <ion-label class="bold">Dr.Jaydeep Hirani</ion-label>
+      <ion-label class="color">St lvn Hospital <span>General Physician</span></ion-label>
+      <div class="rate">
+        <ion-icon name="star" color="primary" style="margin-right: 5px;"></ion-icon>
+        <ion-label class="medium">4.4 (56 reviews)</ion-label>
+      </div>
+      <div class="rate">
+        <ion-icon name="location" color="primary" style="margin-right: 5px;"></ion-icon>
+        <ion-label class="small">No 23, Smile Street, Palitana</ion-label>
+      </div>
+    </div>
+  </div>
+
+  <div class="time">
+    <ion-label>Today, 10:00 AM |</ion-label>
+    <ion-icon name="time-outline" color="primary"></ion-icon>
+    <ion-label class="small_gray"> in 9 hours</ion-label>
+  </div>
+
+  <div class="promise">
+    <div class="flex border">
+      <ion-icon name="checkmark-circle-outline" color="primary"></ion-icon>
+      <ion-label class="bold">Arogya Promise</ion-label>
+    </div>
+
+    <div class="flex">
+      <ion-icon name="checkmark-outline" color="primary"></ion-icon>
+      <ion-label class="gray">Appointment confirm instantly with the doctor</ion-label>
+    </div>
+
+    <div class="flex">
+      <ion-icon name="checkmark-outline" color="primary"></ion-icon>
+      <ion-label class="gray">We assure we will connect you to the doctor</ion-label>
+    </div>
+
+    <div class="flex">
+      <ion-icon name="checkmark-outline" color="primary"></ion-icon>
+      <ion-label class="gray">24/7 live chat support to address all yoir queries</ion-label>
+    </div>
+  </div>
+
+  <ion-label class="book">- By booking this appointment, you agree to Arogya's Terms and conditions.</ion-label>
+
+  <ion-label class="head_text">Bill Details</ion-label>
+
+  <div class="space">
+    <ion-label class="left">Consultation fee</ion-label>
+    <ion-label>$10000</ion-label>
+  </div>
+
+  <div class="space">
+    <ion-label class="left">Booking fee</ion-label>
+    <ion-label>$1000</ion-label>
+  </div>
+
+  <div class="space border_top">
+    <ion-label class="head">Total Payable</ion-label>
+    <ion-label class="head">$11000</ion-label>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="button" (click)="onBooking()">
+      <ion-label class="text">Confirm Appointment</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

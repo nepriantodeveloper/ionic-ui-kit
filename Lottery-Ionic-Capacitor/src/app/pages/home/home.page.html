@@ -1,0 +1,124 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="util.openMenu()">
+        <ion-icon name="menu-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToNotification()">
+        <ion-icon name="notifications-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Lottlab</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main-content">
+    <div class="slide_tikit">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card c_card">
+          <div class="img" [style.backgroundImage]="'url(assets/img/lottery.png)'">
+          </div>
+          <ion-label class="title">$120 million win</ion-label>
+          <ion-label class="text">BTC</ion-label>
+          <ion-button size="small" shape="round" expand="block" class="main_btn">
+            Play Now
+          </ion-button>
+          <ion-label class="small_text" color="medium">Next Drow</ion-label>
+          <ion-label class="title">08:25:43:12</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title">Latest Draw</ion-label>
+    </div>
+
+    <div class="slide_draw">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card c_card">
+          <div class="top_row">
+            <div class="img" [style.backgroundImage]="'url(assets/img/lottery.png)'">
+            </div>
+            <div class="details">
+              <ion-label class="title">Munute Lottery Club</ion-label>
+              <ion-label class="text">Draw rock place on</ion-label>
+              <ion-label class="date">Monday, May 21, 2024</ion-label>
+            </div>
+          </div>
+          <div class="bottom_row">
+            <div class="left_col">
+              <ion-label class="text">Winning Numbers</ion-label>
+              <div class="l_number">
+                <ion-label class="tag_number">12</ion-label>
+                <ion-label class="tag_number">23</ion-label>
+                <ion-label class="tag_number">22</ion-label>
+                <ion-label class="tag_number">35</ion-label>
+                <ion-label class="tag_number">65</ion-label>
+              </div>
+            </div>
+            <div class="right_col">
+              <ion-label class="text">Jackpot</ion-label>
+              <ion-label class="title">$120 BTC</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title">Top Winner</ion-label>
+      <ion-label class="btn">See All</ion-label>
+    </div>
+
+    <div class="slide_profile">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card c_card">
+          <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+          </div>
+          <ion-label class="title">Tuma Joa</ion-label>
+          <ion-label class="text">$1225</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title">Today Winning Number</ion-label>
+    </div>
+
+    <div class="slide_number">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card c_card">
+          <div class="bottom_row">
+            <div class="left_col">
+              <ion-label class="text">Winning Numbers</ion-label>
+              <div class="l_number">
+                <ion-label class="tag_number">12</ion-label>
+                <ion-label class="tag_number">23</ion-label>
+                <ion-label class="tag_number">22</ion-label>
+                <ion-label class="tag_number">35</ion-label>
+                <ion-label class="tag_number">65</ion-label>
+              </div>
+            </div>
+            <div class="right_col">
+              <ion-label class="text">Jackpot</ion-label>
+              <ion-label class="title">$120 BTC</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

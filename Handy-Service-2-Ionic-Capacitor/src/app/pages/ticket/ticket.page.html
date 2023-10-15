@@ -1,0 +1,88 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Handy Service App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>E-Receipt</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <div class="main-content">
+    <div class="img_div">
+      <div class="qr_img" [style.backgroundImage]="'url(assets/img/qr.png)'">
+      </div>
+    </div>
+
+
+    <div class="bill_detail">
+      <div class="bill_list">
+        <ion-label class="title">Services</ion-label>
+        <ion-label class="price">House Cleaning</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Category</ion-label>
+        <ion-label class="price">Cleaning</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Handyman</ion-label>
+        <ion-label class="price">Andrue Russule</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Date & Time</ion-label>
+        <ion-label class="price">Dec. 24 2025 | 10:00 AM</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Working Hours</ion-label>
+        <ion-label class="price">2 hours</ion-label>
+      </div>
+    </div>
+
+    <div class="bill_detail">
+      <div class="bill_list">
+        <ion-label class="title">Amount</ion-label>
+        <ion-label class="price">$9.99</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Promo</ion-label>
+        <ion-label class="price" color="primary">$9.99</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Payment Method</ion-label>
+        <ion-label class="price">Paypal</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Date & Time</ion-label>
+        <ion-label class="price">Dec. 24 2025 | 10:00 AM</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Transaction Id</ion-label>
+        <ion-label class="price">1234567890</ion-label>
+      </div>
+      <div class="bill_list">
+        <ion-label class="title">Status</ion-label>
+        <ion-label class="price">Paid</ion-label>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" shape="round" (click)="goToHome()" expand="block">
+      Home
+    </ion-button>
+  </div>
+</ion-footer>

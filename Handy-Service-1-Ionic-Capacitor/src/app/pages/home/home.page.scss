@@ -1,0 +1,200 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : HandyService App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    .header {
+      display: flex;
+      flex-direction: column;
+      padding-left: 14px;
+
+      .tag {
+        display: flex;
+        align-items: center;
+
+        .icon {
+          font-size: 20px;
+          font-weight: bold;
+          padding-right: 8px;
+        }
+
+        .title {
+          font-size: 16px;
+          font-family: "medium";
+        }
+      }
+
+      .location {
+        font-size: 15px;
+        color: var(--ion-color-medium);
+      }
+    }
+  }
+}
+
+.main-content {
+
+  .cate_type {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    overflow: scroll;
+
+    .cate_detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 6px;
+      background-color: var(--ion-color-primary-tint);
+      padding: 16px 30px;
+      border-radius: 14px;
+
+      .cate_img {
+        width: 40px;
+        height: 40px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .title {
+        font-size: 16px;
+        font-family: "medium";
+        padding: 10px 0px 3px 0px;
+      }
+    }
+  }
+
+  .service_item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4px;
+    overflow: scroll;
+    padding-top: 10px;
+
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 185px;
+      margin-left: 14px;
+      background-color: var(--ion-color-light);
+      ;
+      border-radius: 10px;
+
+      .img {
+        width: 100%;
+        height: 130px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        position: relative;
+
+        .img_detail {
+          position: absolute;
+          bottom: 5px;
+          left: 0px;
+          color: var(--ion-color-primary);
+          background-color: white;
+          border-radius: 4px;
+          padding: 0px 5px;
+
+          .discount {
+            font-size: 12px;
+            font-family: "bold";
+          }
+
+          .discount_type {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .title {
+        font-size: 14px;
+        font-family: "medium";
+        padding: 4px 10px;
+      }
+
+      .rate_div {
+        display: flex;
+        align-items: center;
+        padding: 4px 10px;
+        justify-content: space-between;
+        color: var(--ion-color-medium);
+
+        ion-icon {
+          font-size: 12px;
+          padding-right: 5px;
+          color: var(--ion-color-primary);
+        }
+
+        ion-label {
+          font-size: 12px;
+          padding-right: 5px;
+        }
+
+        .price {
+          font-size: 16px;
+          font-family: 'bold';
+          color: var(--ion-color-primary);
+        }
+      }
+    }
+  }
+
+  .heading_div {
+    padding: 14px;
+
+    .heading_title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .title_div {
+        img {
+          height: 20px;
+          width: 20px;
+        }
+
+        .title {
+          font-size: 18px;
+          text-transform: capitalize;
+          font-family: "bold";
+        }
+      }
+
+      .all_btn {
+        display: flex;
+        align-items: center;
+
+        ion-label {
+          font-size: 14px;
+          color: var(--ion-color-primary);
+        }
+
+        ion-icon {
+          background-color: var(--ion-color-primary);
+          color: white;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .text {
+      font-size: 14px;
+      color: gray;
+    }
+  }
+
+  .line {
+    border-bottom: 10px solid var(--ion-color-light);
+    margin: 20px 0px 10px 0px;
+  }
+}

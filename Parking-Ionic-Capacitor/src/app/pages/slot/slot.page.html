@@ -1,0 +1,52 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Parking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Pick Parking Spot</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="about">
+    <div class="select">
+      <ion-label class="floor">1st Floor</ion-label>
+    </div>
+    <div class="zone">
+      <ion-label>2st Floor</ion-label>
+    </div>
+    <div class="zone">
+      <ion-label>3st Floor</ion-label>
+    </div>
+  </div>
+
+  <div class="slots">
+    <div class="flex" *ngFor="let item of [1,2,3,4,5]">
+      <ion-label class="box">A1</ion-label>
+      <ion-label class="box">A2</ion-label>
+      <ion-label class="box">A3</ion-label>
+      <ion-label class="box">A4</ion-label>
+      <ion-label class="box">A5</ion-label>
+    </div>
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="button" (click)="onPayment()">
+      <ion-label class="text">Continue</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

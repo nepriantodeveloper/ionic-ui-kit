@@ -1,0 +1,80 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Saska App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>My Orders</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-segment [(ngModel)]="tabs">
+    <ion-segment-button value="on">
+      <ion-label>From Me</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="done">
+      <ion-label>To Me</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="tabs =='on'" class="ion-padding">
+    <div class="content">
+      <div class="flex">
+        <ion-icon name="cube" class="icon" color="light"></ion-icon>
+        <div class="text">
+          <ion-label class="bold_text">SK1234567</ion-label>
+          <ion-label class="grey_text">On Transit</ion-label>
+        </div>
+      </div>
+      <div class="button">
+        <ion-row>
+          <ion-col size="6">
+            <ion-label class="cancel" (click)="onReceipt()">View E-Receipt</ion-label>
+          </ion-col>
+          <ion-col size="6">
+            <ion-label class="view" (click)="onTrack()">Track</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <div class="content" *ngFor="let item of [1,2,3,4,5,6,7]">
+      <div class="flex">
+        <ion-icon name="cube" class="icon" color="light"></ion-icon>
+        <div class="text">
+          <ion-label class="bold_text">SK0987654</ion-label>
+          <ion-label class="grey_text">Package Received</ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="tabs =='done'" class="ion-padding">
+    <div class="content">
+      <div class="flex">
+        <ion-icon name="cube" class="icon" color="light"></ion-icon>
+        <div class="text">
+          <ion-label class="bold_text">SK2345678</ion-label>
+          <ion-label class="grey_text">On Transit area</ion-label>
+        </div>
+      </div>
+      <div class="button">
+        <ion-row>
+          <ion-col size="12">
+            <ion-label class="cancel" (click)="onTrack()">Track</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

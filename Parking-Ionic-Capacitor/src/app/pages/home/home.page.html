@@ -1,0 +1,45 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Parking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="end" (click)="onSearch()">
+      <ion-button>
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end" (click)="onNotification()">
+      <ion-button>
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div #map id="map" class="map"></div>
+  <div class="detail ion-padding">
+    <ion-label class="bold_text">Details</ion-label>
+    <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/c2.jpg)'"></div>
+    <div class="flex">
+      <div>
+        <ion-label class="dark_text">Parking Lot of San Manolia</ion-label>
+        <ion-label class="grey_text">9876,Smile Street, Palitana</ion-label>
+      </div>
+      <ion-icon name="bookmark-outline" color="primary"></ion-icon>
+    </div>
+    <ion-row>
+      <ion-col size="6">
+        <ion-label class="cancel">Cancel</ion-label>
+      </ion-col>
+      <ion-col size="6">
+        <ion-label class="detail_button" (click)="onDetails()">Details</ion-label>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

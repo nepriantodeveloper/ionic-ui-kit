@@ -1,0 +1,62 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="goBack()">
+                <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Service Cost Detail</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+      <ion-label class="bold_lbl">Mahindra XUV 300 Service Cost & Maintenance Schedule</ion-label>
+      <ion-label class="small_lbl">Select Engine/Fuel Type</ion-label>
+      <ion-label class="type_lbl">Petrol</ion-label>
+      <ion-label class="simp_lbl">List of all 5 services & kms/months whichever is applicable</ion-label>
+
+      <ion-grid>
+          <ion-row class="main_row">
+              <ion-col size="3">
+                  <ion-label>Service No.</ion-label>
+              </ion-col>
+              <ion-col size="3">
+                  <ion-label>Kilometers/Months</ion-label>
+              </ion-col>
+              <ion-col size="3">
+                  <ion-label>Free/Paid</ion-label>
+              </ion-col>
+              <ion-col size="3">
+                  <ion-label>Total Cost</ion-label>
+              </ion-col>
+          </ion-row>
+          <ion-row class="detail_row" *ngFor="let item of serviceCost">
+              <ion-col size="3">
+                  <ion-label>{{item.name}} Service</ion-label>
+              </ion-col>
+              <ion-col size="3">
+                  <ion-label>{{item.km}}</ion-label>
+              </ion-col>
+              <ion-col size="3">
+                  <ion-label>{{item.type}}</ion-label>
+              </ion-col>
+              <ion-col size="3">
+                  <ion-label style="display: flex;">{{item.total}} &nbsp;
+                      <ion-icon name="information-circle-outline"></ion-icon>
+                  </ion-label>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
+
+  </div>
+</ion-content>

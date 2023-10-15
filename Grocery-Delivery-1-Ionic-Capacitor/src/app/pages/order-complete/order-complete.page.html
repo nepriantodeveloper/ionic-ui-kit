@@ -1,0 +1,41 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+  <ion-toolbar></ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    <ion-label class="bold_lbl">Order Completed</ion-label>
+    <ion-label class="small_lbl">
+      Your order is completed, please leave your feedback for out better service
+    </ion-label>
+
+    <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/user.jpg)'"></div>
+    <ion-label class="name_lbl">Jonh Doe</ion-label>
+    <div class="star_flex">
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+    </div>
+
+    <ion-textarea rows="5" placeholder="Leace your feedback here"></ion-textarea>
+
+    <ion-button class="block_btn" expand="block" (click)="goToHome()">
+      Submit
+    </ion-button>
+
+    <ion-button class="outline_btn" fill="outline" expand="block" (click)="goToHome()">
+      Skip
+    </ion-button>
+
+  </div>
+</ion-content>

@@ -1,0 +1,37 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Select Audiance</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="main-content">
+    <div class="radio_items">
+      <ion-row class="list" *ngFor="let item of [1,2,3,4,5,6,7,8]">
+        <ion-checkbox></ion-checkbox>
+        <ion-label class="text">Lorem ipsum</ion-label>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" shape="round" (click)="goToBack()" expand="block">
+      Apply
+    </ion-button>
+  </div>
+</ion-footer>

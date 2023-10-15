@@ -1,0 +1,81 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  .upper_div {
+    .star {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+
+      .total {
+        margin-left: 5px;
+      }
+    }
+
+    .number {
+      text-align: center;
+    }
+
+    .slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .value {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .list {
+    margin-bottom: 20px;
+
+    .bottom_div {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+
+      .profile_image {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+      }
+
+      .left {
+        margin-left: 5px;
+
+        .name {
+          font-family: 'semi-bold';
+        }
+
+        .flex {
+          display: flex;
+          align-items: center;
+
+          .gray {
+            margin-left: 5px;
+            margin-right: 5px;
+            color: grey;
+          }
+
+          .time {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .review {
+      font-size: 15px;
+      color: gray;
+      margin-top: 5px;
+    }
+  }
+}

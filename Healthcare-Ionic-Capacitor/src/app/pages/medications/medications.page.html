@@ -1,0 +1,82 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Medications</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-segment [(ngModel)]="tabs">
+    <ion-segment-button value="active">
+      <ion-label>Active</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="complete">
+      <ion-label>Complete</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="tabs =='active'">
+
+    <ion-row class="dose">
+      <ion-col size="4">
+        <div>
+          <ion-label class="grey_text">Next Dosage</ion-label>
+          <ion-label class="bold_text">12:00 PM</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="5">
+        <div>
+          <ion-label class="bold_text">Paracetamol</ion-label>
+          <ion-label class="grey_text">2 tabs after meal</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label class="time">3 days left</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="dose">
+      <ion-col size="4">
+        <div>
+          <ion-label class="grey_text">Next Dosage</ion-label>
+          <ion-label class="bold_text">03:00 PM</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="5">
+        <div>
+          <ion-label class="bold_text">Statin</ion-label>
+          <ion-label class="grey_text">2 tabs after meal</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label class="time">4 days left</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="dose">
+      <ion-col size="4">
+        <div>
+          <ion-label class="grey_text">Next Dosage</ion-label>
+          <ion-label class="bold_text">12:00 PM</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="5">
+        <div>
+          <ion-label class="bold_text">Armatern</ion-label>
+          <ion-label class="grey_text">4 tabs after meal</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label class="time">4 days left</ion-label>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

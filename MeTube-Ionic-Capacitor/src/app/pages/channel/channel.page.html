@@ -1,0 +1,152 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Channel Name</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search-back" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="ellipsis-vertical-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="segment">
+      <div (click)="segmentChange(1)" class="seg_name" [class.active]="seg_id == 1">Home
+      </div>
+      <div (click)="segmentChange(2)" class="seg_name" [class.active]="seg_id == 2">Videos
+      </div>
+      <div (click)="segmentChange(3)" class="seg_name" [class.active]="seg_id == 3">Shorts
+      </div>
+      <div (click)="segmentChange(4)" class="seg_name" [class.active]="seg_id == 4">About
+      </div>
+    </div>
+
+    <div class="home_div" *ngIf="seg_id == 1">
+      <div class="profile">
+        <div class="profile-item">
+          <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+          </div>
+          <ion-label class="title">Channel Name</ion-label>
+          <ion-button class="sub_btn" expand="block" shape="round">
+            Subscribe
+          </ion-button>
+          <ion-label class="text">9.4M Subscribers · 310 Videos</ion-label>
+          <ion-label class="text">More about this channel</ion-label>
+        </div>
+      </div>
+      <div class="post_div" *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="col_div">
+          <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+            <div class="icon">
+              <ion-label>2:29</ion-label>
+            </div>
+          </div>
+          <div class="info">
+            <ion-avatar class="profile">
+              <img src="assets/img/profile.jpg" />
+            </ion-avatar>
+
+            <div class="detail">
+              <div class="top_div">
+                <ion-label>Lorem ipsum, dolor sit amet contetur adipisicing elit sentium autem ad a quidem distinctio
+                  suscipit</ion-label>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              </div>
+              <ion-label class="small_txt">Jerry Wilson · 4.4M views · 5 month ago</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video_div" *ngIf="seg_id == 2">
+      <div class="list_card" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13]">
+        <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+          <div class="icon">
+            <ion-label>2:29</ion-label>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="top_div">
+            <div class="col">
+              <ion-label class="title">Lorem ipsum, dolor sit amet contetur adipisicing lorem ipusm </ion-label>
+              <ion-label class="small_txt"> 2.4M views · 5 hours ago</ion-label>
+            </div>
+
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shorts_div" *ngIf="seg_id == 3">
+      <div class="shorts" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]">
+        <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+          <div class="img_detail">
+            <ion-label class="title">Lorem ipsum, dolor sit amet contetur lorem</ion-label>
+            <ion-label class="text">4.5M views</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about_div" *ngIf="seg_id == 4">
+      <ion-label class="title">Description</ion-label>
+      <ion-label class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus autem temporibus numquam
+        at. Aspernatur eum dolor natus vitae, repellat qui, illum laudantium necessitatibus autem magni quos impedit
+        magnam architecto atque.</ion-label>
+      <ion-label class="title">Links</ion-label>
+      <div class="link_div">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-label class="link">Instagram</ion-label>
+      </div>
+      <div class="link_div">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-label class="link">Facebook</ion-label>
+      </div>
+      <div class="link_div">
+        <ion-icon name="logo-google"></ion-icon>
+        <ion-label class="link">Twitter</ion-label>
+      </div>
+      <div class="link_div">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <ion-label class="link">Whatsapp</ion-label>
+      </div>
+
+      <ion-label class="title">More Info</ion-label>
+
+      <div class="list_div">
+        <ion-icon name="location-outline"></ion-icon>
+        <ion-label class="txt">Finland</ion-label>
+      </div>
+      <div class="list_div">
+        <ion-icon name="information-outline"></ion-icon>
+        <ion-label class="txt">Joined Dec 20, 2024</ion-label>
+      </div>
+      <div class="list_div">
+        <ion-icon name="eye-outline"></ion-icon>
+        <ion-label class="txt">234,456,553 Views</ion-label>
+      </div>
+    </div>
+
+
+  </div>
+</ion-content>

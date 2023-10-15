@@ -1,0 +1,74 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main_content_div {
+  padding: 16px;
+
+  .bold_lbl {
+    font-size: 18px;
+    font-family: 'medium';
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .small_lbl {
+    font-size: 15px;
+    color: grey;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .back_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+
+  .name_lbl {
+    text-align: center;
+    font-family: 'medium';
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .star_flex {
+    text-align: center;
+    margin-bottom: 24px;
+
+    ion-icon {
+      color: #fbe03d;
+      font-size: 24px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  ion-textarea {
+    background: var(--ion-color-app-grey);
+    border-radius: 15px;
+    padding: 16px;
+    font-family: 'regular';
+    margin-bottom: 20px;
+  }
+
+  .outline_btn {
+    --border-color: lightgrey;
+    margin: 0px;
+    height: 50px;
+    --border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-family: 'medium';
+    margin-top: 20px;
+    color: grey;
+  }
+}

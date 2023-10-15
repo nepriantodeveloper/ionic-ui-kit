@@ -1,0 +1,83 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Hotel Boooking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="gridChange(1)">
+        <ion-icon name="reader" color="dark" [class.active]="grid_id == 1"></ion-icon>
+      </ion-button>
+      <ion-button (click)="gridChange(2)">
+        <ion-icon name="grid-outline" color="dark" [class.active]="grid_id == 2"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Recently Booked</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="" *ngIf="grid_id == 1">
+      <div class="list_card" *ngFor="let item of [1,2,3,4,5,6,7]">
+        <div class="img" [style.backgroundImage]="'url(assets/img/6.jpg)'">
+        </div>
+        <div class="detail">
+          <div class="item">
+            <ion-label class="title">Eldorado Resort</ion-label>
+            <ion-label class="price">$35</ion-label>
+          </div>
+          <div class="item">
+            <ion-label class="text">Rome, Italy</ion-label>
+            <ion-label class="small_text">1 night</ion-label>
+          </div>
+          <div class="item">
+            <div class="rating">
+              <ion-icon class="star" color="warning" name="star"></ion-icon>
+              <ion-label class="color_txt">4.8</ion-label>
+              <ion-label class="small_text">(322 reviews)</ion-label>
+            </div>
+            <ion-icon color="primary" name="bookmark"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="" *ngIf="grid_id == 2">
+      <div class="grid_card">
+        <div class="col_div" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]">
+          <div class="hotel_card">
+            <div class="img" [style.backgroundImage]="'url(assets/img/6.jpg)'">
+            </div>
+            <div class="detail">
+              <ion-label class="title">Eldorado Resort</ion-label>
+              <div class="rating">
+                <ion-icon class="star" color="warning" name="star"></ion-icon>
+                <ion-label class="color_txt">4.8</ion-label>
+                <ion-label class="small_text">Rome, Italy</ion-label>
+              </div>
+
+              <div class="item">
+                <div class="price_div">
+                  <ion-label class="price">$29</ion-label>
+                  <ion-label class="small_text">/night</ion-label>
+                </div>
+                <ion-icon color="primary" name="bookmark"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

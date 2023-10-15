@@ -1,0 +1,80 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <ion-label class="title_lbl">Valuation of Used cars Online</ion-label>
+
+        <div class="star_flex">
+            <div>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <ion-label>10 Million+ Valuation This Year</ion-label>
+        </div>
+        <div class="star_flex">
+            <div>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <ion-label>2.5 Million+ Car Analysed</ion-label>
+        </div>
+        <div class="star_flex">
+            <div>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <ion-label>300+ Dealers Data Analysed</ion-label>
+        </div>
+
+        <ion-label class="title_lbl" style="margin-top: 30px;">Used Car Price Calculator</ion-label>
+
+        <ion-label class="simp_lbl">I'm Looking To</ion-label>
+
+        <div class="flex_div">
+            <ion-row>
+                <ion-col size="6" [class.active]="action == 1" (click)="action = 1">
+                    <ion-label>Sell My Car</ion-label>
+                </ion-col>
+                <ion-col size="6" [class.active]="action == 2" (click)="action = 2">
+                    <ion-label>Buy Used Car</ion-label>&nbsp;
+                    <ion-icon name="information-circle"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </div>
+
+        <ion-label class="simp_lbl">Registration year</ion-label>
+        <ion-select placeholder="Select">
+            <ion-select-option value="2019">2019</ion-select-option>
+            <ion-select-option value="2018">2018</ion-select-option>
+            <ion-select-option value="2017">2017</ion-select-option>
+            <ion-select-option value="2016">2016</ion-select-option>
+        </ion-select>
+
+        <ion-label class="simp_lbl">Select Car</ion-label>
+        <ion-input type="text" placeholder="Car Name"></ion-input>
+
+        <ion-button expand="block" mode="ios">
+            Continue
+        </ion-button>
+
+        <ion-label class="title_lbl">Frequently Asked Questions</ion-label>
+
+        <ion-label class="ans_lbl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde debitis fuga fugit placeat, ad doloremque accusamus sequi in quis praesentium natus reprehenderit laboriosam molestiae. Doloribus iure voluptatum ea enim.</ion-label>
+
+        <ion-label class="ans_lbl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sint. Numquam enim repudiandae culpa qui excepturi officiis quam ipsa ad pariatur dignissimos. Eaque dolorem esse fuga adipisci aut corporis deserunt?</ion-label>
+
+        <ion-label class="ans_lbl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla similique sit culpa veniam facilis at unde sed molestiae ab officiis atque animi amet, facere laudantium suscipit sapiente possimus. Ab, esse.</ion-label>
+
+    </div>
+</ion-content>

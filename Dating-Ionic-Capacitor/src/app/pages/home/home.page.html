@@ -1,0 +1,44 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="ion-padding-start">
+      <ion-avatar>
+        <img src="assets/img/profile.jpg" />
+      </ion-avatar>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="goToFilter()">
+        <ion-icon name="options-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <div class="header">
+      <ion-label class="title">Good Morning 🖐</ion-label>
+      <ion-label class="text">John Snow</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="center_div" *ngIf="loaded == false">
+    <div class="ripple-container">
+      <div class="thumb-lg ripple-trigger">
+        <img src="assets/img/profile2.jpg" onError="this.src='profile.jpg'" style="height:100px;width: 100px"
+          class="rounded_img b b-2x box-shadow">
+      </div>
+      <div class="ripple-1"></div>
+      <div class="ripple-2"></div>
+    </div>
+  </div>
+  <div *ngIf="loaded == true">
+    <app-tinder-card [cards]="cards"></app-tinder-card>
+  </div>
+</ion-content>

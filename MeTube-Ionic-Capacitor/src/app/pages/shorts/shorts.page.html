@@ -1,0 +1,127 @@
+<ion-content fullscreen color="dark">
+  <ion-slides #slides [options]="slideOpts" (ionSlideDidChange)="slideDidChange(slides)">
+    <ion-slide *ngFor="let videoUrl of demos;let i = index">
+      <div class="progress-bar">
+        <span [style.width]="percentage + '%'"></span>
+      </div>
+      <video [id]="i" preload="none" poster="assets/image/loader.gif" (click)="toggler()" (ended)="videoEnd()"
+        (timeupdate)="onTimeUpdate()" style="height: 100%;width: 100%;" playsinline>
+        <source src="null" type="video/mp4" autostart="false">
+        <source src="null" type="video/ogg" autostart="false">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="header_div">
+        <div>
+          <ion-icon class="icon" name="search-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="main_content">
+
+        <div class="footer_div">
+          <div class="profile_detail">
+            <ion-label class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum
+            </ion-label>
+            <ion-label class="text">#music #shorts #lorem</ion-label>
+            <div class="channel_div" (click)="goToChannel()">
+              <ion-avatar class="profile ion-no-padding">
+                <img src="assets/img/profile.jpg" />
+              </ion-avatar>
+              <ion-label class="head_txt">Lorem ipsum</ion-label>
+              <ion-button class="sub_btn" expand="block" shape="round">
+                Subscribe
+              </ion-button>
+            </div>
+
+          </div>
+          <div class="btn_div">
+            <div class="btns">
+              <ion-icon name="thumbs-up"></ion-icon>
+              <ion-label>204k</ion-label>
+            </div>
+            <div class="btns">
+              <ion-icon name="thumbs-down"></ion-icon>
+              <ion-label>20</ion-label>
+            </div>
+            <div class="btns" id="comment-modal">
+              <ion-icon name="chatbubble-ellipses"></ion-icon>
+              <ion-label>204k</ion-label>
+            </div>
+            <div class="btns">
+              <ion-icon name="share-social"></ion-icon>
+              <ion-label>20</ion-label>
+            </div>
+            <div class="btns">
+              <ion-icon name="ellipsis-horizontal-circle"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-modal #commentModal trigger="comment-modal" [initialBreakpoint]="0.75" [breakpoints]="[0.75]"
+    handleBehavior="cycle">
+    <ng-template>
+      <!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Comments</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="commentModal.dismiss()">
+              <ion-icon name="close" color="dark"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <div>
+          <div class="items">
+            <div class="segment">
+              <div (click)="segmentChange(1)" class="seg_name" [class.active]="seg_id == 1">Top
+              </div>
+              <div (click)="segmentChange(2)" class="seg_name" [class.active]="seg_id == 2">Newest
+              </div>
+              <div (click)="segmentChange(3)" class="seg_name" [class.active]="seg_id == 3">Mostliked
+              </div>
+            </div>
+          </div>
+          <div class="input_div">
+            <ion-avatar class="profile">
+              <img src="assets/img/profile.jpg" />
+            </ion-avatar>
+            <div class="input">
+              <ion-input type="text" placeholder="Add a Comment" class="ion-no-padding"></ion-input>
+            </div>
+          </div>
+          <div class="coment" *ngFor="let item of [1,2,3,4,5,6,7]">
+            <div class="profile_div">
+              <img src="assets/img/profile.jpg" />
+              <ion-label class="name">Jerry Wilson · <span class="time">2 month ago</span></ion-label>
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+            <div class="text_div">
+              <ion-label>Lorem ipsum dolor sit amet, consectetur adipisicing elit onsectetur usamus iste maiores
+                tempore!</ion-label>
+            </div>
+            <div class="icon_div">
+              <ion-icon name="thumbs-up-outline"></ion-icon>
+              <ion-label>20.3k</ion-label>
+              <ion-icon name="thumbs-down-outline"></ion-icon>
+              <ion-label>20.3k</ion-label>
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+              <ion-label>20.3k</ion-label>
+            </div>
+          </div>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>

@@ -1,0 +1,70 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  .border {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .offer_img {
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+    }
+
+    .name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .bold {
+        font-size: 18px;
+        font-family: 'semi-bold';
+      }
+
+      .rate {
+        display: flex;
+        align-items: center;
+
+        .small {
+          font-size: 12px;
+          margin-left: 5px;
+        }
+      }
+
+      .color_border {
+        border: 1px solid var(--ion-color-primary);
+        border-radius: 5px;
+        padding: 2px 10px;
+        color: var(--ion-color-primary);
+        font-size: 14px;
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        .heart {
+          margin: 0 5px;
+        }
+      }
+
+      .days {
+        color: gray;
+        font-size: 13px;
+      }
+    }
+
+    .gray {
+      margin: 10px 0;
+      color: gray;
+    }
+  }
+}

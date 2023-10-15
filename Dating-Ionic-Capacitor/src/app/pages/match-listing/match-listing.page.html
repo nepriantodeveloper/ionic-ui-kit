@@ -1,0 +1,38 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="start" name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>New Matches</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="img_div">
+      <div class="flex" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]">
+        <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'" (click)="goToProfile()">
+          <div class="img_detail">
+            <ion-label class="title">Andrew Russule, 23</ion-label>
+            <ion-label class="text">Developer</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

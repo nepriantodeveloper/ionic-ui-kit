@@ -1,0 +1,76 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Metacoin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="logo">
+    <div class="bg_img" [style.backgroundImage]="'url(assets/images/logo.jpg)'"></div>
+  </div>
+
+  <div class="ttl">
+    <ion-label class="h5">Version 4.37.38.6.79</ion-label>
+    <ion-label class="h5">@2012 - 2022 metacoin inc.</ion-label>
+  </div>
+
+  <ion-row>
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>Privacy Policy</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>Terms of Use</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>FAQ</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>Visit out Website</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row (click)="onContactus()">
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>Contact Us</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

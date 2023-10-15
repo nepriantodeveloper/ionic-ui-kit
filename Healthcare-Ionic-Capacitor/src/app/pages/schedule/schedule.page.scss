@@ -1,0 +1,88 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  .heading {
+    color: grey;
+    margin-bottom: 10px;
+  }
+
+  .bg_white {
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 0;
+
+    .special_image {
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+    }
+
+    .bold {
+      font-size: 16px;
+      font-family: 'semi-bold';
+    }
+
+    .grey {
+      color: grey;
+      font-size: 14px;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+
+      .center {
+        display: flex;
+        align-items: center;
+
+        .label {
+          margin-right: 7px;
+          margin-left: 3px;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .time {
+      font-size: 12px;
+      text-align: center;
+      background-color: #cef7d0;
+      border-radius: 10px;
+    }
+  }
+
+  .schedule {
+    margin-bottom: 20px;
+  }
+
+  .dose {
+    margin-bottom: 20px;
+
+    .grey_text {
+      font-size: 13px;
+      color: grey;
+    }
+
+    .bold_text {
+      font-family: 'semi-bold';
+      font-size: 15px;
+    }
+
+    .time {
+      font-size: 12px;
+      text-align: center;
+      background-color: #cef7d0;
+      border-radius: 10px;
+    }
+  }
+
+
+}

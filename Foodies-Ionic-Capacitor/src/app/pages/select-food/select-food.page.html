@@ -1,0 +1,212 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="bg_image item_img" [style.backgroundImage]="'url(assets/images/f1.jpg)'"></div>
+
+  <div class="title">
+    <ion-label class="name">Paneer Tikka Butter Masala</ion-label>
+    <div class="rate">
+      <ion-icon name="star" color="primary"></ion-icon>
+      <ion-label class="color_text">4.3</ion-label>
+    </div>
+  </div>
+
+  <ion-label class="grey">Exotic Paneer tikka, onion, capsicum & red peprica</ion-label>
+
+  <div class="border">
+    <ion-label class="head">Ingredients</ion-label>
+    <ion-label class="simpl">2 tbsp ghee</ion-label>
+    <ion-label class="simpl">1 tbsp cumin seeds</ion-label>
+    <ion-label class="simpl">2 pcs cardamom</ion-label>
+    <ion-label class="simpl">2 cloves</ion-label>
+    <ion-label class="simpl">Read More....</ion-label>
+  </div>
+
+  <div class="border">
+    <ion-label class="head">Customization</ion-label>
+    <div class="space">
+      <ion-label class="simpl">Personal Giant Slice</ion-label>
+      <div class="radio">
+        <ion-label class="price">$2.5</ion-label>
+        <ion-icon name="radio-button-on"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Regular (Serves 1)</ion-label>
+      <div class="radio">
+        <ion-label class="price">$2.5</ion-label>
+        <ion-icon name="radio-button-off-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Medium (Serves 2)</ion-label>
+      <div class="radio">
+        <ion-label class="price">$2.5</ion-label>
+        <ion-icon name="radio-button-off-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Large (Serves 3)</ion-label>
+      <div class="radio">
+        <ion-label class="price">$2.5</ion-label>
+        <ion-icon name="radio-button-off-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">The Gient (Serves 8)</ion-label>
+      <div class="radio">
+        <ion-label class="price">$2.5</ion-label>
+        <ion-icon name="radio-button-off-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">The Monster (Serves 12)</ion-label>
+      <div class="radio">
+        <ion-label class="price">$2.5</ion-label>
+        <ion-icon name="radio-button-off-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="border">
+    <ion-label class="head">Toppings-Veg (Regular)</ion-label>
+    <div class="space">
+      <ion-label class="simpl">Baby Corn</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.5</ion-label>
+        <ion-icon name="checkbox-outline"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Fresh Tomatoes</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.5</ion-label>
+        <ion-icon name="square-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Mashroom</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.5</ion-label>
+        <ion-icon name="square-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Sweetcorns</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.5</ion-label>
+        <ion-icon name="square-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Paneer</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.5</ion-label>
+        <ion-icon name="square-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Onions</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.5</ion-label>
+        <ion-icon name="square-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="border">
+    <ion-label class="head">Cheese & Dip (Regular)</ion-label>
+    <div class="space">
+      <ion-label class="simpl">Cheezy-7</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.7</ion-label>
+        <ion-icon name="checkbox-outline"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Korma Dip</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.7</ion-label>
+        <ion-icon name="square-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Peri peri dip</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.7</ion-label>
+        <ion-icon name="square-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Hot & Garlic dip</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.7</ion-label>
+        <ion-icon name="square-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Jalapino dip</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.7</ion-label>
+        <ion-icon name="square-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+    <div class="space">
+      <ion-label class="simpl">Cheese dip</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.5</ion-label>
+        <ion-icon name="square-outline" color="medium"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="border">
+    <ion-label class="head">Extra</ion-label>
+    <div class="space">
+      <ion-label class="simpl">Catch up</ion-label>
+      <div class="radio">
+        <ion-label class="price">$0.2</ion-label>
+        <div class="qty">
+          <ion-icon name="remove" color="medium"></ion-icon>
+          <ion-label class="num">2</ion-label>
+          <ion-icon name="add" color="medium"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="5">
+        <div class="qty">
+          <ion-icon name="remove" color="medium"></ion-icon>
+          <ion-label class="num">2</ion-label>
+          <ion-icon name="add" color="medium"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col size="7">
+        <ion-label class="btn">Add ($6.15)</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

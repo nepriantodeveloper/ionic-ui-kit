@@ -1,0 +1,429 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Saska App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Make Order</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div *ngIf="tab == 1" class="sender">
+    <div class="status">
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">1</ion-label>
+        </div>
+        <ion-label class="name color">Sender</ion-label>
+      </div>
+      <div class="number">
+        <div class="round">
+          <ion-label class="circle">2</ion-label>
+        </div>
+        <ion-label class="name">Receiver</ion-label>
+      </div>
+      <div class="number">
+        <div class="round">
+          <ion-label class="circle">3</ion-label>
+        </div>
+        <ion-label class="name">Package</ion-label>
+      </div>
+      <div class="number">
+        <div class="round">
+          <ion-label class="circle">4</ion-label>
+        </div>
+        <ion-label class="name">Payment</ion-label>
+      </div>
+      <div class="number">
+        <div class="round">
+          <ion-label class="circle">5</ion-label>
+        </div>
+        <ion-label class="name">Finish</ion-label>
+      </div>
+    </div>
+
+    <ion-label class="head_text">Sender Name</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="person"></ion-icon>
+      <ion-input type="text" placeholder="Jaydeep Hirani"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">Phone Number</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="call"></ion-icon>
+      <ion-input type="text" placeholder="+91 9876543210"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">Email</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="mail"></ion-icon>
+      <ion-input type="text" placeholder="jaydeep@initappz.com"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">City / Provilance</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="location"></ion-icon>
+      <ion-input type="text" placeholder="Palitana, Guajarat"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">Address Details</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="location"></ion-icon>
+      <ion-input type="text" placeholder="Smile Street, Palitana"></ion-input>
+    </ion-item>
+
+    <div class="button" (click)="tab = 2">
+      <ion-label class="text">Continue</ion-label>
+    </div>
+
+  </div>
+
+  <div *ngIf="tab == 2" class="receiver">
+    <div class="status">
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">1</ion-label>
+        </div>
+        <ion-label class="name color">Sender</ion-label>
+      </div>
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">2</ion-label>
+        </div>
+        <ion-label class="name color">Receiver</ion-label>
+      </div>
+      <div class="number">
+        <div class="round">
+          <ion-label class="circle">3</ion-label>
+        </div>
+        <ion-label class="name">Package</ion-label>
+      </div>
+      <div class="number">
+        <div class="round">
+          <ion-label class="circle">4</ion-label>
+        </div>
+        <ion-label class="name">Payment</ion-label>
+      </div>
+      <div class="number">
+        <div class="round">
+          <ion-label class="circle">5</ion-label>
+        </div>
+        <ion-label class="name">Finish</ion-label>
+      </div>
+    </div>
+
+    <ion-label class="head_text">Receiver Name</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="person"></ion-icon>
+      <ion-input type="text" placeholder="Hardik Gohil"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">Phone Number</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="call"></ion-icon>
+      <ion-input type="text" placeholder="+91 9876543210"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">Email</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="mail"></ion-icon>
+      <ion-input type="text" placeholder="hardik@initappz.com"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">City / Provilance</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="location"></ion-icon>
+      <ion-input type="text" placeholder="Bhavnagar, Guajarat"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">Address Details</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="location"></ion-icon>
+      <ion-input type="text" placeholder="Smile Street, Bhavnagar"></ion-input>
+    </ion-item>
+
+    <div class="button" (click)="tab = 3">
+      <ion-label class="text">Continue</ion-label>
+    </div>
+
+  </div>
+
+  <div *ngIf="tab == 3" class="package">
+    <div class="status">
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">1</ion-label>
+        </div>
+        <ion-label class="name color">Sender</ion-label>
+      </div>
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">2</ion-label>
+        </div>
+        <ion-label class="name color">Receiver</ion-label>
+      </div>
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">3</ion-label>
+        </div>
+        <ion-label class="name color">Package</ion-label>
+      </div>
+      <div class="number">
+        <div class="round">
+          <ion-label class="circle">4</ion-label>
+        </div>
+        <ion-label class="name">Payment</ion-label>
+      </div>
+      <div class="number">
+        <div class="round">
+          <ion-label class="circle">5</ion-label>
+        </div>
+        <ion-label class="name">Finish</ion-label>
+      </div>
+    </div>
+
+    <ion-label class="head_text">Package Category</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="cube"></ion-icon>
+      <ion-input type="text" placeholder="Electronics"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">Weight</ion-label>
+
+    <ion-item lines="none">
+      <ion-input type="text" placeholder="2.5"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">Dimentions</ion-label>
+
+    <ion-item lines="none">
+      <ion-input type="text" placeholder="30 cm"></ion-input>
+    </ion-item>
+
+    <ion-label class="head_text">Select Shipping</ion-label>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="car-sport"></ion-icon>
+      <ion-input type="text" placeholder="Regular - $12"></ion-input>
+    </ion-item>
+
+    <div class="button" (click)="tab = 4">
+      <ion-label class="text">Continue</ion-label>
+    </div>
+  </div>
+
+  <div *ngIf="tab == 4" class="payment">
+    <div class="status">
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">1</ion-label>
+        </div>
+        <ion-label class="name color">Sender</ion-label>
+      </div>
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">2</ion-label>
+        </div>
+        <ion-label class="name color">Receiver</ion-label>
+      </div>
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">3</ion-label>
+        </div>
+        <ion-label class="name color">Package</ion-label>
+      </div>
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">4</ion-label>
+        </div>
+        <ion-label class="name color">Payment</ion-label>
+      </div>
+      <div class="number">
+        <div class="round ">
+          <ion-label class="circle">5</ion-label>
+        </div>
+        <ion-label class="name">Finish</ion-label>
+      </div>
+    </div>
+
+    <ion-label>Select the payment method you want to use</ion-label>
+
+    <div class="flex">
+      <div style="display: flex; align-items: center;">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/wallet.png)'"></div>
+        <div class="text">
+          <ion-label class="bold_text">My Wallet</ion-label>
+        </div>
+      </div>
+      <div>
+        <ion-icon name="radio-button-on-outline" color="primary"></ion-icon>
+
+      </div>
+    </div>
+
+    <div class="flex">
+      <div style="display: flex; align-items: center;">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/paypal.png)'"></div>
+        <div class="text">
+          <ion-label class="bold_text">Paypal</ion-label>
+        </div>
+      </div>
+      <div>
+        <ion-icon name="ellipse-outline" color="primary"></ion-icon>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div style="display: flex; align-items: center;">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/google.png)'"></div>
+        <div class="text">
+          <ion-label class="bold_text">Google Pay</ion-label>
+        </div>
+      </div>
+      <div>
+        <ion-icon name="ellipse-outline" color="primary"></ion-icon>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div style="display: flex; align-items: center;">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/apple.png)'"></div>
+        <div class="text">
+          <ion-label class="bold_text">Apple Pay</ion-label>
+        </div>
+      </div>
+      <div>
+        <ion-icon name="ellipse-outline" color="primary"></ion-icon>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div style="display: flex; align-items: center;">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/visa.png)'"></div>
+        <div class="text">
+          <ion-label class="bold_text">**** **** **** 8998</ion-label>
+        </div>
+      </div>
+      <div>
+        <ion-icon name="ellipse-outline" color="primary"></ion-icon>
+      </div>
+    </div>
+
+    <div class="button" (click)="tab = 5">
+      <ion-label class="text">Continue</ion-label>
+    </div>
+  </div>
+
+  <div *ngIf="tab == 5" class="finish">
+    <div class="status">
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">1</ion-label>
+        </div>
+        <ion-label class="name color">Sender</ion-label>
+      </div>
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">2</ion-label>
+        </div>
+        <ion-label class="name color">Receiver</ion-label>
+      </div>
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">3</ion-label>
+        </div>
+        <ion-label class="name color">Package</ion-label>
+      </div>
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">4</ion-label>
+        </div>
+        <ion-label class="name color">Payment</ion-label>
+      </div>
+      <div class="number">
+        <div class="round bg_color">
+          <ion-label class="circle">5</ion-label>
+        </div>
+        <ion-label class="name color">Finish</ion-label>
+      </div>
+    </div>
+
+    <ion-label>Review Summery</ion-label>
+
+    <div class="bg_white">
+      <div class="space">
+        <ion-label class="grey_text">Sender Name</ion-label>
+        <ion-label class="dark_text">Jaydeep Hirani</ion-label>
+      </div>
+      <div class="space">
+        <ion-label class="grey_text">Phone Number</ion-label>
+        <ion-label class="dark_text">+91 9876543211</ion-label>
+      </div>
+      <div class="space">
+        <ion-label class="grey_text">Email</ion-label>
+        <ion-label class="dark_text">jaydeep@initappz.com</ion-label>
+      </div>
+      <div class="space">
+        <ion-label class="grey_text">Address</ion-label>
+        <ion-label class="dark_text">Smile street,Palitana</ion-label>
+      </div>
+    </div>
+
+    <div class="bg_white">
+      <div class="space">
+        <ion-label class="grey_text">Receiver Name</ion-label>
+        <ion-label class="dark_text">Hardik Gohil</ion-label>
+      </div>
+      <div class="space">
+        <ion-label class="grey_text">Phone Number</ion-label>
+        <ion-label class="dark_text">+91 9876543211</ion-label>
+      </div>
+      <div class="space">
+        <ion-label class="grey_text">Email</ion-label>
+        <ion-label class="dark_text">hardik@initappz.com</ion-label>
+      </div>
+      <div class="space">
+        <ion-label class="grey_text">Address</ion-label>
+        <ion-label class="dark_text">Smile street,Bhavnagar</ion-label>
+      </div>
+    </div>
+
+
+    <div class="bg_white">
+      <div class="space">
+        <ion-label class="grey_text">Shipping Fee</ion-label>
+        <ion-label class="dark_text">$12.00</ion-label>
+      </div>
+      <div class="space">
+        <ion-label class="grey_text">Payment Method</ion-label>
+        <ion-label class="dark_text">Saska Wallet</ion-label>
+      </div>
+    </div>
+
+    <div class="button" (click)="onOrders()">
+      <ion-label class="text">Confirm Order</ion-label>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,81 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : E-Learning App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>E-Receipt</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/barcode.png)'"></div>
+
+  <div class="bg_white">
+    <div class="flex">
+      <ion-label class="grey_text">Course</ion-label>
+      <ion-label class="dark_text">Mastering Figma A-Z</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="grey_text">Category</ion-label>
+      <ion-label class="dark_text">UI/UX Design</ion-label>
+    </div>
+  </div>
+
+  <div class="bg_white">
+    <div class="flex">
+      <ion-label class="grey_text">Name</ion-label>
+      <ion-label class="dark_text">Jaydeep Hirani</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="grey_text">Phone</ion-label>
+      <ion-label class="dark_text">+91 9876543211</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="grey_text">Email</ion-label>
+      <ion-label class="dark_text">jaydeep@initappz.com</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="grey_text">Country</ion-label>
+      <ion-label class="dark_text">India</ion-label>
+    </div>
+  </div>
+
+  <div class="bg_white">
+    <div class="flex">
+      <ion-label class="grey_text">Price</ion-label>
+      <ion-label class="dark_text">Jaydeep Hirani</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="grey_text">Payment Method</ion-label>
+      <ion-label class="dark_text">+91 9876543211</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="grey_text">Date</ion-label>
+      <ion-label class="dark_text">jaydeep@initappz.com</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="grey_text">Transaction ID</ion-label>
+      <ion-label class="dark_text">India</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="grey_text">Status</ion-label>
+      <ion-label class="dark_text">Paid</ion-label>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,47 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Medical App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Notification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label class="time">Today</ion-label>
+  <div class="list" *ngFor="let item of [1,2]">
+    <div class="order">
+      <div class="img">
+        <ion-icon name="notifications-outline" class="icon" color="primary"></ion-icon>
+      </div>
+      <div class="text">
+        <ion-label class="name">Drug 20% off</ion-label>
+        <ion-label class="tab">Lorem ipsum dolor sit amet</ion-label>
+      </div>
+    </div>
+    <ion-label class="status">10:15 AM</ion-label>
+  </div>
+  <ion-label class="time">Yesterday</ion-label>
+  <div class="list" *ngFor="let item of [1,2]">
+    <div class="order">
+      <div class="img">
+        <ion-icon name="notifications-outline" class="icon" color="primary"></ion-icon>
+      </div>
+      <div class="text">
+        <ion-label class="name">Drug 20% off</ion-label>
+        <ion-label class="tab">Lorem ipsum dolor sit amet</ion-label>
+      </div>
+    </div>
+    <ion-label class="status">10:15 AM</ion-label>
+  </div>
+</ion-content>

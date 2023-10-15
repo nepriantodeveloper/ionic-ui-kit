@@ -1,0 +1,42 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button (click)="goBack()">
+              <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-input type="text" placeholder="Type city name"></ion-input>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon slot="icon-only" name="search"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="flex_div">
+            <ion-icon name="locate"></ion-icon>
+            <ion-label>Shows Cars near me</ion-label>
+        </div>
+
+        <div class="border_div">
+            <ion-label style="font-family: 'medium';">Popolar Cities</ion-label>
+        </div>
+
+        <div class="border_div" *ngFor="let item of cities">
+            <ion-label>{{item}}</ion-label>
+        </div>
+
+    </div>
+</ion-content>

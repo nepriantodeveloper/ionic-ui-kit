@@ -1,0 +1,120 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Parking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>My Parking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="tabs">
+    <ion-segment-button value="on">
+      <ion-label>Ongoing</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="done">
+      <ion-label>Complete</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="cancel">
+      <ion-label>Canceled</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="tabs =='on'" class="ion-padding">
+    <div class="content">
+      <div class="flex">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/c2.jpg)'"></div>
+        <div class="text">
+          <ion-label class="bold_text">Alington Paddock</ion-label>
+          <ion-label class="grey_text">912 jumbo street</ion-label>
+          <div class="label">
+            <ion-label class="color_text">$6.06 <span>/hour</span></ion-label>
+            <ion-label class="action">Paid</ion-label>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <ion-row>
+          <ion-col size="6">
+            <ion-label class="cancel" (click)="onTimer()">View Timer</ion-label>
+          </ion-col>
+          <ion-col size="6">
+            <ion-label class="view" (click)="onTicket()">View Ticket</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <div class="content" *ngFor="let item of [1,2,3,4,5,6,7]">
+      <div class="flex">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/c2.jpg)'"></div>
+        <div class="text">
+          <ion-label class="bold_text">Alington Paddock</ion-label>
+          <ion-label class="grey_text">912 jumbo street</ion-label>
+          <div class="label">
+            <ion-label class="color_text">$6.06 <span>/hour</span></ion-label>
+            <ion-label class="action">Paid</ion-label>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <ion-row>
+          <ion-col size="6">
+            <ion-label class="cancel" (click)="onCancelApointment()">Cancel Booking</ion-label>
+          </ion-col>
+          <ion-col size="6">
+            <ion-label class="view">View Ticket</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="tabs =='done'" class="ion-padding">
+    <div class="content" *ngFor="let item of [1,2,3,4,5,6,7]">
+      <div class="flex">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/c2.jpg)'"></div>
+        <div class="text">
+          <ion-label class="bold_text">Bondhouse lane</ion-label>
+          <ion-label class="grey_text">912 jumbo street</ion-label>
+          <div class="label">
+            <ion-label class="color_text">$5.05 <span>/hour</span></ion-label>
+            <ion-label class="green_text">Completed</ion-label>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <ion-row>
+          <ion-col size="12">
+            <ion-label class="cancel">View Ticket</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="tabs =='cancel'" class="ion-padding">
+    <div class="content" *ngFor="let item of [1,2,3,4,5,6,7]">
+      <div class="flex">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/c2.jpg)'"></div>
+        <div class="text">
+          <ion-label class="bold_text">Bondhouse lane</ion-label>
+          <ion-label class="grey_text">912 jumbo street</ion-label>
+          <div class="label">
+            <ion-label class="color_text">$5.05 <span>/hour</span></ion-label>
+            <ion-label class="danger_text">Cancel</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

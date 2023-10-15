@@ -1,0 +1,51 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Medical App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>My Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="center">
+    <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'"></div>
+    <ion-label class="name">Healen Beat</ion-label>
+    <ion-label class="locate">Pro User, India</ion-label>
+  </div>
+
+  <ion-label class="head">Contact Number</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="9876 543 210"></ion-input>
+  </ion-item>
+
+
+  <ion-label class="head">Email Address</ion-label>
+  <ion-item lines="none">
+    <ion-input type="mail" placeholder="jaydeep@gmail.com"></ion-input>
+  </ion-item>
+
+
+  <ion-label class="head">Address</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Smile Street, Palitana"></ion-input>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="button" (click)="onBack()">
+      <ion-label class="text">Update Profile</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

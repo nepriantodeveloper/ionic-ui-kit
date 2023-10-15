@@ -1,0 +1,79 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile">
+    <div class="bg_image profile_image" [style.backgroundImage]="'url(assets/images/p2.jpg)'"></div>
+    <div class="right">
+      <ion-label class="bold">Dr.Jaydeep Hirani</ion-label>
+      <ion-label class="color">St lvn Hospital <span>General Physician</span></ion-label>
+      <div class="rate">
+        <ion-icon name="star" color="primary" style="margin-right: 5px;"></ion-icon>
+        <ion-label class="medium">4.4 (56 reviews)</ion-label>
+      </div>
+      <div class="rate">
+        <ion-icon name="location" color="primary" style="margin-right: 5px;"></ion-icon>
+        <ion-label class="small">No 23, Smile Street, Palitana</ion-label>
+      </div>
+    </div>
+  </div>
+
+  <ion-label class="head_text">Clinic Visit Slots</ion-label>
+  <div class="story-item">
+    <div class="menu">
+      <div class="item" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]">
+        <ion-label class="uper">5 Sept</ion-label>
+        <ion-label class="below">25 SLots available</ion-label>
+      </div>
+    </div>
+  </div>
+
+  <ion-label class="head_text">Today, 5 Sep</ion-label>
+
+  <ion-label class="slot">Morning <span>6 slots</span></ion-label>
+
+  <ion-row class="select">
+    <ion-col size="3" *ngFor="let item of [1,2,3,4]">
+      <ion-label class="time">10:00 AM</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-label class="slot">Afternoon <span>6 slots</span></ion-label>
+
+  <ion-row class="select">
+    <ion-col size="3" *ngFor="let item of [1,2,3,4,5,6,7,8]">
+      <ion-label class="time">01:00 PM</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-label class="slot">Evening <span>6 slots</span></ion-label>
+
+  <ion-row class="select">
+    <ion-col size="3" *ngFor="let item of [1,2,3,4,5,6,7,8]">
+      <ion-label class="time">04:00 PM</ion-label>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="button" (click)="onConfirm()">
+      <ion-label class="text">Continue</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

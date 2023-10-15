@@ -1,0 +1,95 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : HandyService App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Filter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="main-content">
+
+    <div class="items">
+      <ion-label>Category</ion-label>
+      <div>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Cleaning</ion-label>
+        </ion-row>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Electrical</ion-label>
+        </ion-row>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Plumbering</ion-label>
+        </ion-row>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Ruftoping</ion-label>
+        </ion-row>
+      </div>
+    </div>
+
+    <div class="items">
+      <ion-label>City</ion-label>
+      <div>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Ahmedabad</ion-label>
+        </ion-row>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Bhavnagar</ion-label>
+        </ion-row>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Mumbai</ion-label>
+        </ion-row>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Delhi</ion-label>
+        </ion-row>
+      </div>
+    </div>
+
+    <div class="items">
+      <div>
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-label>Price</ion-label>
+          <ion-label slot="end" class="text">$20.00</ion-label>
+        </ion-item>
+      </div>
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-range dualKnobs="true" min="18" max="80" step="1" pin>
+        </ion-range>
+      </ion-item>
+    </div>
+
+
+    <div>
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-label>Service On</ion-label>
+        <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+    </div>
+
+    <ion-button expand="block" (click)="goToBack()">
+      Submit
+    </ion-button>
+
+
+  </div>
+
+</ion-content>

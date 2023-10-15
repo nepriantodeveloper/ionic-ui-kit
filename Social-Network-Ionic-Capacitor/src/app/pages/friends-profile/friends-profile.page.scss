@@ -1,0 +1,179 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Social Network App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+
+    ion-icon {
+      color: white;
+    }
+
+    ion-title {
+      color: white;
+    }
+  }
+}
+
+
+
+.main_div {
+  --background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+
+  ion-thumbnail {
+    margin-top: 2rem;
+    height: 100px;
+    width: 100px;
+
+    .back_image {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+  }
+
+  .head_text {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'bold';
+  }
+
+  .grey_text {
+    color: #86888f;
+    margin-bottom: 1rem;
+  }
+
+  ion-row {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+
+    ion-col {
+      ion-button {
+        padding: 1px;
+        width: 100%;
+        --background: var(--ion-color-primary);
+      }
+
+      .warning {
+        --background: var(--ion-color-warning);
+      }
+
+      .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.second_div {
+  margin-bottom: 1rem;
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .head_text {
+      font-size: 20px;
+      font-family: 'bold';
+    }
+
+    .grey_text {
+      color: #86888f;
+    }
+  }
+
+  .about {
+    ion-thumbnail {
+      height: 120px;
+      width: 100%;
+
+      .back_image {
+        height: 120px;
+        width: 100%;
+        border-radius: 5%;
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+
+      .btn {
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+
+
+        ion-icon {
+          font-size: 15px;
+          margin-right: 1px;
+          color: #86888f;
+        }
+
+        .grey_text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.post {
+  border-bottom: 1px solid #808289;
+
+  ion-row {
+    margin-bottom: 10px;
+
+    ion-icon {
+      font-size: 20px;
+      margin-left: 1rem;
+      color: #808289;
+    }
+  }
+
+  ion-thumbnail {
+    height: 220px;
+    width: 100%;
+
+    .back_image {
+      height: 220px;
+      width: 100%;
+    }
+  }
+
+  .btn {
+    width: 100%;
+
+    ion-row {
+      ion-col {
+        display: flex;
+        justify-content: center;
+
+        ion-item {
+          --border-radius: 30px;
+          width: 100%;
+
+          ion-icon {
+            margin: 10px 10px 12px 40px;
+          }
+        }
+      }
+    }
+  }
+}

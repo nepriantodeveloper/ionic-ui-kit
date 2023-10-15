@@ -1,0 +1,70 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <div class="item_div" (click)="goToEdit()">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Edit Profile</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div" (click)="goToNotification()">
+      <ion-icon name="notifications-outline"></ion-icon>
+      <ion-label>Notification</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div" (click)="goToSecurity()">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-label>Security</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div">
+      <ion-icon name="eye-outline"></ion-icon>
+      <ion-label>Appearance</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div" (click)="goToHelp()">
+      <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-label>Help</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div" (click)="goToPolicy()">
+      <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-label>Privacy Policy</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div" (click)="goToInvite()">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-label>Invite Friend</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div" (click)="goToContactUs()">
+      <ion-icon name="chatbox-outline"></ion-icon>
+      <ion-label>Contact Us</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div">
+      <ion-icon name="log-out-outline"></ion-icon>
+      <ion-label>Logout</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+  </div>
+
+</ion-content>

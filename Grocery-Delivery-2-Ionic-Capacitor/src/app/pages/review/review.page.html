@@ -1,0 +1,52 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="store">
+    <div class="image">
+      <div class="bg_image store_image" [style.backgroundImage]="'url(assets/images/s1.png)'">
+      </div>
+    </div>
+    <ion-label class="dark_text">Love Grocery</ion-label>
+    <ion-label class="grey_text">10 mins</ion-label>
+  </div>
+
+  <ion-label class="color_text">Enjoy Your Grocery!</ion-label>
+
+  <ion-label class="grey_text">Please rate the store</ion-label>
+
+  <div class="icons">
+    <ion-icon name="star" color="primary"></ion-icon>
+    <ion-icon name="star" color="primary"></ion-icon>
+    <ion-icon name="star" color="primary"></ion-icon>
+    <ion-icon name="star" color="primary"></ion-icon>
+    <ion-icon name="star-outline" color="primary"></ion-icon>
+  </div>
+
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Leave Feedback"></ion-input>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="block" (click)="onBack()">
+      Submit
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

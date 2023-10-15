@@ -1,0 +1,87 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Import Tokens</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="segment_btn">
+    <ion-segment mode="md" [(ngModel)]="current">
+      <ion-segment-button value="1">
+        <ion-label>Search</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="2">
+        <ion-label>Custom Token</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <ion-searchbar placeholder="Search"></ion-searchbar>
+
+
+  <div class="content1" *ngIf="current == 1">
+    <ion-label class="h5">Select Token</ion-label>
+    <ion-item lines="none" *ngFor="let item of [1,2,3,4,5,6,7,8,9]">
+      <ion-thumbnail>
+        <img src="assets/images/c2.png" />
+      </ion-thumbnail>
+      <div class="title">
+        <ion-label>Bethereum (BETHER)</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </div>
+    </ion-item>
+  </div>
+
+  <div class="content2" *ngIf="current == 2">
+    <ion-label class="h5">Import This Token?</ion-label>
+    <div class="item">
+      <ion-label class="title">Token Address</ion-label>
+      <ion-item lines="none">
+        <ion-input type="text" placeholder="Token Address"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="item">
+      <ion-label class="title">Token Symbol</ion-label>
+      <ion-item lines="none">
+        <ion-input type="text" placeholder="Token Symbol"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="item">
+      <ion-label class="title">Token of Precision</ion-label>
+      <ion-item lines="none">
+        <ion-input type="text" placeholder="Token of Precision"></ion-input>
+      </ion-item>
+    </div>
+  </div>
+
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="btn">
+      <ion-button fill="outline" class="contentbtn2" expand="block">
+        Cancle
+      </ion-button>
+      <ion-button class="contentbtn" (click)="onImport()" expand="block">
+        Import
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

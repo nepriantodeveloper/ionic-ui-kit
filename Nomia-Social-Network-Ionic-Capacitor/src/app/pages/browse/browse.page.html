@@ -1,0 +1,88 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Nomia App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <div class="flex">
+      <ion-label class="light_text" (click)="onChooseLocation()"> Set Location </ion-label>
+      <ion-icon name="search" color="light" (click)="onDiscover()"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="flex">
+    <ion-label class="head_text"> Categories </ion-label>
+    <ion-label class="grey_text" (click)="onCategories()"> See all </ion-label>
+  </div>
+
+  <div class="story-item">
+    <div class="menu">
+      <div class="item" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]">
+        <ion-thumbnail> <img src="assets/images/p1.jpg" /> </ion-thumbnail>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex">
+    <ion-label class="head_text"> Nearby </ion-label>
+    <ion-label class="grey_text"> See all </ion-label>
+  </div>
+
+  <div class="story-item">
+    <div class="menu">
+      <div class="item" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]">
+        <ion-thumbnail class="profile"> <img src="assets/images/p3.jpg" class="img" /> </ion-thumbnail>
+        <ion-label class="name">Amber Julie</ion-label>
+        <div class="info">
+          <ion-icon name="star" color="warning"></ion-icon>
+          <ion-label class="rate">3.5</ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ion-row>
+    <ion-col size="4">
+      <ion-label>Best Match</ion-label>
+      <ion-icon name="caret-down-outline"></ion-icon>
+    </ion-col>
+    <ion-col size="4">
+      <ion-icon name="swap-vertical-outline"></ion-icon>
+      <ion-label style="margin-left: 5px;">Sort</ion-label>
+    </ion-col>
+    <ion-col size="4" (click)="onFilter()">
+      <ion-icon name="filter-outline"></ion-icon>
+      <ion-label style="margin-left: 5px;">Filter</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <div class="post" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]" (click)="onDetail()">
+    <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/p2.jpg)'"></div>
+    <div class="flex">
+      <ion-label class="bold_text">Amber Julie</ion-label>
+      <ion-label class="bold_text">$20.00/hr</ion-label>
+    </div>
+    <div class="about">
+      <ion-icon name="location-outline" color="medium"></ion-icon>
+      <ion-label class="grey_text">0.48 miles away •</ion-label>
+      <ion-label class="grey_text">25 years old</ion-label>
+    </div>
+    <div class="about">
+      <ion-icon name="star" color="warning"></ion-icon>
+      <ion-icon name="star" color="warning"></ion-icon>
+      <ion-icon name="star" color="warning"></ion-icon>
+      <ion-icon name="star" color="warning"></ion-icon>
+      <ion-icon name="star" color="warning"></ion-icon>
+      <ion-label class="grey_text" style="margin-left: 3px;">0.48 miles away • </ion-label>
+      <ion-label class="grey_text" style="margin-left: 5px;"> cared for 9 families</ion-label>
+
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,48 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : News App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Create New News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="img" [style.backgroundImage]="'url(assets/img/s2.jpg)'">
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title">News Details</ion-label>
+    </div>
+
+    <div class="input">
+      <ion-input type="text" placeholder="Title"></ion-input>
+    </div>
+    <div class="input">
+      <ion-input type="text" placeholder="Category"></ion-input>
+    </div>
+
+    <div class="input">
+      <textarea placeholder="Add News/Article" cols="30" rows="22"></textarea>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" shape="round" (click)="goToHome()" expand="block">
+      Publish
+    </ion-button>
+  </div>
+</ion-footer>

@@ -1,0 +1,117 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="ion-padding-start">
+      <ion-avatar class="logo">
+        <img src="assets/img/video.png" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToSearch()">
+        <ion-icon slot="start" name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button (click)="goToNotification()">
+        <ion-icon slot="start" name="notifications-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-avatar class="profile" (click)="goToProfile()">
+        <img src="assets/img/profile.jpg" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-title>Metube</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main-content">
+
+
+    <div class="segment" (click)="goToCate()">
+      <div class="seg_name">Trending
+      </div>
+      <div class="seg_name">All
+      </div>
+      <div class="seg_name">Live
+      </div>
+      <div class="seg_name">Tech
+      </div>
+      <div class="seg_name">Lorem
+      </div>
+      <div class="seg_name">Lorem
+      </div>
+    </div>
+
+    <div class="post_div">
+      <div class="col_div" (click)="goToVideo()">
+        <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+          <div class="icon">
+            <ion-label>2:29</ion-label>
+          </div>
+        </div>
+        <div class="info">
+
+          <ion-avatar class="profile">
+            <img src="assets/img/profile.jpg" />
+          </ion-avatar>
+
+          <div class="detail">
+            <div class="top_div">
+              <ion-label>Lorem ipsum, dolor sit amet contetur adipisicing elit sentium autem ad a quidem distinctio
+                suscipit</ion-label>
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+            <ion-label class="small_txt">Jerry Wilson · 4.4M views · 5 month ago</ion-label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="scroll_div">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="img" [style.backgroundImage]="'url(assets/img/4.jpg)'">
+          <div class="img_detail">
+            <ion-label class="title">Beauty Conference</ion-label>
+            <ion-label class="text">Lorem, ipsum dolor sit amet cons</ion-label>
+          </div>
+          <div class="icon">
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="post_div">
+      <div class="col_div">
+        <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+          <div class="icon">
+            <ion-label>2:29</ion-label>
+          </div>
+        </div>
+        <div class="info">
+          <ion-avatar class="profile">
+            <img src="assets/img/profile.jpg" />
+          </ion-avatar>
+
+          <div class="detail">
+            <div class="top_div">
+              <ion-label>Lorem ipsum, dolor sit amet contetur adipisicing elit sentium autem ad a quidem distinctio
+                suscipit</ion-label>
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+            <ion-label class="small_txt">Jerry Wilson · 4.4M views · 5 month ago</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

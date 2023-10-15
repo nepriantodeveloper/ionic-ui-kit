@@ -1,0 +1,61 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Find your grocery</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label class="head_text">Type</ion-label>
+
+  <div class="flex">
+    <ion-label class="circle">Store</ion-label>
+    <ion-label class="circle">Grocery</ion-label>
+  </div>
+
+  <ion-label class="head_text">Location</ion-label>
+
+  <div class="flex">
+    <ion-label class="circle">1 km</ion-label>
+    <ion-label class="circle">
+      < 5km</ion-label>
+        <ion-label class="circle">
+          < 10km</ion-label>
+            <ion-label class="circle">
+              > 10km</ion-label>
+  </div>
+
+  <ion-label class="head_text">Grocery</ion-label>
+
+  <div class="flex">
+    <ion-label class="circle">Artichoke</ion-label>
+    <ion-label class="circle">Broccoli</ion-label>
+    <ion-label class="circle">Cabbage</ion-label>
+    <ion-label class="circle">Asparagus</ion-label>
+    <ion-label class="circle">Celery</ion-label>
+    <ion-label class="circle">Bean</ion-label>
+    <ion-label class="circle">Corn</ion-label>
+    <ion-label class="circle">Cucumber</ion-label>
+    <ion-label class="circle">Lettuce</ion-label>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="block" (click)="onBack()">
+      Search
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

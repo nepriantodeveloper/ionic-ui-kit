@@ -1,0 +1,32 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Parking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cancel Parking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label class="bold_text">Are you sure you to cancel your parking reservation ?</ion-label>
+  <ion-label class="grey_text">only 80% of the money you can refund from your payment according to our policy
+  </ion-label>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="6">
+        <ion-label class="cancel" (click)="onBack()">Cancel</ion-label>
+      </ion-col>
+      <ion-col size="6">
+        <ion-label class="detail_button" (click)="onCancel()">Yes, Continue</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

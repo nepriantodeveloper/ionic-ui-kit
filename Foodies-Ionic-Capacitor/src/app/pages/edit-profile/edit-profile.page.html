@@ -1,0 +1,65 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="onNotification()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="image">
+    <div class="bg_image profile_image" [style.backgroundImage]="'url(assets/images/f1.jpg)'">
+      <ion-icon name="pencil-outline" class="edit" color="light"></ion-icon>
+    </div>
+  </div>
+
+  <div class="name">
+    <ion-icon name="person" color="primary" class="color_icon"></ion-icon>
+    <ion-input type="text" placeholder="Giselle Elizabeth"></ion-input>
+  </div>
+
+  <div class="name">
+    <ion-icon name="call" color="primary" class="color_icon"></ion-icon>
+    <ion-input type="number" placeholder="+91 9876543210"></ion-input>
+    <ion-label class="gray">Change</ion-label>
+  </div>
+
+  <div class="name">
+    <ion-icon name="location" color="primary" class="color_icon"></ion-icon>
+    <ion-input type="text" placeholder="New York"></ion-input>
+  </div>
+
+  <div class="name">
+    <ion-icon name="lock-closed" color="primary" class="color_icon"></ion-icon>
+    <ion-input type="text" placeholder="*********"></ion-input>
+    <ion-label class="gray">Change</ion-label>
+  </div>
+
+  <div class="name">
+    <ion-icon name="person" color="primary" class="color_icon"></ion-icon>
+    <ion-input type="text" placeholder="Tell us about your self"></ion-input>
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-label class="btn" (click)="onBack()">Save Changes</ion-label>
+  </ion-toolbar>
+</ion-footer>

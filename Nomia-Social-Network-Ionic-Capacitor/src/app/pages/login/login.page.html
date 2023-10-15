@@ -1,0 +1,39 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Nomia App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="header-top">
+    <img src="assets/images/d3.webp" alt="">
+  </div>
+  <ion-label class="bold_text">Welcome Back,</ion-label>
+  <ion-label> Sign in to continue</ion-label>
+
+  <div class="input">
+    <ion-input type="text" placeholder="User name"></ion-input>
+    <ion-input type="password" placeholder="password"></ion-input>
+  </div>
+
+  <ion-button expand="full" (click)="onLogin()">
+    Login
+  </ion-button>
+  <div class="forgot">
+    <ion-buttons slot="end" (click)="onForgot()">
+      <ion-button class="btn" color="medium">
+        Forgot Password ?
+      </ion-button>
+    </ion-buttons>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="already">
+      <ion-label>New user ? <span (click)="onRegister()">Register</span> Now</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

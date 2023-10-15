@@ -1,0 +1,41 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="onNotification()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Your Ratings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="rating" *ngFor="let item of [1,2,3,4,5,6,7,8]">
+    <ion-label class="bold_text">Order No : #32540</ion-label>
+    <div class="star">
+      <ion-icon name="star" color="primary"></ion-icon>
+      <ion-icon name="star" color="primary"></ion-icon>
+      <ion-icon name="star" color="primary"></ion-icon>
+      <ion-icon name="star" color="primary"></ion-icon>
+      <ion-icon name="star" color="medium"></ion-icon>
+    </div>
+
+    <ion-label class="write">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et minima iure, iste repudiandae
+      laborum
+      <strong>Read more..</strong>
+    </ion-label>
+  </div>
+</ion-content>

@@ -1,0 +1,43 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Favorite</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="searchbar">
+    <div class="icon">
+      <ion-label class="search">Search</ion-label>
+      <ion-icon slot="end" name="search" color="medium"></ion-icon>
+    </div>
+    <ion-icon slot="end" name="filter-outline" color="primary" class="filter"></ion-icon>
+  </div>
+
+  <ion-row *ngFor="let item of [1,2,3,4,5,6,7]" class="cart_item">
+    <ion-col size="2">
+      <div class="bg_image grocery_image" [style.backgroundImage]="'url(assets/images/cabage.jpg)'">
+      </div>
+    </ion-col>
+    <ion-col size="8">
+      <ion-label class="bold_text">Fresh Cabbage</ion-label>
+      <ion-label class="grey_text">Love Grocery</ion-label>
+      <ion-label class="price">$10</ion-label>
+    </ion-col>
+    <ion-col size="2">
+      <ion-icon name="heart" color="primary" class="heart" (click)="remove()"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-content>

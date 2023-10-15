@@ -1,0 +1,103 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    .searchbtn {
+      margin-right: 15px;
+
+      ion-button {
+        border-radius: 100px;
+        height: 35px;
+        width: 35px;
+        background: #BDC4FF;
+
+        ion-icon {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.conversation {
+  margin: 2rem 0px;
+
+  .first-selection {
+    width: 100%;
+    float: left;
+    position: relative;
+
+    .your-massage {
+      float: left;
+      padding: 10px;
+      background: #F3F5F9;
+      width: max-content;
+      border-radius: 20px;
+      border-bottom-left-radius: 0px;
+    }
+
+    ion-label {
+      position: absolute;
+      left: 0px;
+      bottom: -15px;
+      font-size: 8px;
+    }
+  }
+
+  .second-massage {
+    width: 100%;
+    float: right;
+    position: relative;
+
+    .other-massage {
+      float: right;
+      padding: 10px;
+      background: #9FAAFF;
+      width: max-content;
+      border-radius: 20px;
+      border-bottom-right-radius: 0px;
+    }
+
+    ion-label {
+      position: absolute;
+      right: 25px;
+      bottom: -15px;
+      font-size: 8px;
+
+      ion-icon {
+        font-size: 15px;
+        position: absolute;
+        bottom: -3px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: 100%;
+
+  ion-item {
+    border: 1px solid var(--ion-color-primary);
+    border-radius: 30px;
+    width: 90%;
+
+    ion-input {
+      margin: 10px 0px;
+    }
+
+    ion-buttons {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}

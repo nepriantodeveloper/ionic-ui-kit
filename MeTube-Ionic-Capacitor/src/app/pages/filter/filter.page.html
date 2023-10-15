@@ -1,0 +1,96 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Filter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="main-content">
+
+    <div class="items">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-label>Sort By</ion-label>
+        <ion-select placeholder="Select">
+          <ion-select-option value="0" class="text">Relavance</ion-select-option>
+          <ion-select-option value="1" class="text">Trending</ion-select-option>
+
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div class="items">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-label>Type</ion-label>
+        <ion-select placeholder="Select">
+          <ion-select-option value="0" class="text">Channel</ion-select-option>
+          <ion-select-option value="1" class="text">Personal</ion-select-option>
+
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div class="items">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-label>Upload Date</ion-label>
+        <ion-select placeholder="Select">
+          <ion-select-option value="0" class="text">Anytime</ion-select-option>
+          <ion-select-option value="1" class="text">1 Month Ago</ion-select-option>
+
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div class="items">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-label>Duration</ion-label>
+        <ion-select placeholder="Select">
+          <ion-select-option value="0" class="text">1-5 mins</ion-select-option>
+          <ion-select-option value="0" class="text">11-15 mins</ion-select-option>
+
+        </ion-select>
+      </ion-item>
+    </div>
+
+
+    <div class="items">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-label>More Features</ion-label>
+      </ion-item>
+      <div class="segment">
+        <div (click)="segmentChange(1)" class="seg_name" [class.active]="seg_id == 1">Live
+        </div>
+        <div (click)="segmentChange(2)" class="seg_name" [class.active]="seg_id == 2">4K
+        </div>
+        <div (click)="segmentChange(3)" class="seg_name" [class.active]="seg_id == 3">3D
+        </div>
+        <div (click)="segmentChange(4)" class="seg_name" [class.active]="seg_id == 4">HD
+        </div>
+        <div (click)="segmentChange(4)" class="seg_name" [class.active]="seg_id == 5">HDR
+        </div>
+        <div (click)="segmentChange(4)" class="seg_name" [class.active]="seg_id == 6">SubTitle
+        </div>
+      </div>
+    </div>
+
+
+    <ion-button expand="block" class="btn" shape="round" (click)="goToBack()">
+      Apply
+    </ion-button>
+
+
+  </div>
+
+</ion-content>

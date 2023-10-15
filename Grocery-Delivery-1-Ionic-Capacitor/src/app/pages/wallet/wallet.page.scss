@@ -1,0 +1,110 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-toolbar {
+  --background: white;
+
+  ion-title {
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'medium';
+  }
+}
+
+.main_content_div {
+  padding: 16px;
+
+  .balance_box {
+    background: var(--ion-color-app-lightgreen);
+    padding: 16px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    .small_lbl {
+      color: grey;
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .amount_lbl {
+      color: var(--ion-color-app-green);
+      font-family: 'semi-bold';
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  .action_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    div {
+      width: 70px;
+      min-width: 70px;
+      height: 70px;
+      background: lightgrey;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      ion-icon {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      ion-label {
+        font-size: 13px;
+        color: grey;
+      }
+    }
+  }
+
+  .title_lbl {
+    font-size: 18px;
+    font-family: 'medium';
+    margin-bottom: 16px;
+  }
+
+  .card_box {
+    background: var(--ion-color-app-grey);
+    border-radius: 15px;
+    padding: 16px;
+    margin-bottom: 16px;
+
+    .flex_div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .price_lbl {
+        font-family: 'medium';
+        font-size: 18px;
+      }
+
+      .grey_lbl {
+        color: grey;
+        font-size: 15px;
+      }
+
+      .green {
+        font-size: 15px;
+        color: var(--ion-color-app-green);
+      }
+
+      .red {
+        font-size: 15px;
+        color: red;
+      }
+    }
+  }
+}

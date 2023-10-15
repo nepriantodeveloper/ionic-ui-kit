@@ -1,0 +1,65 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="ion-padding-start">
+      <ion-avatar>
+        <img src="assets/img/profile.jpg" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="start" name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="start" name="ellipsis-vertical-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Chats</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <div class="heading_div">
+      <div class="heading_title">
+        <div class="title_div">
+          <ion-label class="title">Feed</ion-label>
+        </div>
+        <div class="all_btn">
+          <ion-label>See All</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide_profile">
+      <div *ngFor="let item of [1,2,3,4,5,6,7,8]">
+        <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+        </div>
+      </div>
+    </div>
+
+    <div class="list_card" *ngFor="let item of [1,2,3,4,5,6,7]" (click)="goToMessage()">
+      <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+      </div>
+
+      <div class="details">
+        <div class="flex_row">
+          <ion-label class="title">Andrew Russle</ion-label>
+          <ion-label class="tag">2</ion-label>
+        </div>
+        <div class="flex_row">
+          <ion-label class="text">Lorem ipsum dolor sit, amet</ion-label>
+          <ion-label class="text">12:26</ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,39 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Channel List (23)</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="start" name="ellipsis-vertical-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="list_card" *ngFor="let item of [1,2,3,4,5,6,7]">
+      <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+      </div>
+
+      <div class="details">
+        <div class="flex_row">
+          <ion-label class="title">Andrew Russle</ion-label>
+          <ion-label class="tag">Live</ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

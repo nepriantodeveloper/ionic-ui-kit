@@ -1,0 +1,55 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : WeCare App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="ellipsis-vertical" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Prayers from Good People</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="review_card" *ngFor="let item of [1,2,3,4,5,6]">
+
+      <div class="upper_div">
+        <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+        </div>
+
+        <div class="details">
+          <div class="left_div">
+            <ion-label class="title">Andrew Russle</ion-label>
+            <ion-label class="small_txt">Dec 20, 2024</ion-label>
+          </div>
+          <ion-icon name="ellipsis-vertical" color="primary"></ion-icon>
+        </div>
+      </div>
+      <div class="lower_div">
+        <ion-label class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore nostrum
+          nisi, maxime numquam</ion-label>
+        <ion-label class="small_txt">123 people sent this prayer</ion-label>
+        <div class="icon_div">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-label class="text">Like</ion-label>
+          <ion-icon name="share-social-outline"></ion-icon>
+          <ion-label class="text">Like</ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

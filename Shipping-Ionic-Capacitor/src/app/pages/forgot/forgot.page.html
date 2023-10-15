@@ -1,0 +1,92 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Saska App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div *ngIf="tab == 1" class="ion-padding">
+
+    <ion-label class="welcome_lbl">Forgot password</ion-label>
+
+    <ion-label class="simp_lbl">Select which contact details should we use to reset your password:</ion-label>
+
+    <div class="flex" (click)="tab = 2">
+      <ion-icon slot="start" name="chatbox-ellipses" class="icon" color="primary"></ion-icon>
+      <div class="text">
+        <ion-label class="grey">via SMS</ion-label>
+        <ion-label class="bold">+91 81******00</ion-label>
+      </div>
+    </div>
+
+    <div class="flex" (click)="tab = 2">
+      <ion-icon slot="start" name="chatbox-ellipses" class="icon" color="primary"></ion-icon>
+      <div class="text">
+        <ion-label class="grey">via Email</ion-label>
+        <ion-label class="bold">jay*********12@gmail.com</ion-label>
+      </div>
+    </div>
+
+  </div>
+
+  <div *ngIf="tab == 2" class="ion-padding">
+
+    <ion-label class="welcome_lbl">Forgot password</ion-label>
+
+    <ion-label class="simp_lbl">Code has been sent to the your registered email</ion-label>
+
+    <ion-item lines="none">
+      <ion-input type="email" placeholder="Enter Code"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="tab = 3" expand="block">
+      Next
+    </ion-button>
+  </div>
+
+  <div *ngIf="tab == 3" class="ion-padding">
+    <div class="password">
+      <ion-label class="welcome_lbl">Reset Password</ion-label>
+
+      <ion-label class="simp_lbl">Create New Password</ion-label>
+
+      <ion-label class="label">Email<span>*</span></ion-label>
+
+      <ion-item lines="none">
+        <ion-input type="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-label class="label">Password<span>*</span></ion-label>
+
+      <ion-item lines="none">
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-button (click)="tab = 4" expand="block">
+        Save
+      </ion-button>
+    </div>
+  </div>
+
+  <div *ngIf="tab == 4" class="ion-padding">
+    <div class="check_icon">
+      <div class="bg_image check_image" [style.backgroundImage]="'url(assets/images/check.png)'">
+      </div>
+    </div>
+    <ion-label class="color_text">Congrats!</ion-label>
+    <ion-label class="reset">Password reset successful</ion-label>
+    <ion-button expand="block" (click)="onLogin()">
+      Ok
+    </ion-button>
+  </div>
+
+</ion-content>

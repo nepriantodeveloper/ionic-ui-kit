@@ -1,0 +1,74 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Medical App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Plastic oi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="bg_color">
+    <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/s2.png)'"></div>
+  </div>
+  <div class="bg_white">
+    <ion-label class="back">50mg</ion-label>
+    <ion-label class="back">100mg</ion-label>
+    <ion-label class="back">500mg</ion-label>
+  </div>
+
+  <div class="flex">
+    <div>
+      <ion-label class="name"><strong>Plastic oi</strong> 150mg</ion-label>
+      <ion-label class="tab">Bottle of 150 tablets</ion-label>
+      <div class="rate">
+        <ion-label class="number">5.0</ion-label>
+        <ion-icon name="star" color="warning"></ion-icon>
+      </div>
+    </div>
+    <div>
+      <ion-label class="color"> $38.00</ion-label>
+      <ion-label class="over">$56.00</ion-label>
+    </div>
+  </div>
+
+  <div class="req">
+    <ion-label class="bold">Prescription Requment</ion-label>
+    <ion-label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, magni beatae </ion-label>
+  </div>
+
+  <div class="indic">
+    <ion-label class="bold">Indication</ion-label>
+    <ion-label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, magni beatae </ion-label>
+    <ion-label class="lab">Exactley as your doctor has told you</ion-label>
+    <ion-label class="lab">Exactley as your doctor has told you</ion-label>
+    <ion-label class="lab">Exactley as your doctor has told you</ion-label>
+    <ion-label class="lab">Exactley as your doctor has told you</ion-label>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="6">
+        <ion-label class="total">Total :<strong> $38.00</strong></ion-label>
+      </ion-col>
+      <ion-col size="6">
+        <div class="button" (click)="onCart()">
+          <ion-label class="text">ADD TO CART</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,117 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="onback()">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Select Your Interest</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-row>
+    <ion-col size="6">
+      <div class="main_div">
+        <div class="sub_div">
+          <ion-buttons>
+            <ion-button color="primary">
+              <ion-icon name="color-palette"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-label>Art</ion-label>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="main_div">
+        <div class="sub_div">
+          <ion-buttons>
+            <ion-button color="primary">
+              <ion-icon name="musical-notes"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-label>Music</ion-label>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="main_div">
+        <div class="sub_div">
+          <ion-buttons>
+            <ion-button color="primary">
+              <ion-icon name="american-football"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-label>Sport</ion-label>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="main_div">
+        <div class="sub_div">
+          <ion-buttons>
+            <ion-button color="primary">
+              <ion-icon name="fast-food"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-label>Foods</ion-label>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="main_div">
+        <div class="sub_div">
+          <ion-buttons>
+            <ion-button color="primary">
+              <ion-icon name="business-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-label>Business</ion-label>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="main_div">
+        <div class="sub_div">
+          <ion-buttons>
+            <ion-button color="primary">
+              <ion-icon name="beer"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-label>Party</ion-label>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="main_div">
+        <div class="sub_div">
+          <ion-buttons>
+            <ion-button color="primary">
+              <ion-icon name="camera"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-label>Photos</ion-label>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="contentbtn" (click)="onSubmit()" expand="block">
+      Submit
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,230 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.main-content {
+
+  ion-label {
+    font-size: 16px;
+    font-family: "medium";
+  }
+
+  .segment {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+
+    .seg_name {
+      text-align: center;
+      width: 30%;
+      font-family: "bold";
+      font-size: 14px;
+      background-color: white;
+      color: var(--ion-color-medium);
+      padding: 10px 0px;
+      border-bottom: 2px solid var(--ion-color-light);
+
+    }
+
+    .active {
+      border-bottom: 2px solid var(--ion-color-primary);
+      color: var(--ion-color-primary);
+    }
+  }
+
+  .culture_div {
+    .post_div {
+      padding: 8px 16px;
+
+      .col_div {
+        .img {
+          width: 100%;
+          border-radius: 2px;
+          height: 220px;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+
+          .icon {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+
+            ion-label {
+              font-size: 12px;
+              background: rgba(0, 0, 0, 0.3);
+              padding: 4px;
+              border-radius: 5px;
+              color: white;
+            }
+          }
+        }
+
+        .detail {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding: 10px 0px;
+
+          .top_div {
+            display: flex;
+            justify-content: space-between;
+
+            ion-label {
+              font-family: 'bold';
+              font-size: 14px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+
+            ion-icon {
+              font-size: 14px;
+            }
+          }
+
+          .small_txt {
+            font-size: 12px;
+            color: var(--ion-color-medium);
+            padding-top: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .country_div {
+    .post_div {
+      padding: 8px 16px;
+
+      .col_div {
+        .img {
+          width: 100%;
+          border-radius: 2px;
+          height: 170px;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+
+          .icon {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+
+            ion-label {
+              font-size: 12px;
+              background: rgba(0, 0, 0, 0.3);
+              padding: 4px;
+              border-radius: 5px;
+              color: white;
+            }
+          }
+        }
+
+        .top_div {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 0px;
+
+          ion-label {
+            font-family: 'bold';
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+
+          ion-icon {
+            font-size: 14px;
+          }
+
+          .right_btn {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+
+  .category_div {
+
+    .title_div {
+      padding: 16px 16px 6px 16px;
+
+    }
+
+
+    .slide_profile {
+      display: flex;
+      flex-direction: row;
+      margin-left: 4px;
+      overflow: scroll;
+      padding-top: 10px;
+
+      .c_card {
+        width: 100px;
+      }
+
+      .p_card {
+        width: 150px;
+      }
+
+      .m_card {
+        width: 180px;
+      }
+
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        align-items: center;
+
+        .img {
+          width: 100%;
+          height: 100px;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 2px;
+          position: relative;
+        }
+
+        .title {
+          font-size: 14px;
+          font-family: "medium";
+          padding: 4px 0px;
+        }
+
+      }
+    }
+  }
+
+
+}

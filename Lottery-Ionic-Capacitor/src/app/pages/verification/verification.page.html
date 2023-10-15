@@ -1,0 +1,46 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Verification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+
+    <div class="center_div">
+      <div class="upper_div">
+        <ion-label class="title">Verification</ion-label>
+        <ion-label class="text">Enter your OTP code</ion-label>
+      </div>
+
+      <div class="verify">
+        <ion-input type="text" maxLength="1" size="1" min="0" max="9"></ion-input>
+        <ion-input type="text" maxLength="1" size="1" min="0" max="9"></ion-input>
+        <ion-input type="text" maxLength="1" size="1" min="0" max="9"></ion-input>
+        <ion-input type="text" maxLength="1" size="1" min="0" max="9"></ion-input>
+      </div>
+
+      <ion-button (click)="goToTerms()" shape="" expand="block" class="submit_btn">
+        Continue
+      </ion-button>
+
+      <ion-button expand="block" color="medium" fill="clear" shape="round">
+        Send OTP again
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,43 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="onNotification()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Ordering Help</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="center">
+    <div class="bg_image deal_img" [style.backgroundImage]="'url(assets/images/contact.jpeg)'">
+    </div>
+
+    <ion-label class="bold">Contact Us</ion-label>
+    <ion-label class="gray">If you face any trouble for food ordering feel free to contact us.</ion-label>
+
+    <div class="contact">
+      <ion-icon name="call" color="primary" class="icon"></ion-icon>
+      <ion-label>+91 9876543210</ion-label>
+    </div>
+
+    <div class="contact">
+      <ion-icon name="mail" color="primary" class="icon"></ion-icon>
+      <ion-label>help@foodies.com</ion-label>
+    </div>
+  </div>
+</ion-content>

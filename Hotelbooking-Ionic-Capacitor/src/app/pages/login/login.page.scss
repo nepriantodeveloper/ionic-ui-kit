@@ -1,0 +1,167 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Hotel Boooking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+
+
+  .upper_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo_img {
+      height: 80px;
+      width: 80px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .center_div {
+    width: 100%;
+
+    .head_text {
+      margin-bottom: 40px;
+
+      .title {
+        font-size: 24px;
+        font-family: 'bold';
+        border-left: 6px solid var(--ion-color-primary);
+        color: var(--ion-color-primary);
+        padding: 0px 24px;
+        position: relative;
+      }
+    }
+
+
+    .input {
+      background-color: var(--ion-color-light);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      margin: 16px 0px;
+
+      .icon {
+        color: var(--ion-color-primary);
+        padding: 0px 10px;
+      }
+
+      ion-input {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .lower_div {
+    .line {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      bottom: 1px;
+      margin: 2rem 1rem;
+
+      .border {
+        width: 100%;
+        border-bottom: 1px solid var(--ion-color-light);
+      }
+
+      ion-label {
+        position: absolute;
+        bottom: -5px;
+        background-color: white;
+        color: gray;
+        font-size: 16px;
+        padding: 0px 15px;
+      }
+    }
+
+    .login-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      ion-buttons {
+        padding: 5px;
+        margin: 10px;
+        font-size: 20px;
+        color: var(--ion-color-primary);
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px var(--box-shadow-color);
+        --box-shadow-color: #d7d8da;
+      }
+    }
+
+    .submit-btn {
+      margin: 30px 0px;
+      color: white;
+    }
+  }
+}
+
+.main_content_div {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+
+  .logo-head {
+    background-color: var(--ion-color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .logo-img {
+    background-color: var(--ion-color-primary);
+    width: 25%;
+    color: #d84e55;
+  }
+
+  .logo-title {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  h2 {
+    border-left: 6px solid var(--ion-color-primary);
+    color: var(--ion-color-primary);
+    padding: 0px 45px;
+    font-size: 32px;
+    line-height: 45px;
+    height: 45px;
+    text-transform: uppercase;
+    margin: 35px 0px 10px 0px;
+    position: relative;
+  }
+
+  .form {
+    margin: 0px 40px 0px 40px;
+  }
+
+  .btn {
+    margin: 45px 15px 25px 15px;
+    padding: 0px 40px 0px 40px;
+  }
+
+  .bottom_lbl {
+    --color: var(--ion-color-main);
+  }
+}

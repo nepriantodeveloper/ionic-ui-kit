@@ -1,0 +1,80 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Wallet UI App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="ion-padding-start">
+      <ion-avatar class="logo">
+        <img src="assets/img/logo.png" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="start" name="notifications-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Paynet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main-content">
+    <div class="searchbox">
+      <ion-icon class="icon" name="search"></ion-icon>
+      <ion-input type="text" placeholder="What you are looking for?" class="ion-no-padding"></ion-input>
+      <ion-icon class="icon" name="filter-outline"></ion-icon>
+    </div>
+
+    <div class="badge">
+      <ion-row>
+        <ion-col size="3" *ngFor="let item of [0,1,2,3,4,5,6,7]" (click)="goToTransfer()">
+          <ion-icon name="logo-paypal" color="primary"></ion-icon>
+          <ion-label>Scan</ion-label>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title">People</ion-label>
+    </div>
+
+    <div class="badge">
+      <ion-row>
+        <ion-col size="3" *ngFor="let item of [0,1,2,3,4,5,6,7]" (click)="goToAddCard()">
+          <img src="assets/img/logo.png" />
+          <ion-label>Pay bills</ion-label>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title">Contact</ion-label>
+    </div>
+
+    <div class="list_card">
+      <div class="col_div" *ngFor="let item of [1,2,3,4,5,6,7,8,9]">
+        <div class="item_card">
+          <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+          </div>
+          <div class="details">
+            <div class="flex_row">
+              <div class="col">
+                <ion-label class="title">Market Bill</ion-label>
+                <ion-label class="text">July 26, 2025</ion-label>
+              </div>
+              <ion-button expand="block" fill="outline" size="small" shape="">
+                <ion-icon name="send-outline" color="primary"></ion-icon>
+              </ion-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,80 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Driver App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-row class="profile bottom_border">
+    <ion-col size="3">
+      <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/p1.jpg)'"></div>
+    </ion-col>
+    <ion-col size="6">
+      <ion-label class="bold_text">Ester Berry</ion-label>
+      <div class="label">
+        <ion-label class="bg_color">ApplePay</ion-label>
+        <ion-label class="bg_color">Discount</ion-label>
+      </div>
+    </ion-col>
+    <ion-col size="3">
+      <ion-label class="price">$25.00</ion-label>
+      <ion-label class="distance">2.3KM</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <div class="info bottom_border">
+    <ion-label class="grey">PICK UP</ion-label>
+    <ion-label class="simple">7890 Swift village</ion-label>
+  </div>
+
+  <div class="info bottom_border">
+    <ion-label class="grey">DROP OFF</ion-label>
+    <ion-label class="simple">105 William St, Chicago, US</ion-label>
+  </div>
+
+  <div class="info bottom_border">
+    <ion-label class="grey">NOTED</ion-label>
+    <ion-label class="simple">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel architecto, aliquid
+      temporibus possimus nulla </ion-label>
+  </div>
+
+  <div class="info bottom_border">
+    <ion-label class="grey">TRIP FARE</ion-label>
+    <div class="flex">
+      <ion-label class="bold">Apple Pay</ion-label>
+      <ion-label class="bold">$15.00</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="bold">Discoumt</ion-label>
+      <ion-label class="bold">$5.00</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="bold">Paid Amount</ion-label>
+      <ion-label class="bold">$10.00</ion-label>
+    </div>
+  </div>
+
+  <div class="button" (click)="onBack()">
+    <ion-label class="text">CANCEL</ion-label>
+  </div>
+
+  <div class="invite">
+    <ion-label class="text" (click)="onBack()">DROP OFF</ion-label>
+  </div>
+
+
+
+
+</ion-content>

@@ -1,0 +1,59 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+
+  <div class="logo">
+    <div class="bg_img" [style.backgroundImage]="'url(assets/images/logo.jpg)'"></div>
+  </div>
+
+  <ion-label class="h1">SignUp For Free</ion-label>
+
+  <ion-label class="title">Email</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Your Email Address"></ion-input>
+  </ion-item>
+  <ion-label class="title">Password</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Password"></ion-input>
+    <ion-icon slot="end" name="eye" color="medium"></ion-icon>
+  </ion-item>
+
+  <div class="remember">
+    <ion-checkbox color="primary" checked mode="md" slot="start"></ion-checkbox>
+    <ion-label class="h6">Remember Me</ion-label>
+  </div>
+
+  <ion-button (click)="onLogin()" expand="block" shape="round" class="contentbtn">
+    Login
+  </ion-button>
+
+  <div class="btn">
+    <ion-buttons slot="end">
+      <ion-button (click)="onForgot()">
+        Forgot Password?
+      </ion-button>
+    </ion-buttons>
+  </div>
+
+  <div class="socialBtn">
+    <ion-button class="fb_button" (click)="onfacebook()" expand="block" fill="outline" color="dark">
+      <ion-icon slot="start" name="logo-facebook"></ion-icon>
+      Facebook
+    </ion-button>
+    <ion-button class="google_button" (click)="onGoogle()" expand="block" fill="outline" color="dark">
+      <ion-icon slot="start" name="logo-google"></ion-icon>
+      Google
+    </ion-button>
+  </div>
+
+  <div class="signup">
+    <ion-label class="sub_heading">Don't have an account ? <span (click)="singup()">SignUp Now</span></ion-label>
+  </div>
+
+</ion-content>

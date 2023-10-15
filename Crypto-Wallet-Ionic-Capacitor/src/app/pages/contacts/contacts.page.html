@@ -1,0 +1,46 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Contacts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="content">
+    <ion-row *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]">
+      <ion-col size="2">
+        <ion-thumbnail>
+          <img src="assets/images/p1.jpg" />
+        </ion-thumbnail>
+      </ion-col>
+      <ion-col size="10">
+        <div class="ttl1">
+          <ion-label>Dianne Rassell</ion-label>
+        </div>
+        <ion-label class="price">dsf415sdf4sdff45sdf4zx234f1zs654dxf65sd4f</ion-label>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="contentbtn" (click)="onContacts()" expand="block">
+      Add Contacts
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

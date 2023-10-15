@@ -1,0 +1,7 @@
+{
+  "name": "hamo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

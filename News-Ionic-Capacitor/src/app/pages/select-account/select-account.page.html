@@ -1,0 +1,60 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : News App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Do you?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <ion-label class="head_label">Choose the role that best describes you right now, whether you're a news agency or a
+      personal.</ion-label>
+
+    <div class="card">
+      <div class="icon-div">
+        <div class="icon">
+          <ion-icon name="newspaper" color="primary"></ion-icon>
+        </div>
+        <div class="details">
+          <ion-label class="title">News Agency</ion-label>
+          <ion-label class="text">You will need further verification if you are a news agency company.</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon-div">
+        <div class="icon">
+          <ion-icon name="person" color="primary"></ion-icon>
+        </div>
+        <div class="details">
+          <ion-label class="title">Personal</ion-label>
+          <ion-label class="text">Suitable for those of you who use this application to read news (you can still make
+            your own news).</ion-label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" shape="round" (click)="goToLogin()" expand="block">
+      Continue
+    </ion-button>
+  </div>
+</ion-footer>

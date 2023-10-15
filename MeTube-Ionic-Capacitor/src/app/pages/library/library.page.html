@@ -1,0 +1,111 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="ion-padding-start">
+      <ion-avatar class="logo">
+        <img src="assets/img/video.png" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToSearch()">
+        <ion-icon slot="start" name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button (click)="goToNotification()">
+        <ion-icon slot="start" name="notifications-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-avatar class="profile" (click)="goToProfile()">
+        <img src="assets/img/profile.jpg" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-title>Library</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main-content">
+
+    <div class="heading_div">
+      <ion-label class="title">History</ion-label>
+      <ion-label class="btn" (click)="goToHistory()">See All</ion-label>
+    </div>
+
+
+    <div class="scroll_div">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="item_div">
+          <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+            <div class="icon">
+              <ion-label>2:29</ion-label>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="top_div">
+              <div class="col">
+                <ion-label class="title">Lorem ipsum, dolor sit amet contetur adipisicing lorem ipusm </ion-label>
+                <ion-label class="small_txt"> World of Music</ion-label>
+              </div>
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list_div">
+      <div class="link_div" (click)="goToMyVideo()">
+        <div class="icon_div">
+          <ion-icon name="videocam"></ion-icon>
+        </div>
+        <ion-label class="link">Your Videos</ion-label>
+      </div>
+      <div class="link_div" (click)="goToDownload()">
+        <div class="icon_div">
+          <ion-icon name="cloud-download"></ion-icon>
+        </div>
+        <ion-label class="link">Downloads</ion-label>
+      </div>
+    </div>
+
+    <div class="heading_div">
+      <ion-label class="title">Playlist</ion-label>
+      <ion-label class="btn">See All</ion-label>
+    </div>
+
+    <div class="list_div">
+      <div class="link_div">
+        <div class="icon_div">
+          <ion-icon name="play-circle"></ion-icon>
+        </div>
+        <ion-label class="link">New Playlist</ion-label>
+      </div>
+      <div class="link_div" (click)="goToWatchLater()">
+        <div class="icon_div">
+          <ion-icon name="stopwatch"></ion-icon>
+        </div>
+        <ion-label class="link">Watch Later</ion-label>
+      </div>
+      <div class="link_div">
+        <div class="icon_div">
+          <ion-icon name="heart-circle"></ion-icon>
+        </div>
+        <ion-label class="link">Liked Videos</ion-label>
+      </div>
+      <div class="link_div" (click)="goToSong()">
+        <div class="icon_div">
+          <ion-icon name="musical-note"></ion-icon>
+        </div>
+        <ion-label class="link">Songs</ion-label>
+      </div>
+    </div>
+
+
+  </div>
+</ion-content>

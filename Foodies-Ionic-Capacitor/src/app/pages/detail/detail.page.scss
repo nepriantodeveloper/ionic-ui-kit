@@ -1,0 +1,123 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  .res_name {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      .bold {
+        font-size: 20px;
+        font-family: 'semi-bold';
+      }
+
+      .gray {
+        color: gray;
+      }
+    }
+
+    .right {
+      .icon {
+        font-size: 25px;
+        color: grey;
+      }
+    }
+  }
+
+  .about_res {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .about_icon {
+        padding: 8px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+      }
+
+      .name {
+        font-size: 13px;
+        color: gray;
+        text-align: center;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .switch {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    .center {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+
+      ion-toggle {
+        zoom: 0.6;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .head_text {
+    font-size: 18px;
+    font-family: 'semi-bold';
+    margin-bottom: 10px;
+  }
+
+  .space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .bold_text {
+      font-size: 18px;
+      font-family: 'semi-bold';
+    }
+  }
+
+
+}
+
+ion-footer {
+  ion-toolbar {
+    --background: white;
+    padding: 10px;
+    --border-width: 0px;
+
+    .brows {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .small_img {
+        height: 30px;
+        width: 30px;
+        color: var(--ion-color-primary);
+      }
+
+      .color {
+        margin-left: 10px;
+        color: var(--ion-color-primary);
+        font-size: 16px;
+      }
+    }
+  }
+}

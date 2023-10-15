@@ -1,0 +1,40 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Handy Service App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Invite Friends</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="list_card" *ngFor="let item of [1,2,3,4,5,6,7]">
+      <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+      </div>
+
+      <div class="details">
+        <div class="flex_row">
+          <div class="col">
+            <ion-label class="title">Andrew Russle</ion-label>
+            <ion-label class="text">Lorem ipsum dolor sit, amet</ion-label>
+          </div>
+          <ion-button expand="block" fill="outline" size="small" shape="round">
+            Invite
+          </ion-button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

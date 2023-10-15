@@ -1,0 +1,100 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main_content_div {
+  padding: 16px;
+
+  .title_lbl {
+    font-size: 24px;
+    font-family: "semi-bold";
+    margin-bottom: 16px;
+  }
+
+  .star_flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    div {
+      width: 24px;
+      min-width: 24px;
+      height: 24px;
+      background: var(--ion-color-primary);
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ion-icon {
+        color: white;
+        font-size: 15px;
+      }
+    }
+
+    ion-label {
+      margin-left: 20px;
+    }
+  }
+
+  .simp_lbl {
+    margin-bottom: 8px;
+    font-family: "medium";
+    font-size: 17px;
+  }
+
+  .flex_div {
+    margin-bottom: 20px;
+    ion-row {
+      ion-col {
+        border: 1px solid lightgrey;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ion-icon {
+          font-size: 20px;
+        }
+      }
+      .active {
+        background: black;
+        border-color: black;
+
+        ion-label {
+          color: white;
+        }
+
+        ion-icon {
+          color: white;
+        }
+      }
+    }
+  }
+
+  ion-select,
+  ion-input {
+    height: 50px;
+    border: 1px solid lightgrey;
+    margin-bottom: 20px;
+    font-family: "regular";
+    --padding-start: 16px;
+  }
+  ion-button {
+    --border-radius: 5px;
+    font-family: "medium";
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 0px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .ans_lbl {
+    margin-bottom: 20px;
+  }
+}

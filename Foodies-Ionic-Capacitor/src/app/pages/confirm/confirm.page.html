@@ -1,0 +1,31 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="center">
+    <div class="bg_image check_img" [style.backgroundImage]="'url(assets/images/check.png)'"></div>
+    <ion-label class="color">Congratulations !</ion-label>
+    <ion-label class="gray">Your order is confirmed you can track now via track your order button</ion-label>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-label class="btn" (click)="onTrack()">Track Your Order</ion-label>
+  </ion-toolbar>
+</ion-footer>

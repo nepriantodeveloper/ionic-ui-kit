@@ -1,0 +1,259 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    .searchbtn {
+      margin-right: 15px;
+
+      ion-button {
+        border-radius: 100px;
+        height: 35px;
+        width: 35px;
+        background: #BDC4FF;
+
+        ion-icon {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+
+  ion-thumbnail {
+    height: 100px;
+    width: 100px;
+    --border-radius: 50%;
+    padding: 5px;
+  }
+
+  .text {
+    width: 100%;
+    margin: 20px 0px;
+
+    ion-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--ion-color-medium);
+      border-bottom: 1px solid var(--ion-color-medium);
+
+      .line {
+        border-left: 1px solid var(--ion-color-medium);
+        border-right: 1px solid var(--ion-color-medium);
+      }
+
+      ion-col {
+        .h6 {
+          font-size: 20px;
+          margin: 2px;
+          color: var(--ion-color-dark);
+        }
+
+        ion-label {
+          font-size: 13px;
+          color: var(--ion-color-medium);
+        }
+      }
+    }
+  }
+}
+
+.social_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--ion-color-medium);
+  margin-bottom: 10px;
+
+  ion-button {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.segments {
+  ion-segment {
+    background: transparent;
+
+    ion-segment-button {
+      padding: 5px;
+      --border-radius: 100px;
+      --indicator-color: var(--ion-color-primary) !important;
+      --indicator-box-shadow: transparent !important;
+      --color-checked: white;
+      margin: 5px;
+      border: 1px solid var(--ion-color-primary);
+    }
+  }
+}
+
+.ittl1 {
+  margin-top: 15px;
+}
+
+.ittl2 {
+  margin-top: 15px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.content3 {
+  padding: 10px 0px;
+  margin-right: 10px;
+
+  .concept_div {
+    width: 100%;
+    margin: 10px 5px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+    ion-row {
+      ion-col {
+        padding: 0px;
+
+        .imgs {
+          // border-radius: 10px;
+          height: 115px;
+          width: 200px;
+
+          .back_image {
+            height: 120px;
+            width: 120px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-position: top;
+            display: flex;
+            justify-content: flex-end;
+
+            ion-chip {
+              height: 20px;
+              font-size: 10px;
+            }
+          }
+        }
+
+        .containt {
+          padding: 0px 10px;
+
+          .name {
+            color: black;
+            margin: 5px 0px;
+            font-size: 14px;
+            font-family: 'bold';
+          }
+
+          ion-chip {
+            height: 20px;
+            font-size: 10px;
+            margin-bottom: 10px;
+          }
+
+          .concept {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            ion-avatar {
+              height: 20px;
+              width: 20px;
+              margin: 0px 5px 0px 0px;
+            }
+
+            ion-label {
+              font-size: 10px;
+              color: var(--ion-color-medium);
+            }
+          }
+
+          .address {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .icn {
+              color: var(--ion-color-primary);
+            }
+
+            .kind {
+              color: black;
+              font-size: 12px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin: 10px 0px;
+
+              ion-label {
+                width: max-content;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+
+              .icn {
+                color: var(--ion-color-primary);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+ion-item {
+  --padding-start: 10px;
+  border-radius: 15px;
+  margin: 10px 0px;
+  border: 1px solid var(--ion-color-medium);
+
+  ion-thumbnail {
+    --border-radius: 50%;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .text {
+    margin-left: 5px;
+
+    .h6 {
+      margin: 2px 0px;
+      font-size: 15px;
+      color: var(--ion-color-dark);
+      font-family: 'bold';
+    }
+
+    ion-label {
+      font-size: 10px;
+      color: var(--ion-color-medium);
+    }
+
+    .review {
+      font-size: 13px;
+      color: var(--ion-color-dark);
+    }
+  }
+
+  .add {
+    width: 60px;
+  }
+
+}

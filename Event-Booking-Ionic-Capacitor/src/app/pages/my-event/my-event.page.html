@@ -1,0 +1,165 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-title>Event List</ion-title>
+    <ion-buttons class="searchbtn" slot="end">
+      <ion-button (click)="onSearch()">
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="segments">
+    <ion-segment value="1" [(ngModel)]="current" mode="ios">
+      <ion-segment-button value="1">
+        <ion-label>Upcoming</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="2">
+        <ion-label>Past Event</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="3">
+        <ion-label>My Event</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div class="content3" *ngIf="current == 1">
+    <div class="main_content" *ngFor="let item of userList">
+      <div class="concept_div">
+        <ion-row (click)="onDetail()">
+          <ion-col size="5">
+            <div class="imgs">
+              <div class="back_image" [style.backgroundImage]="'url(assets/images/4.jpg )'">
+                <ion-chip color="light">27 Dec</ion-chip>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col size="7">
+            <div class="containt">
+              <div class="name">{{item.name}}</div>
+              <ion-chip [outline]="true" color="primary">Music</ion-chip>
+              <div class="concept">
+                <ion-avatar>
+                  <img src="assets/images/1.jpg">
+                </ion-avatar>
+                <ion-label>20K - Going</ion-label>
+              </div>
+              <div class="address">
+                <div class="kind">
+                  <ion-icon class="icn" slot="start" name="location"></ion-icon>
+                  <ion-label>{{item.address}}</ion-label>
+                </div>
+                <ion-icon class="icn" slot="end" name="bookmark-outline"></ion-icon>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-button (click)="onView()" expand="block" shape="round" class="contentbtn">
+        View Ticket
+      </ion-button>
+    </div>
+  </div>
+
+  <div class="content3" *ngIf="current == 2">
+    <div class="main_content" *ngFor="let item of userList">
+      <div class="concept_div">
+        <ion-row (click)="onDetail()">
+          <ion-col size="5">
+            <div class="imgs">
+              <div class="back_image" [style.backgroundImage]="'url(assets/images/4.jpg )'">
+                <ion-chip color="light">27 Dec</ion-chip>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col size="7">
+            <div class="containt">
+              <div class="name">{{item.name}}</div>
+              <ion-chip [outline]="true" color="primary">Music</ion-chip>
+              <div class="concept">
+                <ion-avatar>
+                  <img src="assets/images/1.jpg">
+                </ion-avatar>
+                <ion-label>20K - Going</ion-label>
+              </div>
+              <div class="address">
+                <div class="kind">
+                  <ion-icon class="icn" slot="start" name="location"></ion-icon>
+                  <ion-label>{{item.address}}</ion-label>
+                </div>
+                <ion-icon class="icn" slot="end" name="bookmark-outline"></ion-icon>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="btn">
+        <ion-button (click)="onDocument()" expand="block" shape="round" class="contentbtn">
+          See Documentation
+        </ion-button>
+        <ion-button (click)="onReview()" fill="outline" shape="round" class="reviewbtn">
+          See Reviews
+        </ion-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content3" *ngIf="current == 3">
+    <div class="main_content" *ngFor="let item of userList">
+      <div class="concept_div">
+        <ion-row (click)="onDetail()">
+          <ion-col size="5">
+            <div class="imgs">
+              <div class="back_image" [style.backgroundImage]="'url(assets/images/4.jpg )'">
+                <ion-chip color="light">27 Dec</ion-chip>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col size="7">
+            <div class="containt">
+              <div class="name">{{item.name}}</div>
+              <ion-chip [outline]="true" color="primary">Music</ion-chip>
+              <div class="concept">
+                <ion-avatar>
+                  <img src="assets/images/1.jpg">
+                </ion-avatar>
+                <ion-label>20K - Going</ion-label>
+              </div>
+              <div class="address">
+                <div class="kind">
+                  <ion-icon class="icn" slot="start" name="location"></ion-icon>
+                  <ion-label>{{item.address}}</ion-label>
+                </div>
+                <ion-icon class="icn" slot="end" name="bookmark-outline"></ion-icon>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="btn">
+        <ion-button (click)="onAddDocument()" expand="block" shape="round" class="contentbtn">
+          Add Documentation
+        </ion-button>
+        <ion-button (click)="onReview()" fill="outline" shape="round" class="reviewbtn">
+          Reviews
+        </ion-button>
+        <ion-buttons class="scanbtn" slot="end">
+          <ion-button (click)="onSearch()">
+            <ion-icon name="qr-code-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,101 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Filter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="border">
+    <ion-label class="head">Category</ion-label>
+    <div class="flex bottom">
+      <ion-label class="simpl">Italian</ion-label>
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="border">
+    <ion-label class="head">Sort by</ion-label>
+    <div class="flex bottom">
+      <ion-label class="simpl">Popularity</ion-label>
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="border">
+    <ion-label class="head">Rating</ion-label>
+    <div class="flex">
+      <div class="star">
+        <ion-icon name="star" color="primary"></ion-icon>
+        <ion-icon name="star" color="primary"></ion-icon>
+        <ion-icon name="star" color="primary"></ion-icon>
+        <ion-icon name="star" color="primary"></ion-icon>
+        <ion-icon name="star" color="medium"></ion-icon>
+      </div>
+      <ion-label class="simpl">4 star</ion-label>
+    </div>
+  </div>
+
+  <div class="border">
+    <ion-label class="head">Offer</ion-label>
+    <div class="line">
+      <ion-label class="offer red">50% Off</ion-label>
+      <ion-label class="offer">40% Off</ion-label>
+      <ion-label class="offer">30% Off</ion-label>
+      <ion-label class="offer">20% Off</ion-label>
+    </div>
+  </div>
+
+  <div class="border">
+    <div class="check">
+      <ion-label>Fast Delivery</ion-label>
+      <ion-icon name="checkbox-outline" color="primary"></ion-icon>
+    </div>
+    <div class="check">
+      <ion-label>Pure Veg</ion-label>
+      <ion-icon name="checkbox-outline" color="primary"></ion-icon>
+    </div>
+    <div class="check">
+      <ion-label>Previous Order</ion-label>
+      <ion-icon name="checkbox-outline" color="primary"></ion-icon>
+    </div>
+    <div class="check">
+      <ion-label class="simpl">Pro Offer</ion-label>
+      <ion-icon name="checkbox-outline" color="medium"></ion-icon>
+    </div>
+  </div>
+
+  <div class="border">
+    <ion-label class="head">Price</ion-label>
+    <ion-range [dualKnobs]="true" [value]="{ lower: 20, upper: 80 }"></ion-range>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="6">
+        <div class="center">
+          <ion-label class="reset">Reset</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="center">
+          <ion-label class="apply">Apply</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

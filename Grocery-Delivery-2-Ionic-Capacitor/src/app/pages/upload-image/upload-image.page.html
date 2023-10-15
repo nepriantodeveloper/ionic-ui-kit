@@ -1,0 +1,41 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Upload your photo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label>This data will be displayed in your account profile for security</ion-label>
+
+  <div class="bg_white">
+    <ion-icon slot="start" name="camera" class="icon" color="primary"></ion-icon>
+    <ion-label class="label">Tack Photo</ion-label>
+  </div>
+
+  <div class="bg_white">
+    <ion-icon slot="start" name="folder" class="icon" color="primary"></ion-icon>
+    <ion-label class="label">From Gallery</ion-label>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="block" (click)="onSetLocation()">
+      Next
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,70 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Rating and reviews</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="upper_div">
+    <ion-row>
+      <ion-col size="4">
+        <div class="star">
+          <ion-icon name="star" color="primary"></ion-icon>
+          <ion-label class="total">4.4</ion-label>
+        </div>
+        <ion-label class="number">56 reviews</ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <div class="slide">
+          <ion-label class="value">5</ion-label>
+          <ion-progress-bar value="0.9"></ion-progress-bar>
+        </div>
+        <div class="slide">
+          <ion-label class="value">4</ion-label>
+          <ion-progress-bar value="0.8"></ion-progress-bar>
+        </div>
+        <div class="slide">
+          <ion-label class="value">3</ion-label>
+          <ion-progress-bar value="0.7"></ion-progress-bar>
+        </div>
+        <div class="slide">
+          <ion-label class="value">2</ion-label>
+          <ion-progress-bar value="0.3"></ion-progress-bar>
+        </div>
+        <div class="slide">
+          <ion-label class="value">1</ion-label>
+          <ion-progress-bar value="0.2"></ion-progress-bar>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="list" *ngFor="let item of [1,2,3,4,5,6,7,8,9]">
+    <div class="bottom_div">
+      <div class="bg_image profile_image" [style.backgroundImage]="'url(assets/images/p2.jpg)'"></div>
+      <div class="left">
+        <ion-label class="name">Nancy Smile</ion-label>
+        <div class="flex">
+          <ion-icon name="star" color="primary"></ion-icon>
+          <ion-label class="gray">4.5</ion-label>
+          <ion-label class="time">(1 week ago)</ion-label>
+        </div>
+      </div>
+    </div>
+    <ion-label class="review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi dolor modi
+    </ion-label>
+  </div>
+</ion-content>

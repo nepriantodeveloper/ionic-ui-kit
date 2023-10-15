@@ -1,0 +1,307 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+ion-header {
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.main-content {
+
+  .title_div {
+    margin: 6px 16px;
+    margin-top: 20px;
+  }
+
+  .slide_tikit {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding-top: 10px;
+
+    .c_card {
+      width: 140px;
+    }
+
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+      align-items: center;
+      border: 1px solid var(--ion-color-light);
+      border-radius: 2px;
+      padding: 12px;
+
+      .img {
+        width: 60px;
+        height: 60px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      .title {
+        font-size: 12px;
+        font-family: "bold";
+        padding: 4px 0px;
+      }
+
+      .text {
+        font-size: 12px;
+        font-family: "medium";
+        padding: 4px 0px;
+      }
+
+      .small_text {
+        font-size: 10px;
+      }
+
+      .main_btn {
+        width: 50px;
+        height: 20px;
+        font-size: 10px;
+      }
+    }
+  }
+
+
+  .slide_draw {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding-top: 10px;
+    margin-left: 8px;
+
+    .c_card {
+      width: 300px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 8px;
+      border: 1px solid var(--ion-color-light);
+      border-radius: 2px;
+      padding: 12px;
+      background-color: var(--ion-color-primary-tint);
+
+      .top_row {
+        display: flex;
+        margin-bottom: 30px;
+
+        .img {
+          width: 50px;
+          height: 50px;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+          margin-right: 10px;
+        }
+
+        .details {
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            font-size: 12px;
+            font-family: "bold";
+          }
+
+          .text {
+            font-size: 12px;
+            color: var(--ion-color-medium);
+          }
+
+          .date {
+            font-size: 12px;
+            font-family: "medium";
+          }
+        }
+      }
+
+      .bottom_row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .left_col {
+          display: flex;
+          flex-direction: column;
+
+          .text {
+            font-size: 12px;
+            padding: 4px 0px;
+            color: var(--ion-color-medium);
+          }
+        }
+
+        .l_number {
+          display: flex;
+
+          .tag_number {
+            color: white;
+            background-color: var(--ion-color-primary);
+            border-radius: 50%;
+            margin-right: 6px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+          }
+        }
+
+        .right_col {
+          display: flex;
+          flex-direction: column;
+
+          .text {
+            font-size: 12px;
+            padding: 4px 0px;
+            color: var(--ion-color-medium);
+          }
+
+          .title {
+            font-size: 14px;
+            font-family: "bold";
+          }
+        }
+      }
+
+      .main_btn {
+        width: 50px;
+        height: 20px;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .slide_profile {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding-top: 10px;
+
+    // .c_card{
+    //   width: 60px;
+    // }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+      align-items: center;
+
+
+      .img {
+        width: 60px;
+        height: 60px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 2px;
+        position: relative;
+        border-radius: 50%;
+      }
+
+      .title {
+        font-size: 12px;
+        font-family: "medium";
+        padding: 4px 0px;
+      }
+
+      .text {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .slide_number {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding-top: 10px;
+    margin-left: 8px;
+
+    .c_card {
+      width: 300px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 8px;
+      border: 1px solid var(--ion-color-light);
+      border-radius: 2px;
+      padding: 12px;
+
+      .bottom_row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .left_col {
+          display: flex;
+          flex-direction: column;
+
+          .text {
+            font-size: 12px;
+            padding: 4px 0px;
+            color: var(--ion-color-medium);
+          }
+        }
+
+        .l_number {
+          display: flex;
+
+          .tag_number {
+            color: white;
+            background-color: var(--ion-color-primary);
+            border-radius: 50%;
+            margin-right: 6px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+          }
+        }
+
+        .right_col {
+          display: flex;
+          flex-direction: column;
+
+          .text {
+            font-size: 12px;
+            padding: 4px 0px;
+            color: var(--ion-color-medium);
+          }
+
+          .title {
+            font-size: 14px;
+            font-family: "bold";
+          }
+        }
+      }
+    }
+  }
+}

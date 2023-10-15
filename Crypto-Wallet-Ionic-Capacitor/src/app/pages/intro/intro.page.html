@@ -1,0 +1,27 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-content>
+
+  <div class="logo">
+    <div class="bg_img" [style.backgroundImage]="'url(assets/images/logo.jpg)'"></div>
+    <ion-label class="h1">Meta Coin</ion-label>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="contentbtn2" (click)="onImport()" fill="outline" expand="block">
+      Import Using Seed Phrase
+    </ion-button>
+    <ion-button class="contentbtn" (click)="onWallet()" expand="block">
+      Create a New Wallet
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,65 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Medical App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Prescription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="address">
+    <div class="left">
+      <ion-icon name="home" color="medium" class="home"></ion-icon>
+      <div class="text">
+        <ion-label class="name">Jaydeep Hirani</ion-label>
+        <ion-label class="grey">Smile street, palitana</ion-label>
+      </div>
+    </div>
+    <ion-icon name="pencil-outline" class="edit"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label class="head">Contact Number</ion-label>
+  </div>
+
+  <div class="address">
+    <div class="left">
+      <ion-icon name="call" color="medium" class="home"></ion-icon>
+      <div class="text">
+        <ion-label class="name">+91 9876543211</ion-label>
+      </div>
+    </div>
+    <ion-icon name="pencil-outline" class="edit"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label class="head">Upload Prescription</ion-label>
+  </div>
+
+  <div class="address">
+    <div class="left">
+      <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/p1.jpg)'"></div>
+    </div>
+    <ion-icon name="camera" class="edit"></ion-icon>
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="button" (click)="onBack()">
+      <ion-label class="text">Confirm</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

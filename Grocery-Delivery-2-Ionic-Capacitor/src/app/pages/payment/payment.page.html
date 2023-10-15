@@ -1,0 +1,62 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Payment Method</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="bg_white">
+    <div class="bg_image card_image" [style.backgroundImage]="'url(assets/images/paypal.png)'">
+    </div>
+    <ion-label>+9171******00</ion-label>
+  </div>
+
+  <div class="bg_white">
+    <div class="bg_image card_image" [style.backgroundImage]="'url(assets/images/visa.png)'">
+    </div>
+    <ion-label>+9181******00</ion-label>
+  </div>
+
+  <div class="bg_white">
+    <div class="bg_image card_image" [style.backgroundImage]="'url(assets/images/paypal.png)'">
+    </div>
+    <ion-label>+9191******00</ion-label>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="flex">
+      <ion-label class="text">Subtotal</ion-label>
+      <ion-label class="number">$32</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="text">Delivery Charge</ion-label>
+      <ion-label class="number">$5</ion-label>
+    </div>
+    <div class="flex">
+      <ion-label class="text">Discount</ion-label>
+      <ion-label class="number">$10</ion-label>
+    </div>
+    <div class="flex total">
+      <ion-label class="text">Total</ion-label>
+      <ion-label class="number">$27</ion-label>
+    </div>
+    <ion-button expand="block" (click)="onOrder()" color="light">
+      Order Now
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,56 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content>
+
+  <div class="main_content_div" *ngIf="status == 'success'">
+    <div class="round_box outer_3 success_3">
+      <div class="round_box outer_2 success_2">
+        <div class="round_box outer_1 success_1">
+          <img src="assets/imgs/party.png">
+        </div>
+      </div>
+    </div>
+
+    <ion-label class="bold_lbl">Payment Successful</ion-label>
+    <ion-label class="small_lbl">
+      Your payment is successful, your order will arrive to your house
+      immediately.
+    </ion-label>
+  </div>
+
+  <div class="main_content_div" *ngIf="status == 'failed'">
+
+    <div class="round_box outer_3 failed_3">
+      <div class="round_box outer_2 failed_2">
+        <div class="round_box outer_1 failed_1">
+          <img src="assets/imgs/sad.png">
+        </div>
+      </div>
+    </div>
+
+    <ion-label class="bold_lbl">Payment Failed</ion-label>
+    <ion-label class="small_lbl">
+      Your payment is failed. Please check your connection or your payment method.
+    </ion-label>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <div class="footer_div" *ngIf="status == 'success'" (click)="goToTabs()">
+    <ion-button expand="block" class="block_btn">
+      Back to Home
+    </ion-button>
+  </div>
+  <div class="footer_div" *ngIf="status == 'failed'">
+    <ion-button expand="block" class="block_btn">
+      Retry
+    </ion-button>
+  </div>
+</ion-footer>

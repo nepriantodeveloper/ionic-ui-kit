@@ -1,0 +1,99 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Driver App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+ion-content {
+
+  .bg_color {
+    height: 30vh;
+    width: 100%;
+    background: var(--ion-color-primary);
+    position: relative;
+  }
+
+  .head_text {
+    font-size: 30px;
+    font-family: 'semi-bold';
+  }
+
+  .flag_img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .login {
+    margin-top: 30px;
+  }
+
+  .bg_white {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 15px;
+    position: absolute;
+    top: 100px;
+  }
+
+  ion-item {
+    border-radius: 10px;
+    margin-bottom: 24px;
+    border: 1px solid gray;
+    height: 48px;
+
+    ion-input {
+      font-family: "regular";
+      height: 48px;
+    }
+
+    ion-icon {
+      font-size: 15px;
+    }
+  }
+
+  .button {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 12px 0;
+    margin-top: 30px;
+
+    .text {
+      color: white;
+      font-family: 'bold';
+    }
+  }
+}
+
+ion-footer {
+  --background: white;
+
+  ion-toolbar {
+    --background: white;
+    --border-width: 0px;
+    padding: 10px;
+    align-items: center;
+
+    ion-icon {
+      color: white;
+      font-size: 25px;
+    }
+
+    .last_lbl {
+      text-align: center;
+      font-size: 16px;
+      color: #c2c2cb;
+
+      span {
+        color: var(--ion-color-primary);
+        font-family: "bold";
+      }
+    }
+  }
+}

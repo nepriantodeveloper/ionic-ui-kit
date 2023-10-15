@@ -1,0 +1,62 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="onNotification()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Address Book</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="border">
+    <ion-label class="bold">Home Address</ion-label>
+    <ion-label class="gray">1234 Smile Street,</ion-label>
+    <ion-label class="gray">Palitana,</ion-label>
+    <ion-label class="gray">Gujarat,</ion-label>
+    <ion-label class="gray">364270</ion-label>
+    <div class="space">
+      <ion-label class="gray">9876543210</ion-label>
+      <ion-icon name="pencil-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="border">
+    <ion-label class="bold">Office Address</ion-label>
+    <ion-label class="gray">1234 Smile Street,</ion-label>
+    <ion-label class="gray">Palitana,</ion-label>
+    <ion-label class="gray">Gujarat,</ion-label>
+    <ion-label class="gray">364270</ion-label>
+    <div class="space">
+      <ion-label class="gray">9876543210</ion-label>
+      <ion-icon name="pencil-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="border">
+    <div class="center">
+      <ion-label>Office Address</ion-label>
+      <ion-label>Home Address</ion-label>
+      <ion-label>Other</ion-label>
+    </div>
+
+    <div class="add">
+      <ion-icon name="add" class="add_icon"></ion-icon>
+      <ion-label>Add Address</ion-label>
+    </div>
+  </div>
+</ion-content>

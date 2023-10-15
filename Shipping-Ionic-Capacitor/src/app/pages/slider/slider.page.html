@@ -1,0 +1,40 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Saska App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="main-content">
+    <ion-slides pager="ios">
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s1.jpeg)'">
+          </div>
+          <ion-label class="head_lbl">The best app for shipping & delivery in this century</ion-label>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s2.jpeg)'">
+          </div>
+          <ion-label class="head_lbl">You are our priority. Shipping fast, easy and safe</ion-label>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s3.jpeg)'">
+          </div>
+          <ion-label class="head_lbl">Welcome to Saska and enjoy our service</ion-label>
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <div class="footer">
+      <ion-button (click)="onWelcome()" expand="block" shape="round">
+        Get Started
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

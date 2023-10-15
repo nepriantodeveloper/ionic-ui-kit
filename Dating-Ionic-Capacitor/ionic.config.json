@@ -1,0 +1,7 @@
+{
+  "name": "hume",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

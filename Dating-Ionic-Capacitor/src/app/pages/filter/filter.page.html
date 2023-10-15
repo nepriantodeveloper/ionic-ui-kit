@@ -1,0 +1,93 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Filter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="main-content">
+
+    <div class="items">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-label>Location</ion-label>
+        <ion-select placeholder="Select City">
+          <ion-select-option value="0" class="text">Gujarat</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div class="items">
+      <ion-label>Genger</ion-label>
+      <div>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Male</ion-label>
+        </ion-row>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Female</ion-label>
+        </ion-row>
+        <ion-row class="list">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="text">Random</ion-label>
+        </ion-row>
+      </div>
+    </div>
+
+
+
+    <div class="items">
+      <div>
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-label>age</ion-label>
+          <ion-label slot="end" class="text">20-22</ion-label>
+        </ion-item>
+      </div>
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-range dualKnobs="true" min="18" max="80" step="1" pin>
+        </ion-range>
+      </ion-item>
+    </div>
+
+    <div class="items">
+      <div>
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-label>Distance</ion-label>
+          <ion-label slot="end" class="text">120 KM</ion-label>
+        </ion-item>
+      </div>
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-range dualKnobs="true" min="18" max="80" step="1" pin>
+        </ion-range>
+      </ion-item>
+    </div>
+
+
+    <div>
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-label>Location On</ion-label>
+        <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+    </div>
+
+    <ion-button expand="block" class="btn" shape="round" (click)="goToBack()">
+      Submit
+    </ion-button>
+
+
+  </div>
+
+</ion-content>

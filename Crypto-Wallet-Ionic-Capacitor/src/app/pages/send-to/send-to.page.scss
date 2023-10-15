@@ -1,0 +1,109 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+.content {
+  ion-row {
+    border-bottom: 1px solid var(--ion-color-light);
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+
+    ion-col {
+      ion-thumbnail {
+        --border-radius: 100px;
+      }
+
+      .ttl1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 10px;
+
+        ion-label {
+          font-family: 'bold';
+          font-size: 15px;
+        }
+
+        .price {
+          color: var(--ion-color-medium);
+          font-size: 12px;
+          font-family: 'regular';
+        }
+      }
+
+      .chkbox {
+        display: flex;
+        align-items: end;
+      }
+    }
+  }
+}
+
+.item {
+  margin: 10px 0px;
+
+  .title {
+    margin: 10px 0px 10px 20px;
+    font-size: 12px;
+    color: var(--ion-color-medium);
+    font-family: 'bold';
+  }
+
+  ion-item {
+    --background: white;
+    border-radius: 100px;
+    border: 1px solid var(--ion-color-medium);
+    margin: 0px;
+    font-size: 12px;
+  }
+}
+
+.divider {
+  margin: 20px 0px;
+  border-bottom: 1px solid var(--ion-color-light);
+}
+
+.content2 {
+  font-size: 12px;
+  margin: 20px 0px;
+  border-radius: 15px;
+  background: var(--ion-color-light);
+  padding: 10px 20px;
+
+  .ttl {
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .ttl3 {
+      font-family: 'bold';
+    }
+
+    .ttl1 {
+      color: var(--ion-color-medium);
+    }
+  }
+
+  .divider {
+    margin: 10px 0px;
+    border-bottom: 1px solid var(--ion-color-medium);
+  }
+
+  .ttl2 {
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .ttl2 {
+      color: var(--ion-color-medium);
+      font-size: 10px;
+    }
+  }
+}

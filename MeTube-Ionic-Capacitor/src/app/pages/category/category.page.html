@@ -1,0 +1,74 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="start" name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="start" name="ellipsis-vertical-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Trending</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main-content">
+
+
+    <div class="segment">
+      <div (click)="segmentChange(1)" class="seg_name" [class.active]="seg_id == 1">Top
+      </div>
+      <div (click)="segmentChange(2)" class="seg_name" [class.active]="seg_id == 2">Music
+      </div>
+      <div (click)="segmentChange(3)" class="seg_name" [class.active]="seg_id == 3">Gaming
+      </div>
+      <div (click)="segmentChange(4)" class="seg_name" [class.active]="seg_id == 4">Tech
+      </div>
+      <div (click)="segmentChange(4)" class="seg_name" [class.active]="seg_id == 5">Lorem
+      </div>
+      <div (click)="segmentChange(4)" class="seg_name" [class.active]="seg_id == 6">Lorem
+      </div>
+    </div>
+
+    <div class="post_div" *ngFor="let item of [1,2,3,4,5,6]">
+      <div class="col_div">
+        <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+          <div class="icon">
+            <ion-label>2:29</ion-label>
+          </div>
+        </div>
+        <div class="info">
+
+          <ion-avatar class="profile">
+            <img src="assets/img/profile.jpg" />
+          </ion-avatar>
+
+          <div class="detail">
+            <div class="top_div">
+              <ion-label>Lorem ipsum, dolor sit amet contetur adipisicing elit sentium autem ad a quidem distinctio
+                suscipit</ion-label>
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+            <ion-label class="small_txt">Jerry Wilson · 4.4M views · 5 month ago</ion-label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

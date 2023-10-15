@@ -1,0 +1,87 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="onNotification()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Setting</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="change" (click)="onOrders()">
+    <ion-icon name="settings" color="light" class="change_icon"></ion-icon>
+    <ion-label class="change_name">Your Orders</ion-label>
+  </div>
+  <div class="change" (click)="onFavorite()">
+    <ion-icon name="bookmark" color="light" class="change_icon"></ion-icon>
+    <ion-label class="change_name">Favorite Orders</ion-label>
+  </div>
+  <div class="change" (click)="onAddress()">
+    <ion-icon name="location" color="light" class="change_icon"></ion-icon>
+    <ion-label class="change_name">Address Book</ion-label>
+  </div>
+  <div class="change" (click)="onHelp()">
+    <ion-icon name="help-circle" color="light" class="change_icon"></ion-icon>
+    <ion-label class="change_name">Online Ordering Help</ion-label>
+  </div>
+  <div class="change" (click)="onAbout()">
+    <ion-icon name="information-circle" color="light" class="change_icon"></ion-icon>
+    <ion-label class="change_name">About</ion-label>
+  </div>
+  <div class="change">
+    <ion-icon name="chatbubble" color="light" class="change_icon"></ion-icon>
+    <ion-label class="change_name">Report For a Safety Emergency</ion-label>
+  </div>
+  <div class="change">
+    <ion-icon name="log-out" color="light" class="change_icon"></ion-icon>
+    <ion-label class="change_name">Log Out</ion-label>
+  </div>
+
+  <ion-label class="bold_text">Recent Orders</ion-label>
+
+  <div class="story">
+    <div class="menu">
+      <div class="deal" *ngFor="let item of [1,2,3]">
+        <div class="item">
+          <div class="bg_image deal_img" [style.backgroundImage]="'url(assets/images/f1.jpg)'">
+            <div class="bottom">
+              <ion-label class="offer">60% Off</ion-label>
+            </div>
+          </div>
+        </div>
+        <div class="bg_white">
+          <div class="flex">
+            <div class="left">
+              <ion-label class="name">Vegetable Lasagna</ion-label>
+              <ion-label class="about">Loaded with extra butter</ion-label>
+            </div>
+            <div class="right">
+              <ion-label class="color">$2.4</ion-label>
+              <ion-label class="simpl">For One</ion-label>
+            </div>
+          </div>
+          <div class="info">
+            <div class="rat">
+              <img src="assets/images/veg.png" alt="" class="veg">
+              <ion-label class="green">This Restaurant is pure veg</ion-label>
+            </div>
+            <div class="rat">
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-label class="warning">4.3</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

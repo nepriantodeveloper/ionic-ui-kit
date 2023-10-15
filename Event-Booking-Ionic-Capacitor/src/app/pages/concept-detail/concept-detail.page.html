@@ -1,0 +1,159 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Concept Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-slides mode="ios" scrollbar="ios">
+    <ion-slide>
+      <div class="bg_img" [style.backgroundImage]="'url(assets/images/4.jpg)'">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="bg_img" [style.backgroundImage]="'url(assets/images/5.jpg)'">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="bg_img" [style.backgroundImage]="'url(assets/images/6.jpg)'">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="bg_img" [style.backgroundImage]="'url(assets/images/7.jpg)'">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="bg_img" [style.backgroundImage]="'url(assets/images/8.jpg)'">
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="heading">
+    <ion-chip [outline]="true" color="primary">Music</ion-chip>
+    <div class="concept" (click)="onGoing()">
+      <ion-avatar>
+        <img src="assets/images/1.jpg">
+      </ion-avatar>
+      <ion-label>20.378 - Going</ion-label>
+      <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="ittl2">
+    <ion-label class="ttl1">BGMI Concert</ion-label>
+  </div>
+
+  <ion-row>
+    <ion-col size="2">
+      <div class="icn_div">
+        <ion-icon name="calendar-number"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="10">
+      <div class="title">
+        <ion-label class="ttl1">December 17, 2022</ion-label>
+        <ion-label class="ttl2">Saturday, 4.00 - 10.00 PM</ion-label>
+        <ion-chip [outline]="true" color="primary">Add To My Calendar</ion-chip>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="2">
+      <div class="icn_div">
+        <ion-icon name="location"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="10">
+      <div class="title">
+        <ion-label class="ttl1">Grand Avenue Center</ion-label>
+        <ion-label class="ttl2">49 SBY St, Surabhaya, indonesia</ion-label>
+        <ion-chip [outline]="true" color="primary">See on maps</ion-chip>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-button class="view_detail" expand="block" (click)="onDiscussion()">
+    View Participant Discussion
+  </ion-button>
+
+  <ion-item lines="none" class="profile">
+    <ion-thumbnail>
+      <img src="assets/images/9.jpg" />
+    </ion-thumbnail>
+    <div class="text">
+      <ion-label class="h3">Jaydeep Dodiya</ion-label>
+      <ion-label>10 Mutual Friends</ion-label>
+    </div>
+    <ion-button slot="end" shape="round" fill="outline" color="primary" (click)="onOrganizer()">
+      view
+    </ion-button>
+  </ion-item>
+
+  <div class="ittl2">
+    <ion-label class="ttl1">About Event</ion-label>
+  </div>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet odit omnis alias non temporibus quae dolor
+    vitae explicabo ex excepturi delectus, veniam est perferendis voluptatibus laudantium, libero laborum voluptatum.
+  </p>
+
+  <div class="ittl2">
+    <ion-label class="ttl1">Location</ion-label>
+  </div>
+
+  <div class="location">
+    <div class="map" #map id="map"></div>
+  </div>
+
+  <div class="ittl2">
+    <ion-label class="ttl1">Event Documentation</ion-label>
+  </div>
+
+  <p class="event">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempore laudantium ea error.
+    Repudiandae voluptatum ipsam ducimus omnis mollitia. Ad nulla officia suscipit ullam nemo quasi ut natus modi
+    consequatur.</p>
+
+  <div class="ittl2">
+    <ion-label class="ttl1">Reviews</ion-label>
+  </div>
+
+  <p class="event">Coming Soon (after event)</p>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+
+    <div class="btn">
+      <ion-buttons>
+        <ion-button>
+          <ion-icon name="share-social"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons>
+        <ion-button>
+          <ion-icon name="bookmark"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-button class="content_button" (click)="onTicket()" expand="block">
+        Buy Ticket
+      </ion-button>
+    </div>
+
+  </ion-toolbar>
+</ion-footer>

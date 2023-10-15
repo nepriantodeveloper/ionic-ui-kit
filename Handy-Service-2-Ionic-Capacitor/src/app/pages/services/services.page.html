@@ -1,0 +1,79 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Handy Service App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="gridChange(1)">
+        <ion-icon name="reader" color="dark" [class.active]="grid_id == 1"></ion-icon>
+      </ion-button>
+      <ion-button (click)="gridChange(2)">
+        <ion-icon name="grid-outline" color="dark" [class.active]="grid_id == 2"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Cleaning</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="" *ngIf="grid_id == 1">
+      <div class="list_card" *ngFor="let item of [1,2,3,4,5,6,7]" (click)="goToDetail()">
+        <div class="img" [style.backgroundImage]="'url(assets/img/h2.jpg)'">
+        </div>
+        <div class="detail">
+          <div class="item">
+            <ion-label class="title">AC Repairing</ion-label>
+            <ion-label class="price">$35</ion-label>
+          </div>
+          <div class="item">
+            <ion-label class="text">Andrue Russle</ion-label>
+          </div>
+          <div class="item">
+            <div class="rating">
+              <ion-icon class="star" color="warning" name="star"></ion-icon>
+              <ion-label class="color_txt">4.8</ion-label>
+              <ion-label class="small_text">(322 reviews)</ion-label>
+            </div>
+            <ion-icon color="primary" name="bookmark"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="" *ngIf="grid_id == 2">
+      <div class="grid_card">
+        <div class="col_div" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]">
+          <div class="hotel_card">
+            <div class="img" [style.backgroundImage]="'url(assets/img/h2.jpg)'">
+            </div>
+            <div class="detail">
+              <ion-label class="title">AC Repairing</ion-label>
+              <div class="rating">
+                <ion-icon class="star" color="warning" name="star"></ion-icon>
+                <ion-label class="color_txt">4.8</ion-label>
+                <ion-label class="small_text">(120 reviews)</ion-label>
+              </div>
+              <div class="item">
+                <div class="price_div">
+                  <ion-label class="price">$29</ion-label>
+                </div>
+                <ion-icon color="primary" name="bookmark"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

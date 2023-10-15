@@ -1,0 +1,68 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tab1">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab2">
+      <ion-icon name="videocam-outline"></ion-icon>
+      <ion-label>Shorts</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-icon name="add-circle" id="nav-modal" color="primary"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab4">
+      <ion-icon name="play-circle-outline"></ion-icon>
+      <ion-label>Subscripn</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab5">
+      <ion-icon name="reader-outline"></ion-icon>
+      <ion-label>Library</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+
+
+<ion-modal #saveModal trigger="nav-modal" [initialBreakpoint]="0.3" [breakpoints]="[0]" handleBehavior="cycle">
+  <ng-template>
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Create</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <div class="link_div" (click)="goToShort()" (click)="saveModal.dismiss()">
+        <div class="icon_div">
+          <ion-icon name="videocam"></ion-icon>
+        </div>
+        <ion-label class="link">Create a Short</ion-label>
+      </div>
+      <div class="link_div" (click)="goToVideo()" (click)="saveModal.dismiss()">
+        <div class="icon_div">
+          <ion-icon name="cloud-upload"></ion-icon>
+        </div>
+        <ion-label class="link">Upload a Video</ion-label>
+      </div>
+      <div class="link_div" (click)="goToLive()" (click)="saveModal.dismiss()">
+        <div class="icon_div">
+          <ion-icon name="play-circle"></ion-icon>
+        </div>
+        <ion-label class="link">Go Live</ion-label>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>

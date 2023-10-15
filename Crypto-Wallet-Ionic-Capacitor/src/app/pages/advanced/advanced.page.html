@@ -1,0 +1,54 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Advanced</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-label class="h5">Reset Account</ion-label>
+
+  <ion-button class="contentbtn2" fill="outline" expand="block">
+    Reset Account
+  </ion-button>
+
+  <ion-label class="h5">IPFS Gateway</ion-label>
+
+  <ion-item lines="none">
+    <ion-select placeholder="Select" value="1">
+      <ion-select-option value="1">https://gateway/pinbal/dfsdf545454fsd</ion-select-option>
+      <ion-select-option value="2">https://gateway/library/zfdfsdfzxc111111zxfc</ion-select-option>
+      <ion-select-option value="3">https://gateway/account/dfczx45444fsd</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <div class="toggle">
+    <ion-label>Show Hex Data</ion-label>
+    <ion-toggle></ion-toggle>
+  </div>
+
+  <div class="toggle">
+    <ion-label>Customize Transaction Nonce</ion-label>
+    <ion-toggle></ion-toggle>
+  </div>
+
+  <ion-label class="h5">State Logs</ion-label>
+
+  <ion-button class="contentbtn2" fill="outline" expand="block">
+    Download State Logs
+  </ion-button>
+
+</ion-content>

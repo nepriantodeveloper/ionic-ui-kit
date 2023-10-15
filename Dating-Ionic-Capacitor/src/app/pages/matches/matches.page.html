@@ -1,0 +1,98 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="ion-padding-start">
+      <ion-avatar>
+        <img src="assets/img/heart.png" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="start" name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="start" name="ellipsis-vertical-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Match</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <div class="heading_div">
+      <div class="heading_title">
+        <div class="title_div">
+          <ion-label class="title">New Match</ion-label>
+        </div>
+        <div class="all_btn">
+          <ion-label (click)="goToListing()">See All</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile_item">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'" (click)="goToProfile()">
+          <div class="img_detail">
+            <ion-label class="title">Andrew Russule, 23</ion-label>
+            <ion-label class="text">Developer</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading_div">
+      <div class="heading_title">
+        <div class="title_div">
+          <ion-label class="title">Your Match</ion-label>
+        </div>
+        <div class="all_btn">
+          <ion-label (click)="goToListing()">See All</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide_profile">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card">
+          <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'" (click)="goToProfile()">
+          </div>
+          <ion-label class="title">Andrew</ion-label>
+          <ion-label class="text">23</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading_div">
+      <div class="heading_title">
+        <div class="title_div">
+          <ion-label class="title">All Match</ion-label>
+        </div>
+        <div class="all_btn">
+          <ion-label>See All</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide_profile">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card">
+          <div class="img" [style.backgroundImage]="'url(assets/img/profile2.jpg)'" (click)="goToProfile()">
+          </div>
+          <ion-label class="title">Andrew</ion-label>
+          <ion-label class="text">23</ion-label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

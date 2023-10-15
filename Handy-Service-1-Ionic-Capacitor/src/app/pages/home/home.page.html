@@ -1,0 +1,101 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : HandyService App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="goToNotification()">
+        <ion-icon name="notifications-outline"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+    <div class="header">
+      <div class="tag">
+        <ion-icon class="icon" name="location-outline" color="dark"></ion-icon>
+        <ion-label class="title">Hello, Good Morning!</ion-label>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <div class="searchbox">
+      <ion-icon class="icon" name="search"></ion-icon>
+      <ion-input type="text" placeholder="What you are looking for?" class="ion-no-padding"></ion-input>
+      <ion-icon class="icon" name="filter-outline" (click)="goToFilter()"></ion-icon>
+    </div>
+
+    <div class="cate_type">
+      <div class="cate_detail" *ngFor="let item of [1,2,3,4,5,6]" (click)="goToCategory()">
+        <div class="cate_img" [style.backgroundImage]="'url(assets/img/cate.png)'"></div>
+        <ion-label class="title">Handy</ion-label>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="heading_div">
+      <div class="heading_title">
+        <div class="title_div">
+          <ion-label class="title">&nbsp; Recomened for you</ion-label>
+        </div>
+        <div class="all_btn">
+          <ion-label>See All &nbsp;</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="service_item">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card">
+          <div class="img" [style.backgroundImage]="'url(assets/img/s2.jpg)'">
+          </div>
+          <ion-label class="title">Home Service</ion-label>
+          <div class="rate_div">
+            <ion-label class="rate">
+              <ion-icon name="star"></ion-icon>4.1
+            </ion-label>
+            <ion-label class="price">$12</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="heading_div">
+      <div class="heading_title">
+        <div class="title_div">
+          <ion-label class="title">&nbsp; Recomened for you</ion-label>
+        </div>
+        <div class="all_btn">
+          <ion-label>See All &nbsp;</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="service_item">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card">
+          <div class="img" [style.backgroundImage]="'url(assets/img/s2.jpg)'">
+          </div>
+          <ion-label class="title">Home Service</ion-label>
+          <div class="rate_div">
+            <ion-label class="rate">
+              <ion-icon name="star"></ion-icon>4.1
+            </ion-label>
+            <ion-label class="time">$12</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,43 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Contact Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-label class="title">Full Name</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Your First Name"></ion-input>
+  </ion-item>
+  <ion-label class="title">Email</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Your Email Address"></ion-input>
+  </ion-item>
+  <ion-label class="title">Message</ion-label>
+  <ion-item lines="none" class="textarea">
+    <ion-textarea rows="5" placeholder="Enter notes here..."></ion-textarea>
+  </ion-item>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="content_button" (click)="onSend()" expand="block">
+      Send Message
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

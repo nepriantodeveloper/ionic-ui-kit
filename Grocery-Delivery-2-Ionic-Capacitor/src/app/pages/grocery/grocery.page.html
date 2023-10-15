@@ -1,0 +1,42 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Popular Grocery</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="searchbar">
+    <div class="icon">
+      <ion-label class="search">Search</ion-label>
+      <ion-icon slot="end" name="search" color="medium"></ion-icon>
+    </div>
+    <ion-icon slot="end" name="filter-outline" color="primary" class="filter"></ion-icon>
+  </div>
+
+  <div class="grocery" *ngFor="let item of [1,2,3,4,5,6,7,8,9]">
+    <div class="left">
+      <div class="bg_image grocery_image" [style.backgroundImage]="'url(assets/images/cabage.jpg)'">
+      </div>
+      <div>
+        <ion-label class="bold_text">Fresh Cabbage</ion-label>
+        <ion-label class="grey_text">Lovy Grocery</ion-label>
+      </div>
+    </div>
+    <div class="right">
+      <ion-label class="price">$8</ion-label>
+    </div>
+  </div>
+</ion-content>

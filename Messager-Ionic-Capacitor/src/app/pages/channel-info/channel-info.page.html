@@ -1,0 +1,72 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Channel Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="bg_image add_image" [style.backgroundImage]="'url(assets/images/p5.jpg)'">
+  </div>
+  <div class="ion-padding">
+    <div class="flex">
+      <ion-label class="head_text">GreetPix</ion-label>
+      <ion-icon name="pencil-outline" color="primary"></ion-icon>
+    </div>
+
+    <div class="flex">
+      <ion-label>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </ion-label>
+      <ion-icon name="pencil-outline" color="primary"></ion-icon>
+    </div>
+
+    <div class="flex">
+      <div>
+        <ion-label class="head_text">Category</ion-label>
+        <ion-label>Technology</ion-label>
+      </div>
+      <ion-icon name="pencil-outline" color="primary"></ion-icon>
+    </div>
+
+    <div class="item">
+      <ion-icon slot="start" name="notifications-outline" class="icon"></ion-icon>
+      <ion-label class="text">Mute Notification</ion-label>
+    </div>
+
+    <div class="item">
+      <ion-icon slot="start" name="musical-note-outline" class="icon"></ion-icon>
+      <ion-label class="text">Custom Notification</ion-label>
+    </div>
+
+    <div class="item">
+      <ion-icon slot="start" name="image-outline" class="icon"></ion-icon>
+      <ion-label class="text">Media Visibility</ion-label>
+    </div>
+
+    <div class="flex">
+      <ion-label class="head_text">Media</ion-label>
+      <ion-label class="color_text">View all</ion-label>
+    </div>
+
+    <div class="media">
+      <div class="story-item">
+        <div class="menu">
+          <div class="item" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]">
+            <ion-thumbnail> <img src="assets/images/p4.jpg" /> </ion-thumbnail>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,81 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Medical App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Filter By</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label class="head">Product Type</ion-label>
+
+  <div class="center">
+    <div class="flex">
+      <ion-icon name="radio-button-on-outline" color="primary"></ion-icon>
+      <ion-label class="label">All</ion-label>
+    </div>
+    <div class="flex">
+      <ion-icon name="ellipse-outline"></ion-icon>
+      <ion-label class="label">Tablets</ion-label>
+    </div>
+    <div class="flex">
+      <ion-icon name="ellipse-outline"></ion-icon>
+      <ion-label class="label">Syrup</ion-label>
+    </div>
+    <div class="flex">
+      <ion-icon name="ellipse-outline"></ion-icon>
+      <ion-label class="label">Vitamin</ion-label>
+    </div>
+  </div>
+
+  <ion-label class="head">Brand</ion-label>
+
+  <div class="brand">
+    <ion-label class="name">Kukis</ion-label>
+    <ion-label class="name color">Kukis</ion-label>
+    <ion-label class="name">Kukis</ion-label>
+    <ion-label class="name">Kukis</ion-label>
+    <ion-label class="name">Kukis</ion-label>
+    <ion-label class="name">Kukis</ion-label>
+    <ion-label class="name">Kukis</ion-label>
+  </div>
+
+  <ion-label class="head">Mg</ion-label>
+
+  <div class="brand">
+    <ion-label class="name">25mg</ion-label>
+    <ion-label class="name color">50mg</ion-label>
+    <ion-label class="name">100mg</ion-label>
+    <ion-label class="name">250mg</ion-label>
+    <ion-label class="name">500mg</ion-label>
+  </div>
+
+  <ion-label class="head">Product Type</ion-label>
+
+  <div class="brand">
+    <ion-label class="name">Cost low to high</ion-label>
+    <ion-label class="name color">Cost high to low</ion-label>
+    <ion-label class="name">Most popular</ion-label>
+    <ion-label class="name">Review</ion-label>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="button" (click)="onBack()">
+      <ion-label class="text">APPLY FILTER</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,43 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Wallet UI App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="upper_div">
+      <div class="logo_img" [style.backgroundImage]="'url(assets/img/logo.png)'">
+      </div>
+      <ion-label class="title">Verification</ion-label>
+      <ion-label class="text">Enter your OTP code</ion-label>
+    </div>
+
+    <div class="verify">
+      <ion-input type="text" maxLength="1" size="1" min="0" max="9"></ion-input>
+      <ion-input type="text" maxLength="1" size="1" min="0" max="9"></ion-input>
+      <ion-input type="text" maxLength="1" size="1" min="0" max="9"></ion-input>
+      <ion-input type="text" maxLength="1" size="1" min="0" max="9"></ion-input>
+    </div>
+
+    <ion-button (click)="goToTabs()" class="submit-btn" shape="" expand="block">
+      Send
+    </ion-button>
+
+    <ion-button expand="block" color="medium" fill="clear" shape="">
+      Send OTP again
+    </ion-button>
+  </div>
+</ion-content>

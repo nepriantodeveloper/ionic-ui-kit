@@ -1,0 +1,57 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Social Network App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+
+    ion-icon {
+      color: white;
+    }
+
+    ion-title {
+      color: white;
+    }
+  }
+}
+
+ion-content {
+  --background: #fff;
+  padding: 16px;
+
+  ion-toolbar {
+    --background: #fff;
+  }
+
+  .chat {
+    margin-top: 15px;
+
+    ion-item {
+      margin-bottom: 15px;
+      --background: transparent;
+
+      ion-avatar {
+        width: 40px;
+        height: 40px;
+
+        img {
+          border-radius: 50%;
+          border: 1px solid grey;
+        }
+      }
+
+      ion-label {
+        margin-left: 10px;
+      }
+
+      .icon {
+        margin-right: 10px;
+      }
+    }
+  }
+}

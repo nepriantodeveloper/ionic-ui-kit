@@ -1,0 +1,75 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+.main-content {
+  margin-top: 16px;
+
+  .list_card {
+    display: flex;
+    padding: 10px 16px;
+
+    .img {
+      width: 120px;
+      border-radius: 16px;
+      height: 90px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+
+      .icon {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+
+        ion-label {
+          font-size: 10px;
+          background: rgba(0, 0, 0, 0.3);
+          padding: 4px;
+          border-radius: 5px;
+          color: white;
+        }
+      }
+    }
+
+    .detail {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      padding-left: 12px;
+
+      .top_div {
+        display: flex;
+        justify-content: space-between;
+
+        .col {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+        }
+
+        .title {
+          font-family: 'bold';
+          font-size: 16px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+      }
+
+      .small_txt {
+        font-size: 11px;
+        color: var(--ion-color-medium);
+        padding-top: 8px;
+      }
+    }
+  }
+}

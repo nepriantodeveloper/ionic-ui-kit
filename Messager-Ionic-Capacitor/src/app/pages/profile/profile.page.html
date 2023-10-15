@@ -1,0 +1,38 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="flex">
+    <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'">
+      <div class="icon">
+        <ion-icon name="pencil"></ion-icon>
+      </div>
+    </div>
+  </div>
+  <div class="input">
+    <ion-input type="text" placeholder="First Name"></ion-input>
+    <ion-input type="text" placeholder="Last Name"></ion-input>
+    <ion-input type="text" placeholder="Email Address"></ion-input>
+    <ion-input type="text" placeholder="Gender"></ion-input>
+  </div>
+
+  <ion-button expand="full">
+    Save
+  </ion-button>
+</ion-content>

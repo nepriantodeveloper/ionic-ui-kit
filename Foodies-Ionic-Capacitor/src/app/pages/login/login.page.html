@@ -1,0 +1,56 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="main_div">
+    <div class="icon">
+      <div class="bg_image login_img" [style.backgroundImage]="'url(assets/images/login.png)'"></div>
+    </div>
+
+    <ion-label class="bold">Login</ion-label>
+
+    <ion-item lines="none" class="item">
+      <ion-icon slot="start" name="mail" color="primary"></ion-icon>
+      <ion-input type="mail" placeholder="Enter Email"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="item">
+      <ion-icon slot="start" name="lock-closed" color="primary"></ion-icon>
+      <ion-input type="password" placeholder="Enter Password"></ion-input>
+      <ion-icon slot="end" name="eye-off" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-label class="forgot" (click)="onForgot()">Forgot Password?</ion-label>
+
+    <ion-label class="privacy">By click on login you are accepting privacy policy</ion-label>
+
+    <ion-label class="btn" (click)="onLocation()">Login</ion-label>
+
+    <ion-label class="sub">Or Login with</ion-label>
+
+    <div class="center">
+      <div class="img">
+        <div class="bg_image opt_img" [style.backgroundImage]="'url(assets/images/o1.png)'"></div>
+      </div>
+      <div class="img">
+        <div class="bg_image opt_img" [style.backgroundImage]="'url(assets/images/o2.png)'"></div>
+      </div>
+      <div class="img">
+        <div class="bg_image opt_img" [style.backgroundImage]="'url(assets/images/o3.png)'"></div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="bottom">
+      <ion-label class="last_lbl">New User? <span (click)="onRegister()">Register Here</span></ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,40 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="ion-padding space">
+    <div>
+      <ion-label class="welcome_lbl">Register!</ion-label>
+
+      <ion-label class="simp_lbl">Create a new account</ion-label>
+
+      <ion-item lines="none">
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+        <ion-input type="text" placeholder="Name"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-icon slot="start" name="mail-outline"></ion-icon>
+        <ion-input type="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" (click)="goToHome()">
+        Register
+      </ion-button>
+
+    </div>
+    <div class="bottom">
+      <ion-label class="last_lbl">Already have an account? <span (click)="onLogin()">Login</span></ion-label>
+    </div>
+  </div>
+</ion-content>

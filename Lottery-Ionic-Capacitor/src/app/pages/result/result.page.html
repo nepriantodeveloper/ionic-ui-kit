@@ -1,0 +1,56 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>See Result</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+
+
+    <div class="container">
+
+      <div class="input">
+        <ion-icon class="icon" name="ticket-outline"></ion-icon>
+        <ion-input type="text" placeholder="Jackpot"></ion-input>
+      </div>
+      <div class="input">
+        <ion-icon class="icon" name="calendar-outline"></ion-icon>
+        <ion-input type="text" placeholder="30 May 2024"></ion-input>
+      </div>
+
+      <ion-label class="title">Enter Numbers</ion-label>
+
+
+
+      <div class="l_number">
+        <ion-label class="tag_number">10</ion-label>
+        <ion-label class="tag_number">22</ion-label>
+        <ion-label class="tag_number">34</ion-label>
+        <ion-label class="tag_number">53</ion-label>
+        <ion-label class="tag_number">35</ion-label>
+
+      </div>
+
+      <ion-button (click)="goToResultDetail()" shape="round" expand="block" class="submit_btn">
+        See Result
+      </ion-button>
+    </div>
+
+
+  </div>
+</ion-content>

@@ -1,0 +1,45 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Hotel Boooking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Eldorado Resort</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="review_card" *ngFor="let item of [1,2,3,4,5,6,7,8,9]">
+      <div class="upper_div">
+        <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+        </div>
+
+        <div class="details">
+          <div class="left_div">
+            <ion-label class="title">Andrew Russle</ion-label>
+            <ion-label class="small_txt">Dec 20, 2024</ion-label>
+          </div>
+          <div class="rate">
+            <ion-icon name="star"></ion-icon>
+            <ion-label>4</ion-label>
+          </div>
+        </div>
+      </div>
+      <div class="lower_div">
+        <ion-label class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore nostrum
+          nisi, maxime numquam</ion-label>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

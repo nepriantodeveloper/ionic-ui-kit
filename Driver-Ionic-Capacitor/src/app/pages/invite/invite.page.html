@@ -1,0 +1,37 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Driver App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Invite Friends</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="center">
+    <ion-icon name="people-outline" class="icon"></ion-icon>
+    <ion-label class="bold">Invite Friends</ion-label>
+    <ion-label class="earn">Earn up to <strong>$150</strong> a day</ion-label>
+
+    <ion-label class="refer">When your friend sign up with your referral code, you can received up to $150 a day.
+    </ion-label>
+  </div>
+
+  <ion-label class="head">SHARE YOUR INVITE CODE</ion-label>
+
+  <div class="button">
+    <ion-label class="text">0987654321</ion-label>
+  </div>
+
+  <div class="invite">
+    <ion-label class="text" (click)="onFriendList()">INVITE</ion-label>
+  </div>
+</ion-content>

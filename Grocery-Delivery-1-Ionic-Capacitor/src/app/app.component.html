@@ -1,0 +1,39 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+
+      <ion-header mode="md" class="ion-no-border">
+        <ion-toolbar color="primary"></ion-toolbar>
+      </ion-header>
+
+      <div class="user_flex">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/user.jpg)'"></div>
+        <div class="user_detail">
+          <ion-label class="name_lbl">Mausam Chavda</ion-label>
+          <ion-label class="status_lbl">Online</ion-label>
+        </div>
+      </div>
+
+      <ion-content>
+        <ion-list lines="none">
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item (click)="openPages(p)" lines="none" detail="false">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-outline'"></ion-icon>
+              <ion-label>{{p.title}}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

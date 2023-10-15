@@ -1,0 +1,108 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Medical App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Checkout Information</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="flex">
+    <ion-label class="head">Delivery Address</ion-label>
+    <ion-label class="color">Change</ion-label>
+  </div>
+
+  <div class="address">
+    <div class="left">
+      <ion-icon name="home" color="medium" class="home"></ion-icon>
+      <div class="text">
+        <ion-label class="name">Jaydeep Hirani</ion-label>
+        <ion-label class="grey">Smile street, palitana</ion-label>
+      </div>
+    </div>
+    <ion-icon name="pencil-outline" class="edit"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label class="head">Contact Number</ion-label>
+  </div>
+
+  <div class="address">
+    <div class="left">
+      <ion-icon name="call" color="medium" class="home"></ion-icon>
+      <div class="text">
+        <ion-label class="name">+91 9876543211</ion-label>
+      </div>
+    </div>
+    <ion-icon name="pencil-outline" class="edit"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label class="head">Upload Prescription</ion-label>
+  </div>
+
+  <div class="address">
+    <div class="left">
+      <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/p1.jpg)'"></div>
+    </div>
+    <ion-icon name="camera" class="edit"></ion-icon>
+  </div>
+
+  <div class="flex">
+    <ion-label class="head">Product List</ion-label>
+  </div>
+
+  <div class="list">
+    <div class="img">
+      <ion-thumbnail> <img src="assets/images/s2.png" /> </ion-thumbnail>
+    </div>
+    <div class="text">
+      <ion-label class="name"><strong>Eoo Cool</strong> 250mg</ion-label>
+      <ion-label class="tab">Bottle of 150 tablets</ion-label>
+      <ion-label class="color"> USD 58.00</ion-label>
+    </div>
+  </div>
+
+  <div class="flex">
+    <ion-label class="head">Payment</ion-label>
+    <ion-label class="color" (click)="onPayment()">Change</ion-label>
+  </div>
+
+  <div class="payment">
+    <div class="text">
+      <ion-label class="name">Mastercard</ion-label>
+      <ion-label class="tab">**** **** **** 9090</ion-label>
+    </div>
+    <div class="img">
+      <ion-thumbnail> <img src="assets/images/visa.png" /> </ion-thumbnail>
+    </div>
+  </div>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="6">
+        <ion-label class="total">Total :<strong> $2567.00</strong></ion-label>
+      </ion-col>
+      <ion-col size="6">
+        <div class="button" (click)="onConfirm()">
+          <ion-label class="text">PLACE ORDER</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

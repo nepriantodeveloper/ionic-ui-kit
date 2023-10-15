@@ -1,0 +1,45 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Import Account</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="onClose()" color="dark">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat veritatis labore? Repellat quis, velit culpa
+    asperiores necessitatibus pariatur porro nulla minus at minima ullam maxime et inventore cupiditate molestias.</p>
+
+  <div class="item">
+    <ion-label class="title">Paste your private key string</ion-label>
+    <ion-item lines="none" class="textarea">
+      <ion-textarea type="text" placeholder="enter here..."></ion-textarea>
+    </ion-item>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="btn">
+      <ion-button fill="outline" class="contentbtn2" expand="block">
+        Scan QR Code
+      </ion-button>
+      <ion-button class="contentbtn" (click)="onImport()" expand="block">
+        Import
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

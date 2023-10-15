@@ -1,0 +1,28 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Driver App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Notification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="list" *ngFor="let item of [1,2,3,4,5,6]">
+    <div class="icon">
+      <ion-icon name="checkmark-circle"></ion-icon>
+    </div>
+    <div class="text">
+      <ion-label class="bold">System</ion-label>
+      <ion-label>Booking <strong>#1234</strong> has been successfull</ion-label>
+    </div>
+  </div>
+</ion-content>

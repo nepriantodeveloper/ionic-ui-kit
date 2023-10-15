@@ -1,0 +1,33 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : News App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Featured News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="banner_div" *ngFor="let item of [1,2,3,4,5,6,7]">
+      <div class="img" [style.backgroundImage]="'url(assets/img/s1.jpg)'">
+        <div class="img_detail">
+          <ion-label class="text">Lorem ipsum dolor sit amet adipisicing</ion-label>
+          <ion-button class="btn" expand="block" size="small" shape="round" (click)="goToNews()">
+            Read Now
+          </ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,37 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content fullscreen>
+  <div class="main-content">
+    <div #map id="map" class="map"></div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <div class="img" [style.backgroundImage]="'url(assets/img/country.jpg)'"></div>
+    <div class="content_div">
+
+      <ion-label class="title">Motercity Cusino Hotel</ion-label>
+      <ion-label class="price">$456 per night</ion-label>
+
+      <div class="">
+        <ion-icon color="primary" name="star"></ion-icon>
+        <ion-icon color="primary" name="star"></ion-icon>
+        <ion-icon color="primary" name="star"></ion-icon>
+        <ion-icon color="primary" name="star"></ion-icon>
+        <ion-icon color="primary" name="star"></ion-icon>
+      </div>
+
+      <ion-button class="book_btn" size="small" expand="block" fill="clear" (click)="goToBooking()">
+        Book Room
+      </ion-button>
+
+    </div>
+  </div>
+</ion-footer>

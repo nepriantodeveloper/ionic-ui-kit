@@ -1,0 +1,43 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : News App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-content [fullscreen]="true">
+  <div class="main-content">
+    <ion-slides pager="true">
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img" [style.backgroundImage]="'url(assets/img/s1.jpg)'">
+          </div>
+          <ion-label class="head_lbl">Get the latest news from <span class="app_lable">reliable sources</span>
+          </ion-label>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img" [style.backgroundImage]="'url(assets/img/s2.jpg)'">
+          </div>
+          <ion-label class="head_lbl">Get the latest news from <span>reliable sources</span></ion-label>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img" [style.backgroundImage]="'url(assets/img/s1.jpg)'">
+          </div>
+          <ion-label class="head_lbl">Get the latest news from <span>reliable sources</span></ion-label>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-button class="btn" shape="round" expand="block" (click)="goToSelectAccount()">
+    Next
+  </ion-button>
+</ion-footer>

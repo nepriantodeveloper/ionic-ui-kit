@@ -1,0 +1,94 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Preferences</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-row (click)="onGeneral()">
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>General</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row (click)="onSecurity()">
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>Security & Privacy</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row (click)="onAdvanced()">
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>Advanced</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row (click)="onContact()">
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>Contacts</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row (click)="onNetworks()">
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>Networks</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row (click)="onExperimental()">
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>Experimental</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row (click)="onContactus()">
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>Contact Us</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row (click)="onMetacoin()">
+    <ion-col size="12">
+      <div class="label">
+        <ion-label>About Metacoin</ion-label>
+        <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

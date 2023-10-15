@@ -1,0 +1,28 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main-content {
+  padding: 16px;
+
+  .item_div {
+    display: flex;
+    padding: 14px 0px;
+
+    ion-icon {
+      color: gray;
+      font-size: 24px;
+    }
+
+    ion-label {
+      font-size: 16px;
+      font-family: 'medium';
+      width: 100%;
+      padding-left: 14px;
+    }
+  }
+}

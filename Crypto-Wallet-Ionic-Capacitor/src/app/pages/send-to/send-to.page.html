@@ -1,0 +1,134 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Send To</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-label class="h5">From</ion-label>
+
+  <div class="content">
+    <ion-row (click)="onAccount()">
+      <ion-col size="2">
+        <ion-thumbnail>
+          <img src="assets/images/p1.jpg" />
+        </ion-thumbnail>
+      </ion-col>
+      <ion-col size="8.5">
+        <div class="ttl1">
+          <ion-label>Account 1</ion-label>
+          <ion-label class="price">1.829 ETH</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="1">
+        <div class="chkbox">
+          <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-label class="h5">To</ion-label>
+
+  <div class="item">
+    <ion-label class="title">Address</ion-label>
+    <ion-item lines="none">
+      <ion-input type="text" placeholder="Search, Public Address(0X), or ENS"></ion-input>
+      <ion-icon slot="end" name="copy-outline"></ion-icon>
+    </ion-item>
+  </div>
+
+  <ion-button class="contentbtn2" (click)="onImport()" fill="outline" expand="block">
+    Transfer Between My Account
+  </ion-button>
+
+  <div class="divider"></div>
+
+  <ion-label class="h5">From</ion-label>
+
+  <div class="content">
+    <ion-row>
+      <ion-col size="2">
+        <ion-thumbnail>
+          <img src="assets/images/p1.jpg" />
+        </ion-thumbnail>
+      </ion-col>
+      <ion-col size="8.5">
+        <div class="ttl1">
+          <ion-label>Elenore pena</ion-label>
+          <ion-label class="price">dsfds554____5fsd</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="1">
+        <div class="chkbox">
+          <ion-icon slot="end" color="primary" name="close"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="content2">
+    <div class="ttl">
+      <ion-label class="ttl1">Amount</ion-label>
+      <ion-label class="ttl3">0.60 BNB</ion-label>
+    </div>
+    <div class="ttl">
+      <ion-label class="ttl1">Network Free</ion-label>
+      <ion-label class="ttl3">0.60 BNB</ion-label>
+    </div>
+    <div class="divider"></div>
+    <div class="ttl">
+      <ion-label class="ttl3">Total Amount</ion-label>
+      <ion-label class="ttl3">2.4899 BNB</ion-label>
+    </div>
+    <div class="ttl2">
+      <ion-label class="ttl2">2.4899 BNB</ion-label>
+    </div>
+  </div>
+
+  <ion-label class="h5">Recents</ion-label>
+
+  <div class="content" *ngFor="let item of [1,2]">
+    <ion-row>
+      <ion-col size="2">
+        <ion-thumbnail>
+          <img src="assets/images/p1.jpg" />
+        </ion-thumbnail>
+      </ion-col>
+      <ion-col size="8.5">
+        <div class="ttl1">
+          <ion-label>Jerom Bel</ion-label>
+          <ion-label class="price">eedxcfs___654df</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="1">
+        <div class="chkbox">
+          <ion-icon slot="end" color="primary" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="contentbtn" (click)="onNext()" expand="block">
+      Next
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

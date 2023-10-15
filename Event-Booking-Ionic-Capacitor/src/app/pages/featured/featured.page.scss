@@ -1,0 +1,41 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.content {
+  margin: 10px 0px;
+
+  .bg_img {
+    height: 150px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    .text {
+      display: flex;
+      text-align: start;
+      flex-direction: column;
+      color: white;
+      padding: 10px;
+
+      .h4 {
+        margin-left: 5px;
+        font-family: 'regular';
+      }
+
+      .content_button {
+        width: 100px;
+        height: 30px;
+        --border-radius: 100px;
+      }
+    }
+  }
+}

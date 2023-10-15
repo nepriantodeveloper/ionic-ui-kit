@@ -1,0 +1,7 @@
+{
+  "name": "helia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

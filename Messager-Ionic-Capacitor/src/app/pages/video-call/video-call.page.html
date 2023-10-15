@@ -1,0 +1,47 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <div class="flex">
+      <ion-label class="white">00:40</ion-label>
+      <div class="connect">
+        <ion-icon name="wifi-outline"></ion-icon>
+        <ion-label class="green_text">Good</ion-label>
+      </div>
+      <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/p1.jpg)'">
+    <div class="bg_image front_image" [style.backgroundImage]="'url(assets/images/p2.jpg)'">
+    </div>
+  </div>
+  <div class="row">
+    <ion-icon name="add" color="light" class="icon"></ion-icon>
+    <div class="bg_image add_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'">
+    </div>
+    <div class="bg_image add_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'">
+    </div>
+    <div class="bg_image add_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'">
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="button">
+      <ion-icon name="mic-off"></ion-icon>
+      <ion-icon name="videocam-off"></ion-icon>
+      <ion-icon name="volume-high"></ion-icon>
+      <ion-icon name="call" color="danger" class="call" (click)="onBack()"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-footer>

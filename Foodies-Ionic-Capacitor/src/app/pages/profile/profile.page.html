@@ -1,0 +1,61 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="onNotification()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile_info">
+    <div class="pop">
+      <ion-label class="number">110</ion-label>
+      <ion-label class="gray">Following</ion-label>
+    </div>
+    <div class="image">
+      <div class="bg_image profile_image" [style.backgroundImage]="'url(assets/images/f1.jpg)'">
+        <ion-icon name="pencil-outline" class="edit" color="light"></ion-icon>
+      </div>
+
+    </div>
+    <div class="pop">
+      <ion-label class="number">110</ion-label>
+      <ion-label class="gray">Following</ion-label>
+    </div>
+  </div>
+
+  <div class="center">
+    <ion-label class="name">Gislee Elizabeth</ion-label>
+    <div class="location">
+      <ion-icon slot="start" name="location" color="medium"></ion-icon>
+      <ion-label class="gray">New York</ion-label>
+    </div>
+  </div>
+
+  <ion-label class="border" (click)="onEditProfile()">Edit Profile</ion-label>
+
+  <ion-label class="head_text">Photos</ion-label>
+
+  <ion-row>
+    <ion-col size="6" *ngFor="let item of [1,2,3,4,5,6,7,8]">
+      <div class="bg_image post_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'"></div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

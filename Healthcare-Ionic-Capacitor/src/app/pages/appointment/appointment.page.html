@@ -1,0 +1,42 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>My Appointment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-row class="bg_white" *ngFor="let item of [1,2,3,4,5]">
+    <ion-col size="2">
+      <div class="bg_image special_image" [style.backgroundImage]="'url(assets/images/p2.jpg)'"></div>
+    </ion-col>
+    <ion-col size="7">
+      <div style="margin-left: 10px;">
+        <ion-label class="bold">Dr.Hardik Gohil</ion-label>
+        <ion-label class="grey">Dermitologist</ion-label>
+        <div class="flex">
+          <div class="center">
+            <ion-icon name="calendar-outline" color="primary"></ion-icon>
+            <ion-label class="label">15 Sept 2022</ion-label>
+          </div>
+          <div class="center">
+            <ion-icon name="time-outline" color="primary"></ion-icon>
+            <ion-label class="label">9:00 AM</ion-label>
+          </div>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col size="3">
+      <ion-label class="time">3 days left</ion-label>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

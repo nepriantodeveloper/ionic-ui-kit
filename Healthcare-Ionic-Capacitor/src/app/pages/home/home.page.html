@@ -1,0 +1,74 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <div class="heading">
+      <div class="left">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'"></div>
+        <div>
+          <ion-label class="bold_text">Hi, Jaydeep Hirani</ion-label>
+          <ion-label class="grey_text">Welcome back</ion-label>
+        </div>
+      </div>
+      <div class="right">
+        <ion-icon name="notifications-outline" (click)="onNotification()" class="icon"></ion-icon>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="searchbar">
+    <ion-label class="look">Looking for a Doctor?</ion-label>
+
+    <div class="search" (click)="onSearch()">
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-label class="label">Search for doctors</ion-label>
+    </div>
+  </div>
+
+  <ion-label class="color_text">How are you feeling today?</ion-label>
+
+  <div class="flex">
+    <ion-label class="grey">Happy</ion-label>
+    <ion-label class="grey">Sad</ion-label>
+    <ion-label class="grey">Angry</ion-label>
+    <ion-label class="grey">Tired</ion-label>
+    <ion-label class="grey">Hungry</ion-label>
+  </div>
+
+  <ion-label class="bold_text">Most Searched Specialities</ion-label>
+
+  <ion-row>
+    <ion-col size="3" *ngFor="let item of [1,2,3,4,5,6,7,8]" (click)="onProfileDetail()">
+      <div class="special">
+        <div class="bg_image special_image" [style.backgroundImage]="'url(assets/images/p2.jpg)'"></div>
+        <ion-label class="spe">General Specialist</ion-label>
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-label class="bold_text">Nearby Doctors</ion-label>
+
+  <ion-row>
+    <ion-col size="6" *ngFor="let item of [1,2,3,4,5,6,7,8,9]" (click)="onProfileDetail()">
+      <div class="profile">
+        <div class="bg_image profile_image" [style.backgroundImage]="'url(assets/images/p1.jpg)'"></div>
+        <ion-label class="name">Dr Ogunlade</ion-label>
+        <ion-label class="small">Dentist</ion-label>
+        <div class="rate">
+          <ion-icon name="star" color="primary"></ion-icon>
+          <ion-label class="number">4.6</ion-label>
+        </div>
+        <ion-label class="distance">100m Away</ion-label>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,46 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Medical App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="main-content">
+    <ion-slides pager="ios">
+      <ion-slide>
+        <div class="slide_div">
+          <div class="image">
+            <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s1.png)'">
+            </div>
+          </div>
+          <ion-label class="head_lbl">View & Buy Medicine Online</ion-label>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide_div">
+          <div class="image">
+            <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s2.png)'">
+            </div>
+          </div>
+          <ion-label class="head_lbl">Save Your Time With Us</ion-label>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide_div">
+          <div class="image">
+            <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s3.png)'">
+            </div>
+          </div>
+          <ion-label class="head_lbl">We Provide Home Delivery</ion-label>
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <div class="footer">
+      <ion-button (click)="onWelcome()" expand="block">
+        Get Started
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

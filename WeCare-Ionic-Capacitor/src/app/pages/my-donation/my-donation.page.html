@@ -1,0 +1,51 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : WeCare App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Calender</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <ion-datetime presentation="date"></ion-datetime>
+
+    <div class="title_div ion-padding">
+      <ion-label class="title">My Donation (7)</ion-label>
+      <ion-label class="btn">See All</ion-label>
+    </div>
+
+    <div class="list_card">
+      <div class="col_div" *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="item_card">
+          <div class="img" [style.backgroundImage]="'url(assets/img/c4.jpg)'">
+          </div>
+          <div class="detail">
+            <ion-label class="title">Help Orphanage Children</ion-label>
+            <div class="rating">
+              <ion-label class="color_txt">$2,348</ion-label>
+              <ion-label class="small_text">Fund raised from $8,000</ion-label>
+            </div>
+            <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+            <div class="item">
+              <div class="price_div">
+                <ion-label class="color_txt">4,414</ion-label>
+                <ion-label class="small_text">Donators</ion-label>
+              </div>
+              <div class="price_div">
+                <ion-label class="color_txt">4</ion-label>
+                <ion-label class="small_text">Days left</ion-label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

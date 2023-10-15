@@ -1,0 +1,76 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Credit/Debit Card</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="onNotification()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="story-item">
+    <div class="menu">
+      <div class="item">
+        <ion-icon name="add" class="icon" color="medium"></ion-icon>
+        <ion-label class="grey">Add Card</ion-label>
+      </div>
+      <div class="item color_border">
+        <ion-icon name="card" class="icon " color="primary"></ion-icon>
+        <ion-label class="color">Credit Card</ion-label>
+      </div>
+      <div class="item">
+        <ion-icon name="card" class="icon" color="medium"></ion-icon>
+        <ion-label class="grey">Debit Card</ion-label>
+      </div>
+    </div>
+  </div>
+
+  <div class="name">
+    <ion-icon name="person" color="primary" class="color_icon"></ion-icon>
+    <ion-input type="text" placeholder="Giselle"></ion-input>
+  </div>
+
+  <div class="name">
+    <ion-icon name="card" color="primary" class="color_icon"></ion-icon>
+    <ion-input type="number" placeholder="1212 1212 1212 1212"></ion-input>
+    <div class="bg_image offer_img" [style.backgroundImage]="'url(assets/images/visa.png)'"></div>
+  </div>
+
+  <div class="row">
+    <div class="name magin">
+      <ion-icon name="calendar" color="primary" class="color_icon"></ion-icon>
+      <ion-input type="text" placeholder="08/26"></ion-input>
+    </div>
+    <div class="name">
+      <ion-icon name="lock-closed" color="primary" class="color_icon"></ion-icon>
+      <ion-input type="password" placeholder="***"></ion-input>
+    </div>
+  </div>
+
+  <div class="check">
+    <ion-icon name="checkbox-outline" color="primary"></ion-icon>
+    <ion-label class="save">Save Card</ion-label>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-label class="btn" (click)="onConfirm()">Make Payment Now ($13.8)</ion-label>
+  </ion-toolbar>
+</ion-footer>

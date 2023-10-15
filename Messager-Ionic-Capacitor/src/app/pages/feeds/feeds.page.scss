@@ -1,0 +1,132 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  --background: var(--ion-color-primary);
+
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+
+    ion-item {
+      --background: transparent;
+
+      ion-icon {
+        font-size: 20px;
+        color: #eaeaf4;
+      }
+
+      .back_image {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: column;
+
+        .small_text {
+          font-size: 12px;
+        }
+      }
+
+      ion-label {
+        margin-left: 1rem;
+        color: #eaeaf4;
+
+        h2 {
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+ion-content {
+  .time {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .post {
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+
+    .img_div {
+      .post_image {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+
+      }
+    }
+
+    .content {
+      padding: 15px;
+
+
+      .info_div {
+
+        .grey_text {
+          color: grey;
+        }
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+
+        ion-icon {
+          font-size: 20px;
+        }
+
+        .flex {
+          display: flex;
+          align-items: center;
+
+          .bottom_text {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+ion-footer {
+  --background: white;
+
+  ion-toolbar {
+    --border-width: 0px;
+    padding: 10px;
+    align-items: center;
+
+    ion-icon {
+      color: white;
+      font-size: 25px;
+    }
+
+    .button {
+      background-color: var(--ion-color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 30px;
+      padding: 15px 0;
+
+      .text {
+        color: white;
+      }
+    }
+  }
+}

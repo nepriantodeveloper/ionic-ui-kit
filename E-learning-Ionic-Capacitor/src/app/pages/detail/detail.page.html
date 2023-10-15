@@ -1,0 +1,234 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : E-Learning App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content>
+  <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/p4.jpg)'">
+    <div class="ion-padding">
+      <ion-icon slot="start" name="arrow-back" class="back" (click)="onBack()"></ion-icon>
+    </div>
+  </div>
+
+  <div class="ion-padding">
+    <div class="flex">
+      <ion-label class="bold_text">Intro UI/UX Design</ion-label>
+      <ion-icon slot="end" name="bookmark-outline" color="primary"></ion-icon>
+    </div>
+
+    <div class="row">
+      <ion-label class="bg_text">3D Design</ion-label>
+      <div class="rate">
+        <ion-icon name="star-half-outline" color="warning"></ion-icon>
+        <ion-label class="review">4.8 (4478 reviews)</ion-label>
+      </div>
+    </div>
+
+    <ion-label class="color_text">$40</ion-label>
+
+    <div class="items">
+      <div class="stud">
+        <ion-icon slot="start" name="people" color="primary"></ion-icon>
+        <ion-label>9876 Students</ion-label>
+      </div>
+      <div class="stud">
+        <ion-icon slot="start" name="time" color="primary"></ion-icon>
+        <ion-label>2.5 hours</ion-label>
+      </div>
+      <div class="stud">
+        <ion-icon slot="start" name="document-text" color="primary"></ion-icon>
+        <ion-label>Certificate</ion-label>
+      </div>
+    </div>
+
+    <ion-segment [(ngModel)]="tabs">
+      <ion-segment-button value="about">
+        <ion-label>About</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="lesson">
+        <ion-label>Lessons</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="review">
+        <ion-label>Reviews</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div *ngIf="tabs =='about'" class="about">
+      <ion-label class="head_text">Mentor</ion-label>
+
+      <div class="mentor" (click)="onMentor()">
+        <div class="left">
+          <div class="bg_image men_image" [style.backgroundImage]="'url(assets/images/p3.jpg)'"></div>
+          <div style="margin-left: 10px;">
+            <ion-label class="bold">Jonathon Williams</ion-label>
+            <ion-label class="grey">Senier UI/UX designer at google</ion-label>
+          </div>
+        </div>
+        <ion-icon name="chatbubble-ellipses-outline" color="primary"></ion-icon>
+      </div>
+
+      <ion-label class="head_text">About Course</ion-label>
+
+      <ion-label class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, dolor, quasi
+        commodi
+      </ion-label>
+
+      <ion-label class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, dolor, quasi
+        commodi
+      </ion-label>
+
+      <ion-label class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, dolor, quasi
+        commodi
+      </ion-label>
+
+      <ion-label class="head_text">Tools</ion-label>
+
+      <ion-label>Figma</ion-label>
+    </div>
+
+    <div *ngIf="tabs =='lesson'" class="lesson">
+      <div class="flex">
+        <ion-label class="bold">Most Popular Courses</ion-label>
+        <ion-label class="color">See all</ion-label>
+      </div>
+
+      <div class="sec">
+        <ion-label class="grey">Section 1 - Introduction</ion-label>
+        <ion-label class="color">15 min</ion-label>
+      </div>
+
+      <div class="video" *ngFor="let item of [1,2]">
+        <div class="left">
+          <div class="bg_image men_image" [style.backgroundImage]="'url(assets/images/line.png)'"></div>
+
+          <div class="text">
+            <ion-label class="bold_text">Why Using Figma ?</ion-label>
+            <ion-label class="grey_text">10 mins</ion-label>
+          </div>
+        </div>
+        <div class="right">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="sec">
+        <ion-label class="grey">Section 2 - Figma Basic</ion-label>
+        <ion-label class="color">60 min</ion-label>
+      </div>
+
+
+      <div class="video" *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="left">
+          <div class="bg_image men_image" [style.backgroundImage]="'url(assets/images/line.png)'"></div>
+
+          <div class="text">
+            <ion-label class="bold_text">Why Using Figma ?</ion-label>
+            <ion-label class="grey_text">10 mins</ion-label>
+          </div>
+        </div>
+        <div class="right">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="sec">
+        <ion-label class="grey">Section 3 - Let's Practice</ion-label>
+        <ion-label class="color">75 min</ion-label>
+      </div>
+
+
+      <div class="video" *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="left">
+          <div class="bg_image men_image" [style.backgroundImage]="'url(assets/images/line.png)'"></div>
+
+          <div class="text">
+            <ion-label class="bold_text">Why Using Figma ?</ion-label>
+            <ion-label class="grey_text">10 mins</ion-label>
+          </div>
+        </div>
+        <div class="right">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="tabs =='review'" class="review_tab">
+      <div class="total">
+        <div class="star-rate">
+          <ion-icon name="star-half-outline" color="warning"></ion-icon>
+          <ion-label class="bold">4.8 (5456 Reviews)</ion-label>
+        </div>
+        <ion-label class="color">See all</ion-label>
+      </div>
+
+      <div class="story-item">
+        <div class="menu">
+          <div class="text">
+            <div class="select show">
+              <ion-icon slot="start" name="star" color="light" class="star_icon"></ion-icon>
+              <ion-label class="rate_num white">All</ion-label>
+            </div>
+            <div class="select">
+              <ion-icon slot="start" name="star" color="primary" class="star_icon"></ion-icon>
+              <ion-label class="rate_num">1</ion-label>
+            </div>
+            <div class="select">
+              <ion-icon slot="start" name="star" color="primary" class="star_icon"></ion-icon>
+              <ion-label class="rate_num">2</ion-label>
+            </div>
+            <div class="select">
+              <ion-icon slot="start" name="star" color="primary" class="star_icon"></ion-icon>
+              <ion-label class="rate_num">3</ion-label>
+            </div>
+            <div class="select">
+              <ion-icon slot="start" name="star" color="primary" class="star_icon"></ion-icon>
+              <ion-label class="rate_num">4</ion-label>
+            </div>
+            <div class="select">
+              <ion-icon slot="start" name="star" color="primary" class="star_icon"></ion-icon>
+              <ion-label class="rate_num">5</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviw_list" *ngFor="let item of [1,2,3,4,5]">
+        <div class="profile">
+          <div class="left">
+            <div class="bg_image men_image" [style.backgroundImage]="'url(assets/images/p2.jpg)'"></div>
+            <div style="margin-left: 10px;">
+              <ion-label class="bold">Jonathon Williams</ion-label>
+            </div>
+          </div>
+          <div class="right">
+            <div class="select">
+              <ion-icon slot="start" name="star" color="primary" class="star_icon"></ion-icon>
+              <ion-label class="rate_num">5</ion-label>
+            </div>
+            <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
+          </div>
+        </div>
+        <ion-label>The course is very good. the experience of the menter is very clear and easy to understand
+        </ion-label>
+
+        <div class="like">
+          <ion-icon slot="start" name="heart" color="danger" class="heart"></ion-icon>
+          <ion-label class="count">330</ion-label>
+          <ion-label class="time">2 Days ago</ion-label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="button" (click)="onEnroll()">
+      <ion-label class="text">Enroll Course - $40</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

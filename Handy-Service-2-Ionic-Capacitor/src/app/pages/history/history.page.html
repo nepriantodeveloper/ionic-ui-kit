@@ -1,0 +1,43 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Handy Service App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Bookings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="segment">
+      <div (click)="segmentChange(1)" class="seg_name" [class.active]="seg_id == 1">Ongoing
+      </div>
+      <div (click)="segmentChange(2)" class="seg_name" [class.active]="seg_id == 2">Completed
+      </div>
+      <div (click)="segmentChange(3)" class="seg_name" [class.active]="seg_id == 3">Canceled
+      </div>
+    </div>
+
+    <div class="list_card" *ngFor="let item of [1,2,3,4,5,6,7]" (click)="goToTicket()">
+      <div class="img" [style.backgroundImage]="'url(assets/img/s1.jpg)'">
+      </div>
+      <div class="detail">
+        <div class="item">
+          <ion-label class="title">House Cleaning</ion-label>
+        </div>
+        <div class="item">
+          <ion-label class="text">Andrue Russule</ion-label>
+        </div>
+        <div class="item">
+          <ion-label class="status">Completed</ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

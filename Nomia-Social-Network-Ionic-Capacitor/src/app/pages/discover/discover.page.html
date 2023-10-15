@@ -1,0 +1,52 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Nomia App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Discover</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-segment [(ngModel)]="tabs">
+    <ion-segment-button value="active">
+      <ion-label>Search</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="complete">
+      <ion-label>Recent</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="tabs =='active'">
+    <ion-input type="text" placeholder="Address"></ion-input>
+    <ion-input type="text" placeholder="Date"></ion-input>
+    <ion-input type="text" placeholder="Time"></ion-input>
+    <ion-input type="text" placeholder="Category"></ion-input>
+    <ion-input type="text" placeholder="Gender"></ion-input>
+
+    <ion-button expand="block" mode="ios" class="block_btn">
+      Find
+    </ion-button>
+  </div>
+
+  <div *ngIf="tabs =='complete'">
+    <ion-label class="recent">Alex hales</ion-label>
+    <ion-label class="recent">Alex hales</ion-label>
+    <ion-label class="recent">Alex hales</ion-label>
+    <ion-label class="recent">Alex hales</ion-label>
+    <ion-label class="recent">Alex hales</ion-label>
+    <ion-label class="recent">Alex hales</ion-label>
+  </div>
+
+</ion-content>

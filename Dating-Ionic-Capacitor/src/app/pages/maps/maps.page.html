@@ -1,0 +1,25 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content>
+  <div class="center_div" *ngIf="loading == true">
+    <div class="ripple-container">
+      <div class="thumb-lg ripple-trigger">
+        <img src="assets/img/profile.jpg" onError="this.src='profile.jpg'" style="height:100px;width: 100px"
+          class="rounded_img b b-2x box-shadow">
+      </div>
+      <div class="ripple-1"></div>
+      <div class="ripple-2"></div>
+    </div>
+  </div>
+  <div>
+    <div class="main-content">
+      <div #map id="map" class="map"></div>
+    </div>
+  </div>
+</ion-content>

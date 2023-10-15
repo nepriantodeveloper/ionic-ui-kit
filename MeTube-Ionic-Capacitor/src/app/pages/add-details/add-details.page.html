@@ -1,0 +1,66 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Add Details</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="start" name="ellipsis-vertical-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <div class="upper_div">
+      <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+      </div>
+      <div class="input">
+        <textarea rows="4" placeholder="Add a Note"></textarea>
+      </div>
+    </div>
+
+    <div class="item_div" (click)="goToVisibility()">
+      <ion-icon name="eye-outline"></ion-icon>
+      <ion-label>Visibility</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div" (click)="goToAudiance()">
+      <ion-icon name="people-outline"></ion-icon>
+      <ion-label>Select Audiance</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div">
+      <ion-icon name="people-outline"></ion-icon>
+      <ion-label>Schedule</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="item_div" (click)="goToComments()">
+      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+      <ion-label>Comments</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" shape="round" (click)="goToTabs()" expand="block">
+      Upload Shorts
+    </ion-button>
+  </div>
+</ion-footer>

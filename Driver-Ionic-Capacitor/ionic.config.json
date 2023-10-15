@@ -1,0 +1,7 @@
+{
+  "name": "driver",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

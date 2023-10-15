@@ -1,0 +1,31 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  --background: #e6e6e6;
+}
+.main_content_div {
+  .border_div {
+    border-bottom: 1px solid lightgrey;
+    padding: 20px 16px;
+    position: relative;
+
+    ion-toggle {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .grey_lbl {
+      font-size: 13px;
+      color: grey;
+      margin-top: 3px;
+    }
+  }
+}

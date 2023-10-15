@@ -1,0 +1,35 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Social Network App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="header-top">
+    <img src="assets/images/d3.webp" alt="">
+  </div>
+  <ion-label class="bold_text">Let's Sign in to continue</ion-label>
+  <ion-label style="font-size: 13px;">Welcome Back, You have been missed!</ion-label>
+
+  <div class="input">
+    <ion-input type="text" placeholder="User name"></ion-input>
+    <ion-input type="password" placeholder="password"></ion-input>
+    <div class="forgot">
+      <ion-buttons slot="end">
+        <ion-button class="btn" color="medium">
+          Forgot Password ?
+        </ion-button>
+      </ion-buttons>
+    </div>
+  </div>
+
+  <ion-button expand="full" (click)="onLogin()">
+    Login
+  </ion-button>
+
+  <div class="already">
+    <ion-label>New user ? <span (click)="onRegister()">Register</span> Now</ion-label>
+  </div>
+</ion-content>

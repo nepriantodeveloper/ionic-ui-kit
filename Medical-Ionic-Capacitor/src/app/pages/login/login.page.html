@@ -1,0 +1,59 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Medical App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="ion-padding space">
+    <div>
+
+      <ion-label class="simp_lbl">Sign in account</ion-label>
+
+      <ion-item lines="none">
+        <ion-icon slot="end" name="mail-outline" color="primary"></ion-icon>
+        <ion-input type="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-icon slot="end" name="lock-closed-outline" color="primary"></ion-icon>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-label class="forgot">Forgot Password?</ion-label>
+
+      <div class="button" (click)="onHome()">
+        <ion-label class="text">Sign In</ion-label>
+      </div>
+
+      <ion-label class="or">Or login With</ion-label>
+
+
+      <div class="images">
+        <div class="link_image">
+          <div class="bg_image cont_img" [style.backgroundImage]="'url(assets/images/facebook.png)'">
+          </div>
+        </div>
+        <div class="link_image">
+          <div class="bg_image cont_img" [style.backgroundImage]="'url(assets/images/google.png)'">
+          </div>
+        </div>
+        <div class="link_image">
+          <div class="bg_image cont_img" [style.backgroundImage]="'url(assets/images/twitter.png)'">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="bottom">
+      <ion-label class="last_lbl">Not a Member? <span (click)="onRegister()">Sign up</span></ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,41 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="main-content">
+    <ion-slides pager="ios">
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s1.jpeg)'">
+          </div>
+          <ion-label class="head_lbl">Order from wide range restaurants</ion-label>
+          <ion-label class="text">We provide services from wide range of 10000+ restaurants</ion-label>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s2.jpeg)'">
+          </div>
+          <ion-label class="head_lbl">Find the fastest root to your doorstep</ion-label>
+          <ion-label class="text">We provided facility for quick delivery at your doorstep.</ion-label>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s3.jpeg)'">
+          </div>
+          <ion-label class="head_lbl">The fastest food delivery for you !</ion-label>
+          <ion-label class="text">Order now and get it within 30 minutes or less</ion-label>
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <div class="footer">
+      <ion-label class="btn" (click)="onLogin()">Get Started</ion-label>
+    </div>
+  </div>
+</ion-content>

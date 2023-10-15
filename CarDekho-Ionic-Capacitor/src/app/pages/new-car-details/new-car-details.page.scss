@@ -1,0 +1,867 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-segment {
+    ion-segment-button {
+        --color-checked: black;
+        --indicator-color: var(--ion-color-primary);
+
+        ion-label {
+            font-family: "semi-bold";
+        }
+    }
+}
+.main_content_div {
+    .banner_div {
+        width: 100%;
+        height: 250px;
+        position: relative;
+
+        ion-icon {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            font-size: 24px;
+        }
+    }
+    .images_flex {
+        display: flex;
+        align-items: center;
+        padding: 0px 16px;
+        margin-top: -30px;
+        position: absolute;
+
+        .back_image {
+            height: 60px;
+            width: 60px;
+            min-width: 60px;
+            border-radius: 5px;
+            margin-right: 16px;
+
+            .overlay {
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                position: relative;
+
+                ion-label {
+                    font-size: 13px;
+                    color: white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    line-height: 14px;
+                }
+
+                ion-icon {
+                    color: white;
+                    font-size: 26px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+
+    .offer_div {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 16px;
+        ion-button {
+            margin: 0px;
+            --background: #ec4f1a;
+            height: 56px;
+            width: 100%;
+            --border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            font-family: "medium";
+        }
+        .icn_btn {
+            width: 60px;
+            height: 56px;
+            min-width: 60px;
+            background: #fa9813;
+            position: relative;
+            border-radius: 5px;
+            margin-left: 10px;
+
+            ion-icon {
+                font-size: 24px;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .grey_line_div {
+        width: 100%;
+        height: 10px;
+        background: #e6e6e6;
+    }
+
+    .title_lbl {
+        font-size: 20px;
+        font-family: "semi-bold";
+        margin-bottom: 16px;
+    }
+
+    .color_lbl {
+        font-size: 15px;
+        color: #057db1;
+        text-transform: uppercase;
+        font-family: "semi-bold";
+    }
+
+    .price_container {
+        .upper_div {
+            padding: 16px;
+
+            ion-segment {
+                border-bottom: 1px solid lightgray;
+            }
+        }
+        .price_div {
+            .border_div {
+                padding: 20px 16px;
+                border-bottom: 1px solid lightgrey;
+                display: flex;
+                justify-content: space-between;
+
+                .name_lbl {
+                    font-size: 17px;
+                    font-family: "medium";
+                    margin-bottom: 5px;
+                }
+                .small_lbl {
+                    font-size: 13px;
+                    color: grey;
+                }
+                .price_lbl {
+                    font-family: "semi-bold";
+                }
+                .inner_flex {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 8px;
+
+                    ion-label {
+                        margin-right: 16px;
+                    }
+                }
+            }
+            .color_lbl {
+                padding: 16px;
+            }
+        }
+    }
+
+    .review_div {
+        padding: 16px;
+        .flex_div {
+            display: flex;
+            align-items: center;
+
+            ion-icon {
+                color: #fa9813;
+                font-size: 30px;
+            }
+            ion-label {
+                font-size: 24px;
+                font-family: "medium";
+            }
+            div {
+                padding-left: 12px;
+
+                .gray_lbl {
+                    color: grey;
+                    font-family: "medium";
+                    font-size: 14px;
+                }
+                .simp_lbl {
+                    font-size: 16px;
+                }
+            }
+        }
+        hr {
+            border-top: 1px solid lightgrey;
+        }
+        ion-button {
+            margin: 0px;
+            --border-radius: 5px;
+            font-size: 15px;
+            --background: #ec4f1a;
+            font-family: "medium";
+            height: 50px;
+            letter-spacing: 0.5px;
+        }
+
+        .chip_div {
+            ion-chip {
+                background: #e6e6e6;
+                --padding: 16px;
+            }
+            .active {
+                background: black;
+                color: white;
+            }
+        }
+        .single_review {
+            border-bottom: 1px solid lightgrey;
+            padding: 16px 0px;
+            .rate_box {
+                ion-icon {
+                    color: #ffa921;
+                    margin-right: 3px;
+                }
+            }
+            .bold_lbl {
+                font-family: "medium";
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            .desc_lbl {
+                font-size: 15px;
+                color: grey;
+                margin-bottom: 10px;
+            }
+            .read_lbl {
+                font-family: "medium";
+                color: #057db1;
+                margin-bottom: 10px;
+            }
+            .date_lbl {
+                font-size: 14px;
+                color: grey;
+            }
+        }
+        .color_lbl {
+            padding-top: 16px;
+        }
+    }
+
+    .location_div {
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+
+        .inner_flex {
+            display: flex;
+            align-items: center;
+
+            ion-icon {
+                color: grey;
+                font-size: 20px;
+                margin-right: 12px;
+            }
+        }
+        .grey_lbl {
+            color: grey;
+        }
+    }
+
+    .content_div {
+        .general_detail {
+            padding: 16px;
+            padding-top: 30px;
+            .share_icn {
+                display: block;
+                text-align: end;
+                margin-bottom: 16px;
+
+                ion-icon {
+                    font-size: 24px;
+                }
+            }
+
+            .name_flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 8px;
+
+                ion-label {
+                    font-family: "semi-bold";
+                }
+
+                .inner_flex {
+                    display: flex;
+                    align-items: center;
+
+                    ion-label {
+                        color: grey;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .rate_flex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                ion-label {
+                    color: #057db1;
+                    font-family: "medium";
+                    margin-left: 16px;
+                }
+                .inner_flex {
+                    display: flex;
+                    align-items: center;
+
+                    ion-icon {
+                        color: #ffa921;
+                    }
+                }
+            }
+
+            hr {
+                border-top: 1px solid lightgrey;
+            }
+            .road_price {
+                text-align: center;
+                font-family: "semi-bold";
+                text-transform: uppercase;
+                color: #057db1;
+                font-size: 15px;
+            }
+        }
+
+        .car_slider_div {
+            padding: 16px;
+            padding-bottom: 0px;
+
+            .car_slider {
+                width: 100%;
+                display: flex;
+                overflow: scroll;
+                padding-bottom: 16px;
+
+                .single_car {
+                    width: 330px;
+                    min-width: 330px;
+                    height: 110px;
+                    border-radius: 10px;
+                    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+                    display: flex;
+                    margin-right: 16px;
+
+                    .back_image {
+                        width: 150px;
+                        min-width: 150px;
+                        height: 110px;
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                    }
+                    .car_detail {
+                        padding: 10px;
+
+                        .name_lbl {
+                            font-size: 18px;
+                            font-family: "medium";
+                            margin-bottom: 4px;
+                        }
+                        .price_lbl {
+                            color: grey;
+                            font-size: 14px;
+                            margin-bottom: 4px;
+                        }
+                        ion-button {
+                            --background: #ec4f1a;
+                            margin: 0px;
+                            font-size: 12px;
+                            --border-radius: 3px;
+                            height: 34px;
+                            letter-spacing: 0.5px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+
+        .key_specs_div {
+            padding: 16px;
+
+            ion-row {
+                margin-bottom: 16px;
+
+                ion-col {
+                    img {
+                        display: block;
+                        margin: auto;
+                        width: 30px;
+                        margin-bottom: 10px;
+                    }
+                    ion-label {
+                        text-align: center;
+                    }
+                    .grey_lbl {
+                        font-size: 12px;
+                        color: grey;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .image_slider {
+                width: 100%;
+                display: flex;
+                overflow: scroll;
+
+                .single_image {
+                    margin-right: 16px;
+                    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+                    margin-bottom: 16px;
+                    border-radius: 5px;
+
+                    .back_image {
+                        width: 260px;
+                        min-width: 260px;
+                        height: 180px;
+                        position: relative;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+
+                        ion-icon {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 40px;
+                            color: white;
+                        }
+                    }
+                    .detail_div {
+                        padding: 10px;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+
+                        .price_lbl {
+                            font-size: 17px;
+                            font-family: "medium";
+                        }
+
+                        ion-button {
+                            --border-radius: 5px;
+                            letter-spacing: 0.5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .emi_div {
+            padding: 16px;
+
+            .flex_div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .price_lbl {
+                    font-size: 36px;
+                    font-family: "semi-bold";
+
+                    span {
+                        font-family: "regular";
+                        font-size: 16px;
+                    }
+                    .color_span {
+                        color: #057db1;
+                        font-family: "medium";
+                        margin-left: 8px;
+                    }
+                }
+                .small_lbl {
+                    font-size: 14px;
+                    color: grey;
+                }
+                img {
+                    width: 70px;
+                }
+            }
+            hr {
+                border-top: 1px solid lightgrey;
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .colors_div {
+            padding: 16px;
+            .title_lbl {
+                margin: 0px;
+            }
+            .small_title {
+                font-size: 16px;
+                color: grey;
+                margin-bottom: 8px;
+            }
+            .color_flex {
+                width: 100%;
+                display: flex;
+                overflow: scroll;
+
+                .color_box {
+                    margin-right: 16px;
+
+                    div {
+                        height: 60px;
+                        width: 60px;
+                        min-width: 60px;
+                        border-radius: 100%;
+                        border: 1px solid lightgrey;
+                    }
+                    ion-label {
+                        font-size: 14px;
+                        color: grey;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .news_div {
+            padding: 16px;
+        }
+    }
+
+    .main_car_detail {
+        padding: 16px;
+        padding-bottom: 0px;
+
+        .flex_div {
+            display: flex;
+            margin-bottom: 12px;
+            .back_image {
+                width: 120px;
+                min-width: 120px;
+                height: 90px;
+            }
+            .detail_div {
+                padding-left: 16px;
+                width: 100%;
+
+                ion-label {
+                    font-family: "semi-bold";
+                }
+                .name_lbl {
+                    font-size: 18px;
+                }
+                .price_lbl {
+                    font-size: 17px;
+                    margin-bottom: 8px;
+                }
+                .inner_flex {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    ion-icon {
+                        color: #ffa921;
+                        margin-right: 2px;
+                        font-size: 18px;
+                    }
+                    ion-label {
+                        color: #057db1;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        hr {
+            border-top: 1px solid lightgray;
+        }
+    }
+
+    .fuel_div {
+        padding: 16px;
+
+        ion-select {
+            border-bottom: 1px solid lightgrey;
+            --padding-start: 0px;
+        }
+    }
+
+    .car_accordoin_div {
+        .acc_title {
+            .title_div {
+                padding: 20px 16px;
+                .title_flex {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    ion-label {
+                        font-size: 18px;
+                        font-family: "semi-bold";
+                    }
+
+                    ion-icon {
+                        color: grey;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .dealer_container {
+        .title_lbl {
+            padding: 16px;
+            margin: 0px;
+        }
+        .dealer_slider {
+            width: 100%;
+            display: flex;
+            overflow: scroll;
+
+            .card_box {
+                background: white;
+                border-radius: 5px;
+                padding: 10px;
+                margin-left: 16px;
+                width: 270px;
+                min-width: 270px;
+                border: 1px solid lightgrey;
+
+                .name_lbl {
+                    font-size: 18px;
+                    font-family: "medium";
+                    margin-bottom: 10px;
+                }
+
+                .flex_div {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    ion-icon {
+                        font-size: 24px;
+                    }
+
+                    ion-label {
+                        padding-left: 12px;
+                        font-size: 14px;
+                        color: grey;
+                    }
+                }
+                ion-button {
+                    margin: 0px;
+                    font-family: "medium";
+                    font-size: 16px;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    height: 50px;
+                    --border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .grey_content_div {
+        background: #e6e6e6;
+        padding: 16px;
+
+        .single_car {
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+            margin-bottom: 16px;
+            border-radius: 5px;
+
+            .back_image {
+                width: 100%;
+                height: 240px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            .detail_div {
+                padding: 16px;
+                background: white;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                .price_lbl {
+                    font-family: "medium";
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                }
+                ion-button {
+                    --border-radius: 5px;
+                    font-family: "medium";
+                    letter-spacing: 0.5px;
+                    margin: 0px;
+                }
+            }
+        }
+
+        .single_car_detail {
+            border-radius: 5px;
+            background: white;
+            padding: 16px;
+            margin-bottom: 16px;
+
+            .car_flex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 16px;
+
+                .detail_div {
+                    padding-right: 16px;
+
+                    .grey_lbl {
+                        font-size: 14px;
+                        color: grey;
+                        margin-bottom: 8px;
+                    }
+                    .simp_title {
+                        font-size: 16px;
+                        margin-bottom: 8px;
+                    }
+                    .time_lbl {
+                        display: flex;
+                        align-items: center;
+                        color: grey;
+                        font-size: 14px;
+
+                        ion-icon {
+                            font-size: 16px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .back_image {
+                    width: 120px;
+                    min-width: 120px;
+                    height: 90px;
+                }
+            }
+
+            ion-button {
+                margin: 0px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-family: "medium";
+                --border-radius: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+    .grey_box {
+        padding: 16px;
+        background: #e6e6e6;
+        display: flex;
+        align-items: center;
+
+        div {
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            border: 1px solid lightgray;
+            margin-right: 16px;
+        }
+    }
+
+    .color_image_box {
+        width: 100%;
+        height: 280px;
+        padding: 16px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        ion-label {
+            text-align: center;
+            font-family: "medium";
+            font-size: 17px;
+            color: white;
+        }
+    }
+
+    .no_data {
+        background: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: "semi-bold";
+        padding: 20px;
+    }
+
+    .overview_detail {
+        padding: 16px;
+
+        .detail_flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgrey;
+            padding: 16px 0px;
+
+            ion-icon {
+                font-size: 24px;
+                color: #25d568;
+            }
+        }
+    }
+
+    .car_image {
+        width: 100%;
+        height: 260px;
+        position: relative;
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 16px;
+            display: flex;
+            align-items: flex-end;
+
+            ion-label {
+                color: white;
+                font-family: "medium";
+                font-size: 17px;
+            }
+        }
+
+        ion-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            color: white;
+        }
+    }
+    .car_video_detail {
+        padding: 16px;
+        .bold_lbl {
+            font-family: "medium";
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .grey_lbl {
+            font-size: 14px;
+            color: grey;
+        }
+    }
+}

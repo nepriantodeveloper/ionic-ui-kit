@@ -1,0 +1,46 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lottery Ticket</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <div class="container">
+      <div class="slide_draw">
+        <div *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11]">
+          <div class="card c_card">
+            <div class="top_row">
+              <div class="img" [style.backgroundImage]="'url(assets/img/lottery.png)'">
+              </div>
+              <div class="details">
+                <ion-label class="title">Super Ball</ion-label>
+                <ion-label class="text">Jackpots</ion-label>
+                <ion-label class="price">$320 000 000</ion-label>
+              </div>
+            </div>
+            <div class="country">
+              <div class="img" [style.backgroundImage]="'url(assets/img/india.png)'">
+              </div>
+              <ion-label class="text">Next Draw</ion-label>
+              <ion-label class="title">80:12:25:26</ion-label>
+            </div>
+            <ion-button (click)="goToSelectNumber()" size="small" shape="round" expand="block" class="main_btn">
+              Play Now
+            </ion-button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,95 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="heading_div">
+      <div class="heading_title">
+        <div class="title_div">
+          <ion-label class="title">Your Best Photos</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide_profile">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card">
+          <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading_div">
+      <div class="heading_title">
+        <div class="title_div">
+          <ion-label class="title">Your Interest</ion-label>
+        </div>
+        <div class="all_btn" (click)="goToInterest()">
+          <ion-icon name="create-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="interest">
+      <div class="chip">
+        <ion-chip outline color="dark" *ngFor="let item of [1,2,3,4,5]">
+          <img src="assets/img/heart.png" class="img">
+          <ion-label> Travel </ion-label>
+        </ion-chip>
+      </div>
+    </div>
+
+    <div class="heading_div">
+      <div class="heading_title">
+        <div class="title_div">
+          <ion-label class="title">Your Profile</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="center_div">
+      <div class="input">
+        <ion-input type="text" placeholder="Full Name"></ion-input>
+      </div>
+      <div class="input">
+        <ion-input type="text" placeholder="Nick Name"></ion-input>
+      </div>
+      <div class="input">
+        <ion-input type="text" placeholder="Date of Birth"></ion-input>
+      </div>
+      <div class="input">
+        <ion-select placeholder="Select Gender">
+          <ion-select-option value="0" class="text">Male</ion-select-option>
+          <ion-select-option value="1" class="text">Female</ion-select-option>
+
+        </ion-select>
+      </div>
+      <div class="input">
+        <ion-input type="text" placeholder="Email"></ion-input>
+      </div>
+      <div class="input">
+        <ion-input type="text" placeholder="Phone Number"></ion-input>
+      </div>
+      <div class="input">
+        <ion-input type="text" placeholder="Occupation"></ion-input>
+      </div>
+    </div>
+  </div>
+</ion-content>

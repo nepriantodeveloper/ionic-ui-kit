@@ -1,0 +1,90 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="onNotification()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Your Orders</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="res_detail">
+    <div class="bg_image res_img" [style.backgroundImage]="'url(assets/images/f2.jpg)'"></div>
+    <div class="info">
+      <ion-label class="name">Burger King</ion-label>
+      <div class="align">
+        <ion-icon name="location-outline" color="medium"></ion-icon>
+        <ion-label class="simpl">Browen Avenue</ion-label>
+      </div>
+      <div class="align">
+        <ion-icon name="stopwatch-outline" color="medium"></ion-icon>
+        <ion-label class="simpl">Delivery in 30 min</ion-label>
+      </div>
+    </div>
+  </div>
+
+  <div class="item_detail">
+    <div class="item_info">
+      <div class="bg_image veg_img" [style.backgroundImage]="'url(assets/images/veg.png)'"></div>
+      <div class="detail">
+        <ion-label class="bold">Lite Whopper Jr Veg</ion-label>
+        <ion-label class="simpl">King fries, medium fries + charcoal</ion-label>
+        <div class="just">
+          <ion-label class="color_text">CUSTOMIZED</ion-label>
+          <ion-icon name="chevron-down-outline" color="primary"></ion-icon>
+        </div>
+        <div class="just">
+          <ion-icon name="remove" class="qty_icon"></ion-icon>
+          <ion-label class="number">1</ion-label>
+          <ion-icon name="add" class="qty_icon"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <ion-label class="price">Track</ion-label>
+  </div>
+
+  <div class="question">
+    <ion-icon name="create-outline" class="edit"></ion-icon>
+    <ion-label class="simpl">Any Question or request? We will try our...</ion-label>
+  </div>
+
+  <div class="item_detail">
+    <div class="item_info">
+      <div class="bg_image veg_img" [style.backgroundImage]="'url(assets/images/veg.png)'"></div>
+      <div class="detail">
+        <ion-label class="bold">Lite Whopper Jr Veg</ion-label>
+        <ion-label class="simpl">King fries, medium fries + charcoal</ion-label>
+        <div class="just">
+          <ion-label class="color_text">CUSTOMIZED</ion-label>
+          <ion-icon name="chevron-down-outline" color="primary"></ion-icon>
+        </div>
+        <div class="just">
+          <ion-icon name="remove" class="qty_icon"></ion-icon>
+          <ion-label class="number">1</ion-label>
+          <ion-icon name="add" class="qty_icon"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <ion-label class="price">Track</ion-label>
+  </div>
+
+  <div class="question">
+    <ion-icon name="create-outline" class="edit"></ion-icon>
+    <ion-label class="simpl">Any Question or request? We will try our best...</ion-label>
+  </div>
+</ion-content>

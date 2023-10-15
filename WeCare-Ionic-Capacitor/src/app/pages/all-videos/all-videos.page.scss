@@ -1,0 +1,57 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : WeCare App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+.main-content {
+  .grid_card {
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .video_div {
+      width: 50%;
+
+      .img {
+        height: 250px;
+        border-radius: 16px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        position: relative;
+        margin: 8px;
+
+        .image_detail {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+
+          .title {
+            font-size: 14px;
+            color: white;
+            font-family: 'medium';
+          }
+        }
+
+        .icon {
+          position: absolute;
+          top: 50%;
+          left: 42%;
+
+          ion-icon {
+            color: var(--ion-color-primary);
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+}

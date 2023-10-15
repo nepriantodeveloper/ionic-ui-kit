@@ -1,0 +1,46 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    ion-thumbnail {
+      --border-radius: 100px;
+      height: 25px;
+      width: 25px;
+      margin: 0px 10px;
+    }
+  }
+}
+
+ion-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--ion-color-light);
+  margin: 12px 0px;
+
+  ion-col {
+    .btns {
+      height: 40px;
+      width: 40px;
+      --border-radius: 10px;
+      --background: #DADCFF;
+      color: var(--ion-color-primary);
+    }
+
+    .label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      ion-label {
+        font-family: 'bold';
+        font-size: 13px;
+      }
+    }
+  }
+}

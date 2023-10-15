@@ -1,0 +1,114 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  --background: var(--ion-color-primary);
+
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+
+    ion-item {
+      --background: transparent;
+
+      ion-icon {
+        font-size: 20px;
+        color: #eaeaf4;
+      }
+
+      .back_image {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+      }
+
+      ion-label {
+        margin-left: 1rem;
+        color: #eaeaf4;
+
+        h2 {
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+ion-content {
+  --background: #F3FCF8;
+
+  .messageList {
+    .left {
+      width: 100%;
+      float: left;
+      margin-left: 15px;
+      --background: #F5F6F9;
+
+      p {
+        width: max-content;
+        float: left;
+        background: white;
+        border-radius: 0 10px 10px 10px;
+        padding: 5px 10px;
+      }
+    }
+
+    .right {
+      width: 100%;
+      float: right;
+      margin-right: 15px;
+
+      p {
+        width: max-content;
+        float: right;
+        background: var(--ion-color-primary);
+        color: white;
+        border-radius: 10px 0px 10px 10px;
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+ion-footer {
+  ion-toolbar {
+    --border-width: 0px;
+    padding: 10px;
+    align-items: center;
+
+    ion-row {
+      display: flex;
+      flex-direction: row;
+
+      ion-col {
+        ion-input {
+          --padding-start: 20px;
+          background: #F4F5F8;
+          border-radius: 30px;
+          border: 1px solid rgb(220, 219, 219);
+        }
+
+        ion-buttons {
+          background: #fe734d50;
+          border-radius: 50%;
+        }
+
+        .btn {
+          background: var(--ion-color-primary);
+          color: white;
+          border-radius: 50%;
+          height: 100%;
+          width: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Driver App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <div class="bg_color">
+          <div class="profile">
+            <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/p1.jpg)'"></div>
+            <div>
+              <ion-label class="bold">Gujarat Banks</ion-label>
+              <div class="line">
+                <ion-icon name="star" color="primary"></ion-icon>
+                <ion-label class="gold">Gold Member</ion-label>
+              </div>
+            </div>
+          </div>
+
+          <div class="about">
+            <div class="center">
+              <ion-icon name="time-outline"></ion-icon>
+              <ion-label class="bold">10.2</ion-label>
+              <ion-label class="grey">Hours Online</ion-label>
+            </div>
+
+            <div class="center">
+              <ion-icon name="speedometer-outline"></ion-icon>
+              <ion-label class="bold">30 KM</ion-label>
+              <ion-label class="grey">Total Distance</ion-label>
+            </div>
+
+            <div class="center">
+              <ion-icon name="bookmark-outline"></ion-icon>
+              <ion-label class="bold">20</ion-label>
+              <ion-label class="grey">Total Jobs</ion-label>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg_white">
+          <div class="class" (click)="onHome()">
+            <ion-icon name="home-outline" class="icon" color="medium"></ion-icon>
+            <ion-label class="name">Home</ion-label>
+          </div>
+
+          <div class="class" (click)="onWallet()">
+            <ion-icon name="wallet-outline" class="icon" color="medium"></ion-icon>
+            <ion-label class="name">My Wallet</ion-label>
+          </div>
+
+          <div class="class" (click)="onHistory()">
+            <ion-icon name="sync-outline" class="icon" color="medium"></ion-icon>
+            <ion-label class="name">History</ion-label>
+          </div>
+
+          <div class="class" (click)="onNotification()">
+            <ion-icon name="notifications-outline" class="icon" color="medium"></ion-icon>
+            <ion-label class="name">Notification</ion-label>
+          </div>
+
+          <div class="class" (click)="onInvite()">
+            <ion-icon name="gift-outline" class="icon" color="medium"></ion-icon>
+            <ion-label class="name">Invite Friends</ion-label>
+          </div>
+
+          <div class="class" (click)="onSettings()">
+            <ion-icon name="settings-outline" class="icon" color="medium"></ion-icon>
+            <ion-label class="name">Settings</ion-label>
+          </div>
+
+          <div class="class">
+            <ion-icon name="log-out-outline" class="icon" color="medium"></ion-icon>
+            <ion-label class="name">Logout</ion-label>
+          </div>
+        </div>
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

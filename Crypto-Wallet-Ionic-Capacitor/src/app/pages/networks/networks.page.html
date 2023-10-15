@@ -1,0 +1,72 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Networks</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="item">
+    <div class="heading">
+      <ion-icon slot="start" color="success" name="ellipse"></ion-icon>
+      <ion-label>Ethereum Main Network</ion-label>
+    </div>
+    <ion-checkbox></ion-checkbox>
+  </div>
+
+  <ion-label class="h5">Other Networks</ion-label>
+
+  <div class="item">
+    <div class="heading">
+      <ion-icon slot="start" color="danger" name="ellipse"></ion-icon>
+      <ion-label>Ropesten Test Network</ion-label>
+    </div>
+    <ion-checkbox></ion-checkbox>
+  </div>
+
+  <div class="item">
+    <div class="heading">
+      <ion-icon slot="start" color="primary" name="ellipse"></ion-icon>
+      <ion-label>Kovan Test Network</ion-label>
+    </div>
+    <ion-checkbox></ion-checkbox>
+  </div>
+
+  <div class="item">
+    <div class="heading">
+      <ion-icon slot="start" color="warning" name="ellipse"></ion-icon>
+      <ion-label>Rinkeby Test Network</ion-label>
+    </div>
+    <ion-checkbox></ion-checkbox>
+  </div>
+
+  <div class="item">
+    <div class="heading">
+      <ion-icon slot="start" color="secondary" name="ellipse"></ion-icon>
+      <ion-label>Goerli Test Network</ion-label>
+    </div>
+    <ion-checkbox></ion-checkbox>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="contentbtn" (click)="onNetwork()" expand="block">
+      Add Network
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

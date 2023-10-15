@@ -1,0 +1,66 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Nomia App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  padding: 16px;
+
+  .header-top {
+    img {
+      margin-top: 2rem;
+    }
+  }
+
+  .bold_text {
+    margin-top: 2rem;
+    font-size: 24px;
+    font-family: 'bold';
+  }
+
+  .input {
+    margin-top: 1rem;
+
+    ion-input {
+      margin-top: 1.5rem;
+      border: 1px solid #92949c;
+      --padding-start: 10px;
+    }
+  }
+
+  ion-button {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .forgot {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    align-items: flex-end;
+
+    .btn {
+      margin: 5px 0px 0px 0px;
+    }
+  }
+
+
+}
+
+ion-footer {
+  .already {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ion-label {
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}

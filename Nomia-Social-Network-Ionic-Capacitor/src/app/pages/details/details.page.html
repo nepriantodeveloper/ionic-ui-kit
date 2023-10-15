@@ -1,0 +1,127 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Nomia App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content>
+  <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/p1.jpg)'">
+    <div class="ion-padding">
+      <ion-icon name="chevron-back-outline" class="back" (click)="back()"></ion-icon>
+      <div class="detail">
+        <ion-icon name="play" class="play"></ion-icon>
+        <div class="bg_image profile_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'"></div>
+        <ion-icon name="heart" class="favorite"></ion-icon>
+      </div>
+      <ion-label class="white_text"> Barbera Michelle </ion-label>
+      <div class="flex">
+        <ion-icon name="location-outline" color="light"></ion-icon>
+        <ion-label class="small_text"> Gujarat, India • 0.30 miles away </ion-label>
+      </div>
+      <div class="flex">
+        <ion-label class="bg_text"> Available </ion-label>
+      </div>
+      <div class="bottom">
+        <div class="rate">
+          <ion-label class="dark_text"> 53 </ion-label>
+          <ion-label class="light_text"> Rating </ion-label>
+        </div>
+        <div class="rate">
+          <ion-label class="dark_text"> 83 </ion-label>
+          <ion-label class="light_text"> Review </ion-label>
+        </div>
+        <div class="rate">
+          <ion-label class="dark_text"> 24 </ion-label>
+          <ion-label class="light_text"> Year's old </ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ion-padding">
+    <ion-row>
+      <ion-col>
+        <div class="complete">
+          <ion-label> Hourly Rate </ion-label>
+          <ion-label><strong>$15</strong> per hour </ion-label>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="complete">
+          <ion-label> Completed </ion-label>
+          <ion-label><strong>37</strong> </ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-label class="head_text"> Experience </ion-label>
+
+    <ion-label class=""> New born and childeren upto 12 years old </ion-label>
+
+    <div class="icons">
+      <ion-icon name="leaf-outline"></ion-icon>
+      <ion-icon name="medical-outline"></ion-icon>
+      <ion-icon name="happy-outline"></ion-icon>
+      <ion-icon name="gift-outline"></ion-icon>
+      <ion-icon name="game-controller-outline"></ion-icon>
+    </div>
+
+    <ion-label class="head_text"> Description </ion-label>
+
+    <ion-label class="description"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+      Ipsum has been the industry Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+      has been the industry <strong>Read more</strong></ion-label>
+
+    <div class="space">
+      <ion-label class="head_text"> Schedule </ion-label>
+      <ion-label class="color_text"> See all </ion-label>
+    </div>
+
+    <div class="story-item">
+      <div class="menu">
+        <div class="item" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]">
+          <ion-label>October 24</ion-label>
+          <ion-label>Available</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <ion-label class="head_text"> Reviews </ion-label>
+    <div class="booking" *ngFor="let item of [1,2,3,4,5,6]">
+      <div class="flex">
+        <div class="bg_image profile_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'"></div>
+        <div style="margin-left: 10px;">
+          <ion-label class="bold_text"> Mike Jenifer </ion-label>
+          <div class="rate">
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-label class="grey_text"> 15 minutes ago </ion-label>
+          </div>
+        </div>
+      </div>
+      <ion-label> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</ion-label>
+    </div>
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="10">
+        <ion-button expand="block" mode="ios" class="block_btn" (click)="onBooking()">
+          Book Now
+        </ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <div class="icon" (click)="onMessage()">
+          <ion-icon name="chatbubble" color="primary"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

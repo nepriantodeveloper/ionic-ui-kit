@@ -1,0 +1,115 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    --background: black;
+
+    ion-icon {
+      color: white;
+    }
+
+    .white {
+      color: white;
+    }
+
+    .green_text {
+      color: var(--ion-color-primary);
+      margin-left: 5px;
+    }
+
+    .connect {
+      display: flex;
+      align-items: center;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+
+    ion-title {
+      color: white;
+    }
+  }
+}
+
+ion-content {
+  --background: black;
+
+  .back_image {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    position: relative;
+
+    .front_image {
+      height: 90px;
+      width: 120px;
+      border-radius: 5px;
+      position: absolute;
+      left: 0;
+      top: -20px;
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    .icon {
+      background-color: rgb(66, 65, 65);
+      padding: 15px;
+      border-radius: 100%;
+      margin-right: 10px;
+      font-size: 30px;
+    }
+
+    .add_image {
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+      margin-right: 10px;
+    }
+  }
+}
+
+ion-footer {
+  --background: black;
+
+  ion-toolbar {
+    --border-width: 0px;
+    padding: 10px;
+    align-items: center;
+    --background: black;
+
+    ion-icon {
+      color: white;
+      font-size: 25px;
+    }
+
+    .button {
+      background-color: var(--ion-color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 30px;
+      padding: 10px 0;
+
+      .call {
+        background-color: white;
+        padding: 7px;
+        border-radius: 100%;
+      }
+    }
+  }
+}

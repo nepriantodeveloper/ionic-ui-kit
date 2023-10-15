@@ -1,0 +1,797 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="goBack()">
+                <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Maruti Baleno</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="goBack()">
+                <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+            </ion-button>
+            <ion-button (click)="goBack()">
+                <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+
+    <ion-segment value="overview" mode="md" scrollable (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="overview">
+            <ion-label>Overview</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="price">
+            <ion-label>Price</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="compare">
+            <ion-label>Compare</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="offers">
+            <ion-label>Offers</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="variants">
+            <ion-label>Variants</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="colors">
+            <ion-label>Colors</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="360view">
+            <ion-label>360 View</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="features">
+            <ion-label>Specs & Features</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="images">
+            <ion-label>Images</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="videos">
+            <ion-label>Videos</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="reviews">
+            <ion-label>Reviews</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div" *ngIf="tabID == 'overview'">
+
+        <div class="bg_image banner_div" [style.backgroundImage]="'url(assets/imgs/car1.jpg)'">
+            <ion-icon name="heart-outline"></ion-icon>
+        </div>
+
+        <div class="images_flex">
+            <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/car2.jpg)'">
+                <div class="overlay">
+                    <ion-label>Images</ion-label>
+                </div>
+            </div>
+            <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/car3.jpg)'">
+                <div class="overlay">
+                    <ion-label>+5 Colors</ion-label>
+                </div>
+            </div>
+            <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/car4.jpg)'">
+                <div class="overlay">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_div">
+
+            <div class="general_detail">
+                <div class="share_icn">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                </div>
+                <div class="name_flex">
+                    <div>
+                        <ion-label>Maruti Baleno</ion-label>
+                        <ion-label>₹ 6.35 - 9.35 Lakh*</ion-label>
+                    </div>
+                    <div class="inner_flex">
+                        <ion-checkbox mode="md"></ion-checkbox>
+                        <ion-label>Compare</ion-label>
+                    </div>
+                </div>
+                <div class="rate_flex">
+                    <div class="inner_flex">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-label>11 Reviews</ion-label>
+                    </div>
+                    <ion-label>Rate This Car</ion-label>
+                </div>
+                <hr>
+                <div class="offer_div">
+                    <ion-button expand="block" mode="ios">
+                        View Exciting Offers
+                    </ion-button>
+                    <div class="icn_btn">
+                        <ion-icon name="call"></ion-icon>
+                    </div>
+                </div>
+                <ion-label class="road_price">Get on road price</ion-label>
+            </div>
+
+            <div class="grey_line_div"></div>
+
+            <div class="car_slider_div">
+                <ion-label class="title_lbl">Get Offers on Similar Cars</ion-label>
+                <div class="car_slider">
+                    <div class="single_car" *ngFor="let item of cars">
+                        <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'"></div>
+                        <div class="car_detail">
+                            <ion-label class="name_lbl">Tata Altroz</ion-label>
+                            <ion-label class="price_lbl">₹ 5.99 - 6.70 Lakh*</ion-label>
+                            <ion-button expand="block" mode="ios" size="small">
+                                View exciting offer
+                            </ion-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grey_line_div"></div>
+
+            <div class="key_specs_div">
+                <ion-label class="title_lbl">Key Specs of Maruti Baleno</ion-label>
+                <ion-row>
+                    <ion-col size="4">
+                        <img src="assets/imgs/speedometer.png">
+                        <ion-label class="grey_lbl">Mileage (upto)</ion-label>
+                        <ion-label>22.94 kmpl</ion-label>
+                    </ion-col>
+                    <ion-col size="4">
+                        <img src="assets/imgs/engine.png">
+                        <ion-label class="grey_lbl">Engine (upto)</ion-label>
+                        <ion-label>1197 cc</ion-label>
+                    </ion-col>
+                    <ion-col size="4">
+                        <img src="assets/imgs/thunder.png">
+                        <ion-label class="grey_lbl">BHP</ion-label>
+                        <ion-label>88.5</ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-label class="color_lbl">View all specs</ion-label>
+            </div>
+
+            <div class="grey_line_div"></div>
+
+            <div class="price_container">
+                <div class="upper_div">
+                    <ion-label class="title_lbl">Maruti Baleno price list (Variants)</ion-label>
+                    <ion-segment value="petrol" mode="md" scrollable  (ionChange)="priceChange($event)">
+                        <ion-segment-button value="petrol">
+                            <ion-label>Petrol Version</ion-label>
+                        </ion-segment-button>
+                        <ion-segment-button value="automatic">
+                            <ion-label>Automatic Version</ion-label>
+                        </ion-segment-button>
+                    </ion-segment>
+                </div>
+                <div class="price_div">
+                    <div class="border_div" *ngFor="let item of [1,2,3,4,5]">
+                        <div>
+                            <ion-label class="name_lbl">Sigma</ion-label>
+                            <ion-label class="small_lbl">1197 cc, Manual, Petrol, 22.35 kmpl</ion-label>
+                        </div>
+                        <div>
+                            <ion-label class="price_lbl">₹ 6.35 Lakh*</ion-label>
+                            <div class="inner_flex">
+                                <ion-label class="small_lbl">Campare</ion-label>
+                                <ion-checkbox mode="md"></ion-checkbox>
+                            </div>
+                        </div>
+                    </div>
+                    <ion-label class="color_lbl">View all variants</ion-label>
+                </div>
+            </div>
+
+            <div class="grey_line_div"></div>
+
+            <div class="emi_div">
+                <ion-label class="title_lbl">EMI Starts</ion-label>
+                <div class="flex_div">
+                    <div>
+                        <ion-label class="price_lbl">₹ 13,500<span>/month</span> <span class="color_span">Edit</span> </ion-label>
+                        <ion-label class="small_lbl">(for 60 months and interest rate 9.8%)</ion-label>
+                    </div>
+                    <div>
+                        <img src="assets/imgs/money.png">
+                    </div>
+                </div>
+                <hr>
+                <ion-label class="color_lbl">View Finance Offers</ion-label>
+            </div>
+
+            <div class="grey_line_div"></div>
+
+            <div class="review_div">
+                <ion-label class="title_lbl">User Reviews</ion-label>
+                <div class="flex_div">
+                    <ion-icon name="star"></ion-icon>&nbsp;
+                    <ion-label>4.5</ion-label>
+                    <div>
+                        <ion-label class="gray_lbl">Based on</ion-label>
+                        <ion-label class="simp_lbl">11 User Reviews</ion-label>
+                    </div>
+                </div>
+                <hr>
+                <ion-button expand="block" mode="ios">
+                    Write a Review
+                </ion-button>
+                <hr>
+
+                <div class="chip_div">
+                    <ion-chip [class.active]="item.status" *ngFor="let item of reviewFilter">
+                        <ion-label>{{item.name}}</ion-label>
+                    </ion-chip>
+                </div>
+
+                <ion-segment value="latest" mode="md" scrollable (ionChange)="reviewChange($event)">
+                    <ion-segment-button value="latest">
+                        <ion-label>Latest</ion-label>
+                    </ion-segment-button>
+                    <ion-segment-button value="helpful">
+                        <ion-label>Helpful</ion-label>
+                    </ion-segment-button>
+                </ion-segment>
+
+                <div class="single_review" *ngFor="let item of [1,2,3]">
+                    <div class="rate_box">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <ion-label class="bold_lbl">My Personal Baleno Experience Is Awesome.</ion-label>
+                    <ion-label class="desc_lbl">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magnam, nobis
+                        aspernatur natus recusandae vero quae.
+                    </ion-label>
+                    <ion-label class="read_lbl">Read More</ion-label>
+                    <ion-label class="name_lbl">Jonh Doe</ion-label>
+                    <ion-label class="date_lbl">Feb 25, 2022</ion-label>
+                </div>
+
+                <ion-label class="color_lbl">View all Balono Review</ion-label>
+
+            </div>
+
+            <div class="grey_line_div"></div>
+
+            <div class="key_specs_div">
+                <ion-label class="title_lbl">Pictures</ion-label>
+                <div class="image_slider">
+                    <div class="single_image" style="box-shadow: none;" *ngFor="let item of cars">
+                        <div class="bg_image back_image"  [style.backgroundImage]="'url('+ item +')'" style="border-radius: 0px;"></div>
+                    </div>
+                </div>
+                <ion-label class="color_lbl">View all pictures</ion-label>
+            </div>
+
+            <div class="grey_line_div"></div>
+
+            <div class="key_specs_div">
+                <ion-label class="title_lbl">Videos</ion-label>
+                <div class="image_slider">
+                    <div class="single_image" style="box-shadow: none;" *ngFor="let item of cars">
+                        <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'" style="border-radius: 0px;">
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <ion-label class="color_lbl">View all Videos</ion-label>
+            </div>
+
+            <div class="grey_line_div"></div>
+
+            <div class="colors_div">
+                <ion-label class="title_lbl">Colors Available</ion-label>
+                <ion-label class="small_title">5 Shades</ion-label>
+
+                <div class="color_flex">
+                    <div class="color_box" *ngFor="let item of colors">
+                        <div [style.background]="item.code"></div>
+                        <ion-label>{{item.name}}</ion-label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="grey_line_div"></div>
+
+            <div class="key_specs_div">
+                <ion-label class="title_lbl">Users who viewed this car also viewed</ion-label>
+                <div class="image_slider">
+                    <div class="single_image" *ngFor="let item of cars">
+                        <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'"></div>
+                        <div class="detail_div">
+                            <ion-label>Tata Altoz</ion-label>
+                            <ion-label class="price_lbl">₹ 6.35 - 9.35 Lakh*</ion-label>
+                        </div>
+                    </div>
+                </div>
+                <ion-label class="color_lbl">View all pictures</ion-label>
+            </div>
+
+            <div class="grey_line_div"></div>
+
+            <div class="key_specs_div">
+                <ion-label class="title_lbl">Maruti Baleno Comparison with similar...</ion-label>
+                <div class="image_slider">
+                    <div class="single_image" *ngFor="let item of cars">
+                        <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'"></div>
+                        <div class="detail_div">
+                            <ion-label>Tata Altoz</ion-label>
+                            <ion-label class="price_lbl">₹ 6.35 - 9.35 Lakh*</ion-label>
+                            <ion-button expand="block" fill="outline" mode="ios">
+                              Baleno vs Altoz
+                            </ion-button>
+                        </div>
+                    </div>
+                </div>
+                <ion-label class="color_lbl">View all pictures</ion-label>
+            </div>
+
+            <div class="grey_line_div"></div>
+
+            <div class="news_div">
+                <ion-label class="title_lbl">Maruti Baleno News</ion-label>
+
+                <div class="news_flex" *ngFor="let item of cars">
+                    <div class="news_detail">
+                        <ion-label class="bold_lbl">Here are the differences between the old and new...</ion-label>
+                        <ion-label class="date_lbl">
+                            <span>By Mausam</span> &nbsp;•&nbsp; <span>Feb 25,2022</span>
+                        </ion-label>
+                    </div>
+                    <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="main_content_div" *ngIf="tabID == 'price'">
+
+        <div class="main_car_detail">
+            <div class="flex_div">
+                <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/car1.jpg)'" ></div>
+                <div class="detail_div">
+                    <ion-label class="name_lbl">Maruti Baleno</ion-label>
+                    <ion-label class="price_lbl">₹ 6.35 - 9.35 Lakh*</ion-label>
+                    <div class="inner_flex">
+                        <div>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <ion-label>Rate Now</ion-label>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="offer_div">
+                <ion-button expand="block" mode="ios">
+                    View Exciting Offers
+                </ion-button>
+                <div class="icn_btn">
+                    <ion-icon name="call"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="grey_line_div"></div>
+
+        <div class="location_div">
+            <div class="inner_flex">
+                <ion-icon name="location-outline"></ion-icon>
+                <ion-label>New Delhi</ion-label>
+            </div>
+            <ion-label class="grey_lbl">Change</ion-label>
+        </div>
+
+        <div class="grey_line_div"></div>
+
+        <div class="fuel_div">
+            <ion-label class="title_lbl">Fuel Type</ion-label>
+            <ion-select placeholder="Petrol (7 Variants)">
+                <ion-select-option value="Petrol1">Petrol1</ion-select-option>
+                <ion-select-option value="Petrol1">Petrol2</ion-select-option>
+            </ion-select>
+        </div>
+
+        <div class="grey_line_div"></div>
+
+        <div class="car_accordoin_div">
+
+          <div class="acc_title" *ngFor="let item of carList; let i = index;">
+              <div class="title_div">
+                  <div class="title_flex" (click)="toggleSection(i)">
+                      <ion-label>{{item.name}}</ion-label>
+                      <ion-icon name="add" *ngIf="!item.open"></ion-icon>
+                      <ion-icon name="remove" *ngIf="item.open"></ion-icon>
+                  </div>
+                  <ion-label>On road price ₹ 9,14,081</ion-label>
+              </div>
+
+
+              <div *ngIf="item.open">
+                  <app-accordion2></app-accordion2>
+              </div>
+              <div class="grey_line_div"></div>
+          </div>
+
+            <!-- <div *ngFor="let item of carList">
+                <app-accordion2 [product]="carList"></app-accordion2>
+            </div> -->
+        </div>
+
+        <div class="dealer_container">
+          <ion-label class="title_lbl">Maruti Baleno Car Dealers in Ahmedabad</ion-label>
+
+          <div class="dealer_slider">
+            <div class="card_box" *ngFor="let item of [1,2,3,4,5]">
+              <ion-label class="name_lbl">Atu Motors</ion-label>
+              <div class="flex_div">
+                  <div>
+                      <ion-icon name="location"></ion-icon>
+                  </div>
+                  <ion-label>1234, Eva surbhi, aksharwadi road, Kalanala, bhavnagar.</ion-label>
+              </div>
+              <div class="flex_div">
+                  <div>
+                      <ion-icon name="mail-sharp"></ion-icon>
+                  </div>
+                  <ion-label>info@initappz.com</ion-label>
+              </div>
+              <div class="flex_div">
+                  <div>
+                      <ion-icon name="call-sharp" style="color: #10a446"></ion-icon>
+                  </div>
+                  <ion-label>9876543212</ion-label>
+              </div>
+              <ion-button expand="block" mode="ios">
+                  Contact
+              </ion-button>
+            </div>
+        </div>
+        </div>
+
+
+    </div>
+
+    <div class="main_content_div" *ngIf="tabID == 'compare'">
+
+      <div class="main_car_detail">
+          <div class="flex_div">
+              <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/car1.jpg)'"></div>
+              <div class="detail_div">
+                  <ion-label class="name_lbl">Maruti Baleno</ion-label>
+                  <ion-label class="price_lbl">₹ 6.35 - 9.35 Lakh*</ion-label>
+                  <div class="inner_flex">
+                      <div>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                      </div>
+                      <ion-label>Rate This Car</ion-label>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="offer_div">
+              <ion-button expand="block" mode="ios">
+                  View Exciting Offers
+              </ion-button>
+              <div class="icn_btn">
+                  <ion-icon name="call"></ion-icon>
+              </div>
+          </div>
+      </div>
+
+      <div class="grey_content_div">
+          <div class="single_car" *ngFor="let item of cars">
+              <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'"></div>
+              <div class="detail_div">
+                  <ion-label>Maruti Swift</ion-label>
+                  <ion-label class="price_lbl">₹ 6.35 - 9.35 Lakh*</ion-label>
+                  <ion-button expand="block" fill="outline" mode="ios">
+                      Baleno vs Maruti Swift
+                  </ion-button>
+              </div>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="main_content_div" *ngIf="tabID == 'offers'">
+
+        <div class="grey_content_div">
+            <div class="location_div" style="margin-bottom: 16px;">
+                <div class="inner_flex">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <ion-label>New Delhi</ion-label>
+                </div>
+                <ion-label class="grey_lbl">Change</ion-label>
+            </div>
+
+            <ion-label style="margin-bottom: 16px;text-align: center; font-family: 'semi-bold'; font-size: 18px;">
+                Offers on Similar Cars in Ahmedabad
+            </ion-label>
+
+            <div class="single_car_detail" *ngFor="let item of cars">
+                <div class="car_flex">
+                    <div class="detail_div">
+                        <ion-label class="grey_lbl">Maruti Desire</ion-label>
+                        <ion-label class="simp_title">Buy Now Maruti Vehicle and Get Savings...</ion-label>
+                        <ion-label class="time_lbl">
+                            <ion-icon name="stopwatch-outline"></ion-icon>
+                            1 Days remaining
+                        </ion-label>
+                    </div>
+                    <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'"></div>
+                </div>
+
+                <ion-button expand="block" fill="outline" mode="ios">
+                    View complete offers
+                </ion-button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main_content_div" *ngIf="tabID == 'variants'">
+
+        <div class="main_car_detail">
+            <div class="flex_div">
+                <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/car1.jpg)'"></div>
+                <div class="detail_div">
+                    <ion-label class="name_lbl">Maruti Baleno</ion-label>
+                    <ion-label class="price_lbl">₹ 6.35 - 9.35 Lakh*</ion-label>
+                    <div class="inner_flex">
+                        <div>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <ion-label>Rate This Car</ion-label>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="offer_div">
+                <ion-button expand="block" mode="ios">
+                    View Exciting Offers
+                </ion-button>
+                <div class="icn_btn">
+                    <ion-icon name="call"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="grey_line_div"></div>
+
+        <div class="content_div">
+
+            <div class="price_container">
+                <div class="upper_div">
+                    <ion-label class="title_lbl">Maruti Baleno price list (Variants)</ion-label>
+                    <ion-segment value="petrol" mode="md" (ionChange)="priceChange($event)">
+                        <ion-segment-button value="petrol">
+                            <ion-label>Petrol Version</ion-label>
+                        </ion-segment-button>
+                        <ion-segment-button value="automatic">
+                            <ion-label>Automatic Version</ion-label>
+                        </ion-segment-button>
+                    </ion-segment>
+                </div>
+                <div class="price_div">
+                    <div class="border_div" *ngFor="let item of [1,2,3,4,5]">
+                        <div>
+                            <ion-label class="name_lbl">Sigma</ion-label>
+                            <ion-label class="small_lbl">1197 cc, Manual, Petrol, 22.35 kmpl</ion-label>
+                        </div>
+                        <div>
+                            <ion-label class="price_lbl">₹ 6.35 Lakh*</ion-label>
+                            <div class="inner_flex">
+                                <ion-label class="small_lbl">Campare</ion-label>
+                                <ion-checkbox mode="md"></ion-checkbox>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+      </div>
+
+    </div>
+
+    <div class="main_content_div" *ngIf="tabID == 'colors'">
+
+        <ion-label class="title_lbl" style="padding: 16px;">Colors</ion-label>
+
+        <div class="grey_box">
+            <div [style.background]="item.code" *ngFor="let item of colors"></div>
+        </div>
+
+        <div *ngFor="let item of colors">
+            <div class="bg_image color_image_box" [style.backgroundImage]="'url('+ item.img +')'">
+                  <ion-label>{{item.name}}</ion-label>
+            </div>
+            <div class="grey_line_div"></div>
+        </div>
+  </div>
+
+  <div class="main_content_div" *ngIf="tabID == '360view'">
+      <ion-label class='no_data'>360 view is not available for this car.</ion-label>
+      <div class="grey_line_div"></div>
+  </div>
+
+  <div class="main_content_div" *ngIf="tabID == 'features'">
+      <div class="main_car_detail">
+        <div class="flex_div">
+            <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/car1.jpg)'"></div>
+            <div class="detail_div">
+                <ion-label class="name_lbl">Maruti Baleno</ion-label>
+                <ion-label class="price_lbl">₹ 6.35 - 9.35 Lakh*</ion-label>
+                <div class="inner_flex">
+                    <div>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <ion-label>Rate This Car</ion-label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="offer_div">
+            <ion-button expand="block" mode="ios">
+                View Exciting Offers
+            </ion-button>
+            <div class="icn_btn">
+                <ion-icon name="call"></ion-icon>
+            </div>
+        </div>
+      </div>
+      <div class="grey_line_div"></div>
+
+      <div class="overview_detail">
+          <ion-label class="title_lbl">Overview</ion-label>
+
+          <div class="detail_flex" *ngFor="let item of overview">
+              <ion-label>{{item.title}}</ion-label>
+              <ion-label>{{item.value}}</ion-label>
+          </div>
+
+          <div class="detail_flex">
+            <ion-label>Finance Available</ion-label>
+            <ion-label>Apply Now</ion-label>
+          </div>
+
+      </div>
+
+      <div class="grey_line_div"></div>
+
+      <div class="overview_detail">
+          <ion-label class="title_lbl">Maruti Baleno Features</ion-label>
+
+          <div class="detail_flex" *ngFor="let item of features">
+              <ion-label style="width: 70%;">{{item}}</ion-label>
+              <ion-icon name="checkmark"></ion-icon>
+          </div>
+      </div>
+
+  </div>
+
+  <div class="main_content_div" *ngIf="tabID == 'images'">
+
+      <div *ngFor="let item of images">
+          <div class="bg_image car_image" [style.backgroundImage]="'url('+ item.img +')'">
+              <div class="overlay">
+                  <ion-label>{{item.name}}</ion-label>
+              </div>
+          </div>
+          <div class="grey_line_div"></div>
+      </div>
+
+  </div>
+
+  <div class="main_content_div" *ngIf="tabID == 'videos'">
+
+    <div *ngFor="let item of cars">
+        <div class="bg_image car_image" [style.backgroundImage]="'url('+ item +')'">
+            <ion-icon name="play-circle-outline"></ion-icon>
+        </div>
+        <div class="car_video_detail">
+            <ion-label class="bold_lbl">Mauti Baleno 2022 Detailed walkaround</ion-label>
+            <ion-label class="grey_lbl"><span>8881 Views</span>&nbsp; • &nbsp;<span>Feb 25,2022</span></ion-label>
+        </div>
+        <div class="grey_line_div"></div>
+    </div>
+
+  </div>
+
+  <div class="main_content_div" *ngIf="tabID == 'reviews'">
+
+    <div class="review_div">
+      <ion-label class="title_lbl">User Reviews</ion-label>
+      <div class="flex_div">
+          <ion-icon name="star"></ion-icon>&nbsp;
+          <ion-label>4.5</ion-label>
+          <div>
+              <ion-label class="gray_lbl">Based on</ion-label>
+              <ion-label class="simp_lbl">11 User Reviews</ion-label>
+          </div>
+      </div>
+      <hr>
+      <ion-button expand="block" mode="ios">
+          Write a Review
+      </ion-button>
+      <hr>
+
+      <div class="chip_div">
+          <ion-chip [class.active]="item.status" *ngFor="let item of reviewFilter">
+              <ion-label>{{item.name}}</ion-label>
+          </ion-chip>
+      </div>
+
+      <ion-segment value="latest" mode="md" (ionChange)="reviewChange($event)">
+          <ion-segment-button value="latest">
+              <ion-label>Latest</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="helpful">
+              <ion-label>Helpful</ion-label>
+          </ion-segment-button>
+      </ion-segment>
+
+      <div class="single_review" *ngFor="let item of [1,2,3]">
+          <div class="rate_box">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+          </div>
+          <ion-label class="bold_lbl">My Personal Baleno Experience Is Awesome.</ion-label>
+          <ion-label class="desc_lbl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magnam, nobis
+              aspernatur natus recusandae vero quae.
+          </ion-label>
+          <ion-label class="read_lbl">Read More</ion-label>
+          <ion-label class="name_lbl">Jonh Doe</ion-label>
+          <ion-label class="date_lbl">Feb 25, 2022</ion-label>
+      </div>
+
+      <ion-label class="color_lbl">View all Balono Review</ion-label>
+
+  </div>
+
+  </div>
+
+</ion-content>

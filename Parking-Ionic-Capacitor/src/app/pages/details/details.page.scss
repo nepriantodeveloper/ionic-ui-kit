@@ -1,0 +1,138 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Parking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+
+    ion-icon {
+      color: white;
+    }
+
+    ion-title {
+      color: white;
+    }
+  }
+}
+
+ion-content {
+
+  .detail {
+    .back_image {
+      height: 180px;
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      .dark_text {
+        font-size: 16px;
+        font-family: 'semi-bold';
+      }
+
+      .grey_text {
+        font-size: 14px;
+        color: grey;
+      }
+
+      ion-icon {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .zone {
+      display: flex;
+      align-items: center;
+      border: 1px solid #4B5DFA;
+      padding: 5px 15px;
+      border-radius: 30px;
+
+      ion-icon {
+        margin-right: 5px;
+      }
+
+      ion-label {
+        color: var(--ion-color-primary);
+      }
+    }
+  }
+
+  .head_text {
+    font-size: 16px;
+    font-family: 'semi-bold';
+    margin-bottom: 10px;
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: #e2e5ef;
+    border-radius: 10px;
+
+    .number {
+      color: var(--ion-color-primary);
+      font-family: 'semi-bold';
+      font-size: 18px;
+    }
+
+    .grey_text {
+      color: grey;
+      font-size: 14px;
+    }
+  }
+}
+
+ion-footer {
+  .button {
+    display: flex;
+    align-items: center;
+  }
+
+  .cancel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #c5caf1;
+    color: #4B5DFA;
+    border-radius: 30px;
+    font-family: 'semi-bold';
+    height: 50px;
+    padding: 14px 0;
+  }
+
+  .detail_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: var(--ion-color-primary);
+    border-radius: 30px;
+    height: 50px;
+    padding: 14px 0;
+    color: white;
+    font-family: 'semi-bold';
+  }
+}

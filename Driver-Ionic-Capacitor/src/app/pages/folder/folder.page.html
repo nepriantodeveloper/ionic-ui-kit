@@ -1,0 +1,52 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Driver App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="map"></div>
+  <div class="ion-padding bottom">
+    <ion-row class="profile bottom_border">
+      <ion-col size="3">
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/p1.jpg)'"></div>
+      </ion-col>
+      <ion-col size="6">
+        <ion-label class="bold_text">Ester Berry</ion-label>
+        <div class="flex">
+          <ion-label class="bg_color">ApplePay</ion-label>
+          <ion-label class="bg_color">Discount</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label class="price">$25.00</ion-label>
+        <ion-label class="distance">2.3KM</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <div class="bottom_border">
+      <ion-label class="grey_text">PICK UP</ion-label>
+      <ion-label>7890 Swift Village</ion-label>
+    </div>
+
+    <div class="bottom_border">
+      <ion-label class="grey_text">DROP OFF</ion-label>
+      <ion-label>105 William St, Chicago, US</ion-label>
+    </div>
+
+    <div class="buttons">
+      <ion-label class="ignor">Ignor</ion-label>
+      <ion-label class="accept" (click)="onAccept()">Accept</ion-label>
+    </div>
+  </div>
+</ion-content>

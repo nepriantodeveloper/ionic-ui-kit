@@ -1,0 +1,60 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content>
+  <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'">
+    <div class="ion-padding">
+      <ion-icon name="chevron-back-outline" class="back" (click)="back()"></ion-icon>
+    </div>
+  </div>
+  <div class="main_div ion-padding">
+    <div class="name_div">
+      <ion-label class="name">Hardik Gohil</ion-label>
+      <ion-label class="small">Online: 35 min</ion-label>
+    </div>
+
+    <div class="buttons">
+      <ion-icon name="videocam" color="primary"></ion-icon>
+      <ion-icon name="call" color="primary"></ion-icon>
+      <ion-icon name="chatbubble-ellipses" color="primary"></ion-icon>
+    </div>
+
+    <div class="share">
+      <div class="column">
+        <ion-label class="number">+91 9876 543 543</ion-label>
+        <ion-label class="color_text">@ hard2311</ion-label>
+      </div>
+      <ion-icon name="share-outline" color="primary"></ion-icon>
+    </div>
+
+    <div class="flex">
+      <div class="left">
+        <ion-icon name="lock-closed-outline" color="primary" class="background"></ion-icon>
+        <ion-label class="item">Secret Chat</ion-label>
+      </div>
+      <ion-icon slot="end" name="chevron-forward-outline" color="medium"></ion-icon>
+    </div>
+
+    <div class="flex">
+      <div class="left">
+        <ion-icon name="add-circle-outline" color="primary" class="background"></ion-icon>
+        <ion-label class="item">Group Chat</ion-label>
+      </div>
+      <ion-icon slot="end" name="chevron-forward-outline" color="medium"></ion-icon>
+    </div>
+
+    <div class="flex">
+      <div class="left">
+        <ion-icon name="apps-outline" color="primary" class="background"></ion-icon>
+        <ion-label class="item">Call History</ion-label>
+      </div>
+      <ion-icon slot="end" name="chevron-forward-outline" color="medium"></ion-icon>
+    </div>
+  </div>
+
+</ion-content>

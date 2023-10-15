@@ -1,0 +1,106 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  .back_image {
+    height: 300px;
+    width: 100%;
+    opacity: 0.9;
+
+    .back {
+      font-size: 30px;
+      color: white;
+    }
+  }
+
+
+  .main_div {
+
+    .name_div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .name {
+        font-size: 16px;
+        font-family: 'bold';
+      }
+
+      .small {
+        font-size: 13px;
+      }
+    }
+
+  }
+
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(238, 236, 236);
+    padding: 10px 0;
+    border-radius: 10px;
+
+    ion-icon {
+      background-color: white;
+      font-size: 25px;
+      border-radius: 100%;
+      padding: 10px;
+    }
+  }
+
+  .share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 15px;
+
+    .number {
+      font-family: 'semi-bold';
+    }
+
+    ion-icon {
+      font-size: 20px;
+    }
+  }
+
+  .flex {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 15px;
+
+    .background {
+      background-color: rgb(240, 238, 238);
+      padding: 8px;
+      border-radius: 100%;
+    }
+
+
+    ion-icon {
+      font-size: 20px;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .item {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .color_text {
+    color: var(--ion-color-primary);
+  }
+}

@@ -1,0 +1,95 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="goBack()">
+                <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Feel The Car</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="banner_div" [style.backgroundImage]="'url(assets/imgs/dashboard.jpg)'">
+            <div class="overlay_div">
+                <div class="tap_div">
+                    <img src="assets/imgs/touch.png">
+                </div>
+                <ion-label class="image_bold_lbl">Feel The Car</ion-label>
+                <ion-label class="small_lbl">Virtual Car, Engine Sound and more</ion-label>
+            </div>
+        </div>
+        <div class="grey_line_div"></div>
+
+        <ion-label class="bold_lbl">Trending Now</ion-label>
+
+        <div class="car_slider">
+            <div class="single_slide" *ngFor="let item of cars">
+                <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'"></div>
+                <div class="detail_div">
+                    <ion-label class="name_lbl">Maruti Swift</ion-label>
+                    <ion-label class="price_lbl">₹ 6.35 - 9.35 Lakh*</ion-label>
+                    <ion-label class="grey_lbl">
+                        <span>2184 cc</span>&nbsp;•&nbsp;
+                        <span>130.0 bhp</span>&nbsp;•&nbsp;
+                        <span>0.0 kmpl</span>
+                    </ion-label>
+                </div>
+            </div>
+        </div>
+        <div class="grey_line_div"></div>
+
+        <ion-label class="bold_lbl">Features</ion-label>
+
+        <div class="border_div">
+            <div class="round_image"></div>
+            <div class="detail_div">
+                <ion-label class="title_lbl">360 View</ion-label>
+                <ion-label class="detail_lbl">
+                    Complete immersive experience with 360 interior and exterior views
+                </ion-label>
+            </div>
+        </div>
+
+        <div class="border_div">
+            <div class="round_image"></div>
+            <div class="detail_div">
+                <ion-label class="title_lbl">Car Sound</ion-label>
+                <ion-label class="detail_lbl">
+                    Litsen to real car sounds from inside and outside the car
+                </ion-label>
+            </div>
+        </div>
+
+        <div class="border_div">
+            <div class="round_image"></div>
+            <div class="detail_div">
+                <ion-label class="title_lbl">Research</ion-label>
+                <ion-label class="detail_lbl">
+                    Research like a Pro with detailed specs and features.
+                </ion-label>
+            </div>
+        </div>
+
+
+
+    </div>
+</ion-content>
+
+<ion-footer>
+    <div class="footer_div">
+        <ion-button expand="block" mode="ios">
+            Start The Experience
+        </ion-button>
+    </div>
+</ion-footer>

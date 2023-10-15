@@ -1,0 +1,48 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content>
+  <div class="main_content_div">
+    <div class="head_div">
+      <ion-label class="head_lbl">Sign up</ion-label>
+    </div>
+
+    <ion-item class="input ion-no-padding">
+      <ion-label position="floating" color="medium">name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="input ion-no-padding">
+      <ion-label position="floating" color="medium">Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item class="input ion-no-padding">
+      <ion-label position="floating" color="medium">mobile</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <ion-item class="input ion-no-padding">
+      <ion-label position="floating" color="medium">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-button class="main_btn" expand="block" fill="clear" (click)="goToLogin()">
+      Register
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-label class="small_lbl">Already have an account?</ion-label>
+    <ion-button class="text_btn" color="dark" fill="clear" size="small" (click)="goToLogin()">
+      Login
+    </ion-button>
+  </div>
+</ion-footer>

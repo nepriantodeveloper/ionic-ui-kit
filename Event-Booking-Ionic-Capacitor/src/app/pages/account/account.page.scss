@@ -1,0 +1,101 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    .searchbtn {
+      margin-right: 15px;
+
+      ion-button {
+        border-radius: 100px;
+        height: 35px;
+        width: 35px;
+        background: #BDC4FF;
+
+        ion-icon {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+
+  .bg_img {
+    position: relative;
+
+    ion-thumbnail {
+      height: 100px;
+      width: 100px;
+      --border-radius: 50%;
+      padding: 5px;
+    }
+
+    .icnbtn {
+      position: absolute;
+      bottom: 5px;
+      right: 0px;
+
+      ion-button {
+        border-radius: 100px;
+        height: 30px;
+        width: 30px;
+        background: var(--ion-color-primary);
+
+        ion-icon {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .text {
+    width: 100%;
+    margin: 20px 0px;
+
+    ion-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--ion-color-medium);
+      border-bottom: 1px solid var(--ion-color-medium);
+
+      .line {
+        border-left: 1px solid var(--ion-color-medium);
+        border-right: 1px solid var(--ion-color-medium);
+      }
+
+      ion-col {
+        .h6 {
+          font-size: 20px;
+          margin: 2px;
+          color: var(--ion-color-dark);
+        }
+
+        ion-label {
+          font-size: 13px;
+          color: var(--ion-color-medium);
+        }
+      }
+    }
+  }
+}
+
+p {
+  font-size: 15px;
+}
+
+.chip {
+  margin: 15px 0px;
+}

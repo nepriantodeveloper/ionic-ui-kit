@@ -1,0 +1,75 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)=" goToVideoCall()">
+        <ion-icon slot="start" name="call-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button (click)="goToVideoCall()">
+        <ion-icon slot="start" name="videocam-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="start" name="ellipsis-vertical-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Andrew Russule</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="main-content">
+    <div class="lower_div" *ngFor="let msg of messages">
+      <div class="left" *ngIf="msg.side == 'left'">
+        <div class="content">
+          <div class="icon_div">
+            <ion-icon class="icon" name="person" color="light"></ion-icon>
+          </div>
+          <div class="msg_div">
+            <div class="msg">
+              {{msg.msg}}
+            </div>
+            <ion-label class="time">12.03 PM</ion-label>
+          </div>
+        </div>
+      </div>
+
+      <div class="right" *ngIf="msg.side == 'right'">
+        <div class="content">
+          <div class="msg_div">
+            <div class="msg">
+              {{msg.msg}}
+            </div>
+            <ion-label class="time">12.03 PM</ion-label>
+          </div>
+          <div class="icon_div">
+            <ion-icon class="icon" name="person" color="light"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <div class="sendbox">
+      <ion-input type="text" placeholder="Send Message..." class="ion-no-padding"></ion-input>
+      <div class="icon">
+        <ion-icon class="attach" name="attach-outline"></ion-icon>
+        <ion-icon class="send" name="send-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
+</ion-footer>

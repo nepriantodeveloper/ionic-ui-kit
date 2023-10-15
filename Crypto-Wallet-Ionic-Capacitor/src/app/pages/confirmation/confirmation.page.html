@@ -1,0 +1,66 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Confirmation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="main_content">
+    <div class="ttl">
+      <ion-label class="ttl1">Slippage Tolerance</ion-label>
+      <ion-label class="ttl1">2%</ion-label>
+    </div>
+    <div class="divider"></div>
+    <div class="ttl">
+      <ion-label class="ttl3">Rate</ion-label>
+      <ion-label class="ttl3">2.4899 BNB</ion-label>
+    </div>
+    <div class="ttl2">
+      <ion-label class="ttl2">2.4899 ETH</ion-label>
+    </div>
+    <div class="divider"></div>
+    <div class="ttl">
+      <ion-label class="ttl3">Inverse Rate</ion-label>
+      <ion-label class="ttl3">1 BNB</ion-label>
+    </div>
+    <div class="ttl2">
+      <ion-label class="ttl2">2.400899 ETH</ion-label>
+    </div>
+    <div class="divider"></div>
+    <div class="ttl">
+      <ion-label class="ttl3">USD Price</ion-label>
+      <ion-label class="ttl3">1 BNB</ion-label>
+    </div>
+    <div class="ttl2">
+      <ion-label class="ttl2">$ 286.33</ion-label>
+    </div>
+    <div class="divider"></div>
+    <div class="ttl">
+      <ion-label class="ttl1">Estimated Fee</ion-label>
+      <ion-label class="ttl1">1.7 BNB</ion-label>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="contentbtn" (click)="onSwap()" expand="block">
+      Swap
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

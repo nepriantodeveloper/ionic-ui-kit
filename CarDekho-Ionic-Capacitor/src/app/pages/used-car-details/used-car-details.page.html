@@ -1,0 +1,297 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/car1.jpg)'">
+            <div class="upper_div">
+                <div class="round_box" style="background: white;" (click)="goBack()">
+                    <ion-icon name="arrow-back" color="dark"></ion-icon>
+                </div>
+                <div style="display: flex;">
+                    <div class="round_box">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                    </div>
+                    <div class="round_box" style="margin-left: 16px;">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="counter_flex">
+                <ion-label>
+                    <ion-icon name="camera-outline"></ion-icon>
+                    &nbsp;12
+                </ion-label>
+                <ion-label>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    &nbsp;1000
+                </ion-label>
+            </div>
+        </div>
+
+        <div class="white_container general_container">
+            <div class="flex_div name_flex">
+                <ion-label>2019 Maruti Swift Dzire</ion-label>
+                <ion-label>₹ 1,60,000</ion-label>
+            </div>
+            <div class="flex_div grey_flex">
+                <ion-label>VXI 1.2</ion-label>
+                <ion-label style="text-decoration: line-through;">₹ 2,60,000</ion-label>
+            </div>
+            <div class="flex_div grey_flex">
+                <ion-label>EMI starts from <span>₹ 13,500</span></ion-label>
+                <ion-label class="custom_btn">What's included?</ion-label>
+            </div>
+            <div class="flex_div rate_div">
+                <ion-icon name="star"></ion-icon>
+                <ion-label class="rate_no">9.5</ion-label>
+                <ion-label class="small_lbl">Inspection Score</ion-label>
+            </div>
+        </div>
+
+        <div class="light_container overview_container">
+            <ion-label class="title_lbl">Car Overview</ion-label>
+
+            <ion-row>
+                <ion-col size="6" *ngFor="let item of overviews;">
+                    <ion-label class="small_lbl">{{item.name}}</ion-label>
+                    <ion-label class="bold_lbl">{{item.value}}</ion-label>
+                </ion-col>
+            </ion-row>
+        </div>
+
+        <div class="light_container overview_container" style="background: white;">
+            <ion-label class="title_lbl">Car Specification</ion-label>
+
+            <ion-row>
+                <ion-col size="6" *ngFor="let item of specification;">
+                    <ion-label class="small_lbl">{{item.name}}</ion-label>
+                    <ion-label class="bold_lbl">{{item.value}}</ion-label>
+                </ion-col>
+            </ion-row>
+
+            <ion-button expand="block" fill="outline" mode="ios">
+                View All Specifications
+            </ion-button>
+        </div>
+
+        <div class="light_container features_container">
+            <ion-label class="title_lbl">Car Features</ion-label>
+
+            <div style="margin-bottom: 16px;" *ngFor="let item of features; let i = index;">
+                <div class="acc_title">
+                    <div class="title_flex" (click)="toggleSection(i)">
+                        <ion-label>{{item.name}}</ion-label>
+                        <ion-icon name="add" *ngIf="!item.open"></ion-icon>
+                        <ion-icon name="remove" *ngIf="item.open"></ion-icon>
+                    </div>
+
+                    <div *ngIf="item.open" style="margin-bottom: 16px;">
+                        <app-accordion1></app-accordion1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="white_container benifits_container">
+            <ion-label class="title_lbl">Cardekho Benefits</ion-label>
+
+            <ion-row>
+                <ion-col size="6" [class.left]="i%2 == 1" [class.right]="i%2 == 0" *ngFor="let item of benifits;let i = index">
+                    <div class="card_box">
+                        <img [src]="item.img">
+                        <ion-label>{{item.title}}</ion-label>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-label class="term_lbl">Terms & Conditions</ion-label>
+
+            <div class="chat_box">
+                <div class="white_box"></div>
+                <div class="grey_box">
+                    <div class="bg_image user_image"></div>
+                    <ion-label>Want to know more about this car? <br>Our expert can help you.</ion-label>
+                    <div class="btn_div">
+                        <ion-button fill="outline" mode="ios">
+                            <ion-icon slot="start" name="logo-whatsapp"></ion-icon>
+                            Chat
+                        </ion-button>
+                        <ion-button fill="outline" mode="ios">
+                            <ion-icon slot="start" name="call"></ion-icon>
+                            Call
+                        </ion-button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image_flex">
+                <ion-icon name="home-outline"></ion-icon>
+                <ion-label>Home Delivery Available</ion-label>
+            </div>
+            <div class="image_flex">
+                <ion-icon name="location-outline"></ion-icon>
+                <ion-label>Available at Store</ion-label>
+            </div>
+
+        </div>
+
+        <div class="light_container emi_calc_container">
+            <ion-label class="title_lbl">EMI Calculator</ion-label>
+
+            <ion-label class="emi_lbl">EMI</ion-label>
+            <ion-label class="amount_lbl">₹ 15,500</ion-label>
+            <ion-label class="simp_lbl">For 2 Years @12.5% Interest Rate</ion-label>
+            <ion-label class="small_lbl">*Interest rate may vary subject to your credit score</ion-label>
+
+            <div class="range_flex">
+                <ion-label class="simple_lbl">Loan Amount</ion-label>
+                <ion-label class="price_lbl">₹ 3,35,000</ion-label>
+            </div>
+            <ion-range value="50" color="dark" mode="md"></ion-range>
+            <div class="range_flex">
+                <ion-label class="grey_lbl">₹ 0</ion-label>
+                <ion-label class="grey_lbl">₹ 6,70,000</ion-label>
+            </div>
+
+            <div class="range_flex">
+                <ion-label class="simple_lbl">Duration</ion-label>
+                <ion-label class="simple_lbl">2 Year</ion-label>
+            </div>
+            <ion-range value="50" color="dark" mode="md"></ion-range>
+            <div class="range_flex">
+                <ion-label class="grey_lbl">1 Year</ion-label>
+                <ion-label class="grey_lbl">5 Year</ion-label>
+            </div>
+
+            <div class="image_flex">
+                <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/finance.jpg)'"></div>
+                <div class="detail_div">
+                    <ion-label class="bold_lbl">Interested in Finance?</ion-label>
+                    <ion-label class="small_lbl">Avail upto <span>80%</span> of the car value in finance at the lowest
+                      possible interest rates</ion-label>
+                    <ion-button expand="block" fill="outline">
+                        Yes, I'm Interested
+                    </ion-button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="white_container fair_price_container">
+            <ion-label class="title_lbl">Fair Price Guarantee</ion-label>
+
+            <div class="image_flex">
+                <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/test_drive.jpg)'"></div>
+                <div class="detail_div">
+                    <ion-label class="bold_lbl">Schedule Test Drive</ion-label>
+                    <ion-label class="small_lbl">Love it already? Schedule a Test Drive.</ion-label>
+                    <ion-button expand="block" fill="outline">
+                        Read More
+                    </ion-button>
+                </div>
+            </div>
+
+            <div class="image_flex">
+                <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/safety.jpg)'"></div>
+                <div class="detail_div">
+                    <ion-label class="bold_lbl">Covid Safety Assurance</ion-label>
+                    <ion-label class="small_lbl">We're taking strict measures to ensure that your car
+                      is delivered with highest quality of safety assurance.</ion-label>
+                </div>
+            </div>
+        </div>
+
+        <div class="light_container inspection_container">
+            <ion-label class="title_lbl">Inspection Report</ion-label>
+
+            <ion-label class="grey_lbl">
+                Our cars undergo 217 point inspection by CarDekho's trained and qualified engineers.
+                We assure 100% satisfaction with 6-month comprehensive warranty, 6-month Pan India road
+                side assistance and 7-day money back guarantee. *T&C.
+            </ion-label>
+
+            <div class="inspection_slider">
+                <div class="inspection_slide" *ngFor="let item of interior">
+                    <div class="round_box">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-label>{{item.no}}</ion-label>
+                    </div>
+                    <ion-label class="small_lbl">{{item.name}}</ion-label>
+                </div>
+            </div>
+
+            <ion-button expand="block" fill="outline">
+                Get Inspection Report
+                <ion-icon slot="end" name="logo-whatsapp"></ion-icon>
+            </ion-button>
+        </div>
+
+        <div class="white_container cars_container">
+            <ion-label class="title_lbl">Similar priced used Cars near Ahmedabad</ion-label>
+
+            <div class="cars_slider">
+                <div class="news_card" *ngFor="let item of cars">
+                  <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'">
+                      <div class="round_box">
+                          <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                      <div class="counter_flex">
+                          <ion-label>
+                              <ion-icon name="camera-outline"></ion-icon>
+                              &nbsp;12
+                          </ion-label>
+                          <ion-label>
+                              <ion-icon name="eye-outline"></ion-icon>
+                              &nbsp;1000
+                          </ion-label>
+                      </div>
+                  </div>
+                  <div class="detail_div">
+                      <div class="flex_div name_flex">
+                          <ion-label class="bold_lbl">2019 Maruti Swift Dzire</ion-label>
+                          <ion-label class="price_lbl">₹ 1,60,000</ion-label>
+                      </div>
+                      <div class="flex_div grey_flex">
+                          <ion-label>VXI 1.2</ion-label>
+                          <ion-label style="text-decoration: line-through;">₹ 2,60,000</ion-label>
+                      </div>
+                      <div class="flex_div small_flex">
+                          <ion-label>
+                              <span>12,000 km</span>&nbsp;•&nbsp;
+                              <span>Petrol</span>&nbsp;•&nbsp;
+                              <span>Manual</span>
+                          </ion-label>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</ion-content>
+
+<ion-footer>
+    <div class="footer_div">
+        <ion-row>
+            <ion-col size="6" style="padding-right: 8px;">
+                <div class="btn_1">
+                    <ion-label class="lbl_1">Book Now @ ₹ 15,500</ion-label>
+                    <ion-label class="lbl_2">100% Instant Refund</ion-label>
+                </div>
+            </ion-col>
+            <ion-col size="6" style="padding-left: 8px;">
+                <div class="btn_2">
+                    <ion-label class="lbl_3">Schedule Test Drive</ion-label>
+                </div>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-footer>

@@ -1,0 +1,290 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="res_name">
+    <div class="left">
+      <ion-label class="bold">V K Restaurant</ion-label>
+      <ion-label class="gray">Pizza,Italian</ion-label>
+      <ion-label class="gray">Green Avenue | 5.3 km</ion-label>
+    </div>
+    <div class="right">
+      <ion-icon name="share" class="icon" style="margin-right: 10px;"></ion-icon>
+      <ion-icon name="bookmark" class="icon"></ion-icon>
+    </div>
+  </div>
+
+  <div class="about_res">
+    <div class="info" (click)="onResReview()">
+      <ion-icon name="star" color="primary" class="about_icon"></ion-icon>
+      <ion-label class="name">4.2(5000+)</ion-label>
+    </div>
+    <div class="info">
+      <ion-icon name="stopwatch" color="primary" class="about_icon"></ion-icon>
+      <ion-label class="name">18 Minutes</ion-label>
+    </div>
+    <div class="info">
+      <ion-icon name="ribbon" color="primary" class="about_icon"></ion-icon>
+      <ion-label class="name">View all offers</ion-label>
+    </div>
+    <div class="info">
+      <ion-icon name="logo-usd" color="primary" class="about_icon"></ion-icon>
+      <ion-label class="name">$15 for each</ion-label>
+    </div>
+  </div>
+
+  <ion-searchbar placeholder="Search Food"></ion-searchbar>
+
+  <div class="switch">
+    <div class="center">
+      <ion-toggle checked></ion-toggle>
+      <ion-label>Pure Veg</ion-label>
+    </div>
+    <div class="center">
+      <ion-toggle></ion-toggle>
+      <ion-label>Non Veg</ion-label>
+    </div>
+  </div>
+
+  <div class="pro">
+    <div class="left">
+      <div class="bg_image pro_img" [style.backgroundImage]="'url(assets/images/pro.png)'"></div>
+      <ion-label class="pro_head">Pro Offers</ion-label>
+    </div>
+    <ion-label class="bg_color">Go Pro</ion-label>
+  </div>
+
+  <div class="story">
+    <div class="menu">
+      <div class="deal" *ngFor="let item of [1,2,3]" (click)="onSelectFood()">
+        <div class="item">
+          <div class="bg_image deal_img" [style.backgroundImage]="'url(assets/images/f1.jpg)'">
+            <div class="right">
+              <ion-icon name="bookmark" color="primary"></ion-icon>
+            </div>
+            <div class="top_bottom">
+              <ion-label class="sell">Bestseller</ion-label>
+            </div>
+            <div class="bottom">
+              <ion-label class="offer">60% Off</ion-label>
+            </div>
+          </div>
+        </div>
+        <div class="bg_white">
+          <div class="flex">
+            <div class="left">
+              <ion-label class="name">Vegetable Lesagna</ion-label>
+              <ion-label class="about">Loaded With extra butter</ion-label>
+            </div>
+            <div class="right">
+              <ion-label class="color">$2.4</ion-label>
+              <ion-label class="simpl">For One</ion-label>
+            </div>
+          </div>
+          <div class="info">
+            <div class="rat">
+              <img src="assets/images/veg.png" alt="" class="veg">
+              <ion-label class="green">This Restaurant is Pure veg</ion-label>
+            </div>
+            <div class="rat">
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-label class="warning">4.3</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ion-label class="head_text">Today's Deal</ion-label>
+
+  <div class="story">
+    <div class="menu">
+      <div class="deal" *ngFor="let item of [1,2,3]">
+        <div class="item">
+          <div class="bg_image deal_img" [style.backgroundImage]="'url(assets/images/f1.jpg)'">
+            <div class="right">
+              <ion-icon name="bookmark" color="primary"></ion-icon>
+            </div>
+            <div class="top_bottom">
+              <ion-label class="sell">Bestseller</ion-label>
+            </div>
+            <div class="bottom">
+              <ion-label class="offer">60% Off</ion-label>
+            </div>
+          </div>
+        </div>
+        <div class="bg_white">
+          <div class="flex">
+            <div class="left">
+              <ion-label class="name">Vegetable Lesagna</ion-label>
+              <ion-label class="about">Loaded With extra butter</ion-label>
+            </div>
+            <div class="right">
+              <ion-label class="color">$2.4</ion-label>
+              <ion-label class="simpl">For One</ion-label>
+            </div>
+          </div>
+          <div class="info">
+            <div class="rat">
+              <img src="assets/images/veg.png" alt="" class="veg">
+              <ion-label class="green">This Restaurant is Pure veg</ion-label>
+            </div>
+            <div class="rat">
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-label class="warning">4.3</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="space">
+    <ion-label class="bold_text">Recommended</ion-label>
+    <ion-icon name="chevron-down"></ion-icon>
+  </div>
+
+  <ion-row class="around" *ngFor="let item of [1,2,3]">
+    <ion-col size="3">
+      <div class="bg_image small_img" [style.backgroundImage]="'url(assets/images/f3.jpg)'"></div>
+    </ion-col>
+    <ion-col size="9">
+      <div class="about">
+        <div class="flex">
+          <ion-label class="name">Burger Queen</ion-label>
+          <ion-icon name="bookmark" color="primary"></ion-icon>
+        </div>
+        <ion-label class="item">Fast food,American,Chiness</ion-label>
+        <ion-label class="prise"><strong>$5.1</strong>For one</ion-label>
+        <div class="info">
+          <div class="rat">
+            <img src="assets/images/veg.png" alt="" class="veg">
+            <ion-label class="green">Pure veg</ion-label>
+          </div>
+          <div class="rat">
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-label class="warning">4.3</ion-label>
+          </div>
+          <div class="rat add_btn">
+            <ion-label class="add">Add</ion-label>
+            <ion-icon name="add" color="medium"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <div class="space">
+    <ion-label class="bold_text">Try New</ion-label>
+    <ion-icon name="chevron-down"></ion-icon>
+  </div>
+
+
+  <ion-row class="around" *ngFor="let item of [1,2,3]">
+    <ion-col size="3">
+      <div class="bg_image small_img" [style.backgroundImage]="'url(assets/images/f3.jpg)'"></div>
+    </ion-col>
+    <ion-col size="9">
+      <div class="about">
+        <div class="flex">
+          <ion-label class="name">Burger Queen</ion-label>
+          <ion-icon name="bookmark" color="primary"></ion-icon>
+        </div>
+        <ion-label class="item">Fast food,American,Chiness</ion-label>
+        <ion-label class="prise"><strong>$5.1</strong>For one</ion-label>
+        <div class="info">
+          <div class="rat">
+            <img src="assets/images/veg.png" alt="" class="veg">
+            <ion-label class="green">Pure veg</ion-label>
+          </div>
+          <div class="rat">
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-label class="warning">4.3</ion-label>
+          </div>
+          <div class="rat add_btn">
+            <ion-label class="add">Add</ion-label>
+            <ion-icon name="add" color="medium"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <div class="space">
+    <ion-label class="bold_text">Drinks</ion-label>
+    <ion-icon name="chevron-down"></ion-icon>
+  </div>
+
+  <ion-row class="around" *ngFor="let item of [1,2]">
+    <ion-col size="3">
+      <div class="bg_image small_img" [style.backgroundImage]="'url(assets/images/drink.jpg)'"></div>
+    </ion-col>
+    <ion-col size="9">
+      <div class="about">
+        <div class="flex">
+          <ion-label class="name">Pepsi(500 ml)</ion-label>
+          <ion-icon name="bookmark" color="primary"></ion-icon>
+        </div>
+        <div class="info around">
+          <ion-label class="prise">$1.2</ion-label>
+          <div class="rat add_btn ">
+            <ion-label class="add">Add</ion-label>
+            <ion-icon name="add" color="medium"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <div class="space">
+    <ion-label class="bold_text">Chips</ion-label>
+    <ion-icon name="chevron-down"></ion-icon>
+  </div>
+
+  <ion-row class="around" *ngFor="let item of [1,2]">
+    <ion-col size="3">
+      <div class="bg_image small_img" [style.backgroundImage]="'url(assets/images/chips.jpeg)'"></div>
+    </ion-col>
+    <ion-col size="9">
+      <div class="about">
+        <div class="flex">
+          <ion-label class="name">Lays Potato Chips</ion-label>
+          <ion-icon name="bookmark" color="primary"></ion-icon>
+        </div>
+        <div class="info around">
+          <ion-label class="prise">$0.2</ion-label>
+          <div class="rat add_btn ">
+            <ion-label class="add">Add</ion-label>
+            <ion-icon name="add" color="medium"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="brows">
+      <div class="bg_image small_img" [style.backgroundImage]="'url(assets/images/browse.png)'"></div>
+      <ion-label class="color">Browse</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-footer>

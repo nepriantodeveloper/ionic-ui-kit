@@ -1,0 +1,151 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+
+    ion-icon {
+      color: white;
+    }
+
+    ion-title {
+      color: white;
+    }
+  }
+}
+
+ion-content {
+  .searchbar {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 15px;
+      background-color: rgb(230, 229, 229);
+      width: 100%;
+      margin-right: 10px;
+      border-radius: 20px;
+    }
+
+    .filter {
+      background-color: #E8F8F1;
+      padding: 12px 15px;
+      border-radius: 8px;
+    }
+  }
+
+  .banner {
+    margin-top: 20px;
+
+    .banner_image {
+      height: 150px;
+      width: 100%;
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    .bold_text {
+      font-family: 'bold';
+    }
+
+    .color_text {
+      font-size: 15px;
+      color: var(--ion-color-primary);
+    }
+  }
+
+  .slide {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    width: 100%;
+
+    .store {
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      padding: 20px 25px;
+      margin: 5px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .image {
+
+        .store_image {
+          height: 90px;
+          width: 90px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .dark_text {
+        font-family: 'semi-bold';
+        font-size: 13px;
+      }
+
+      .grey_text {
+        color: grey;
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  .grocery {
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .grocery_image {
+        height: 45px;
+        width: 45px;
+        border-radius: 10px;
+        margin-right: 10px;
+      }
+
+      .bold_text {
+        font-size: 15px;
+        font-family: 'semi-bold';
+      }
+
+      .grey_text {
+        font-size: 13px;
+        color: grey;
+      }
+    }
+
+    .price {
+      color: var(--ion-color-primary);
+      font-family: 'semi-bold';
+      font-size: 20px;
+    }
+  }
+
+
+}

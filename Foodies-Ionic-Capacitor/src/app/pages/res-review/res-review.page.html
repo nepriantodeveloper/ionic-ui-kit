@@ -1,0 +1,57 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="onNotification()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Restaurant Review</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="border" *ngFor="let item of [1,2,3,4,5,6,7]">
+    <ion-row>
+      <ion-col size="2">
+        <div class="bg_image offer_img" [style.backgroundImage]="'url(assets/images/profile.jpg)'"></div>
+      </ion-col>
+      <ion-col size="10">
+        <div class="name">
+          <div>
+            <ion-label class="bold">Smira Smith</ion-label>
+            <div class="rate">
+              <ion-icon name="star" color="primary"></ion-icon>
+              <ion-label class="small">4 star Review</ion-label>
+            </div>
+          </div>
+          <ion-label class="color_border">Follow</ion-label>
+        </div>
+        <ion-label class="gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum quaerat libero ducimus
+          dignissimos,
+          ratione error non</ion-label>
+        <div class="name">
+          <div class="left">
+            <ion-label>20</ion-label>
+            <ion-icon name="heart" color="primary" class="heart"></ion-icon>
+            <ion-icon name="chatbubble-ellipses-outline" color="medium"></ion-icon>
+          </div>
+          <ion-label class="days">26 Days ago</ion-label>
+        </div>
+        <ion-label class="gray">View Reply</ion-label>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

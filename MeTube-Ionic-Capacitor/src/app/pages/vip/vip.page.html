@@ -1,0 +1,82 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <ion-label class="vip-title">Dating VIP</ion-label>
+    <ion-label class="vip-text">Enjoy Watching Full Hd Videos. Without restrictions & without ads</ion-label>
+
+    <div class="card_div" (click)="goToPayment()">
+      <div class="img_back">
+        <div class="img" [style.backgroundImage]="'url(assets/img/crown.png)'">
+        </div>
+      </div>
+
+      <div class="head-title">
+        $9.99 <span class="text">/month</span>
+      </div>
+
+      <div class="list">
+        <ion-icon name="checkmark-outline"></ion-icon>
+        <ion-label class="title">Lorem ipsum dolor, sit amet</ion-label>
+      </div>
+      <div class="list">
+        <ion-icon name="checkmark-outline"></ion-icon>
+        <ion-label class="title">Lorem dolor, sit amet</ion-label>
+      </div>
+      <div class="list">
+        <ion-icon name="checkmark-outline"></ion-icon>
+        <ion-label class="title">Lorem ipsum sit amet</ion-label>
+      </div>
+      <div class="list">
+        <ion-icon name="checkmark-outline"></ion-icon>
+        <ion-label class="title">Remove Restrictions & Ads</ion-label>
+      </div>
+    </div>
+
+    <div class="card_div" (click)="goToPayment()">
+      <div class="img_back">
+        <div class="img" [style.backgroundImage]="'url(assets/img/crown.png)'">
+        </div>
+      </div>
+
+      <div class="head-title">
+        $49.99 <span class="text">/month</span>
+      </div>
+
+      <div class="list">
+        <ion-icon name="checkmark-outline"></ion-icon>
+        <ion-label class="title">Lorem ipsum dolor, sit amet</ion-label>
+      </div>
+      <div class="list">
+        <ion-icon name="checkmark-outline"></ion-icon>
+        <ion-label class="title">Lorem dolor, sit amet</ion-label>
+      </div>
+      <div class="list">
+        <ion-icon name="checkmark-outline"></ion-icon>
+        <ion-label class="title">Lorem ipsum sit amet</ion-label>
+      </div>
+      <div class="list">
+        <ion-icon name="checkmark-outline"></ion-icon>
+        <ion-label class="title">Remove Restrictions & Ads</ion-label>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,43 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : WeCare App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Select Your Interest</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <ion-label class="text">Select your interests to donate. Dont worry you can change it anytime.</ion-label>
+    <div class="chip">
+      <ion-chip outline color="dark" *ngFor="let item of cat">
+        <img src="assets/img/logo.jpg" class="img">
+        <ion-label> {{item.name}}</ion-label>
+      </ion-chip>
+    </div>
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <div class="footer">
+
+    <ion-button class="btn" shape="round" color="medium" class="skip_btn" expand="block" fill="outline">
+      Skip
+    </ion-button>
+    <ion-button class="btn" shape="round" (click)="goToTabs()" expand="block">
+      Next
+    </ion-button>
+  </div>
+</ion-footer>

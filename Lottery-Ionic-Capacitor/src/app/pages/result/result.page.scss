@@ -1,0 +1,123 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+.header-ios ion-toolbar:last-of-type {
+  --border-width: 0px;
+  --background: var(--ion-color-primary);
+  color: white;
+}
+
+.header-md ion-toolbar:last-of-type {
+  --border-width: 0px;
+  --background: var(--ion-color-primary);
+  color: white;
+}
+
+
+.main-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--ion-color-primary);
+  padding: 16px;
+
+  .top_container {
+    width: 100%;
+    padding: 16px;
+
+
+    .title {
+      font-size: 14px;
+      font-family: "bold";
+      color: white;
+      display: block;
+      text-align: center;
+    }
+  }
+
+
+  .container {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin: 16px;
+    border-radius: 20px;
+
+    .input {
+      background-color: var(--ion-color-light);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      margin: 16px 0px;
+
+      .icon {
+        color: var(--ion-color-primary);
+        padding: 0px 10px;
+      }
+
+      ion-input {
+        padding-left: 10px;
+      }
+    }
+
+    .title {
+      font-size: 14px;
+      font-family: "bold";
+      color: var(--ion-color-medium);
+      display: block;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    .lable_no {
+      font-size: 22px;
+      font-family: "bold";
+      display: block;
+      text-align: center;
+      padding-bottom: 10px;
+
+    }
+
+    .price {
+      font-size: 16px;
+      font-family: "medium";
+      display: block;
+      text-align: center;
+    }
+
+    .l_number {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 12px;
+
+      .tag_number {
+        color: var(--ion-color-medium);
+        background-color: var(--ion-color-light);
+        border-radius: 50%;
+        margin-right: 6px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+      }
+    }
+
+    .submit_btn {
+      font-family: 'bold';
+      margin: 20px 50px;
+    }
+  }
+
+
+}

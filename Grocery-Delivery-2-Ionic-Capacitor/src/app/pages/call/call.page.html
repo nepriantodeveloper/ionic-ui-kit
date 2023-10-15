@@ -1,0 +1,32 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-content class="ion-padding main_div">
+  <div class="profile">
+    <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'"></div>
+    <div class="title">
+      <ion-label class="head_text"> Jhon Smith </ion-label>
+      <ion-label class="grey_text"> 12:30 mins </ion-label>
+    </div>
+  </div>
+
+  <div class="btn">
+    <ion-row>
+      <ion-col size="6">
+        <div class="about">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="about">
+          <ion-icon name="call-outline" class="danger" (click)="onCancel()"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

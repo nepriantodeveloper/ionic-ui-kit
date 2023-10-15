@@ -1,0 +1,191 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Wallet UI App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+ion-header {
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.main-content {
+
+  .credit_card_div {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    margin: 16px 0px;
+
+    .credit_card {
+      border-radius: 15px;
+      width: 100%;
+      padding: 16px;
+      position: relative;
+      margin-left: 16px;
+      background-image: linear-gradient(to bottom right, var(--ion-color-primary), var(--ion-color-secondary-tint));
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+
+      .upper_div {
+        display: flex;
+        justify-content: space-between;
+        width: 290px;
+
+        .title_left {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          .text {
+            font-size: 14px;
+            color: var(--ion-color-light);
+            padding-bottom: 4px;
+          }
+
+          .title {
+            font-size: 20px;
+            font-family: 'medium';
+            color: white;
+          }
+        }
+
+        .card_logo_img {
+          width: 50px;
+          height: 50px;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+      }
+
+      .lower_div {
+        display: flex;
+        justify-content: space-between;
+        width: 290px;
+
+        .title_left {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          .text {
+            font-size: 14px;
+            color: var(--ion-color-light);
+            padding-bottom: 4px;
+          }
+
+          .title {
+            font-size: 14px;
+            font-family: 'medium';
+            color: white;
+          }
+        }
+
+        .card_logo_img {
+          width: 50px;
+          height: 50px;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+      }
+
+    }
+  }
+
+  .title_div {
+    margin: 6px 16px;
+  }
+
+  .list_card {
+
+    .col_div {
+      margin: 12px 16px;
+
+      .item_card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: white;
+        border-radius: 12px;
+        position: relative;
+        border: 1px solid lightgray;
+        padding: 10px;
+
+        .icon {
+          background-color: var(--ion-color-primary-tint);
+          margin-right: 10px;
+          padding: 14px;
+          display: flex;
+          border-radius: 50%;
+
+          .cate_img {
+            width: 30px;
+            height: 30px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+        }
+
+
+        .details {
+          display: block;
+          width: 90%;
+
+          .col {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .flex_row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .tag {
+              background-color: var(--ion-color-primary);
+              color: white;
+              border-radius: 50%;
+              font-size: 10px;
+              width: 18px;
+              height: 18px;
+              text-align: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .title {
+              font-family: 'medium';
+              padding-bottom: 6px;
+            }
+
+            .text {
+              font-size: 12px;
+              color: var(--ion-color-medium);
+            }
+          }
+        }
+      }
+    }
+  }
+}

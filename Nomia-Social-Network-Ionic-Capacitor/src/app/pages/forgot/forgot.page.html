@@ -1,0 +1,31 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Nomia App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Forgot Password</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-label> Enter your mobile number and we'll send you verification code </ion-label>
+
+  <ion-input type="Number" placeholder="Enter code"></ion-input>
+
+  <ion-button expand="block" mode="ios" class="block_btn" (click)="onVerify()">
+    Send
+  </ion-button>
+
+
+</ion-content>

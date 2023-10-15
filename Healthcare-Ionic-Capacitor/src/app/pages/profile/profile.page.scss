@@ -1,0 +1,92 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .back_image {
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+    }
+
+    .name {
+      font-size: 18px;
+      font-family: 'semi-bold';
+      margin-left: 10px;
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .text {
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  }
+
+  ion-segment {
+    margin-top: 20px;
+  }
+
+  .medical {
+    margin-top: 20px;
+
+    .bold {
+      font-family: 'semi-bold';
+      font-size: 15px;
+    }
+
+    .grey {
+      color: grey;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    .bg_grey {
+      background-color: rgb(238, 237, 237);
+      padding: 8px;
+      border-radius: 7px;
+      margin-bottom: 10px;
+
+      .simple {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .medical {
+    ion-item {
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 1px solid black;
+
+      ion-input {
+        font-family: "regular";
+        height: 48px;
+      }
+
+      ion-icon {
+        font-size: 22px;
+      }
+    }
+
+    .label {
+      font-family: 'semi-bold';
+      margin-bottom: 10px;
+    }
+  }
+}

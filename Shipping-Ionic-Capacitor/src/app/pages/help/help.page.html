@@ -1,0 +1,92 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Saska App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Help Center</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-segment [(ngModel)]="tabs">
+    <ion-segment-button value="faq">
+      <ion-label>FAQ</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="contact">
+      <ion-label>Contact us</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="tabs =='faq'">
+    <ion-searchbar placeholder="Search" class="search"></ion-searchbar>
+
+    <div class="bg_white">
+      <ion-label class="medium">What is Saska</ion-label>
+      <ion-icon name="caret-down-outline" color="primary"></ion-icon>
+    </div>
+
+    <div class="bg_white">
+      <ion-label class="medium">How to use Saska</ion-label>
+      <ion-icon name="caret-down-outline" color="primary"></ion-icon>
+    </div>
+
+    <div class="bg_white">
+      <ion-label class="medium">Can i create my own shipping?</ion-label>
+      <ion-icon name="caret-down-outline" color="primary"></ion-icon>
+    </div>
+
+    <div class="bg_white">
+      <ion-label class="medium">Is Saska free to use ?</ion-label>
+      <ion-icon name="caret-down-outline" color="primary"></ion-icon>
+    </div>
+
+    <div class="bg_white">
+      <ion-label class="medium">How to make offer on Saska?</ion-label>
+      <ion-icon name="caret-down-outline" color="primary"></ion-icon>
+    </div>
+
+
+  </div>
+
+  <div *ngIf="tabs =='contact'">
+    <div class="white">
+      <ion-icon name="call-outline" color="primary"></ion-icon>
+      <ion-label class="text">Customer Service</ion-label>
+    </div>
+
+    <div class="white">
+      <ion-icon name="logo-whatsapp" color="primary"></ion-icon>
+      <ion-label class="text">WhatsApp</ion-label>
+    </div>
+
+    <div class="white">
+      <ion-icon name="earth-outline" color="primary"></ion-icon>
+      <ion-label class="text">Website</ion-label>
+    </div>
+
+    <div class="white">
+      <ion-icon name="logo-facebook" color="primary"></ion-icon>
+      <ion-label class="text">Facebook</ion-label>
+    </div>
+
+    <div class="white">
+      <ion-icon name="logo-twitter" color="primary"></ion-icon>
+      <ion-label class="text">Twitter</ion-label>
+    </div>
+
+    <div class="white">
+      <ion-icon name="logo-instagram" color="primary"></ion-icon>
+      <ion-label class="text">Instagram</ion-label>
+    </div>
+  </div>
+</ion-content>

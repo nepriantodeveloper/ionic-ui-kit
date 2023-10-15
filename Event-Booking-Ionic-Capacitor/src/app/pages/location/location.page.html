@@ -1,0 +1,42 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="onback()">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Select Your Location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main_div">
+    <div class="map" #map id="map">
+      <div class="content">
+        <div class="ttl">
+          <ion-label>uttrakhand,india</ion-label>
+          <ion-icon name="chevron-down-outline" color="medium"></ion-icon>
+        </div>
+        <ion-searchbar showCancelButton="never"></ion-searchbar>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="contentbtn" (click)="onSubmit()" expand="block">
+      My Location
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,46 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : News App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+.main-content {
+  .banner_div {
+    padding: 8px 16px;
+
+    .img {
+      width: 100%;
+      border-radius: 22px;
+      height: 220px;
+      background-position: center center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      position: relative;
+
+      .img_detail {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+
+        .text {
+          font-size: 16px;
+          font-family: 'bold';
+          color: white;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+        }
+
+        .btn {
+          color: white;
+          width: 100px;
+          height: 30px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

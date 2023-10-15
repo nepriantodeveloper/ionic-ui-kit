@@ -1,0 +1,186 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+
+        <div class="user_info">
+          <div class="bg_image back_image"></div>
+          <ion-label>Jonh Doe</ion-label>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </div>
+
+        <div class="header_div">
+          <ion-label>CarDekho</ion-label>
+          <div></div>
+        </div>
+
+        <div class="image_div" (click)="goToHome()">
+          <ion-menu-toggle auto-hide="false">
+            <img src="assets/imgs/logo.svg">
+          </ion-menu-toggle>
+        </div>
+
+        <div class="header_div">
+          <ion-label>Research</ion-label>
+          <div></div>
+        </div>
+
+        <ion-accordion-group>
+
+          <ion-accordion value="new">
+            <ion-item slot="header">
+              <ion-icon slot="start" name="car"></ion-icon>
+              <ion-label>New Cars</ion-label>
+            </ion-item>
+
+            <ion-list slot="content" lines="none">
+              <ion-menu-toggle auto-hide="false">
+                <ion-item (click)="goToNewCars('new')">
+                  <ion-label>Serch New Cars</ion-label>
+                </ion-item>
+                <ion-item (click)="goToNewCars('latest')">
+                  <ion-label>Latest Cars</ion-label>
+                </ion-item>
+                <ion-item (click)="goToNewCars('upcoming')">
+                  <ion-label>Upcoming Cars</ion-label>
+                </ion-item>
+                <ion-item (click)="goToNewCars('electric')">
+                  <ion-label>Electric Cars</ion-label>
+                </ion-item>
+                <ion-item (click)="goToSuggest()">
+                  <ion-label>Suggest Me a Car</ion-label>
+                </ion-item>
+                <ion-item (click)="goToFeelCar()">
+                  <ion-label>Feel The Car</ion-label>
+                </ion-item>
+                <ion-item (click)="goToNewCars('popular')">
+                  <ion-label>Popular Cars</ion-label>
+                </ion-item>
+                <ion-item (click)="goToOffers()">
+                  <ion-label>Offers & Discounts</ion-label>
+                </ion-item>
+                <ion-item (click)="goToServiceCenter()">
+                  <ion-label>Service Centers</ion-label>
+                </ion-item>
+                <ion-item (click)="goToDealers()">
+                  <ion-label>Dealers</ion-label>
+                </ion-item>
+                <ion-item (click)="goToSpareParts()">
+                  <ion-label>Spare Parts</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            </ion-list>
+          </ion-accordion>
+
+        </ion-accordion-group>
+
+        <ion-accordion-group>
+
+          <ion-accordion value="used">
+            <ion-item slot="header">
+              <ion-icon slot="start" name="car"></ion-icon>
+              <ion-label>Used Cars</ion-label>
+            </ion-item>
+
+            <ion-list slot="content" lines="none">
+              <ion-menu-toggle auto-hide="false">
+                <ion-item (click)="goToUsedCars()">
+                  <ion-label>CarDekho Used Cars</ion-label>
+                </ion-item>
+                <ion-item (click)="goToCarValuation()">
+                  <ion-label>Used Car Valuation</ion-label>
+                </ion-item>
+                <ion-item (click)="goToUsedCarDealers()">
+                  <ion-label>Used Car Dealers</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>My Listing</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            </ion-list>
+          </ion-accordion>
+
+        </ion-accordion-group>
+
+        <ion-list>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerDirection="root" lines="none" detail="false" (click)="goToSellCar()">
+              <ion-icon slot="start" name="car"></ion-icon>
+              <ion-label>Sell Car</ion-label>
+            </ion-item>
+            <ion-item routerDirection="root" lines="none" detail="false" (click)="goToCompareCar()">
+              <ion-icon slot="start" name="car"></ion-icon>
+              <ion-label>Compare Cars</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+        <ion-accordion-group>
+
+          <ion-accordion value="news">
+            <ion-item slot="header">
+              <ion-icon slot="start" name="car"></ion-icon>
+              <ion-label>News & Reviews</ion-label>
+            </ion-item>
+
+            <ion-list slot="content" lines="none">
+              <ion-menu-toggle auto-hide="false">
+                <ion-item (click)="goToNews()">
+                  <ion-label>Auto News</ion-label>
+                </ion-item>
+                <ion-item (click)="goToNews()">
+                  <ion-label>Feature Stories</ion-label>
+                </ion-item>
+                <ion-item (click)="goToNews()">
+                  <ion-label>Car Collections</ion-label>
+                </ion-item>
+                <ion-item (click)="goToNews()">
+                  <ion-label>User Reviwes</ion-label>
+                </ion-item>
+                <ion-item (click)="goToNews()">
+                  <ion-label>Road Test</ion-label>
+                </ion-item>
+                <ion-item (click)="goToNews()">
+                  <ion-label>Car Videos</ion-label>
+                </ion-item>
+                <ion-item (click)="goToNews()">
+                  <ion-label>Write a Review</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            </ion-list>
+          </ion-accordion>
+        </ion-accordion-group>
+
+        <div class="header_div">
+          <ion-label>Explore More</ion-label>
+          <div></div>
+        </div>
+
+        <ion-list id="labels-list">
+          <ion-item *ngFor="let label of labels" lines="none">
+            <ion-label>{{ label }}</ion-label>
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerDirection="root" lines="none" detail="false" (click)="goToSettings()">
+              <ion-icon slot="start" name="settings"></ion-icon>
+              <ion-label>Settings</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

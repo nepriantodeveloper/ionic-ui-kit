@@ -1,0 +1,42 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Lottery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Choose Number</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <div class="top_container">
+      <ion-label class="title">Choose</ion-label>
+      <ion-label class="text">5 Numbers</ion-label>
+      <div class="select_number">
+        <ion-label class="tag_number">12</ion-label>
+        <ion-label class="tag_number">23</ion-label>
+        <ion-label class="tag_number">22</ion-label>
+        <ion-label class="tag_number">35</ion-label>
+        <ion-label class="tag_number">65</ion-label>
+      </div>
+    </div>
+
+    <div class="container">
+      <ion-datetime presentation="date"></ion-datetime>
+      <ion-button (click)="goToPayment()" shape="round" expand="block" class="submit_btn">
+        Make Payment
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

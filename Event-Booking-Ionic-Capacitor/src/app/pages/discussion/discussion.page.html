@@ -1,0 +1,70 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Discussion</ion-title>
+    <ion-buttons class="searchbtn" slot="end">
+      <ion-button (click)="onMenu()">
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="conversation">
+    <div class="first-selection">
+      <div class="your-massage">
+        hii !
+      </div>
+      <ion-label>8:25 AM</ion-label>
+    </div>
+
+    <div class="second-massage">
+      <div class="other-massage">
+        hello ?
+      </div>
+      <ion-label>8:27 AM <ion-icon name="checkmark-done-sharp" color="success"></ion-icon>
+      </ion-label>
+    </div>
+
+    <div class="first-selection">
+      <div class="your-massage">
+        how are you ?
+      </div>
+      <ion-label>8:28 AM</ion-label>
+    </div>
+
+    <div class="second-massage">
+      <div class="other-massage">
+        fine
+      </div>
+      <ion-label>8:27 AM <ion-icon name="checkmark-done-sharp" color="success"></ion-icon>
+      </ion-label>
+    </div>
+  </div>
+
+  <div class="footer" slot="fixed">
+    <ion-item lines="none">
+      <ion-input type="text" placeholder="Type something.."></ion-input>
+      <ion-buttons slot="end">
+        <ion-button (click)="onSend()" color="primary">
+          <ion-icon name="send-sharp"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  </div>
+
+</ion-content>

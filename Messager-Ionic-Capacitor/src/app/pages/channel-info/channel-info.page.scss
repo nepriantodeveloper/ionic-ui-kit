@@ -1,0 +1,92 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+
+    ion-icon {
+      color: white;
+    }
+
+    ion-title {
+      color: white;
+    }
+  }
+}
+
+ion-content {
+  .add_image {
+    height: 200px;
+    width: 100%;
+    border: 1px solid lightgrey;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .head_text {
+    font-size: 18px;
+    font-family: 'semi-bold';
+  }
+
+  ion-icon {
+    font-size: 20px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    .text {
+      font-size: 18px;
+    }
+  }
+
+  .color_text {
+    color: var(--ion-color-primary);
+    font-size: 14px;
+  }
+
+  .story-item {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3px;
+
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .item {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        ion-thumbnail {
+          border-radius: 15px;
+          width: max-content;
+          height: 60px;
+          width: 60px;
+        }
+
+      }
+    }
+  }
+}

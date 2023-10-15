@@ -1,0 +1,33 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Notification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="flex">
+    <ion-label class="bold_text">Today</ion-label>
+    <ion-label class="gray">Read All</ion-label>
+  </div>
+
+  <div class="notify" *ngFor="let item of [1,2,3,4]">
+    <div class="bg_image check_image" [style.backgroundImage]="'url(assets/images/green.png)'"></div>
+    <div>
+      <ion-label>Order is out for delivery</ion-label>
+      <ion-label class="small">Your order is out for delivery. click here for track order</ion-label>
+    </div>
+  </div>
+</ion-content>

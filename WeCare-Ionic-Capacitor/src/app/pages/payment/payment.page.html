@@ -1,0 +1,73 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : WeCare App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Payment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <ion-label class="text">Select the payment method you want to use.</ion-label>
+    <ion-list>
+      <ion-radio-group class="md">
+
+        <ion-item lines="none" class="payment">
+          <ion-avatar slot="start">
+            <img src="assets/img/paypal.png" />
+          </ion-avatar>
+          <ion-label>Paypal</ion-label>
+          <ion-radio slot="end" value="1"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="none" class="payment">
+          <ion-avatar slot="start">
+            <img src="assets/img/paypal.png" />
+          </ion-avatar>
+          <ion-label>Google Pay</ion-label>
+          <ion-radio slot="end" value="2"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="none" class="payment">
+          <ion-avatar slot="start">
+            <img src="assets/img/paypal.png" />
+          </ion-avatar>
+          <ion-label>Apple Pay</ion-label>
+          <ion-radio slot="end" value="3"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="none" class="payment">
+          <ion-avatar slot="start">
+            <img src="assets/img/paypal.png" />
+          </ion-avatar>
+          <ion-label>Net Banking</ion-label>
+          <ion-radio slot="end" value="4"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+
+      <ion-button class="add_btn" fill="outline" shape="round" (click)="goToAddCard()" expand="block">
+        Add New Card
+      </ion-button>
+    </ion-list>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer">
+    <ion-button class="btn" shape="round" (click)="goToSummary()" expand="block">
+      Continue
+    </ion-button>
+  </div>
+</ion-footer>

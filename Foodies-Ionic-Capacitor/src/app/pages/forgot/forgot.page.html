@@ -1,0 +1,82 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div *ngIf="tab == 1" class="ion-padding">
+
+    <div class="icon">
+      <div class="bg_image login_img" [style.backgroundImage]="'url(assets/images/login.png)'"></div>
+    </div>
+
+    <ion-label class="welcome_lbl">Forgot password</ion-label>
+
+    <ion-item lines="none" class="item">
+      <ion-icon slot="start" name="mail" color="primary"></ion-icon>
+      <ion-input type="mail" placeholder="Enter Email"></ion-input>
+    </ion-item>
+
+    <ion-label class="or">OR</ion-label>
+
+    <ion-item lines="none" class="item">
+      <ion-icon slot="start" name="call" color="primary"></ion-icon>
+      <ion-input type="number" placeholder="Enter Phone Number"></ion-input>
+    </ion-item>
+
+    <ion-label class="btn" (click)="tab = 2">Send OTP</ion-label>
+
+  </div>
+
+  <div *ngIf="tab == 2" class="ion-padding">
+    <div class="icon">
+      <div class="bg_image login_img" [style.backgroundImage]="'url(assets/images/login.png)'"></div>
+    </div>
+
+    <ion-label class="welcome_lbl">Enter OTP</ion-label>
+
+    <div class="otp">
+      <ng-otp-input [config]="{length:6}"></ng-otp-input>
+    </div>
+
+    <ion-label class="send">Not yet get? <strong>Resend OTP</strong></ion-label>
+
+    <ion-label class="btn" (click)="tab = 3">Verify</ion-label>
+
+
+  </div>
+
+  <div *ngIf="tab == 3" class="ion-padding">
+    <div class="icon">
+      <div class="bg_image login_img" [style.backgroundImage]="'url(assets/images/login.png)'"></div>
+    </div>
+
+    <ion-label class="welcome_lbl">New Password</ion-label>
+
+    <ion-item lines="none" class="item">
+      <ion-icon slot="start" name="lock-closed" color="primary"></ion-icon>
+      <ion-input type="password" placeholder="Enter New Password"></ion-input>
+      <ion-icon slot="end" name="eye-off" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none" class="item">
+      <ion-icon slot="start" name="lock-closed" color="primary"></ion-icon>
+      <ion-input type="password" placeholder="Confirm Password"></ion-input>
+      <ion-icon slot="end" name="eye-off" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-label class="btn" (click)="onLogin()">Set Password</ion-label>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,51 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="onback()">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Add New Card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="card">
+    <div class="bg_img" [style.backgroundImage]="'url(assets/images/c1.jpg)'"></div>
+  </div>
+
+  <ion-label class="title">Full Name</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Your Full Name"></ion-input>
+  </ion-item>
+  <ion-label class="title">Card Number</ion-label>
+  <ion-item lines="none">
+    <ion-input type="number" placeholder="Your Card Number"></ion-input>
+  </ion-item>
+  <ion-label class="title">Expiry Date</ion-label>
+  <ion-item lines="none">
+    <ion-input type="number" placeholder="Expiry Date"></ion-input>
+  </ion-item>
+  <ion-label class="title">CVV</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="CVV"></ion-input>
+  </ion-item>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="content_button" (click)="onContinue()" expand="block">
+      Continue
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

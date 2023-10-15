@@ -1,0 +1,55 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Messanger Chat App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Language</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-radio-group allow-empty-selection>
+    <ion-list-header>
+      <ion-label>Choose Language</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>English</ion-label>
+      <ion-radio slot="end" color="primary" checked></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Hindi</ion-label>
+      <ion-radio slot="end" color="secondary"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Spanish</ion-label>
+      <ion-radio slot="end" color="tertiary" name="sausage"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Arabic</ion-label>
+      <ion-radio slot="end" color="success" value="tomato"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>chiness</ion-label>
+      <ion-radio slot="end" color="warning" value="carrot"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Japaness</ion-label>
+      <ion-radio slot="end" color="danger" checked></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-content>

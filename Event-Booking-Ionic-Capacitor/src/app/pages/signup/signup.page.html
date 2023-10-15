@@ -1,0 +1,50 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Event Booking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+
+  <div class="main_title">
+    <ion-label class="heading">Let's Start With Your Basic Details!</ion-label>
+  </div>
+
+  <ion-label class="title">First Name</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Your First Name"></ion-input>
+  </ion-item>
+  <ion-label class="title">Last Name</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Your Last Name"></ion-input>
+  </ion-item>
+  <ion-label class="title">Phone</ion-label>
+  <ion-item lines="none">
+    <ion-input type="number" placeholder="Your Phone Number"></ion-input>
+  </ion-item>
+  <ion-label class="title">Email</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Your Email Address"></ion-input>
+  </ion-item>
+  <ion-label class="title">Password</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Password"></ion-input>
+    <ion-icon slot="end" name="eye" color="medium"></ion-icon>
+  </ion-item>
+  <ion-label class="title">Confirm Password</ion-label>
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Confirm Password"></ion-input>
+    <ion-icon slot="end" name="eye" color="medium"></ion-icon>
+  </ion-item>
+
+  <ion-button (click)="onSignUp()" expand="block" shape="round" class="contentbtn">
+    SignUp
+  </ion-button>
+
+  <div class="signup">
+    <ion-label class="sub_heading">You have an already account ? <span (click)="onLogin()">Login Now</span></ion-label>
+  </div>
+
+</ion-content>

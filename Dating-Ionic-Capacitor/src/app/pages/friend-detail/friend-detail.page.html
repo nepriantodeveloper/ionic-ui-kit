@@ -1,0 +1,63 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content>
+  <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+    <div class="icon">
+      <ion-icon class="back" name="chevron-back-outline" (click)="goToBack()"></ion-icon>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="uper_div">
+      <div class="item">
+        <ion-label class="name">John Doe</ion-label>
+        <ion-badge class="badge">24 year</ion-badge>
+      </div>
+      <div class="item">
+        <ion-label class="text">Florida, Usa</ion-label>
+        <ion-label class="distance">1 km away</ion-label>
+      </div>
+      <div class="line"></div>
+      <div>
+        <ion-icon class="icon" name="school-outline"></ion-icon>
+        <ion-label class="text">Flutter Devlopment at Google</ion-label>
+      </div>
+
+      <div>
+        <ion-icon class="icon" name="file-tray-outline"></ion-icon>
+        <ion-label class="text">Music, Traveling, Netflix</ion-label>
+      </div>
+      <div>
+        <div class="title-head">
+          <ion-label class="title-head">About</ion-label>
+        </div>
+        <div class="text">
+          <ion-label>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque magni quibusdam earum illum
+            perspiciatis, ipsa
+          </ion-label>
+        </div>
+      </div>
+
+      <div class="interest">
+        <div class="title-head">
+          <ion-label class="title-head">Interest</ion-label>
+        </div>
+        <div class="chip">
+          <ion-chip outline color="dark" *ngFor="let item of [1,2,3,4,5]">
+            <img src="assets/img/heart.png" class="img">
+            <ion-label> Travel </ion-label>
+          </ion-chip>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</ion-content>

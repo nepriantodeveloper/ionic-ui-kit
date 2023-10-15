@@ -1,0 +1,52 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="goBack()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>News</ion-title>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+            </ion-button>
+            <ion-button>
+                <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="select_div">
+            <ion-select placeholder="Select News Categories">
+                <ion-select-option value="{{item}}" *ngFor="let item of categories">{{item}}</ion-select-option>
+            </ion-select>
+        </div>
+
+        <div class="content_div">
+
+            <div class="news_card" *ngFor="let item of cars">
+                <div class="bg_image back_image" [style.backgroundImage]="'url('+ item +')'">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </div>
+                <div class="detail_div">
+                    <ion-label class="bold_lbl">Skoda Slavia Test Drives Commence Ahead Of February 28 Launch</ion-label>
+                    <ion-label class="date_lbl">Feb 25, 2022</ion-label>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</ion-content>

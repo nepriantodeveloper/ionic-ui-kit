@@ -1,0 +1,61 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Parking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="ion-padding space">
+    <div>
+
+      <ion-label class="simp_lbl">Create Your Account</ion-label>
+
+      <ion-item lines="none">
+        <ion-icon slot="start" name="mail-outline"></ion-icon>
+        <ion-input type="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+        <ion-input type="password" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" (click)="onFillProfile()">
+        Register
+      </ion-button>
+
+
+      <ion-label class="or">Or Continue With</ion-label>
+
+      <div class="button">
+        <ion-buttons>
+          <ion-button>
+            <ion-icon name="logo-facebook"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+
+        <ion-buttons>
+          <ion-button>
+            <ion-icon name="logo-google"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+
+        <ion-buttons>
+          <ion-button>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+    </div>
+    <div class="bottom">
+      <ion-label class="last_lbl">Already have an account? <span (click)="onLogin()">Login</span></ion-label>
+    </div>
+  </div>
+</ion-content>

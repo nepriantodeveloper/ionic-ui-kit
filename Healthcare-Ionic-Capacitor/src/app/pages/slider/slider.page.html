@@ -1,0 +1,45 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-content class="ion-padding">
+  <div class="main-content">
+    <ion-slides pager="ios">
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s1.jpeg)'">
+          </div>
+          <ion-label class="head_lbl">Book an appointment</ion-label>
+          <ion-label class="text">We help users to easily search for a doctor and book an appointment</ion-label>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s2.jpeg)'">
+          </div>
+          <ion-label class="head_lbl">Store your medical records</ion-label>
+          <ion-label class="text">We help users store medical records and share them with their doctor in an easy and
+            secure way.</ion-label>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide_div">
+          <div class="slide_img bg_image" [style.backgroundImage]="'url(assets/images/s3.jpeg)'">
+          </div>
+          <ion-label class="head_lbl">Set reminders take your medications</ion-label>
+          <ion-label class="text">We help to remind those at risk of forgotting to take their medicines on time, to do
+            so.</ion-label>
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <div class="footer">
+      <ion-button (click)="onRegister()" expand="block">
+        Get Started
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

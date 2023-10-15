@@ -1,0 +1,79 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : E-Learning App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  .simp_lbl {
+    margin-top: 30px;
+    font-size: 30px;
+    letter-spacing: 1.2;
+    margin-bottom: 30px;
+    font-family: 'semi-bold';
+  }
+
+  ion-item {
+    --background: #f7f7f7;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    ion-input {
+      --padding-start: 10px;
+      font-family: "regular";
+      height: 50px;
+    }
+
+    ion-icon {
+      font-size: 22px;
+    }
+  }
+
+  ion-button {
+    --border-radius: 10px;
+    margin-top: 2.5rem;
+    height: 50px;
+  }
+
+  .or {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    color: grey;
+    font-size: 14px;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    ion-buttons {
+      margin: 0 10px;
+
+      ion-button {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .last_lbl {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 16px;
+    color: #c2c2cb;
+
+    span {
+      color: var(--ion-color-primary);
+      font-family: "bold";
+    }
+  }
+}

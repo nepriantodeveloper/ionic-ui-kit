@@ -1,0 +1,55 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Health App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Add Record</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label class="heading">Name of Record</ion-label>
+
+  <div class="border">
+    <ion-label>Enter Name Of The Record</ion-label>
+  </div>
+
+  <ion-row>
+    <ion-col size="6">
+      <ion-label class="heading">Date</ion-label>
+      <div class="border">
+        <ion-label>Select Date</ion-label>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <ion-label class="heading">Time</ion-label>
+      <div class="flex">
+        <div class="border">
+          <ion-label>09</ion-label>
+        </div>
+        <ion-label class="margin">:</ion-label>
+        <div class="border margin">
+          <ion-label>00</ion-label>
+        </div>
+        <div class="border margin">
+          <ion-label>AM</ion-label>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <div class="button" (click)="onBack()">
+    <ion-label class="text">Add Record</ion-label>
+  </div>
+</ion-content>

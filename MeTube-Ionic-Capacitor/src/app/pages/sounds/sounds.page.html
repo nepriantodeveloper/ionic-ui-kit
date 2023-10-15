@@ -1,0 +1,44 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : MeTube App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Sounds</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <div class="segment">
+      <div (click)="segmentChange(1)" class="seg_name" [class.active]="seg_id == 1">Discover
+      </div>
+      <div (click)="segmentChange(2)" class="seg_name" [class.active]="seg_id == 2">Favorite
+      </div>
+    </div>
+
+    <div class="list_card" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13]">
+      <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+      </div>
+      <div class="detail">
+        <div class="top_div">
+          <div class="col">
+            <ion-label class="title">Lorem ipsum, dolor </ion-label>
+            <ion-label class="small_txt">Hary Style</ion-label>
+            <ion-label class="small_txt">05:20</ion-label>
+          </div>
+          <ion-label class="small_txt">65.1M</ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

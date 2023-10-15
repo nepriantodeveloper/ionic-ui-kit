@@ -1,0 +1,104 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Dating App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.img {
+  height: 60vh;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .icon {
+    color: white;
+
+    .back {
+      color: white;
+      background-color: black;
+      border-radius: 100%;
+      opacity: 0.6;
+      z-index: 9999;
+      left: 14px;
+      top: 20px;
+      position: absolute;
+      font-size: 22px;
+      padding: 3px;
+    }
+  }
+}
+
+.main-content {
+  padding: 24px;
+  border-radius: 40px;
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  .name {
+    font-size: 18px;
+    font-family: "bold";
+    color: var(--ion-color-dark);
+  }
+
+  .badge {
+    font-size: 13px;
+    font-family: "medium";
+  }
+
+  .distance {
+    font-size: 12px;
+    font-family: "medium";
+    color: var(--ion-color-medium);
+    padding-right: 3px;
+  }
+
+  .text {
+    font-size: 14px;
+    font-family: "medium";
+    color: var(--ion-color-medium);
+  }
+
+  .icon {
+    font-size: 20px;
+    color: var(--ion-color-medium);
+    padding-right: 10px;
+  }
+
+  .title-head {
+    font-size: 16px;
+    font-family: "medium";
+    color: var(--ion-color-dark);
+    padding: 10px 0px 5px 0px;
+  }
+
+  .line {
+    width: 100px;
+    margin: 10px 0px;
+    border-bottom: 3px solid var(--ion-color-primary);
+  }
+
+  ion-chip {
+    box-shadow: 0px 0px 5px var(--box-shadow-color);
+    --box-shadow-color: #d7d8da;
+    text-transform: capitalize;
+    margin-top: 10px;
+
+    .img {
+      width: 20px;
+      height: 20px;
+    }
+
+    ion-label {
+      font-family: "medium";
+      font-size: 16px;
+    }
+  }
+}

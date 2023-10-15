@@ -1,0 +1,7 @@
+{
+  "name": "saska",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,51 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Amount</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+    <ion-item lines="none">
+      <ion-select placeholder="Select">
+        <ion-select-option value="bnb">BNB</ion-select-option>
+        <ion-select-option value="usdc">USDC</ion-select-option>
+        <ion-select-option value="snx">SNX</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-input type="text" placeholder="Enter Amount"></ion-input>
+
+  <div class="chip">
+    <ion-chip color="medium" mode="ios">
+      <ion-label>sdf56sd4fsdf5</ion-label>
+      <ion-icon name="copy-outline"></ion-icon>
+    </ion-chip>
+
+    <ion-label class="balance">Balance : 4,66 BNB</ion-label>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="contentbtn" (click)="onNext()" expand="block">
+      Next
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

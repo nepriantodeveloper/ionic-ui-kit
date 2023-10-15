@@ -1,0 +1,66 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header mode="md" class="ion-no-border">
+  <ion-toolbar color="primary">
+    <div class="header_div">
+      <div class="first_div">
+        <ion-buttons slot="start">
+          <ion-button (click)="goBack()">
+            <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <div class="bg_image back_image" [style.backgroundImage]="'url(assets/imgs/user.jpg)'"></div>
+        <div>
+          <ion-label class="username">Mausam</ion-label>
+          <ion-label class="small_lbl">last seen at 12:10 pm</ion-label>
+        </div>
+      </div>
+      <div>
+        <ion-buttons slot="end">
+          <ion-button fill="clear" size="small">
+            <ion-icon slot="icon-only" name="call-outline"></ion-icon>
+          </ion-button>
+          <ion-button fill="clear" size="small">
+            <ion-icon slot="icon-only" name="ellipsis-horizontal"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <span *ngFor="let item of messages">
+      <div class="left_div" *ngIf="item.side == 'left'">
+        <div class="msg_div">
+          <ion-label>{{item.msg}}</ion-label>
+        </div>
+      </div>
+
+      <div class="right_div" *ngIf="item.side == 'right'">
+        <div class="msg_div">
+          <ion-label>{{item.msg}}</ion-label>
+        </div>
+      </div>
+    </span>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer_div">
+    <div class="input_box">
+      <ion-input type="text" placeholder="Type a message"></ion-input>
+      <ion-icon name="camera-outline" style="margin-right: 16px;"></ion-icon>
+      <ion-icon name="mic-outline"></ion-icon>
+    </div>
+  </div>
+</ion-footer>

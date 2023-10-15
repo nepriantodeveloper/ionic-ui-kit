@@ -1,0 +1,7 @@
+{
+  "name": "fipay",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

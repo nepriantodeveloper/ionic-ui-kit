@@ -1,0 +1,48 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Finance App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon slot="start" name="chevron-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>My QR Code</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+
+    <div class="profile">
+      <div class="profile-item">
+        <div class="profile-picture">
+          <div class="img" [style.backgroundImage]="'url(assets/img/profile.jpg)'">
+          </div>
+
+
+        </div>
+        <ion-label class="title">Garold Febinaco</ion-label>
+        <ion-label class="text">admin@initappz.com</ion-label>
+
+        <div class="qr_img" [style.backgroundImage]="'url(assets/img/qr.png)'">
+        </div>
+
+        <div class="notice_detail">
+
+          <div class="icon">
+            <ion-icon name="document-text-outline"></ion-icon>
+          </div>
+          <ion-label class="text">Simply show them QR Code and your friend quickly scan and tap!</ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

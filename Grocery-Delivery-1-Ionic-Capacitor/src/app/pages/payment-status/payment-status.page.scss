@@ -1,0 +1,98 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+$success_1: #fbf0ea;
+$success_2: #fef8f2;
+$success_3: #fdfaf7;
+
+.main_content_div {
+  padding: 20px;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .round_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .outer_3 {
+    height: 250px;
+    width: 250px;
+    min-width: 250px;
+
+    .outer_2 {
+      height: 200px;
+      width: 200px;
+      min-width: 200px;
+
+      .outer_1 {
+        height: 150px;
+        width: 150px;
+        min-width: 150px;
+      }
+    }
+  }
+
+  .success_3 {
+    background: #f6fcf7;
+
+    .success_2 {
+      background: #ebfdec;
+
+      .success_1 {
+        background: #edfde7;
+
+        img {
+          width: 90px;
+        }
+      }
+    }
+  }
+
+  .failed_3 {
+    background: #fdfaf7;
+
+    .failed_2 {
+      background: #fef8f2;
+
+      .failed_1 {
+        background: #fbf0ea;
+
+        img {
+          width: 90px;
+        }
+      }
+    }
+  }
+
+  .bold_lbl {
+    font-size: 18px;
+    font-family: 'medium';
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  .small_lbl {
+    font-size: 12px;
+    color: grey;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.footer_div {
+  padding: 16px;
+}

@@ -1,0 +1,87 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Nomia App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Order Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="chat">
+    <div class="flex">
+      <div class="bg_image back_image" [style.backgroundImage]="'url(assets/images/profile.jpg)'"></div>
+      <div style="margin-left: 10px;">
+        <ion-label class="bold_text"> Mike Jenifer </ion-label>
+        <div style="display: flex;">
+          <ion-label class="green_text"> Confirmed </ion-label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ion-icon name="chatbubble" class="icon" color="primary"></ion-icon>
+      <ion-icon name="call" class="icon" color="primary"></ion-icon>
+    </div>
+  </div>
+
+  <div class="schedule ion-padding">
+    <ion-row>
+      <ion-col size="5">
+        <div class="left">
+          <ion-label class="grey_text"> Start </ion-label>
+          <ion-label class="dark_text"> Monday </ion-label>
+          <ion-label class="dark_text"> Aug 24, 2022 </ion-label>
+          <ion-label class="grey_text"> 08:00 PM </ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="5">
+        <div class="right">
+          <ion-label class="grey_text"> End </ion-label>
+          <ion-label class="dark_text"> Monday </ion-label>
+          <ion-label class="dark_text"> Aug 24, 2022 </ion-label>
+          <ion-label class="grey_text"> 10:00 PM </ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <div class="flex">
+      <div class="left">
+        <ion-label class="grey_text"> Address </ion-label>
+        <ion-label class="dark_text"> Bhavnagar,Gujarat </ion-label>
+        <ion-label class="grey_text"> 0.30mi away </ion-label>
+      </div>
+      <div class="right">
+        <div class="bg_image map_image" [style.backgroundImage]="'url(assets/images/map.png)'"></div>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="left">
+        <ion-label class="grey_text"> Price </ion-label>
+        <ion-label class="dark_text"> Total Price $60.00 </ion-label>
+        <ion-label class="grey_text"> for 2hrs </ion-label>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="block" mode="ios" color="medium" class="block_btn">
+      Cancel
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

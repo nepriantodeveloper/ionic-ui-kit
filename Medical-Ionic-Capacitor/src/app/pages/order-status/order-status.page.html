@@ -1,0 +1,134 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Medical App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>order-status</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="status">
+    <div class="action">
+      <ion-icon name="checkmark-circle" color="primary"></ion-icon>
+      <ion-label class="name">Pending</ion-label>
+    </div>
+    <div class="action">
+      <ion-icon name="checkmark-circle" color="primary"></ion-icon>
+      <ion-label class="name">Confirming</ion-label>
+    </div>
+    <div class="action">
+      <ion-icon name="checkmark-circle" color="primary"></ion-icon>
+      <ion-label class="name">Processed</ion-label>
+    </div>
+    <div class="action">
+      <ion-icon name="checkmark-circle" color="primary"></ion-icon>
+      <ion-label class="name">Picked</ion-label>
+    </div>
+    <div class="action">
+      <ion-icon name="checkmark-circle" color="primary"></ion-icon>
+      <ion-label class="name">Shipped</ion-label>
+    </div>
+    <div class="action">
+      <ion-icon name="checkmark-circle" color="medium"></ion-icon>
+      <ion-label class="name">Dilivered</ion-label>
+    </div>
+  </div>
+
+  <ion-label class="head">Order Timeline</ion-label>
+
+  <ion-row class="row">
+    <ion-col size="3">
+      <ion-label class="small">31 Jan</ion-label>
+      <ion-label class="small">12:30 am</ion-label>
+    </ion-col>
+    <ion-col size="1">
+      <ion-icon name="ellipse" color="primary"></ion-icon>
+    </ion-col>
+    <ion-col size="8">
+      <ion-label class="bold">Shipped</ion-label>
+      <ion-label class="gray">Pay from mastercard account using mastercard payment getaway</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="row">
+    <ion-col size="3">
+      <ion-label class="small">28 Jan</ion-label>
+      <ion-label class="small">04:30 am</ion-label>
+    </ion-col>
+    <ion-col size="1">
+      <ion-icon name="ellipse" color="primary"></ion-icon>
+    </ion-col>
+    <ion-col size="8">
+      <ion-label class="bold">Picked</ion-label>
+      <ion-label class="gray">Pay from mastercard account using mastercard payment getaway</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="row">
+    <ion-col size="3">
+      <ion-label class="small">26 Jan</ion-label>
+      <ion-label class="small">03:30 pm</ion-label>
+    </ion-col>
+    <ion-col size="1">
+      <ion-icon name="ellipse" color="primary"></ion-icon>
+    </ion-col>
+    <ion-col size="8">
+      <ion-label class="bold">Processed</ion-label>
+      <ion-label class="gray">Pay from mastercard account using mastercard payment getaway</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="row">
+    <ion-col size="3">
+      <ion-label class="small">23 Jan</ion-label>
+      <ion-label class="small">12:30 am</ion-label>
+    </ion-col>
+    <ion-col size="1">
+      <ion-icon name="ellipse" color="primary"></ion-icon>
+    </ion-col>
+    <ion-col size="8">
+      <ion-label class="bold">Confirming</ion-label>
+      <ion-label class="gray">Pay from mastercard account using mastercard payment getaway</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="row">
+    <ion-col size="3">
+      <ion-label class="small">20 Jan</ion-label>
+      <ion-label class="small">12:30 am</ion-label>
+    </ion-col>
+    <ion-col size="1">
+      <ion-icon name="ellipse" color="primary"></ion-icon>
+    </ion-col>
+    <ion-col size="8">
+      <ion-label class="bold">Pending</ion-label>
+      <ion-label class="gray">Pay from mastercard account using mastercard payment getaway</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <div class="list">
+    <div class="order">
+      <div class="img">
+        <ion-thumbnail> <img src="assets/images/s2.png" /> </ion-thumbnail>
+      </div>
+      <div class="text">
+        <ion-label class="name"><strong>Eoo Cool</strong> 250mg</ion-label>
+        <ion-label class="tab">USD 56.00 X 2</ion-label>
+        <ion-label class="color"> USD 58.00</ion-label>
+      </div>
+    </div>
+  </div>
+
+
+</ion-content>

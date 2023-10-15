@@ -1,0 +1,35 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Driver App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+*/
+ion-menu-button {
+  color: black;
+}
+
+ion-content {
+  .list {
+    display: flex;
+    padding: 10px 15px;
+    border-bottom: 1px solid lightgray;
+
+    .icon {
+      ion-icon {
+        padding: 12px;
+        background-color: blue;
+        color: white;
+        border-radius: 100%;
+        margin-right: 15px;
+        font-size: 25px;
+      }
+    }
+
+    .bold {
+      font-family: 'semi-bold';
+      font-size: 18px;
+    }
+  }
+}

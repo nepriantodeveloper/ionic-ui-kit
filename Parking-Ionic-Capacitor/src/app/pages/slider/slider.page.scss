@@ -1,0 +1,40 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Parking App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-content {
+  ion-slides {
+    ion-slide {
+      display: flex;
+      flex-direction: column;
+
+      .slide {
+        margin-top: 6rem;
+
+        img {
+          height: 220px;
+          width: 100%;
+        }
+
+        .main_lbl {
+          font-size: 24px;
+          font-family: "semi-bold";
+        }
+
+        .sub_lbl {
+          font-size: 16px;
+          line-height: 1.4;
+        }
+      }
+
+      ion-button {
+        margin-top: 6rem;
+        width: 100%;
+      }
+    }
+  }
+}

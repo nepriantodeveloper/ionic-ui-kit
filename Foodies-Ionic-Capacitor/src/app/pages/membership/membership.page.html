@@ -1,0 +1,70 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Foodies App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="onNotification()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Foodies Pro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="border">
+    <ion-label class="bold">Pro Membership</ion-label>
+
+    <div class="bottom">
+      <ion-label class="color">6 Months <span>3 Months</span></ion-label>
+      <ion-label class="center">Up to Extra 30% Off on Delivery</ion-label>
+      <ion-label class="center">At 25000+ Restaurants</ion-label>
+      <ion-label class="center">Faster Delivery Of Your Order</ion-label>
+      <ion-label class="btn" (click)="onBack()">Join Pro ($4.49)</ion-label>
+    </div>
+  </div>
+
+  <ion-label class="head_text">Pro Restaurant Around You</ion-label>
+
+
+  <ion-row class="around" *ngFor="let item of [1,2,3,4]">
+    <ion-col size="3">
+      <div class="bg_image small_img" [style.backgroundImage]="'url(assets/images/f3.jpg)'"></div>
+    </ion-col>
+    <ion-col size="9">
+      <div class="about">
+        <div class="flex">
+          <ion-label class="name">Burger Queen</ion-label>
+          <ion-icon name="bookmark" color="medium"></ion-icon>
+        </div>
+        <ion-label class="item">Fast food,American,Chiness</ion-label>
+        <ion-label class="prise"><strong>$5.1</strong>For one</ion-label>
+        <div class="info">
+          <div class="rat">
+            <img src="assets/images/veg.png" alt="" class="veg">
+            <ion-label class="green">Pure veg</ion-label>
+          </div>
+          <div class="rat">
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-label class="warning">4.3</ion-label>
+          </div>
+          <div class="rat">
+            <ion-icon name="trending-up-outline" color="danger"></ion-icon>
+            <ion-label class="danger">1200 Orders today</ion-label>
+          </div>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>

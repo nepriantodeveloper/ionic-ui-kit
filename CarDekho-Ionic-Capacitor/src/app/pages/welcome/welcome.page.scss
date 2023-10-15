@@ -1,0 +1,71 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CarDekho App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main_content_div {
+  padding: 16px;
+
+  .logo_box {
+    height: 160px;
+    width: 160px;
+    min-width: 160px;
+    border-radius: 100%;
+    background: #ececec;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inner_box {
+      height: 120px;
+      width: 120px;
+      min-width: 120px;
+      border-radius: 100%;
+      background: #dadada;
+      display: flex;
+      align-items: center;
+      justify-content: centerṁ;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  .bold_lbl {
+    text-align: center;
+    font-family: "medium";
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .small_lbl {
+    text-align: center;
+    color: grey;
+    margin-bottom: 16px;
+  }
+
+  ion-button {
+    margin: 0px;
+    --border-radius: 5px;
+    height: 50px;
+    font-size: 15px;
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+
+  .fb_btn {
+    --background: #1876f4;
+  }
+
+  .gp_btn {
+    --border-color: black;
+    color: black;
+  }
+}

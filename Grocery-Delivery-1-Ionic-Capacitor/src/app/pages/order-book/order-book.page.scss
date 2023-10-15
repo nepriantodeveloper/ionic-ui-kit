@@ -1,0 +1,159 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery Delivery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  .bold_title {
+    font-weight: normal;
+    font-family: 'medium';
+    color: var(--ion-color-app-green);
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .loc_lbl {
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+  }
+}
+
+.main_content_div {
+  .title_div {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--ion-color-app-lightgreen);
+
+    .title_lbl {
+      font-family: 'medium';
+    }
+
+    .small_lbl {
+      font-size: 14px;
+    }
+  }
+
+  .address_div {
+    padding: 16px;
+
+    .address_flex {
+      display: flex;
+      align-items: center;
+
+      ion-icon {
+        font-size: 20px;
+        color: var(--ion-color-app-orange);
+      }
+
+      ion-label {
+        padding-left: 16px;
+      }
+    }
+  }
+
+  .product_container {
+    .product_flex {
+      padding: 16px;
+      border-bottom: 1px solid lightgrey;
+      display: flex;
+      justify-content: space-between;
+
+      .inner_flex {
+        display: flex;
+
+        .qty_box {
+          width: 24px;
+          min-width: 24px;
+          height: 24px;
+          background: var(--ion-color-primary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+
+          ion-label {
+            color: white;
+            font-family: 'medium';
+          }
+        }
+
+        .name_lbl {
+          font-family: 'medium';
+          margin-bottom: 4px;
+        }
+
+        .small_grey {
+          color: grey;
+          font-size: 14px;
+        }
+      }
+
+      .price_lbl {
+        font-family: 'medium';
+        color: var(--ion-color-primary);
+      }
+    }
+  }
+
+  .price_container {
+    padding: 16px;
+
+    ion-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'medium';
+      margin-bottom: 10px;
+
+      span {
+        font-family: 'semi-bold';
+      }
+    }
+
+    .bold_lbl {
+      span {
+        color: var(--ion-color-primary);
+      }
+    }
+
+    .simp_lbl {
+      color: grey;
+    }
+  }
+
+  .payment_container {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .no_lbl {
+      font-family: 'medium';
+    }
+
+    .simp_lbl {
+      font-family: 'medium';
+      color: grey;
+    }
+
+    .change_lbl {
+      background: #f1b230;
+      border-radius: 8px;
+      font-size: 14px;
+      color: white;
+      font-family: 'medium';
+      padding: 6px 14px;
+    }
+  }
+}
+
+.footer_div {
+  padding: 16px;
+}

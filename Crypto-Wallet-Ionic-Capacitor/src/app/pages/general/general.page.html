@@ -1,0 +1,76 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : CryptoWallet App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>General</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-label class="h5">Currency Conversion</ion-label>
+
+  <ion-item lines="none">
+    <ion-select placeholder="Select" value="usd">
+      <ion-select-option value="usd">USD</ion-select-option>
+      <ion-select-option value="usdc">USDC</ion-select-option>
+      <ion-select-option value="bnb">BNB</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-label class="h5">Currency Conversion</ion-label>
+
+  <div class="radiobtn">
+    <div class="btn">
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>Native</ion-label>
+    </div>
+    <div class="btn">
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>Flat</ion-label>
+    </div>
+  </div>
+
+  <ion-label class="h5">Currency Language</ion-label>
+
+  <ion-item lines="none">
+    <ion-select placeholder="Select" value="english">
+      <ion-select-option value="english">English</ion-select-option>
+      <ion-select-option value="hindi">Hindi</ion-select-option>
+      <ion-select-option value="gujrati">Gujrati</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-label class="h5">Search Engine</ion-label>
+
+  <ion-item lines="none">
+    <ion-select placeholder="Select" value="google">
+      <ion-select-option value="google">Google</ion-select-option>
+      <ion-select-option value="hindi">Bing</ion-select-option>
+      <ion-select-option value="yahoo">Yahoo</ion-select-option>
+      <ion-select-option value="duck">DuckDuckGo</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <div class="toggle">
+    <ion-label>Sign in With Face ID</ion-label>
+    <ion-toggle></ion-toggle>
+  </div>
+
+  <div class="toggle">
+    <ion-label>Dark Mode</ion-label>
+    <ion-toggle></ion-toggle>
+  </div>
+
+</ion-content>

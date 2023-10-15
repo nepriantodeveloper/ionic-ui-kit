@@ -1,0 +1,148 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Finance App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="ion-padding-start">
+      <ion-avatar class="logo">
+        <img src="assets/img/logo.png" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToNotification()">
+        <ion-icon slot="start" name="notifications-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Paynet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main-content">
+
+    <div class="balance_card">
+      <div class="upper_div">
+        <div class="title_left">
+          <ion-label class="text">Balance</ion-label>
+          <ion-label class="title">$2,456</ion-label>
+        </div>
+        <div class="card_logo_img" [style.backgroundImage]="'url(assets/img/paypal.png)'"></div>
+      </div>
+      <div class="lower_div">
+        <div class="title_left">
+          <ion-label class="text">Account Number</ion-label>
+          <ion-label class="title">*** *** *** 8999</ion-label>
+        </div>
+        <ion-icon color="light" name="cash-outline"></ion-icon>
+      </div>
+    </div>
+
+    <div class="badge">
+      <ion-row>
+        <ion-col size="4" (click)="goToHistory()">
+          <ion-icon name="save-outline" color="primary"></ion-icon>
+          <ion-label>History</ion-label>
+        </ion-col>
+        <ion-col size="4" (click)="goToTransfer()">
+          <ion-icon name="cash-outline" color="primary"></ion-icon>
+          <ion-label>Transfer</ion-label>
+        </ion-col>
+        <ion-col size="4" (click)="goToTopup()">
+          <ion-icon name="logo-paypal" color="primary"></ion-icon>
+          <ion-label>Top Up</ion-label>
+        </ion-col>
+        <ion-col size="4" (click)="goToCards()">
+          <ion-icon name="card-outline" color="primary"></ion-icon>
+          <ion-label>My Cards</ion-label>
+        </ion-col>
+        <ion-col size="4" (click)="goToQr()">
+          <ion-icon name="qr-code-outline" color="primary"></ion-icon>
+          <ion-label>QR Pay</ion-label>
+        </ion-col>
+        <ion-col size="4">
+          <ion-icon name="wallet-outline" color="primary"></ion-icon>
+          <ion-label>Withdrow</ion-label>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="title_div">
+      <ion-label class="title">Monthly Budget</ion-label>
+      <ion-label class="btn">See All</ion-label>
+    </div>
+
+    <ion-toolbar class="limit_card">
+      <div class="progress" slot="start">
+        <circle-progress [percent]="50" [outerStrokeColor]="'#fff'" [backgroundColor]="'#68ab9f'" [titleColor]="'#fff'"
+          [unitsColor]="'#fff'" [showUnits]="true">
+        </circle-progress>
+      </div>
+
+      <div class="title">
+        <ion-label class="name">Daily limit</ion-label>
+        <ion-label class="dollar">$140.20 of $350.00</ion-label>
+      </div>
+
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="chevron-forward-outline" color="light"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+
+    <ion-toolbar class="limit_card">
+      <div class="progress" slot="start">
+
+        <circle-progress [percent]="85" [outerStrokeColor]="'#fff'" [backgroundColor]="'#68ab9f'" [titleColor]="'#fff'"
+          [unitsColor]="'#fff'" [showUnits]="true">
+        </circle-progress>
+      </div>
+
+      <div class="title">
+        <ion-label class="name">Transactions</ion-label>
+        <ion-label class="dollar">$140.20 of $350.00</ion-label>
+      </div>
+
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="chevron-forward-outline" color="light"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+
+
+    <div class="title_div">
+      <ion-label class="title">Transaction History</ion-label>
+      <ion-label class="btn">See All</ion-label>
+    </div>
+
+    <div class="recent_card">
+      <div class="col_div" *ngFor="let item of [1,2,3,4,5,6,7,8,9]">
+        <div class="item_card" (click)="goToDetail()">
+          <div class="icon">
+            <div class="cate_img" [style.backgroundImage]="'url(assets/img/logo.png)'"></div>
+          </div>
+          <div class="details">
+            <div class="flex_row">
+              <div class="col">
+                <ion-label class="title">Buy Mobile</ion-label>
+                <ion-label class="text">July 26, 2025</ion-label>
+              </div>
+              <div class="end_div">
+                <ion-label class="price">$120.20</ion-label>
+                <ion-icon name="chevron-forward-outline" color="primary"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

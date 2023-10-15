@@ -1,0 +1,76 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : Grocery App Template
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2022-present initappz.
+ -->
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="onBack()">
+      <ion-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Fill in your bio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label>This data will be displayed in your account profile for security</ion-label>
+
+  <ion-label class="label">Full Name<span>*</span></ion-label>
+
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Password"></ion-input>
+  </ion-item>
+
+
+  <ion-label class="label">Full Name<span>*</span></ion-label>
+
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Jaydeep Hirani"></ion-input>
+  </ion-item>
+
+
+  <ion-label class="label">Nick Name<span>*</span></ion-label>
+
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Jaydeep"></ion-input>
+  </ion-item>
+
+
+  <ion-label class="label">Phone Number<span>*</span></ion-label>
+
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="+91 8100000091"></ion-input>
+  </ion-item>
+
+
+  <ion-label class="label">Gender<span>*</span></ion-label>
+
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Male"></ion-input>
+  </ion-item>
+
+  <ion-label class="label">Date of Birth<span>*</span></ion-label>
+
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="12 Aug 1998"></ion-input>
+  </ion-item>
+
+  <ion-label class="label">Address<span>*</span></ion-label>
+
+  <ion-item lines="none">
+    <ion-input type="text" placeholder="Smile Street, Palitana"></ion-input>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="block" (click)="onUploadImage()">
+      Next
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
